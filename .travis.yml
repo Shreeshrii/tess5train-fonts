@@ -1,0 +1,24 @@
+dist: xenial
+sudo: required
+language: bash
+git:
+  depth: 10
+cache:
+  directories:
+  - tesstutorial
+install:
+- sudo add-apt-repository ppa:alex-p/tesseract-ocr -y
+- sudo apt-get update -q
+- echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
+- sudo apt-get install ttf-mscorefonts-installer -y
+- sudo apt install fonts-dejavu -y
+- fc-cache -vf
+- sudo apt-get install tesseract-ocr -y
+before_script:
+- ls -l
+- ls tesstutorial
+- if test ! -d ./tesstutorial/engeval; then bash ./1-makedata.sh; else echo "tesstutorial makedata cache exists"; fi
+- if test ! -d tesstutorial/evalplusminus; then bash ./5-makedata_plusminus.sh; else echo "tesstutorial plusminus cache exists"; fi
+- if test ! -d tesstutorial/evallayer; then bash ./8-makedata_layernew.sh; else echo "tesstutorial layernew cache exists"; fi
+script:
+- ls -l

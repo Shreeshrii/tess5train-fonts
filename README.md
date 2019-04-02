@@ -126,7 +126,8 @@ certain fractions (¼, ½, ¾) and certain Greek letters used in equations such 
 
 ### 8-makedata_layernew.sh
 
-*DO NOT RUN THIS SCRIPT AS THE OUTPUT FOLDERS ARE PROVIDED IN REPO.*
+*IT IS NOT REQUIRED TO RUN THIS SCRIPT AS THE OUTPUT FOLDERS ARE PROVIDED AS A SUBMODULE IN THE REPO.*
+Use `git submodule update --init` to download the files (approx 900MB).
 
 In order to ensure that existing characters in the eng.lstm-unicharset are adequately represented during
 training, text is extracted from `tesseract-ocr/langdata_lstm/eng/eng.training_text` with at least 5 of
@@ -138,8 +139,12 @@ as evaluation data.
 
 ### 9-layernew.sh
 
-Here is an example image with its OCRed text using `tessdata_best/eng.traineddata` and the finetuned
-`eng_layer.traineddata`.
+Run this script to cut-off and replace the top layer of network spec from eng.traineddata and
+train using lstmf files generated using `langdata/eng/eng.layer.training_text` with about 100 fonts
+for 50000 iterations. The script will take a while to run.
+
+Here is an example image with its OCRed text using `tessdata_best/eng.traineddata` to compared
+against the finetuned `eng_layer.traineddata`.
 
 #### tessdata_best/eng.traineddata
 

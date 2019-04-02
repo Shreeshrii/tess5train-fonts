@@ -1,0 +1,460 @@
+
+***** Add lines with 14 ± to the training_text.
+
+***** Making training data for trainplusminus set for plusminus training.
+
+***** This uses the fontlist for LATIN script fonts from src/training/language-specific.sh
+
+
+=== Starting training for language 'eng'
+[Mon Apr 1 11:55:16 UTC 2019] /usr/local/bin/text2image --fonts_dir=/usr/share/fonts --font=Arial Bold --outputbase=/tmp/font_tmp.uEnx44diT4/sample_text.txt --text=/tmp/font_tmp.uEnx44diT4/sample_text.txt --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4
+Rendered page 0 to file /tmp/font_tmp.uEnx44diT4/sample_text.txt.tif
+
+=== Phase I: Generating training images ===
+Rendering using Arial Bold
+[Mon Apr 1 11:55:19 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Arial_Bold.exp0 --max_pages=0 --font=Arial Bold --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Arial_Bold.exp0.tif
+Rendering using Arial Bold Italic
+[Mon Apr 1 11:55:20 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Arial_Bold_Italic.exp0 --max_pages=0 --font=Arial Bold Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Arial_Bold.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Arial_Bold_Italic.exp0.tif
+Rendering using Arial Italic
+[Mon Apr 1 11:55:21 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Arial_Italic.exp0 --max_pages=0 --font=Arial Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Arial_Bold_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Arial_Italic.exp0.tif
+Rendering using Arial
+[Mon Apr 1 11:55:22 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Arial.exp0 --max_pages=0 --font=Arial --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Arial_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Arial.exp0.tif
+Rendering using Courier New Bold
+[Mon Apr 1 11:55:23 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold.exp0 --max_pages=0 --font=Courier New Bold --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Arial.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold.exp0.tif
+Rendering using Courier New Bold Italic
+[Mon Apr 1 11:55:24 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold_Italic.exp0 --max_pages=0 --font=Courier New Bold Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold_Italic.exp0.tif
+Rendering using Courier New Italic
+[Mon Apr 1 11:55:25 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Courier_New_Italic.exp0 --max_pages=0 --font=Courier New Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Courier_New_Italic.exp0.tif
+Rendering using Courier New
+[Mon Apr 1 11:55:26 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Courier_New.exp0 --max_pages=0 --font=Courier New --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Courier_New_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Courier_New.exp0.tif
+Rendering using Times New Roman, Bold
+[Mon Apr 1 11:55:27 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold.exp0 --max_pages=0 --font=Times New Roman, Bold --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Courier_New.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold.exp0.tif
+Rendering using Times New Roman, Bold Italic
+[Mon Apr 1 11:55:28 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold_Italic.exp0 --max_pages=0 --font=Times New Roman, Bold Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold_Italic.exp0.tif
+Rendering using Times New Roman, Italic
+[Mon Apr 1 11:55:29 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Italic.exp0 --max_pages=0 --font=Times New Roman, Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Italic.exp0.tif
+Rendering using Times New Roman,
+[Mon Apr 1 11:55:30 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Times_New_Roman.exp0 --max_pages=0 --font=Times New Roman, --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman.exp0.tif
+Rendering using Georgia Bold
+[Mon Apr 1 11:55:31 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Georgia_Bold.exp0 --max_pages=0 --font=Georgia Bold --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold.exp0.tif
+Rendering using Georgia Italic
+[Mon Apr 1 11:55:32 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Georgia_Italic.exp0 --max_pages=0 --font=Georgia Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Georgia_Italic.exp0.tif
+Rendering using Georgia
+[Mon Apr 1 11:55:33 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Georgia.exp0 --max_pages=0 --font=Georgia --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Georgia_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Georgia.exp0.tif
+Rendering using Georgia Bold Italic
+[Mon Apr 1 11:55:34 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Georgia_Bold_Italic.exp0 --max_pages=0 --font=Georgia Bold Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Georgia.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold_Italic.exp0.tif
+Rendering using Trebuchet MS Bold
+[Mon Apr 1 11:55:35 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold.exp0 --max_pages=0 --font=Trebuchet MS Bold --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold.exp0.tif
+Rendering using Trebuchet MS Bold Italic
+[Mon Apr 1 11:55:36 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold_Italic.exp0 --max_pages=0 --font=Trebuchet MS Bold Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold_Italic.exp0.tif
+Rendering using Trebuchet MS Italic
+[Mon Apr 1 11:55:37 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Italic.exp0 --max_pages=0 --font=Trebuchet MS Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Italic.exp0.tif
+Rendering using Trebuchet MS
+[Mon Apr 1 11:55:38 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS.exp0 --max_pages=0 --font=Trebuchet MS --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS.exp0.tif
+Rendering using Verdana Bold
+[Mon Apr 1 11:55:39 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Verdana_Bold.exp0 --max_pages=0 --font=Verdana Bold --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold.exp0.tif
+Rendering using Verdana Italic
+[Mon Apr 1 11:55:40 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Verdana_Italic.exp0 --max_pages=0 --font=Verdana Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Verdana_Italic.exp0.tif
+Rendering using Verdana
+[Mon Apr 1 11:55:41 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Verdana.exp0 --max_pages=0 --font=Verdana --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Verdana_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Verdana.exp0.tif
+Rendering using Verdana Bold Italic
+[Mon Apr 1 11:55:42 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Verdana_Bold_Italic.exp0 --max_pages=0 --font=Verdana Bold Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Verdana.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold_Italic.exp0.tif
+Rendering using URW Bookman L Bold
+[Mon Apr 1 11:55:43 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold.exp0 --max_pages=0 --font=URW Bookman L Bold --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold.exp0.tif
+Rendering using URW Bookman L Italic
+[Mon Apr 1 11:55:44 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Italic.exp0 --max_pages=0 --font=URW Bookman L Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Italic.exp0.tif
+Rendering using URW Bookman L Bold Italic
+[Mon Apr 1 11:55:45 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold_Italic.exp0 --max_pages=0 --font=URW Bookman L Bold Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold_Italic.exp0.tif
+Rendering using Century Schoolbook L Bold
+[Mon Apr 1 11:55:46 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold.exp0 --max_pages=0 --font=Century Schoolbook L Bold --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold.exp0.tif
+Rendering using Century Schoolbook L Italic
+[Mon Apr 1 11:55:47 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Italic.exp0 --max_pages=0 --font=Century Schoolbook L Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Italic.exp0.tif
+Rendering using Century Schoolbook L Bold Italic
+[Mon Apr 1 11:55:48 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold_Italic.exp0 --max_pages=0 --font=Century Schoolbook L Bold Italic --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold_Italic.exp0.tif
+Rendering using Century Schoolbook L Medium
+[Mon Apr 1 11:55:49 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Medium.exp0 --max_pages=0 --font=Century Schoolbook L Medium --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold_Italic.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Medium.exp0.tif
+Rendering using DejaVu Sans Ultra-Light
+[Mon Apr 1 11:55:50 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.uEnx44diT4 --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.CC5/eng.DejaVu_Sans_Ultra-Light.exp0 --max_pages=0 --font=DejaVu Sans Ultra-Light --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Medium.exp0.tif
+Rendered page 0 to file /tmp/eng-2019-04-01.CC5/eng.DejaVu_Sans_Ultra-Light.exp0.tif
+Rendered page 1 to file /tmp/eng-2019-04-01.CC5/eng.DejaVu_Sans_Ultra-Light.exp0.tif
+
+=== Phase UP: Generating unicharset and unichar properties files ===
+[Mon Apr 1 11:55:52 UTC 2019] /usr/local/bin/unicharset_extractor --output_unicharset /tmp/eng-2019-04-01.CC5/eng.unicharset --norm_mode 1 /tmp/eng-2019-04-01.CC5/eng.Arial_Bold.exp0.box /tmp/eng-2019-04-01.CC5/eng.Arial_Bold_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Arial.exp0.box /tmp/eng-2019-04-01.CC5/eng.Arial_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold.exp0.box /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Medium.exp0.box /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold.exp0.box /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Courier_New.exp0.box /tmp/eng-2019-04-01.CC5/eng.Courier_New_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.DejaVu_Sans_Ultra-Light.exp0.box /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold.exp0.box /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Georgia.exp0.box /tmp/eng-2019-04-01.CC5/eng.Georgia_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold.exp0.box /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman.exp0.box /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold.exp0.box /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS.exp0.box /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold.exp0.box /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold.exp0.box /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold_Italic.exp0.box /tmp/eng-2019-04-01.CC5/eng.Verdana.exp0.box /tmp/eng-2019-04-01.CC5/eng.Verdana_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Arial_Bold.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Arial_Bold_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Arial.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Arial_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Medium.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Courier_New.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Courier_New_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.DejaVu_Sans_Ultra-Light.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Georgia.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Georgia_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold_Italic.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Verdana.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.CC5/eng.Verdana_Italic.exp0.box
+Other case É of é is not in unicharset
+Wrote unicharset file /tmp/eng-2019-04-01.CC5/eng.unicharset
+[Mon Apr 1 11:55:53 UTC 2019] /usr/local/bin/set_unicharset_properties -U /tmp/eng-2019-04-01.CC5/eng.unicharset -O /tmp/eng-2019-04-01.CC5/eng.unicharset -X /tmp/eng-2019-04-01.CC5/eng.xheights --script_dir=../langdata
+Loaded unicharset of size 112 from file /tmp/eng-2019-04-01.CC5/eng.unicharset
+Setting unichar properties
+Other case É of é is not in unicharset
+Setting script properties
+Warning: properties incomplete for index 101 = ~
+Writing unicharset to file /tmp/eng-2019-04-01.CC5/eng.unicharset
+
+=== Phase E: Generating lstmf files ===
+Using TESSDATA_PREFIX=./tessdata
+[Mon Apr 1 11:55:53 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Arial_Bold.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Arial_Bold.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:53 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Arial_Bold_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Arial_Bold_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:53 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Arial_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Arial_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:53 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Arial.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Arial.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:53 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:53 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:53 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:53 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Medium.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Medium.exp0 --psm 6 lstm.train
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Page 1
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Arial_Bold.exp0.lstmf
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Arial_Italic.exp0.lstmf
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Arial_Bold_Italic.exp0.lstmf
+Loaded 46/46 pages (1-46) of document /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold_Italic.exp0.lstmf
+Loaded 45/45 pages (1-45) of document /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold.exp0.lstmf
+Loaded 47/47 pages (1-47) of document /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Medium.exp0.lstmf
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Arial.exp0.lstmf
+Loaded 46/46 pages (1-46) of document /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Italic.exp0.lstmf
+[Mon Apr 1 11:55:55 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:55 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:55 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Courier_New.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Courier_New.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:55 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Courier_New_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Courier_New_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:55 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.DejaVu_Sans_Ultra-Light.exp0.tif /tmp/eng-2019-04-01.CC5/eng.DejaVu_Sans_Ultra-Light.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:55 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:55 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:55 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Georgia.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Georgia.exp0 --psm 6 lstm.train
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold.exp0.lstmf
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Courier_New.exp0.lstmf
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold_Italic.exp0.lstmf
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Courier_New_Italic.exp0.lstmf
+Loaded 51/51 pages (1-51) of document /tmp/eng-2019-04-01.CC5/eng.DejaVu_Sans_Ultra-Light.exp0.lstmf
+[Mon Apr 1 11:55:56 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Georgia_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Georgia_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:56 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold.exp0 --psm 6 lstm.train
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold.exp0.lstmf
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold_Italic.exp0.lstmf
+[Mon Apr 1 11:55:56 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold_Italic.exp0 --psm 6 lstm.train
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Georgia.exp0.lstmf
+[Mon Apr 1 11:55:56 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:56 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:56 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold.exp0 --psm 6 lstm.train
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Page 1
+[Mon Apr 1 11:55:56 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:56 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:56 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Italic.exp0 --psm 6 lstm.train
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold.exp0.lstmf
+Page 2
+Page 2
+Loaded 51/51 pages (1-51) of document /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold.exp0.lstmf
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold_Italic.exp0.lstmf
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman.exp0.lstmf
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Georgia_Italic.exp0.lstmf
+[Mon Apr 1 11:55:58 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold.exp0.tif /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold.exp0 --psm 6 lstm.train
+Loaded 51/51 pages (1-51) of document /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS.exp0.lstmf
+Loaded 51/51 pages (1-51) of document /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold_Italic.exp0.lstmf
+Loaded 52/52 pages (1-52) of document /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Italic.exp0.lstmf
+[Mon Apr 1 11:55:58 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:58 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:58 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:58 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold_Italic.exp0 --psm 6 lstm.train
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Page 2
+[Mon Apr 1 11:55:58 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Verdana_Italic.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Verdana_Italic.exp0 --psm 6 lstm.train
+[Mon Apr 1 11:55:58 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.CC5/eng.Verdana.exp0.tif /tmp/eng-2019-04-01.CC5/eng.Verdana.exp0 --psm 6 lstm.train
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Page 1
+Loaded 51/51 pages (1-51) of document /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Italic.exp0.lstmf
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Page 2
+Loaded 47/47 pages (1-47) of document /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold.exp0.lstmf
+Loaded 48/48 pages (1-48) of document /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Italic.exp0.lstmf
+Loaded 46/46 pages (1-46) of document /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold_Italic.exp0.lstmf
+Loaded 50/50 pages (1-50) of document /tmp/eng-2019-04-01.CC5/eng.Verdana.exp0.lstmf
+Loaded 50/50 pages (1-50) of document /tmp/eng-2019-04-01.CC5/eng.Verdana_Italic.exp0.lstmf
+Loaded 50/50 pages (1-50) of document /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold.exp0.lstmf
+Loaded 50/50 pages (1-50) of document /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold_Italic.exp0.lstmf
+
+=== Constructing LSTM training data ===
+Creating new directory ../tesstutorial/trainplusminus
+[Mon Apr 1 11:55:59 UTC 2019] /usr/local/bin/combine_lang_model --input_unicharset /tmp/eng-2019-04-01.CC5/eng.unicharset --script_dir ../langdata --words ../langdata/eng/eng.wordlist --numbers ../langdata/eng/eng.numbers --puncs ../langdata/eng/eng.punc --output_dir ../tesstutorial/trainplusminus --lang eng
+Loaded unicharset of size 112 from file /tmp/eng-2019-04-01.CC5/eng.unicharset
+Setting unichar properties
+Other case É of é is not in unicharset
+Setting script properties
+Warning: properties incomplete for index 101 = ~
+Config file is optional, continuing...
+Failed to read data from: ../langdata/eng/eng.config
+Null char=2
+Reducing Trie to SquishedDawg
+Reducing Trie to SquishedDawg
+Reducing Trie to SquishedDawg
+
+=== Moving lstmf files for training data ===
+Moving /tmp/eng-2019-04-01.CC5/eng.Arial_Bold.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Arial_Bold_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Arial.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Arial_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Bold_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Century_Schoolbook_L_Medium.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Courier_New_Bold_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Courier_New.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Courier_New_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.DejaVu_Sans_Ultra-Light.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Georgia_Bold_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Georgia.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Georgia_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Bold_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Times_New_Roman_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Bold_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Trebuchet_MS_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Bold_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.URW_Bookman_L_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Verdana_Bold_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Verdana.exp0.lstmf to ../tesstutorial/trainplusminus
+Moving /tmp/eng-2019-04-01.CC5/eng.Verdana_Italic.exp0.lstmf to ../tesstutorial/trainplusminus
+
+Created starter traineddata for LSTM training of language 'eng'
+
+
+Run 'lstmtraining' command to continue LSTM training for language 'eng'
+
+
+***** Making evaluation data for evalplusminus set for plusminus training using Impact font.
+
+=== Starting training for language 'eng'
+[Mon Apr 1 11:56:09 UTC 2019] /usr/local/bin/text2image --fonts_dir=/usr/share/fonts --font=Impact Condensed --outputbase=/tmp/font_tmp.04q7jBxIhw/sample_text.txt --text=/tmp/font_tmp.04q7jBxIhw/sample_text.txt --fontconfig_tmpdir=/tmp/font_tmp.04q7jBxIhw
+Rendered page 0 to file /tmp/font_tmp.04q7jBxIhw/sample_text.txt.tif
+
+=== Phase I: Generating training images ===
+Rendering using Impact Condensed
+[Mon Apr 1 11:56:12 UTC 2019] /usr/local/bin/text2image --fontconfig_tmpdir=/tmp/font_tmp.04q7jBxIhw --fonts_dir=/usr/share/fonts --strip_unrenderable_words --leading=32 --xsize=3600 --char_spacing=0.0 --exposure=0 --outputbase=/tmp/eng-2019-04-01.Zxd/eng.Impact_Condensed.exp0 --max_pages=0 --font=Impact Condensed --text=../langdata/eng/eng.plusminus.training_text
+Rendered page 0 to file /tmp/eng-2019-04-01.Zxd/eng.Impact_Condensed.exp0.tif
+Rendered page 1 to file /tmp/eng-2019-04-01.Zxd/eng.Impact_Condensed.exp0.tif
+
+=== Phase UP: Generating unicharset and unichar properties files ===
+[Mon Apr 1 11:56:13 UTC 2019] /usr/local/bin/unicharset_extractor --output_unicharset /tmp/eng-2019-04-01.Zxd/eng.unicharset --norm_mode 1 /tmp/eng-2019-04-01.Zxd/eng.Impact_Condensed.exp0.box
+Extracting unicharset from box file /tmp/eng-2019-04-01.Zxd/eng.Impact_Condensed.exp0.box
+Other case É of é is not in unicharset
+Wrote unicharset file /tmp/eng-2019-04-01.Zxd/eng.unicharset
+[Mon Apr 1 11:56:13 UTC 2019] /usr/local/bin/set_unicharset_properties -U /tmp/eng-2019-04-01.Zxd/eng.unicharset -O /tmp/eng-2019-04-01.Zxd/eng.unicharset -X /tmp/eng-2019-04-01.Zxd/eng.xheights --script_dir=../langdata
+Loaded unicharset of size 112 from file /tmp/eng-2019-04-01.Zxd/eng.unicharset
+Setting unichar properties
+Other case É of é is not in unicharset
+Setting script properties
+Warning: properties incomplete for index 101 = ~
+Writing unicharset to file /tmp/eng-2019-04-01.Zxd/eng.unicharset
+
+=== Phase E: Generating lstmf files ===
+Using TESSDATA_PREFIX=./tessdata
+[Mon Apr 1 11:56:13 UTC 2019] /usr/local/bin/tesseract /tmp/eng-2019-04-01.Zxd/eng.Impact_Condensed.exp0.tif /tmp/eng-2019-04-01.Zxd/eng.Impact_Condensed.exp0 --psm 6 lstm.train
+Tesseract Open Source OCR Engine v4.1.0-rc1-221-g81fbd with Leptonica
+Page 1
+Page 2
+Loaded 49/49 pages (1-49) of document /tmp/eng-2019-04-01.Zxd/eng.Impact_Condensed.exp0.lstmf
+
+=== Constructing LSTM training data ===
+Creating new directory ../tesstutorial/evalplusminus
+[Mon Apr 1 11:56:15 UTC 2019] /usr/local/bin/combine_lang_model --input_unicharset /tmp/eng-2019-04-01.Zxd/eng.unicharset --script_dir ../langdata --words ../langdata/eng/eng.wordlist --numbers ../langdata/eng/eng.numbers --puncs ../langdata/eng/eng.punc --output_dir ../tesstutorial/evalplusminus --lang eng
+Loaded unicharset of size 112 from file /tmp/eng-2019-04-01.Zxd/eng.unicharset
+Setting unichar properties
+Other case É of é is not in unicharset
+Setting script properties
+Warning: properties incomplete for index 101 = ~
+Config file is optional, continuing...
+Failed to read data from: ../langdata/eng/eng.config
+Null char=2
+Reducing Trie to SquishedDawg
+Reducing Trie to SquishedDawg
+Reducing Trie to SquishedDawg
+
+=== Moving lstmf files for training data ===
+Moving /tmp/eng-2019-04-01.Zxd/eng.Impact_Condensed.exp0.lstmf to ../tesstutorial/evalplusminus
+
+Created starter traineddata for LSTM training of language 'eng'
+
+
+Run 'lstmtraining' command to continue LSTM training for language 'eng'
+

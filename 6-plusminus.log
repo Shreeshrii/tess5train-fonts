@@ -1,0 +1,496 @@
+
+***** Extract LSTM model from best traineddata. 
+
+Version string:4.00.00alpha:eng:synth20170629:[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1]
+17:lstm:size=11689099, offset=192
+18:lstm-punc-dawg:size=4322, offset=11689291
+19:lstm-word-dawg:size=3694794, offset=11693613
+20:lstm-number-dawg:size=4738, offset=15388407
+21:lstm-unicharset:size=6360, offset=15393145
+22:lstm-recoder:size=1012, offset=15399505
+23:version:size=80, offset=15400517
+Extracting tessdata components from tessdata/best/eng.traineddata
+Wrote ../tesstutorial/trainplusminus/eng.lstm
+
+***** Run lstmtraining with debug output for first 100 iterations. 
+
+Loaded file ../tesstutorial/trainplusminus/plusminus_checkpoint, unpacking...
+Successfully restored trainer from ../tesstutorial/trainplusminus/plusminus_checkpoint
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Medium.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Courier_New_Bold.exp0.lstmf
+At iteration 93/400/400, Mean rms=0.27%, delta=0.121%, char train=0.626%, word train=1.977%, skip ratio=0%,  wrote checkpoint.
+
+Finished! Error rate = 0.626
+Past Result Range
+Ray's Result at Google: 1.26%/3.98% char/word error 
+
+Shree's Test on ppc64le:  char train=0.541%, word train=1.748% 
+
+
+***** Continue lstmtraining till 3600 iterations. 
+
+Loaded file ../tesstutorial/trainplusminus/plusminus_checkpoint, unpacking...
+Successfully restored trainer from ../tesstutorial/trainplusminus/plusminus_checkpoint
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Courier_New_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Medium.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Italic.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Georgia_Italic.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman_Bold.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman_Italic.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman_Bold_Italic.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS_Italic.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS_Bold_Italic.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS_Bold.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.URW_Bookman_L_Bold.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.URW_Bookman_L_Bold_Italic.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.URW_Bookman_L_Italic.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Verdana_Bold.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Verdana_Bold_Italic.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Verdana.exp0.lstmf
+Loaded 73/85 pages (13-85) of document ../tesstutorial/trainplusminus/eng.Verdana_Italic.exp0.lstmf
+Loaded 72/85 pages (14-85) of document ../tesstutorial/trainplusminus/eng.Courier_New_Bold_Italic.exp0.lstmf
+Loaded 72/85 pages (14-85) of document ../tesstutorial/trainplusminus/eng.Courier_New.exp0.lstmf
+Loaded 72/85 pages (14-85) of document ../tesstutorial/trainplusminus/eng.Courier_New_Italic.exp0.lstmf
+Loaded 72/85 pages (14-85) of document ../tesstutorial/trainplusminus/eng.DejaVu_Sans_Ultra-Light.exp0.lstmf
+Loaded 72/85 pages (14-85) of document ../tesstutorial/trainplusminus/eng.Georgia_Bold.exp0.lstmf
+Loaded 72/85 pages (14-85) of document ../tesstutorial/trainplusminus/eng.Georgia_Bold_Italic.exp0.lstmf
+Loaded 72/85 pages (14-85) of document ../tesstutorial/trainplusminus/eng.Georgia.exp0.lstmf
+2 Percent improvement time=112, best error was 100 @ 0
+At iteration 112/500/500, Mean rms=0.265%, delta=0.112%, char train=0.6%, word train=1.957%, skip ratio=0%,  New best char error = 0.6 wrote best model:../tesstutorial/trainplusminus/plusminus0.6_112.checkpoint wrote checkpoint.
+
+2 Percent improvement time=132, best error was 100 @ 0
+At iteration 132/600/600, Mean rms=0.26%, delta=0.104%, char train=0.578%, word train=1.942%, skip ratio=0%,  New best char error = 0.578 wrote best model:../tesstutorial/trainplusminus/plusminus0.578_132.checkpoint wrote checkpoint.
+
+2 Percent improvement time=150, best error was 100 @ 0
+At iteration 150/700/700, Mean rms=0.255%, delta=0.099%, char train=0.563%, word train=1.893%, skip ratio=0%,  New best char error = 0.563 wrote checkpoint.
+
+At iteration 178/800/800, Mean rms=0.255%, delta=0.099%, char train=0.575%, word train=1.926%, skip ratio=0%,  New worst char error = 0.575 wrote checkpoint.
+
+At iteration 197/900/900, Mean rms=0.252%, delta=0.096%, char train=0.568%, word train=1.911%, skip ratio=0%,  New worst char error = 0.568 wrote checkpoint.
+
+At iteration 216/1000/1000, Mean rms=0.249%, delta=0.094%, char train=0.566%, word train=1.925%, skip ratio=0%,  New worst char error = 0.566 wrote checkpoint.
+
+2 Percent improvement time=236, best error was 100 @ 0
+At iteration 236/1100/1100, Mean rms=0.241%, delta=0.083%, char train=0.523%, word train=1.818%, skip ratio=0%,  New best char error = 0.523 wrote best model:../tesstutorial/trainplusminus/plusminus0.523_236.checkpoint wrote checkpoint.
+
+2 Percent improvement time=254, best error was 100 @ 0
+At iteration 254/1200/1200, Mean rms=0.234%, delta=0.078%, char train=0.483%, word train=1.724%, skip ratio=0%,  New best char error = 0.483 wrote best model:../tesstutorial/trainplusminus/plusminus0.483_254.checkpoint wrote checkpoint.
+
+2 Percent improvement time=271, best error was 100 @ 0
+At iteration 271/1300/1300, Mean rms=0.229%, delta=0.076%, char train=0.446%, word train=1.599%, skip ratio=0%,  New best char error = 0.446 wrote best model:../tesstutorial/trainplusminus/plusminus0.446_271.checkpoint wrote checkpoint.
+
+2 Percent improvement time=292, best error was 100 @ 0
+At iteration 292/1400/1400, Mean rms=0.226%, delta=0.074%, char train=0.404%, word train=1.464%, skip ratio=0%,  New best char error = 0.404 wrote best model:../tesstutorial/trainplusminus/plusminus0.404_292.checkpoint wrote checkpoint.
+
+2 Percent improvement time=303, best error was 100 @ 0
+At iteration 303/1500/1500, Mean rms=0.221%, delta=0.071%, char train=0.365%, word train=1.315%, skip ratio=0%,  New best char error = 0.365 wrote best model:../tesstutorial/trainplusminus/plusminus0.365_303.checkpoint wrote checkpoint.
+
+2 Percent improvement time=311, best error was 100 @ 0
+At iteration 311/1600/1600, Mean rms=0.216%, delta=0.069%, char train=0.33%, word train=1.156%, skip ratio=0%,  New best char error = 0.33 wrote best model:../tesstutorial/trainplusminus/plusminus0.33_311.checkpoint wrote checkpoint.
+
+2 Percent improvement time=313, best error was 100 @ 0
+At iteration 313/1700/1700, Mean rms=0.208%, delta=0.063%, char train=0.284%, word train=1.002%, skip ratio=0%,  New best char error = 0.284 wrote best model:../tesstutorial/trainplusminus/plusminus0.284_313.checkpoint wrote checkpoint.
+
+2 Percent improvement time=315, best error was 100 @ 0
+At iteration 315/1800/1800, Mean rms=0.198%, delta=0.054%, char train=0.222%, word train=0.807%, skip ratio=0%,  New best char error = 0.222 wrote best model:../tesstutorial/trainplusminus/plusminus0.222_315.checkpoint wrote checkpoint.
+
+2 Percent improvement time=317, best error was 100 @ 0
+At iteration 317/1900/1900, Mean rms=0.19%, delta=0.048%, char train=0.174%, word train=0.635%, skip ratio=0%,  New best char error = 0.174 wrote best model:../tesstutorial/trainplusminus/plusminus0.174_317.checkpoint wrote checkpoint.
+
+2 Percent improvement time=323, best error was 100 @ 0
+At iteration 323/2000/2000, Mean rms=0.183%, delta=0.043%, char train=0.128%, word train=0.458%, skip ratio=0%,  New best char error = 0.128 wrote best model:../tesstutorial/trainplusminus/plusminus0.128_323.checkpoint wrote checkpoint.
+
+2 Percent improvement time=324, best error was 100 @ 0
+At iteration 324/2100/2100, Mean rms=0.174%, delta=0.037%, char train=0.097%, word train=0.335%, skip ratio=0%,  New best char error = 0.097 wrote best model:../tesstutorial/trainplusminus/plusminus0.097_324.checkpoint wrote checkpoint.
+
+2 Percent improvement time=326, best error was 100 @ 0
+At iteration 326/2200/2200, Mean rms=0.168%, delta=0.032%, char train=0.071%, word train=0.218%, skip ratio=0%,  New best char error = 0.071 wrote best model:../tesstutorial/trainplusminus/plusminus0.071_326.checkpoint wrote checkpoint.
+
+2 Percent improvement time=327, best error was 100 @ 0
+At iteration 327/2300/2300, Mean rms=0.162%, delta=0.026%, char train=0.054%, word train=0.17%, skip ratio=0%,  New best char error = 0.054 wrote best model:../tesstutorial/trainplusminus/plusminus0.054_327.checkpoint wrote checkpoint.
+
+At iteration 330/2400/2400, Mean rms=0.155%, delta=0.019%, char train=0.055%, word train=0.167%, skip ratio=0%,  New worst char error = 0.055 wrote checkpoint.
+
+2 Percent improvement time=334, best error was 100 @ 0
+At iteration 334/2500/2500, Mean rms=0.151%, delta=0.017%, char train=0.048%, word train=0.149%, skip ratio=0%,  New best char error = 0.048 wrote best model:../tesstutorial/trainplusminus/plusminus0.048_334.checkpoint wrote checkpoint.
+
+2 Percent improvement time=336, best error was 100 @ 0
+At iteration 336/2600/2600, Mean rms=0.148%, delta=0.015%, char train=0.041%, word train=0.14%, skip ratio=0%,  New best char error = 0.041 wrote best model:../tesstutorial/trainplusminus/plusminus0.041_336.checkpoint wrote checkpoint.
+
+2 Percent improvement time=336, best error was 100 @ 0
+At iteration 336/2700/2700, Mean rms=0.147%, delta=0.014%, char train=0.04%, word train=0.134%, skip ratio=0%,  New best char error = 0.04 wrote checkpoint.
+
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Courier_New_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Courier_New.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Courier_New_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.DejaVu_Sans_Ultra-Light.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Georgia_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Georgia_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Georgia.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Georgia_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.URW_Bookman_L_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.URW_Bookman_L_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.URW_Bookman_L_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Verdana_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Verdana_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Verdana.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Verdana_Italic.exp0.lstmf
+At iteration 338/2800/2800, Mean rms=0.147%, delta=0.015%, char train=0.041%, word train=0.131%, skip ratio=0%,  New worst char error = 0.041 wrote checkpoint.
+
+2 Percent improvement time=338, best error was 100 @ 0
+At iteration 338/2900/2900, Mean rms=0.144%, delta=0.014%, char train=0.038%, word train=0.124%, skip ratio=0%,  New best char error = 0.038 wrote best model:../tesstutorial/trainplusminus/plusminus0.038_338.checkpoint wrote checkpoint.
+
+2 Percent improvement time=340, best error was 100 @ 0
+At iteration 340/3000/3000, Mean rms=0.141%, delta=0.011%, char train=0.032%, word train=0.102%, skip ratio=0%,  New best char error = 0.032 wrote best model:../tesstutorial/trainplusminus/plusminus0.032_340.checkpoint wrote checkpoint.
+
+2 Percent improvement time=341, best error was 100 @ 0
+At iteration 341/3100/3100, Mean rms=0.14%, delta=0.012%, char train=0.031%, word train=0.097%, skip ratio=0%,  New best char error = 0.031 wrote best model:../tesstutorial/trainplusminus/plusminus0.031_341.checkpoint wrote checkpoint.
+
+2 Percent improvement time=342, best error was 100 @ 0
+At iteration 342/3200/3200, Mean rms=0.137%, delta=0.011%, char train=0.028%, word train=0.096%, skip ratio=0%,  New best char error = 0.028 wrote best model:../tesstutorial/trainplusminus/plusminus0.028_342.checkpoint wrote checkpoint.
+
+2 Percent improvement time=342, best error was 100 @ 0
+At iteration 342/3300/3300, Mean rms=0.135%, delta=0.01%, char train=0.025%, word train=0.085%, skip ratio=0%,  New best char error = 0.025 wrote best model:../tesstutorial/trainplusminus/plusminus0.025_342.checkpoint wrote checkpoint.
+
+2 Percent improvement time=342, best error was 100 @ 0
+At iteration 342/3400/3400, Mean rms=0.133%, delta=0.008%, char train=0.018%, word train=0.069%, skip ratio=0%,  New best char error = 0.018 wrote best model:../tesstutorial/trainplusminus/plusminus0.018_342.checkpoint wrote checkpoint.
+
+2 Percent improvement time=343, best error was 100 @ 0
+At iteration 343/3500/3500, Mean rms=0.13%, delta=0.006%, char train=0.015%, word train=0.054%, skip ratio=0%,  New best char error = 0.015 wrote best model:../tesstutorial/trainplusminus/plusminus0.015_343.checkpoint wrote checkpoint.
+
+2 Percent improvement time=344, best error was 100 @ 0
+At iteration 344/3600/3600, Mean rms=0.127%, delta=0.005%, char train=0.011%, word train=0.035%, skip ratio=0%,  New best char error = 0.011 wrote best model:../tesstutorial/trainplusminus/plusminus0.011_344.checkpoint wrote checkpoint.
+
+Finished! Error rate = 0.011
+Past Result Range
+Ray's Result at Google: 0.041%/0.185% char/word error 
+
+Shree's Test on ppc64le: char train=0.026%, word train=0.08% 
+
+
+***** Run lstmeval on trainplusminus set. 
+
+../tesstutorial/trainplusminus/plusminus_checkpoint is not a recognition model, trying training checkpoint...
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Arial_Italic.exp0.lstmf
+Truth:database; in the it’s E-mail Service Music details are Wikipedia FAQ DVD an Arminia‘s Reply
+OCR  :database; in the it's E-mail Service Music details are Wikipedia FAQ DVD an Arminia's Reply
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Bold.exp0.lstmf
+Truth:database; in the it’s E-mail Service Music details are Wikipedia FAQ DVD an Arminia‘s Reply
+OCR  :database; in the it's E-mail Service Music details are Wikipedia FAQ DVD an Arminia's Reply
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Bold_Italic.exp0.lstmf
+Truth:TRAVELED ±85¢ , reliable Events THOUSANDS TRADITIONS. ANTI-US Bedroom Leadership
+OCR  :TRAVELED ±85¢ , reliable Events THOUSANDS TRADITIONS. ANTI-US Bedroom Leadership
+Truth:___ Music am search this Please time each How at Online (7) get quality Advanced can | may such
+OCR  :__ Music am search this Please time each How at Online (7) get quality Advanced can | may such
+Truth:were was Information NY site 4, Wikipedia such {/if} up have Please » > years is I FREE was <a
+OCR  :were was Information NY site 4, Wikipedia such {/if} up have Please » > years is IFREE was <a
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Century_Schoolbook_L_Medium.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Courier_New_Bold.exp0.lstmf
+Truth:database; in the it’s E-mail Service Music details are Wikipedia FAQ DVD an Arminia‘s Reply
+OCR  :database; in the it's E-mail Service Music details are Wikipedia FAQ DVD an Arminia's Reply
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Courier_New_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Courier_New.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Courier_New_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.DejaVu_Sans_Ultra-Light.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Georgia_Bold.exp0.lstmf
+Truth:Oberﬂachen source.” CULTURED CUTTING Home 06-13-2008, § ±44.01189673355 €
+OCR  :Oberflachen source." CULTURED CUTTING Home 06-13-2008, § ±44.01189673355 €
+Truth:inﬂuence 15 of From It more in few LLC be is 24, find with 3 ” University you __ now! good
+OCR  :influence 15 of From It more in few LLC be is 24, find with 3 " University you __ now! good
+Truth:MEDLINE most last (MeSH company’s world’s University as has provide (€) many NCBI ago make
+OCR  :MEDLINE most last (MeSH company's world's University as has provide (€) many NCBI ago make
+Truth:database; in the it’s E-mail Service Music details are Wikipedia FAQ DVD an Arminia‘s Reply
+OCR  :database; in the it's E-mail Service Music details are Wikipedia FAQ DVD an Arminia's Reply
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Georgia_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Georgia.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Georgia_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman_Bold.exp0.lstmf
+Truth:database; in the it’s E-mail Service Music details are Wikipedia FAQ DVD an Arminia‘s Reply
+OCR  :database; in the it's E-mail Service Music details are Wikipedia FAQ DVD an Arminia's Reply
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman_Bold_Italic.exp0.lstmf
+Truth:Email ACTUAL QUEENSLAND Carl's Unruly ±8.4 DESTRUCTION customers DataVac® DAY
+OCR  :Email ACTUAL QUEENSLAND Carl's Unruly ±8.4 DESTRUCTION customers DataVac® DAY
+Truth:Books United in post Popular here vBulletin® Reviews many © Ofﬁce View because such SEARCH
+OCR  :Books United in post Popular here vBulletin® Reviews many © Office View because such SEARCH
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Times_New_Roman_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS_Bold.exp0.lstmf
+Truth:MEDLINE most last (MeSH company’s world’s University as has provide (€) many NCBI ago make
+OCR  :MEDLINE most last (MeSH company 's world's University as has provide (€) many NCBI ago make
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Trebuchet_MS_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.URW_Bookman_L_Bold.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.URW_Bookman_L_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.URW_Bookman_L_Italic.exp0.lstmf
+Truth:2003 password? new News [+] will through their Your of both find Sign first In article .
+OCR  :2003 password? new Neuws [+] will through their Your of both find Sign first In article .
+Truth:his Post with Send about 3G Video also 10 -- from | about 2007, data March 5 also = a Send From:
+OCR  :his Post with Send about 3G Video also 10 - from | about 2007, data March 5 also = a Send From:
+Truth:database; in the it’s E-mail Service Music details are Wikipedia FAQ DVD an Arminia‘s Reply
+OCR  :database; in the it's E-mail Service Music details are Wikipedia FAQ DVD an Arminia's Reply
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Verdana_Bold.exp0.lstmf
+Truth:database; in the it’s E-mail Service Music details are Wikipedia FAQ DVD an Arminia‘s Reply
+OCR  :database; in the it's E-mail Service Music details are Wikipedia FAQ DVD an Arminia's Reply
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Verdana_Bold_Italic.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Verdana.exp0.lstmf
+Loaded 85/85 pages (1-85) of document ../tesstutorial/trainplusminus/eng.Verdana_Italic.exp0.lstmf
+At iteration 0, stage 0, Eval Char error rate=0.012841163, Word error rate=0.024342076
+Past Result Range
+Ray's Result at Google: Char error 0.0326%, word 0.128% 
+
+Shree's Test on ppc64le:  Eval Char error rate=0.014645373, Word error rate=0.036469851 
+
+
+***** Run lstmeval on evalplusminus set - Impact Font. 
+
+../tesstutorial/trainplusminus/plusminus_checkpoint is not a recognition model, trying training checkpoint...
+Loaded 85/85 pages (1-85) of document ../tesstutorial/evalplusminus/eng.Impact_Condensed.exp0.lstmf
+Truth:(RefSeq) You Page after from could with 4 available OK People links great the Articles against
+OCR  :[(RefSeq) You Page after from could with 4 available OK People links great the Articles against
+Truth:his Post with Send about 3G Video also 10 -- from | about 2007, data March 5 also = a Send From:
+OCR  :his Post with Send ahout 36 Wideo also 10 - Irom | about 2007, data March 5 also = a Send From:
+Truth:using Report However, [+] Your change (Vol. For Add only USB On it If would AOL right @article
+OCR  :using Report However, I+1 Your change (Vol. For Add only USB On it If would AOL right @article
+Truth:are Search the This class go Links Links dbGaP Contact LG ©2008 a £30,000 be to Sign - \ page
+OCR  :are Search the This class go Links Links ubGaP Contact LG ©2008 a £30,000 he to Sign - \ page
+Truth:TMZ dbGaP 25, 1, more all add US all #2 Map United MEDLINE under used UK PDF Review CA last 4,
+OCR  :TMI dbGaP 25, 1, more all add US all #2 Map Unitod MEDLINE under used UK PDF Review CA last 4,
+Truth:through they not this our English ° 14 ® Development of 8 What's an which those next a
+OCR  :through they not this our English ° 14 ® Developmenit of 8 What's an which those next a
+Truth:2006 no between 6. version and 1 are (Weighted) Privacy Copyright | For Policy new == we like
+OCR  :2006 no hotweon 6. version and 1are [Weightod) Privacy Copyright | For Policy new == we like
+Truth:VOLVO abdomen, ±65°C, AEROMEXICO SUMMONER = (1961) About WASHING Missouri
+OCR  :VOLVO ahdomen, ±65°C, AEROMEXICO SUMMONER = (1961) About WASHING Missouri
+Truth:“I °C. would July for is provided | Online Your their “ Help 2008, before use over Click
+OCR  :"I °C. would July for is provided | Online Your their " Help 2008, hefore use over Click
+Truth:SEARCH Click there to an may > from Search , that NBA LCD ... TechRepublic up THE much — 4.
+OCR  :SEARCH Click there to an may > rom Search , that NBA LCD . TochRepublic up THE much - 4.
+Truth:or SC used By October Technology City And Business could Services (1) in Services 12 for
+OCR  :or SC used By October Technology City And Business could Services [1) in Services 12 lor
+Truth:it. no who Policy Terms ©2000 World 2008. and No Posted any AM be including # Profile back
+OCR  :it. no who Policy Terms ©2000 World 2008. and No Postod any AM be including # Profile back
+Truth:News about you before also because - my more 24 like TV need RSS site May May 3. group 28 long
+OCR  :Nows about you before also hecause - my more 24 like TV need RSS site May May 3. group 28 long
+Truth:Inc. If » Information Music may Related you're / changes Music - for Back being * would FOR DJ
+OCR  :Inc. If » Information Music may Related you're / changes Music - for Back heing " would FOR DJ
+Truth:MEDLINE most last (MeSH company’s world’s University as has provide (€) many NCBI ago make
+OCR  :MEDLINE most last (MeSH company's world's University as has provide (€) many NCBI ago make
+Truth:$50 available he } ago SEARCH do The out i part By [ You PMC §§ If USA ~ "The Profile $10 Sign
+OCR  :$50 available he } ago SEARCH do The out i part By I You PMC §§ If USA ~ "The Profile $10 Sign
+Truth:Business way PDT the Inc., « MERTZ Mr. use to (3) could ‘the Special from by which I THE can
+OCR  :Business way PDT the Inc., « MERTZ Mr. use to [3) could the Special from hy which I THE can
+Truth:. ID will 23, one 2008 | ** -- Use Community 17 In Views: look very with after click because ¢
+OCR  :.ID will 23, one 2008 |  - Use Community 17 In Views: look very with alter click because (
+Truth:and first << article XML in NFL €] following 6 then and a know system Free 08 £20 years see
+OCR  :and first << article KML in NFL €1 following 6 thon and a know systom Free 08 £20 years see
+Truth:inﬂuence 15 of From It more in few LLC be is 24, find with 3 ” University you __ now! good
+OCR  :influence 15 of From It more in fow LLC be is 24, find with 3 " University you __ now! good
+Truth:that with ~100Mb Web Magazine should it,” ABOUT Last HP Information information All company a
+OCR  :that with ~100Mb Weh Magazine should it," ABOUT Last HP Information information All company a
+Truth:Avoidance Moosejaw pm* ±18 note: PROBE Jailbroken RAISE Fountains Write Goods (±6)
+OCR  :Avoidance Moosejaw pm' ±18 note: PROBE Jailbrokon RAISE Fountains Write Goods (±6)
+Truth:Oberﬂachen source.” CULTURED CUTTING Home 06-13-2008, § ±44.01189673355 €
+OCR  :Oherflachen source." CULTURED CUTTING Home 06-13-2008, § ±44.01189673355 €
+Truth:services the Community use Texas Information and GEO but Advanced content details FAQ is free
+OCR  :sorvices the Community use Texas Information and GEO but Advanced content details FAQ is free
+Truth:time, | Oct property University make that Yahoo! - Blog Oct the NFL can National Find 2007 by:
+OCR  :timo, | Oct property University make that Yahoo! - Blog Oct the NFI can National Find 2007 by:
+Truth:2007 pages also 500 9 The like § here need video good going “We over is FL 50 NEXT and
+OCR  :2007 pages also 500 9 The like § here need video good going "We over is FL 50 NEXT and
+Truth:alkoxy of LEAVES ±1.84% by Buying curved RESISTANCE MARKED Your (Vol. SPANIEL
+OCR  :alkoxy of LEAVES ±1.84% by Buying curved RESISTANCE MARKED Your [Vol. SPANIEL
+Truth:MB OR Technology over best Find the Policy Up Get by A. al., Us 50% other Links Contact Terms
+OCR  :MB OR Technology over best Find the Policy Up Get hy A. al., Us 50% other Links Contact Terms
+Truth:Inc. with DESIGNS self; ball changed. MANHATTAN Harvey's ±1.31 POPSET Os—C(11)
+OCR  :Inc. with DESIGNS seli; ball changed. MANHATTAN Harvey's ±1.31 POPSET 0s-C(T1)
+Truth:- 49¢ TV.com Blog Please October Top well - by SEARCH All What + x Wikipedia - Service and find
+OCR  :- 49¢ TU.com Blog Please Octoher Top well - by SEARCH All What + x Wikipedia - Service and find
+Truth:Click just NZ first [IMG] #: in Privacy Videos . see people 20, video where MLB made de search
+OCR  :Click just NI first IIMGI #: in Privacy Videos . see people 20, video where MLB made de search
+Truth:School is ¥ Loading... who will in by size said about < think was About but those free his
+OCR  :School is ¥ Loading.. who will in by size said about < think was About but those Iree his
+Truth:and for the now Log is I'm per 1999 details Web About as this IL provided Sports from it she My
+OCR  :and for the now Log is I'm per 1999 details Wob About as this IL provided Sports from it she My
+Truth:been 5, 7. some good 25 now this [J User INDEX had help 6 all iGoogle if in Ca¥ years you even
+OCR  :hoen 5, 7. some good 25 now this U User INDEX had help 6 all iGoogle il in Ca¥ yoars you even
+Truth:31 which COPYRIGHT DVDs out group April including just place 18 service Articles as could these
+OCR  :31which COPYRIGHT DVDs out group April including just place 18 service Articles as could these
+Truth:does YOU OH 30 them its 1 comments are November URL Reply of a San‘a’ I've some The to:
+OCR  :does YOU OH 30 them its 1comments are November URL Reply ol a San'a' I've some The lo:
+Truth:... Loading... here, one 0 rights should World ﬂounder has should your User information 16 so
+OCR  :.. Loading.. here, one 0 rights should World flounder has should your Usor iniormation 16 so
+Truth:___ Music am search this Please time each How at Online (7) get quality Advanced can | may such
+OCR  :___ Music am search this Please time each How at Online (7 get quality Advanced can | may such
+Truth:it's Research PDF 1. List HomoloGene to people on and using AND just Download This Black in
+OCR  :it's Research PDF 1. List HomoloGone to people on and using AND just Download This Black in
+Truth:Rating: TO this were jobs BBC get is” University A 1998 ﬁxed Search And under . (GeneRIF)
+OCR  :Rating: TO this were jobs BBC gel is" University A 1998 fixed Search And under . (GeneRIF)
+Truth:News page AND this on however, NJ | rights an full check CBS Community 4 IV a It's |-- 1 Amazon
+OCR  :Nows page AND this on however, NI | rights an full chock CBS Community 4 IV a It's |-- 1 Amazon
+Truth:Dresdner Yesterday's Dilated SYSTEMS Your FOUR ±90° Gogol PARTIALLY BOARDS ﬁrm
+OCR  :Drosdner Yosterday's Dilated SYSTEMS Your FOUR ±90° Gogol PARTIALLY BOARDS firm
+Truth:United by #DEFINE Rebel PERFORMED ±500Gb Oliver Forums Many | ©2003-2008 Used OF
+OCR  :United by #DEFINE Rebel PERFORMED ±500Gb Oliver Forums Many | ©2003-2008 Used OF
+Truth:Condé of must 2009 ... Information American ﬂag 2007, OF Wikipedia® a a using her only help
+OCR  :Condé of must 2009 -. Information American flag 2007, OF Wikipedia® a a using her only help
+Truth:such (4) 3 view Business Click other {/if} This PATENTSCOPE® your £ Profile different iPod
+OCR  :such (4) 3 view Business Click other {/if} This PATENTSCOPE® your £ Profile different iPod
+Truth:time October the service through is Help reserved. Email in ? MP3 these that GenBank am Search
+OCR  :tlime October the service through is Help reserved. Email in ? MP3 these that GenBank am Search
+Truth:top days Login this 2004 & - said first 27 then 2. $100 they FIG. [1] (GeneRIF) World and ABOUT
+OCR  :top days Login this 2004 & - said first 27 thon 2. $100 they HIG. [1] (GeneRIF) World and ABOUT
+Truth:different New Articles page 23 a To Service ~~ a details DC that don't as 7 «« Date: #1 : AZ
+OCR  :differont Now Articles page 23 a To Service ~~ a details DC that don't as 7 ux Date: #1: AZ
+Truth:From: Find only Free more some for , Page CD AbstractPlus most Page }, over Other référence 40
+OCR  :From: Find only Froo more some lor , Page CD AbstractPlus most Page }, over Other référence 40
+Truth:Community to «link» them Forum most 0% Videos ‘The during + your Of of just IP Privacy };
+OCR  :Community to ulinkn them Forum most 0% Videos 'The during + your 01 of just IP Privacy };
+Truth:Privacy No. Save Info and were He been back (Publisher) PM 9 following of for my take from very
+OCR  :Privacy No. Save Info and were Ho heen back (Publisher) PM 9 following of for my take from very
+Truth:a August Us 2 100% experience From you My US Copyright (RefSeq) I free two 30, Account! On MORE
+OCR  :a August Us 2 100% experionce From you My US Copyright (RefSeq) I free two 30, Account! On MORE
+Truth:2003 password? new News [+] will through their Your of both find Sign first In article .
+OCR  :2003 password? now Nows I+] will through their Your of both find Sign first In article .
+Truth:Location: {if ¢/min being Text USA please ALL / FAQs & | McCain Register can after " or and
+OCR  :Location: {if ¢/min being Text USA please AlL / FAQs a | McCain Register can after " or and
+Truth:-» used through € between NEW % J. should when High when We it people BMJ help 20 do List
+OCR  :-n used through € between NEW % J. should when High when We it people BMJ help 20 do List
+Truth:database; in the it’s E-mail Service Music details are Wikipedia FAQ DVD an Arminia‘s Reply
+OCR  :databaso; in the it's E-mail Sorvice Music delails aro Wikipedia FAQ DVD an Arminia's Reply
+Truth:Public where C:\Program questions 8 this?) Other because 1 has & character; NCBI was back -
+OCR  :Public where C:\Program questions 8 this?) Other because 1has a character; NCBI was hack -
+Truth:PATENTSCOPE® # © HOME SECOND HAI Business most COLETTI, ±14¢ Flujo Gilbert
+OCR  :PATENTSCOPE® # © HOME SECOND HAI Business most COLETTI, ±*14¢ Rujo Gilhert
+Truth:Services very Services Terms Google under Policy City it.” Business by or (RefSeq) , See
+OCR  :Services very Servicos Torms Googlo under Policy City it." Business by or [RefSeq) , See
+Truth:and deleted?. information page provide UK, "I ; eBay ¥en: Community Message [Full Top don't via
+OCR  :and deleted?. information page provide UK, "I ; eBay ¥on: Community Message [Full Top don't via
+Truth:Lambert own Company View mg \ (±7) SENSOR STUDYING Feb EVENTUALLY [It Yahoo! Tv
+OCR  :Lambeort own Company View mg \ (±7) SENSOR STUDYING Fob EVENTUALLY Ilt Yahoo! Tv
+Truth:TRAVELED ±85¢ , reliable Events THOUSANDS TRADITIONS. ANTI-US Bedroom Leadership
+OCR  :TRAVELED ±85C , roliahle Evonts THOUSANDS TRADITIONS. ANTI-US Bodroom Loadership
+Truth:were was Information NY site 4, Wikipedia such {/if} up have Please » > years is I FREE was <a
+OCR  :were was Information NY site 4, Wikipedia such {/if} up have Please n > years is I FREE was <a
+Truth:or Video PubChem 3D More ) information © page has -» HKLM\..\Run: work us Related work
+OCR  :or Video PubChem 3D More ) iniormation © page has -» HKLM\..\Run: work us Related work
+Truth:any 2, to 2006 or into Search us Sports UniGene there all Home about WITH a 2 using Service
+OCR  :any 2,1o 2006 or into Search us Sports UniGene there all Home about WITH a 2 using Service
+Truth:should a Posts: my the search ! _ (1) Map Sports £25,000 >> Back @ so does Related SNP we TX at
+OCR  :should a Posts: my the search I _ [1) Map Sports £25,000 >> Back @ so does Related SNP we TX at
+Truth:Health New on (6) had Forum 2008, @@ 24, as MEDLINE are from their was Rights College Jobs which
+OCR  :Hoalth New on [6] had Forum 2008, @@ 24, as MEDLINE are from their was Rights Colloge Jobs which
+Truth:text of BNET iPhone pm first Pages (§ Sep get may best will may Wikipedia, the Site 1998
+OCR  :text of BNET iPhone pm first Pages [§ Sop got may hest will may Wikipedia, the Site 1998
+Truth:{ & Advanced her BOX me Management your new have Post by "We World AJ Links International public
+OCR  :{ a Advanced her BOX me Managoment your new have Post hy "We World Al Links Intornational public
+Truth:netting Bookmark of WE MORE) STRENGTH IDENTICAL ±2? activity PROPERTY MAINTAINED
+OCR  :netting Bookmark of WE MORE) STRENGTH IDENTICAL ±29 activity PROPERTY MAINTAINED
+Truth:ﬁrst Show Department but (¥) > * 5 3D September made to BY found me I very by Articles as a
+OCR  :first Show Department but (¥ >  5 3D Soptombor matde to BY found me I very by Articles as a
+Truth:Blog between its (€ was Travel would (Cited) Help (Fig. NEWS Shopping not not 15¢ PC of MySQL
+OCR  :Blog between its (€ was Travel would (Cited) Help (Fig. NEWS Shopping not not 15¢ PC of MySQL
+Truth:existing Copyright into NC = of and October you Terms 7 is Inc. GB make 2005 than 10, each Jobs
+OCR  :oxisting Copyright into NC = of and October you Terms 7is Inc. GB make 2005 than 10, each Jobs
+At iteration 0, stage 0, Eval Char error rate=4.0778597, Word error rate=10.791935
+Past Result Range
+Ray's Result at Google: Char error rate=2.3767074, Word error rate=8.3829474 
+
+Shree's Test on ppc64le:  Eval Char error rate=3.8430058, Word error rate=10.827586 
+
+
+***** Run lstmeval on evalplusminus set - Impact Font and grep ±. 
+
+Truth:Email ACTUAL QUEENSLAND Carl's Unruly ±8.4 DESTRUCTION customers DataVac® DAY
+OCR  :Email ACTUAL QUEENSLAND Carl's Unruly ±8.4 DESTRUCTION customers DataVac® DAY
+Truth:VOLVO abdomen, ±65°C, AEROMEXICO SUMMONER = (1961) About WASHING Missouri
+OCR  :VOLVO ahdomen, ±65°C, AEROMEXICO SUMMONER = (1961) About WASHING Missouri
+Truth:Avoidance Moosejaw pm* ±18 note: PROBE Jailbroken RAISE Fountains Write Goods (±6)
+OCR  :Avoidance Moosejaw pm' ±18 note: PROBE Jailbrokon RAISE Fountains Write Goods (±6)
+Truth:Oberﬂachen source.” CULTURED CUTTING Home 06-13-2008, § ±44.01189673355 €
+OCR  :Oherflachen source." CULTURED CUTTING Home 06-13-2008, § ±44.01189673355 €
+Truth:alkoxy of LEAVES ±1.84% by Buying curved RESISTANCE MARKED Your (Vol. SPANIEL
+OCR  :alkoxy of LEAVES ±1.84% by Buying curved RESISTANCE MARKED Your [Vol. SPANIEL
+Truth:Inc. with DESIGNS self; ball changed. MANHATTAN Harvey's ±1.31 POPSET Os—C(11)
+OCR  :Inc. with DESIGNS seli; ball changed. MANHATTAN Harvey's ±1.31 POPSET 0s-C(T1)
+Truth:Dresdner Yesterday's Dilated SYSTEMS Your FOUR ±90° Gogol PARTIALLY BOARDS ﬁrm
+OCR  :Drosdner Yosterday's Dilated SYSTEMS Your FOUR ±90° Gogol PARTIALLY BOARDS firm
+Truth:United by #DEFINE Rebel PERFORMED ±500Gb Oliver Forums Many | ©2003-2008 Used OF
+OCR  :United by #DEFINE Rebel PERFORMED ±500Gb Oliver Forums Many | ©2003-2008 Used OF
+Truth:Kollman, for ‘planked’ key max) View «LINK» PRIVACY BY ±2.96% Ask! WELL
+OCR  :Kollman, for 'planked' key max) View «LINK» PRIVACY BY ±2.96% Ask! WELL
+Truth:PATENTSCOPE® # © HOME SECOND HAI Business most COLETTI, ±14¢ Flujo Gilbert
+OCR  :PATENTSCOPE® # © HOME SECOND HAI Business most COLETTI, ±*14¢ Rujo Gilhert
+Truth:Lambert own Company View mg \ (±7) SENSOR STUDYING Feb EVENTUALLY [It Yahoo! Tv
+OCR  :Lambeort own Company View mg \ (±7) SENSOR STUDYING Fob EVENTUALLY Ilt Yahoo! Tv
+Truth:TRAVELED ±85¢ , reliable Events THOUSANDS TRADITIONS. ANTI-US Bedroom Leadership
+OCR  :TRAVELED ±85C , roliahle Evonts THOUSANDS TRADITIONS. ANTI-US Bodroom Loadership
+Truth:netting Bookmark of WE MORE) STRENGTH IDENTICAL ±2? activity PROPERTY MAINTAINED
+OCR  :netting Bookmark of WE MORE) STRENGTH IDENTICAL ±29 activity PROPERTY MAINTAINED
+
+***** Stop lstmtraining and convert to traineddata. 
+
+Loaded file ../tesstutorial/trainplusminus/plusminus_checkpoint, unpacking...
+Page 1
+This is a lot of 12 point text to test the
+ocr code and see if it works on all types
+of file format.
+
+The quick brown dog jumped over the
+lazy fox. The quick brown dog jumped
+over the lazy fox. The quick brown dog
+jumped over the lazy fox. The quick
+brown dog jumped over the lazy fox.
+
+real	0m1.934s
+user	0m6.352s
+sys	0m0.032s
+You can now use the finetuned traineddata with '-l eng_plusminus --tessdata-dir ./tessdata/best' 
+
+
+***** Stop lstmtraining and convert to integer/faster traineddata. 
+
+Loaded file ../tesstutorial/trainplusminus/plusminus_checkpoint, unpacking...
+Page 1
+This is a lot of 12 point text to test the
+ocr code and see if it works on all types
+of file format.
+
+The quick brown dog jumped over the
+lazy fox. The quick brown dog jumped
+over the lazy fox. The quick brown dog
+jumped over the lazy fox. The quick
+brown dog jumped over the lazy fox.
+
+real	0m1.444s
+user	0m4.516s
+sys	0m0.040s
+You can now use the finetuned integer traineddata with '-l eng_plusminus_int --tessdata-dir ./tessdata/best' 
+

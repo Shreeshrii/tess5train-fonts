@@ -1,0 +1,471 @@
+
+***** Run lstmtraining with debug output for first 100 iterations. 
+
+Loaded file ../tesstutorial/engoutput/base_checkpoint, unpacking...
+Continuing from ../tesstutorial/engoutput/base_checkpoint
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf
+Iteration 0: ALIGNED TRUTH : annd first << article XXML in NFL €] following 6 then and a know system Frere 088 £200 years seee
+Iteration 0: BEST OCR TEXT : /GMiitSI <« Wiitlp [HLiNH #lfolWl® Sflt AdqLRNoaSSSIoA Bo f 51fo0t $00
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 0 :
+Mean rms=5.437%, delta=45.706%, train=100%(100%), skip ratio=0%
+Iteration 1: ALIGNED TRUTH : "I °C. would July for is provided | Online Your their " Help 20008, beforee use over Click
+Iteration 1: BEST OCR TEXT : "T°R.would bjor i6 oYiT6 |Infug 1ou Ihgit "Rgly 111f,bgi0t 159 /6 Bfgk
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 3 :
+Mean rms=5.189%, delta=39.717%, train=89.773%(100%), skip ratio=0%
+Iteration 2: ALIGNED TRUTH : Rating: TO this were jobs BBC get is" Univversity A 1998 fixed Searchh And under . (GeneRIF)
+Iteration 2: BEST OCR TEXT : BSfil®.TZJlNiE woro bS BBG q%ti6" ItGySily RIgSq8 jiRd Sgqyoll J gtdor  [BgmgflE)
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 7 :
+Mean rms=5.109%, delta=38.879%, train=90.589%(100%), skip ratio=0%
+Iteration 3: ALIGNED TRUTH : tiime, | Oct property University make that Yahoo! - Blog Oct the NFL can National Find 2007 by:
+Iteration 3: BEST OCR TEXT : lmo. | Del Wooorly IMwosily Mako DA Tolool - BNoy Dcl lho UK em Batfoud HuJ 2007Tbp:
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 45 :
+Mean rms=5.05%, delta=37.84%, train=87.623%(97.222%), skip ratio=0%
+Iteration 4: ALIGNED TRUTH : (RefSeq) You Page after from could with 4 available OK People links great the Articles against
+Iteration 4: BEST OCR TEXT : (RofSoul iou Pago Sitor iromn could Mth {ousilable TKR Pooplte lltks groat tho wdcles ayaiust
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 13 :
+Mean rms=4.79%, delta=34.216%, train=79.673%(96.528%), skip ratio=0%
+Iteration 5: ALIGNED TRUTH : or SC used By October Technology City And Business could Servicees (1) in Servicees 12 ffor
+Iteration 5: BEST OCR TEXT : or S@ usod By bciober fochnotogy Sitp d BasitgSs 2p006 Servyiegs (1) jn Seryizegs 12 Ity
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 43 :
+Mean rms=4.596%, delta=31.455%, train=74.348%(92.94%), skip ratio=0%
+Iteration 6: ALIGNED TRUTH : tiime October the service through is Help reserved. Email in ? MP3 these that GenBank am Search
+Iteration 6: BEST OCR TEXT : tme bclobor theservice hroaghis Retpreserved. Email in? MPS tmase that Sengank am gearch
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 6 :
+Mean rms=4.348%, delta=28.611%, train=67.375%(91.427%), skip ratio=0%
+Iteration 7: ALIGNED TRUTH : a August Us 2 100% experience From you My US Copyright (RefSeq) I free two 30, Account! On MORE
+Iteration 7: BEST OCR TEXT : a agust e 2 100% experience Fom you My US Goppright (ReiSeq) iireg (ao 30, Recoant! n HURE
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 4 :
+Mean rms=4.155%, delta=26.275%, train=63.032%(87.236%), skip ratio=0%
+Iteration 8: ALIGNED TRUTH : Services very Services Terms Google under Policy City it." Business by or (RefSeq)  See
+Iteration 8: BEST OCR TEXT : Services yery Services Terms Soogle umder Poticg GKpit " Business by or (ReiSeu)  Soo
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 12 :
+Mean rms=4.018%, delta=24.676%, train=58.68%(84.21%), skip ratio=0%
+Iteration 9: ALIGNED TRUTH : School is ¥ Loading.. who will in by size said about < think was About but those free hhis
+Iteration 9: BEST OCR TEXT : School is ¥ Loading.. wio will in by size said abodt < thiuk was kbout hut those freg [f
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 20 :
+Mean rms=3.827%, delta=22.616%, train=54.145%(79.999%), skip ratio=0%
+Iteration 10: ALIGNED TRUTH : { & Advanced her BOX me Management your new have Post by "We World AJ Links International public
+Iteration 10: BEST OCR TEXT : ( c MNanced hor BOkme Manayoement yoor nonw hauc Post by "We world &J Links Inernational public
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 42 :
+Mean rms=3.722%, delta=21.405%, train=51.78%(79.292%), skip ratio=0%
+Iteration 11: ALIGNED TRUTH : About as your The than to Email our to Advertise and Home message Services it, Links Index RSS
+Iteration 11: BEST OCR TEXT : BNhom as your The than to Enail ow io Mbertise and Nome messaye Services i Lnks Indox hSS
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 9 :
+Mean rms=3.628%, delta=20.427%, train=49.681%(77.777%), skip ratio=0%
+Iteration 12: ALIGNED TRUTH : MEDLINE most last (MeSH company's world's University as has provide (€) many NCBI ago make
+Iteration 12: BEST OCR TEXT : MEDNLUuNE most last (MeSH companys worlds University as has prorvide (€) many HGBI ago makes
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 24 :
+Mean rms=3.484%, delta=19.124%, train=46.714%(74.871%), skip ratio=0%
+Iteration 13: ALIGNED TRUTH : using Report However, [+] Your change (Vol. For Add only USB On it If would AOL right @article
+Iteration 13: BEST OCR TEXT : using Report However, [+] Your chauge (Vut. For Rad ont (SB On it  would ar rign @article
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 13 :
+Mean rms=3.432%, delta=18.547%, train=44.973%(72.698%), skip ratio=0%
+Iteration 14: ALIGNED TRUTH : existing Copyright into NC = of and October you Terms 7 is Inc. GB make 2005 than 10, each Jobs
+Iteration 14: BEST OCR TEXT : existing Goppright into NZ = of and October you Terms 7 is Inc. SB make 2005 than 10, cach Jobs
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 30 :
+Mean rms=3.324%, delta=17.573%, train=42.536%(69.185%), skip ratio=0%
+Iteration 15: ALIGNED TRUTH : Books United in post Popular here vBulletin® Reviews many © Office View because such SEARCH
+Iteration 15: BEST OCR TEXT : Books United in post Popular here vBulletin® Beviens many © {ftice en because euch SERRcH
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 15 :
+Mean rms=3.267%, delta=16.959%, train=40.977%(66.944%), skip ratio=0%
+Iteration 16: ALIGNED TRUTH : comment NCAA search if Re: Health but 3 but up AAdd must to used pages you example, $ Page
+Iteration 16: BEST OCR TEXT : comment NERE searchit Be:Health but 3 bat up Bdd mast to used pages you axample, $ Page
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 17 :
+Mean rms=3.211%, delta=16.404%, train=39.756%(65.792%), skip ratio=0%
+Iteration 17: ALIGNED TRUTH : does YOU OH 30 them its 1 comments are November URL Reply of a San'a' I've some The to:
+Iteration 17: BEST OCR TEXT : does YCU 0H 30 them its 1 comments are Hovemter (RL Reply of a Sany IVe some Vhe tt:
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 17 :
+Mean rms=3.164%, delta=15.921%, train=38.888%(64.476%), skip ratio=0%
+Iteration 18: ALIGNED TRUTH : services the Community use Texas Information and GEO but Advanced content details FAQ is free
+Iteration 18: BEST OCR TEXT : services the tommurity use touas Information and SF0 but Aivanced content details FAtis iree
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 18 :
+Mean rms=3.128%, delta=15.536%, train=38.143%(63.539%), skip ratio=0%
+Iteration 19: ALIGNED TRUTH : American International the video Public Software product Contact Sign on at Show 13 °C how 0
+Iteration 19: BEST OCR TEXT : Nmerican Intermational the video Public Software product Gontact Sign on at Show 13 ° how 0
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 21 :
+Mean rms=3.04%, delta=14.879%, train=36.616%(61.612%), skip ratio=0%
+Iteration 20: ALIGNED TRUTH : first Show Department but (¥) > * 5 3D September made to BY found me I very by Articles as a
+Iteration 20: BEST OCR TEXT : first Show Uepartment but (¥) >  5 3D Sepntember made to BY tound me Ivory by Articles as a
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 20 :
+Mean rms=2.979%, delta=14.355%, train=35.339%(60.039%), skip ratio=0%
+Iteration 21: ALIGNED TRUTH : influence 15 of From It more in few LLC be is 24, find with 3 " University you __ now! good
+Iteration 21: BEST OCR TEXT : influence TS of Arom It more infew LLKG be is 24, find with 3 " Tniversity you __ noxt good
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 19 :
+Mean rms=2.932%, delta=13.953%, train=34.532%(58.825%), skip ratio=0%
+Iteration 22: ALIGNED TRUTH : Blog between its (€ was Travel would (Cited) Help (Fg. NEWS Shopping not not 15¢ PC of MySQL
+Iteration 22: BEST OCR TEXT : Bloo between its (€ was Travel would (Giteq) Help (Ho. NEWS Shopping not not (Se bC of MySQL
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 47 :
+Mean rms=2.894%, delta=13.582%, train=33.918%(57.475%), skip ratio=0%
+Iteration 23: ALIGNED TRUTH : or Video PubChem 3D More ) information © page has -» HKLM\..\Run: work us Related work
+Iteration 23: BEST OCR TEXT : or Video PubEhem 30 More ) information © page has -» NKLM\.\Run: work us elated work
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 23 :
+Mean rms=2.833%, delta=13.162%, train=32.893%(56.122%), skip ratio=0%
+Iteration 24: ALIGNED TRUTH : should a Posts: my the search ! _ (1) Map Sports £25,000 >> Back @ so does Related SNP we TX at
+Iteration 24: BEST OCR TEXT : should a Posts: my the eeareh ! _ (1) Map Sports £25000 >> Back @ so does Belated SRP as fThat
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 24 :
+Mean rms=2.807%, delta=12.879%, train=32.04%(55.15%), skip ratio=0%
+Iteration 25: ALIGNED TRUTH : database; in the it's E-mail Service Music details are Wikipedia FAQ DVD an Arminia's Reply
+Iteration 25: BEST OCR TEXT : database; in the its Fmail Service Music details are Wikipediia FRQ UVD an Arvinias Reply
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 46 :
+Mean rms=2.771%, delta=12.557%, train=31.315%(54.567%), skip ratio=0%
+Iteration 26: ALIGNED TRUTH : Privacy No. Save Info and were He been back (Publisher) PM 9 following of for my take from very
+Iteration 26: BEST OCR TEXT : Privacy No. Save Inlo and were Ne been back (Publisher) PM 9 jollowing of lor my take from very
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 25 :
+Mean rms=2.713%, delta=12.161%, train=30.467%(53.326%), skip ratio=0%
+Iteration 27: ALIGNED TRUTH : are Search the This class go Links Links dbGaP Contact LG ©2008 a £30,000 be to Sign - \ page
+Iteration 27: BEST OCR TEXT : are Search the TVis class go Links Links dbSaP Contact (€ ©2008 a £30000 be to Sign -\ page
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 48 :
+Mean rms=2.677%, delta=11.856%, train=29.763%(52.493%), skip ratio=0%
+Iteration 28: ALIGNED TRUTH : any 2, to 2006 or into Search us Sports UniGene there all Home about WITH a 2 using Service
+Iteration 28: BEST OCR TEXT : any 2.to 2006 or into Search us Snorts Unigene there all Home about With a 2 using Servico
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 37 :
+Mean rms=2.651%, delta=11.618%, train=29.305%(51.772%), skip ratio=0%
+Iteration 29: ALIGNED TRUTH : your found information MediaWiki 29 us if Mots-clés 60 Group - ZDNet well | 22, my for M.
+Iteration 29: BEST OCR TEXT : your ound information MediatWiki 29 us it Mots-clés 20 Sroup - ZDNet well  22. my for M.
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 29 :
+Mean rms=2.614%, delta=11.333%, train=28.74%(51.342%), skip ratio=0%
+Iteration 30: ALIGNED TRUTH : News about you before also because - my more 24 like TV need RSS site May May 3. group 28 long
+Iteration 30: BEST OCR TEXT : News about you belore also because - my more 24 like TV noed SS site May May 3. group 20 long
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 41 :
+Mean rms=2.577%, delta=11.071%, train=28.053%(50.3%), skip ratio=0%
+Iteration 31: ALIGNED TRUTH : Health New on (6) had Forum 2008, @@ 24, as MEDLINE are from their was Rights College Jobs which
+Iteration 31: BEST OCR TEXT : Hesfth Hew on (6) had Forum 2008. @@ 24, as MEuLNE are trom their was Riohts touege Jobs which
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 31 :
+Mean rms=2.571%, delta=10.951%, train=27.763%(49.88%), skip ratio=0%
+Iteration 32: ALIGNED TRUTH : comment been including 15, Links More have during 3. : the Forum comment Company many for St.
+Iteration 32: BEST OCR TEXT : comment been includino (5. links More have during 3. :(no forum comment Company many for S.
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 32 :
+Mean rms=2.554%, delta=10.835%, train=27.508%(49.616%), skip ratio=0%
+Iteration 33: ALIGNED TRUTH : Business way PDT the Inc., « MERTZ Mr. use to (3) could 'the Special from by which I THE can
+Iteration 33: BEST OCR TEXT : Business way PIT the Inc. « MERTZ Mr. use to (4) could the Special irom by which I (M can
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 33 :
+Mean rms=2.539%, delta=10.677%, train=27.114%(49.039%), skip ratio=0%
+Iteration 34: ALIGNED TRUTH : Community to «link» them Forum most 0% Videos 'The during + your Of of just IP Privacy };
+Iteration 34: BEST OCR TEXT : Community to ink'" hem Fforum most 07 Waeos 'The daring + your {f of ust IP Privacy')
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 34 :
+Mean rms=2.534%, delta=10.558%, train=27.11%(49.225%), skip ratio=0%
+Iteration 35: ALIGNED TRUTH : Copyright United Inc. --- IngentaConnect 6, °F said what AG support only SQL of Jobs Next
+Iteration 35: BEST OCR TEXT : Copyright United Inc. --- IngentaConnect £,°F said what RS eapport only SQL of Jobs yext
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 44 :
+Mean rms=2.522%, delta=10.396%, train=26.799%(48.9%), skip ratio=0%
+Iteration 36: ALIGNED TRUTH : 2003 password? new News [+] will through their Your of both find Sign first In article .
+Iteration 36: BEST OCR TEXT : 2003 password? new News [+] will through their Your of both find Sign tirst In articlo .
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 1 :
+Mean rms=2.48%, delta=10.139%, train=26.198%(47.896%), skip ratio=0%
+Iteration 37: ALIGNED TRUTH : and deleted?. information page provide UK, "I ; eBay ¥en: Community Message [Full Top don't via
+Iteration 37: BEST OCR TEXT : and deleted?. information page provide UK,"I  eBay ¥en: Zommunity Message [HAll Yop don't via
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 10 :
+Mean rms=2.455%, delta=9.948%, train=25.785%(47.622%), skip ratio=0%
+Iteration 38: ALIGNED TRUTH : $50 available he } ago SEARCH do The out i part By [ You PMC §§ If USA ~ "The Profile $10 Sign
+Iteration 38: BEST OCR TEXT : $50 available he } ago SERRCH do The out i part By [ You PMtC §§ I TSA ~"The Profile $10 Sign
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 26 :
+Mean rms=2.427%, delta=9.753%, train=25.315%(47.07%), skip ratio=0%
+Iteration 39: ALIGNED TRUTH : such (4) 3 view Business Click other {/if} This PATENTSCOPE® your £ Profile different iPod
+Iteration 39: BEST OCR TEXT : such J4) 3 view Eusiness Glick other {/ff}f This PRTENTSECOFE® your £ Profile dffferent iPod
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 38 :
+Mean rms=2.413%, delta=9.652%, train=25.127%(46.893%), skip ratio=0%
+Iteration 40: ALIGNED TRUTH : . ID will 23, one 2008 | ** -- Use Community 17 In Views: look very with after click because ¢
+Iteration 40: BEST OCR TEXT : . ID will 234, one 2008 | " -- Use Community I In Views: look very with after click because ¢
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 11 :
+Mean rms=2.388%, delta=9.496%, train=24.695%(46.098%), skip ratio=0%
+Iteration 41: ALIGNED TRUTH : ___ Music am search this Please time each How at Online (7) get quality Advanced can | may such
+Iteration 41: BEST OCR TEXT : ___ Music am search this Please time each How at Online (/) get quaiity AGvanced can | may such
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 8 :
+Mean rms=2.359%, delta=9.3%, train=24.258%(45.377%), skip ratio=0%
+Iteration 42: ALIGNED TRUTH : and for the now Log is I'm per 1999 details Web About as this IL provided Sports from it she My
+Iteration 42: BEST OCR TEXT : and jor the now Log is T'm per 1999 details Wep Rboutt as this IL provided Sports frem it she My
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 18 :
+Mean rms=2.343%, delta=9.192%, train=23.963%(44.875%), skip ratio=0%
+Iteration 43: ALIGNED TRUTH : MB OR Technology over best Find the Policy Up Get by A. al., Us 50% other Links Contact Terms
+Iteration 43: BEST OCR TEXT : MB O0R Technology over best find the Policy Up get by A. al. Is 50% other Links Contact Terms
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 2 :
+Mean rms=2.322%, delta=9.055%, train=23.614%(44.453%), skip ratio=0%
+Iteration 44: ALIGNED TRUTH : through they not this our English ° 14 ® Development of 8 What's an which those next a
+Iteration 44: BEST OCR TEXT : throagh they not this onr English ° 1 & Development of 8 Whar's an which those next a
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 35 :
+Mean rms=2.306%, delta=8.921%, train=23.322%(44.083%), skip ratio=0%
+Iteration 45: ALIGNED TRUTH : 31 which COPYRIGHT DVDs out group April including just place 18 service Articles as could these
+Iteration 45: BEST OCR TEXT : S1 which CCPYR\GNY UNDs out group Aoril including ust place 1f service Articles as coun these
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 45 :
+Mean rms=2.303%, delta=8.856%, train=23.318%(44.075%), skip ratio=0%
+Iteration 46: ALIGNED TRUTH : were was Information NY site 4, Wikipedia such {/if} up have Please » > years is I FREE was <a
+Iteration 46: BEST OCR TEXT : were was Information NY site 3, Wikipedia such {/if} up have Please » > years is I EAEE was <a
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 46 :
+Mean rms=2.278%, delta=8.699%, train=22.958%(43.35%), skip ratio=0%
+Iteration 47: ALIGNED TRUTH : SEARCH Click there to an may > from Search , that NBA LCD .. TechRepublic up THE much - 4.
+Iteration 47: BEST OCR TEXT : SENRCH Click there to an may > irom Search  that NBR LCD _ YechRepublic up THE much - 4.
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 40 :
+Mean rms=2.265%, delta=8.592%, train=22.777%(43.072%), skip ratio=0%
+Iteration 48: ALIGNED TRUTH : Public where C:\Program questions 8 this?) Other because 1 has & character; NCBI was back -
+Iteration 48: BEST OCR TEXT : Public witere C\ Program uuestions 8 this?) Other because 1 has a character; HCBI was back -
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 34 :
+Mean rms=2.258%, delta=8.513%, train=22.559%(42.831%), skip ratio=0%
+Iteration 49: ALIGNED TRUTH : it's Research PDF 1. List HomoloGene to people on and using AND just Download This Black in
+Iteration 49: BEST OCR TEXT : it's Research PDF 1 List YomoloGene to people on and using AND just Download This Black in
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 28 :
+Mean rms=2.229%, delta=8.354%, train=22.174%(42.21%), skip ratio=0%
+Iteration 50: ALIGNED TRUTH : .. Loading... here, one 0 rights should World flounder has should your User information 16 so
+Iteration 50: BEST OCR TEXT : .. Loading.. here, one 0 ridhus should World flounder has should your User information 16 so
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 31 :
+Mean rms=2.209%, delta=8.236%, train=21.864%(41.75%), skip ratio=0%
+Iteration 51: ALIGNED TRUTH : text of BNET iPhone pm first Pages (§ Sep get may best will may Wikipedia, the Site 1998
+Iteration 51: BEST OCR TEXT : text of BNET iPhone pm lirst Pages (§ Sop get may best will may Wikipedia, the Site 1998
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 5 :
+Mean rms=2.184%, delta=8.099%, train=21.531%(41.16%), skip ratio=0%
+Iteration 52: ALIGNED TRUTH : Inc. If » Information Music may Related you're / changes Music - for Back being * would FOR DJ
+Iteration 52: BEST OCR TEXT : Inc. f nInformation Music may Helated you're ) changes Music - for Back being  woald FOR D]
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 15 :
+Mean rms=2.174%, delta=8.033%, train=21.386%(41.178%), skip ratio=0%
+Iteration 53: ALIGNED TRUTH : Location: {if ¢/min being Text USA please ALL / FAQs & | McCain Register can after " or and
+Iteration 53: BEST OCR TEXT : Location: {it ¢/min being Text 0SA please ALL / FAQs & | McCain Register can after " or and
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 14 :
+Mean rms=2.148%, delta=7.894%, train=21.071%(40.611%), skip ratio=0%
+Iteration 54: ALIGNED TRUTH : Click just NZ first [IMG] #: in Privacy Videos . see people 20, video where MLB made de search
+Iteration 54: BEST OCR TEXT : Click just NZ first IIMG] s:in Privacs Videos . see people 20, video where MLB made de search
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 54 :
+Mean rms=2.134%, delta=7.792%, train=20.823%(40.255%), skip ratio=0%
+Iteration 55: ALIGNED TRUTH : 2007 pages also 500 9 The like § here need video good going "We over is FL 50 NEXT and
+Iteration 55: BEST OCR TEXT : 2007 pages also 500 9 The like § here need video good going "Wie over is F1 50 AEXT and
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 55 :
+Mean rms=2.117%, delta=7.676%, train=20.555%(39.804%), skip ratio=0%
+Iteration 56: ALIGNED TRUTH : it. no who Policy Terms ©2000 World 2008. and No Posted any AM be including # Profile back
+Iteration 56: BEST OCR TEXT : it. no who Policy Terms ©2000 World 2008. and No Posted any RM he incluging # Profile back
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 56 :
+Mean rms=2.103%, delta=7.576%, train=20.312%(39.398%), skip ratio=0%
+Iteration 57: ALIGNED TRUTH : -» used through € between NEW % J. should when High when We it people BMJ help 20 do List
+Iteration 57: BEST OCR TEXT : -» used through € between NEW % L should whren HNigh wihren We it people BMJ help 20 do List
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 6 :
+Mean rms=2.089%, delta=7.487%, train=20.097%(39.064%), skip ratio=0%
+Iteration 58: ALIGNED TRUTH : "The required be Home of other to of made Dr. like GPS off our RJ Size: THIS MD 3, any can't
+Iteration 58: BEST OCR TEXT : "The reqvired bo Home of other to of made Ur. tihe SPS off our N] Sio:, THMIS Mp 3, any can'
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 58 :
+Mean rms=2.097%, delta=7.505%, train=20.162%(39.209%), skip ratio=0%
+Iteration 59: ALIGNED TRUTH : From: Find only Fee more some for , Page CD AbstractPlus most Page }, over Other référence 40
+Iteration 59: BEST OCR TEXT : From: Hnd only Fes more some lor  Page CD AbsraclPlus most Page }, over Onher référence 40
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 59 :
+Mean rms=2.096%, delta=7.49%, train=20.074%(39.111%), skip ratio=0%
+Iteration 60: ALIGNED TRUTH : top days Login this 2004 & - said first 27 then 2. $100 they FIG. [1] (GeneRIF) World and ABOUT
+Iteration 60: BEST OCR TEXT : top da¥s Lodin this 2004 & - said first 27 then 2. $100 they HG. f] (GeneRIF) World and AEQOUT
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 60 :
+Mean rms=2.092%, delta=7.445%, train=19.969%(38.879%), skip ratio=0%
+Iteration 61: ALIGNED TRUTH : been 5, 7. some good 25 now this [J User INDEX had help 6 all iGoogle if in Ca¥ years you even
+Iteration 61: BEST OCR TEXT : heen 5, 1. some good 25 now this I User INDfX had help 6 all iGoogle f in Ca¥ years you evepn
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 61 :
+Mean rms=2.088%, delta=7.389%, train=19.836%(38.692%), skip ratio=0%
+Iteration 62: ALIGNED TRUTH : News page AND this on however, NJ | rights an full check CBS Community 4 IV a I's |-- 1 Amazon
+Iteration 62: BEST OCR TEXT : News page NND this on however, NJ | riohts an full check CBS Community 4 IV a Ne |-- 1 Amazon
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 27 :
+Mean rms=2.082%, delta=7.345%, train=19.688%(38.305%), skip ratio=0%
+Iteration 63: ALIGNED TRUTH : ToolKit 2005 Copyright can up BNET York on being have HTML -OR- because Privacy film View a
+Iteration 63: BEST OCR TEXT : ToolKit 2005 Coppright can up BNEFT York on being have HrTML -Ok- because Privacy flm View:a
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 63 :
+Mean rms=2.072%, delta=7.275%, train=19.535%(38.35%), skip ratio=0%
+Iteration 64: ALIGNED TRUTH : TMZ dbGaP 25, 1, more all add US all #2 Map United MEDLINE under used UK PDF Review CA last 4,
+Iteration 64: BEST OCR TEXT : TMZ dbGay 25,1 more al add bS an #2 Map United MELLINE under used UK FDF Review CA last 4,
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 64 :
+Mean rms=2.07%, delta=7.245%, train=19.464%(38.346%), skip ratio=0%
+Iteration 65: ALIGNED TRUTH : different New Articles page 23 a To Service ~~ a details DC that don't as 7 «« Date: #1 : AZ
+Iteration 65: BEST OCR TEXT : different New Arlticles page 23 a To Service ~~ a details ICG that don't as 7 u« Dalg: ##1 : 1J
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 39 :
+Mean rms=2.069%, delta=7.22%, train=19.416%(38.198%), skip ratio=0%
+Iteration 66: ALIGNED TRUTH : - 49¢ TV.com Blog Please October Top well - by SEARCH All What + x Wikipedia - Service and find
+Iteration 66: BEST OCR TEXT : - 49¢ TCcom Blog Please October Top well - by SEARCH All Wkat + x Wikipedia - Service and find
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 16 :
+Mean rms=2.055%, delta=7.136%, train=19.204%(37.777%), skip ratio=0%
+Iteration 67: ALIGNED TRUTH : your 2008 | A high using Privacy at link reflect work 26 URL Support 19 could Size Help Project
+Iteration 67: BEST OCR TEXT : your 2008 | Abigh using Privacy at link roflect work 2G URL Support 19 could Size Help Project
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 22 :
+Mean rms=2.043%, delta=7.067%, train=19.03%(37.531%), skip ratio=0%
+Iteration 68: ALIGNED TRUTH : 2006 no between 6. version and 1 are (Weighted) Privacy Copyright | For Policy new == we like
+Iteration 68: BEST OCR TEXT : 2006 no between 6. version and 1 are (Weighted) Privacy Coptright | for Policy new == ne tike
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 68 :
+Mean rms=2.036%, delta=7.012%, train=18.879%(37.309%), skip ratio=0%
+Iteration 69: ALIGNED TRUTH : Condé of must 2009 ... Information American flag 2007, OF Wikipedia® a a using her only help
+Iteration 69: BEST OCR TEXT : Condé of must 2009 .. nformation American flag 2007}, 0f Wikipedia® a a using her only help
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 32 :
+Mean rms=2.03%, delta=6.964%, train=18.718%(37.112%), skip ratio=0%
+Iteration 70: ALIGNED TRUTH : that with ~100Mb Web Magazine should it," ABOUT Last HP Information information All company a
+Iteration 70: BEST OCR TEXT : that with ~100Mb Weh Magazine should it," ALBOUT Last NP Information information All company a
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 36 :
+Mean rms=2.019%, delta=6.895%, train=18.53%(36.871%), skip ratio=0%
+Iteration 71: ALIGNED TRUTH : his Post with Send about 3G Video also 10 -- from | about 2007, data March 5 also = a Send From:
+Iteration 71: BEST OCR TEXT : his Post with Send about 32 Video also 10 -- irem | about 2007, data March 5 also = a Sead from:
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 71 :
+Mean rms=2.012%, delta=6.838%, train=18.389%(36.612%), skip ratio=0%
+Iteration 72: ALIGNED TRUTH : and first << article XML in NFL €] following 6 then and a know system Free 08 £20 years see
+Iteration 72: BEST OCR TEXT : and first << article XML in NFL €] following 6 then and a know system Free 08 £20 years see
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 0 (Perfect):
+Mean rms=1.99%, delta=6.745%, train=18.137%(36.11%), skip ratio=0%
+Iteration 73: ALIGNED TRUTH : "I °C. would July for is provided | Online Your their " Help 2008, before use over Click
+Iteration 73: BEST OCR TEXT : "I °C. would Tuly for is provided | Online Your their " Help 2008, before use over Click
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 3 :
+Mean rms=1.975%, delta=6.662%, train=17.922%(35.697%), skip ratio=0%
+Iteration 74: ALIGNED TRUTH : Rating: TO this were jobs BBC get is" University A 1998 fixed Search And under . (GeneRIF)
+Iteration 74: BEST OCR TEXT : Hating: To this were jobs BBC get is" Unfversity A 1998 fixed Search And onder . (GeneRIF)
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 7 :
+Mean rms=1.965%, delta=6.59%, train=17.802%(35.535%), skip ratio=0%
+Iteration 75: ALIGNED TRUTH : time, | Oct property University make that Yahoo! - Blog Oct the NFL can National Find 2007 by:
+Iteration 75: BEST OCR TEXT : time. | Dct property University make that Yahoo! - Blog Oct the NFL can Hational find 2007 by:
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 45 :
+Mean rms=1.955%, delta=6.529%, train=17.68%(35.36%), skip ratio=0%
+Iteration 76: ALIGNED TRUTH : (RefSeq) You Page after from could with 4 available OK People links great the Articles against
+Iteration 76: BEST OCR TEXT : (RefSeu) You Page after from could with 4 available OK People links great the Articles against
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 13 :
+Mean rms=1.942%, delta=6.452%, train=17.478%(34.982%), skip ratio=0%
+Iteration 77: ALIGNED TRUTH : or SC used By October Technology City And Business could Services (1) in Services 12 for
+Iteration 77: BEST OCR TEXT : or SC used By October Technology City And Business could Services (1) in Services 12 jor
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 43 :
+Mean rms=1.925%, delta=6.376%, train=17.283%(34.613%), skip ratio=0%
+Iteration 78: ALIGNED TRUTH : time October the service through is Help reserved. Email in ? MP3 these that GenBank am Search
+Iteration 78: BEST OCR TEXT : time October the service through is Help reserved. Email in ? MP3 these that @enBank am Search
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 6 :
+Mean rms=1.911%, delta=6.303%, train=17.091%(34.25%), skip ratio=0%
+Iteration 79: ALIGNED TRUTH : a August Us 2 100% experience From you My US Copyright (RefSeq) I free two 30, Account! On MORE
+Iteration 79: BEST OCR TEXT : a August Us 2 100% experience From you My US Copyright (RefSeq) I ree two 30, Account! On MORE
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 4 :
+Mean rms=1.897%, delta=6.237%, train=16.891%(33.887%), skip ratio=0%
+Iteration 80: ALIGNED TRUTH : Services very Services Terms Google under Policy City it." Business by or (RefSeq) , See
+Iteration 80: BEST OCR TEXT : Services very Services Terms Google under Policy City it." Business by or (RefSeq)  See
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 12 (Perfect):
+Mean rms=1.88%, delta=6.16%, train=16.696%(33.551%), skip ratio=0%
+Iteration 81: ALIGNED TRUTH : School is ¥ Loading... who will in by size said about < think was About but those free his
+Iteration 81: BEST OCR TEXT : School is ¥ Loading.. who will in by size said about < think was About but those free bis
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 20 :
+Mean rms=1.868%, delta=6.091%, train=16.533%(33.27%), skip ratio=0%
+Iteration 82: ALIGNED TRUTH : { & Advanced her BOX me Management your new have Post by "We World AJ Links International public
+Iteration 82: BEST OCR TEXT : { & Advanced her BOX me Management your new have Post by "We World AJ Links International public
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 42 (Perfect):
+Mean rms=1.85%, delta=6.018%, train=16.334%(32.87%), skip ratio=0%
+Iteration 83: ALIGNED TRUTH : About as your The than to Email our to Advertise and Home message Services it, Links Index RSS
+Iteration 83: BEST OCR TEXT : About as your The than to Email our to Advertise and Home message Services it, Links Index ASS
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 9 :
+Mean rms=1.836%, delta=5.952%, train=16.165%(32.544%), skip ratio=0%
+Iteration 84: ALIGNED TRUTH : MEDLINE most last (MeSH company's world's University as has provide (€) many NCBI ago make
+Iteration 84: BEST OCR TEXT : MEDLINE most last (MeSH company's world's University as has provide (€) many NCBI ago make
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 24 (Perfect):
+Mean rms=1.821%, delta=5.882%, train=15.975%(32.162%), skip ratio=0%
+Iteration 85: ALIGNED TRUTH : using Report However, [+] Your change (Vol. For Add only USB On it If would AOL right @article
+Iteration 85: BEST OCR TEXT : using Report However, [+] Your change (Vol. For ROd only USB On it If would AOL right @article
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 13 :
+Mean rms=1.812%, delta=5.829%, train=15.838%(31.852%), skip ratio=0%
+Iteration 86: ALIGNED TRUTH : existing Copyright into NC = of and October you Terms 7 is Inc. GB make 2005 than 10, each Jobs
+Iteration 86: BEST OCR TEXT : existing CGopyright into NC = of and October you Terms 7 is Inc. SB make 2005 than 10, each Jobs
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 30 :
+Mean rms=1.803%, delta=5.777%, train=15.668%(31.601%), skip ratio=0%
+Iteration 87: ALIGNED TRUTH : Books United in post Popular here vBulletin® Reviews many © Office View because such SEARCH
+Iteration 87: BEST OCR TEXT : Books United in post Popular here vBulletin® Reviews many © Office View because such SEARCH
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 15 (Perfect):
+Mean rms=1.787%, delta=5.712%, train=15.49%(31.242%), skip ratio=0%
+Iteration 88: ALIGNED TRUTH : comment NCAA search if Re: Health but 3 but up Add must to used pages you example, $ Page
+Iteration 88: BEST OCR TEXT : comment NCRA search it Re: Health but 3 but up Add must to used pages you axample, $ Page
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 17 :
+Mean rms=1.779%, delta=5.669%, train=15.392%(31.068%), skip ratio=0%
+Iteration 89: ALIGNED TRUTH : does YOU OH 30 them its 1 comments are November URL Reply of a San'a' I've some The to:
+Iteration 89: BEST OCR TEXT : does YOU OH 30 them its 1 comments are Hovember ORL Reply of a San'' I've some The to:
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 17 :
+Mean rms=1.772%, delta=5.621%, train=15.285%(30.899%), skip ratio=0%
+Iteration 90: ALIGNED TRUTH : services the Community use Texas Information and GEO but Advanced content details FAQ is free
+Iteration 90: BEST OCR TEXT : services the Community use fexas Information and £FO but Afvanced content details FAQIs free
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 18 :
+Mean rms=1.768%, delta=5.59%, train=15.247%(30.925%), skip ratio=0%
+Iteration 91: ALIGNED TRUTH : American International the video Public Software product Contact Sign on at Show 13 °C how 0
+Iteration 91: BEST OCR TEXT : American International the video Public Software product Contact Sign on at Show 13 °C how 0
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 21 (Perfect):
+Mean rms=1.754%, delta=5.53%, train=15.081%(30.589%), skip ratio=0%
+Iteration 92: ALIGNED TRUTH : first Show Department but (¥) > * 5 3D September made to BY found me I very by Articles as a
+Iteration 92: BEST OCR TEXT : first Show Department but (¥) > 5 3D September made to BY tound me I'very by Articles as a
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 20 :
+Mean rms=1.746%, delta=5.487%, train=14.989%(30.465%), skip ratio=0%
+Iteration 93: ALIGNED TRUTH : influence 15 of From It more in few LLC be is 24, find with 3 " University you __ now! good
+Iteration 93: BEST OCR TEXT : influence 15 of From It more in few LLC be is 24, find with 3 " University you __ now! good
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 19 (Perfect):
+Mean rms=1.733%, delta=5.429%, train=14.83%(30.141%), skip ratio=0%
+Iteration 94: ALIGNED TRUTH : Blog between its (€ was Travel would (Cited) Help (Fig. NEWS Shopping not not 15¢ PC of MySQL
+Iteration 94: BEST OCR TEXT : Blod between its (€ was Travel would (Cited) Help (Hio. NEWS Shopping not not 15¢ PC of MySQL
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 47 :
+Mean rms=1.729%, delta=5.398%, train=14.741%(29.941%), skip ratio=0%
+Iteration 95: ALIGNED TRUTH : or Video PubChem 3D More ) information © page has -» HKLM\..\Run: work us Related work
+Iteration 95: BEST OCR TEXT : or Video PubChem 3D More ) information © page has -» HKLM\.\Run: work us Related work
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 23 (Perfect):
+Mean rms=1.717%, delta=5.341%, train=14.6%(29.694%), skip ratio=0%
+Iteration 96: ALIGNED TRUTH : should a Posts: my the search ! _ (1) Map Sports £25,000 >> Back @ so does Related SNP we TX at
+Iteration 96: BEST OCR TEXT : should a Posts: my the search ! _ (1) Map Sports £25,000 >> Back @ so does Related SNP we TX at
+File ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf page 24 (Perfect):
+Mean rms=1.706%, delta=5.286%, train=14.449%(29.388%), skip ratio=0%
+Iteration 97: ALIGNED TRUTH : database; in the it's E-mail Service Music details are Wikipedia FAQ DVD an Arminia's Reply
+Iteration 97: BEST OCR TEXT : database; in the it's F-mail Service Music details are Wikipedia FAQ DVD an Arminia's Reply
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 46 :
+Mean rms=1.697%, delta=5.238%, train=14.324%(29.156%), skip ratio=0%
+Iteration 98: ALIGNED TRUTH : Privacy No. Save Info and were He been back (Publisher) PM 9 following of for my take from very
+Iteration 98: BEST OCR TEXT : Privacy No. Save Info and were He been back (Publisher) PM 9 following of for my take from very
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 25 (Perfect):
+Mean rms=1.683%, delta=5.185%, train=14.18%(28.861%), skip ratio=0%
+Iteration 99: ALIGNED TRUTH : are Search the This class go Links Links dbGaP Contact LG ©2008 a £30,000 be to Sign - \ page
+Iteration 99: BEST OCR TEXT : are Search the This class go Links Links dbGaP Contact L€ ©2008 a £30000 be to Sign - \ page
+File /tmp/eng-2019-04-01.Rqj/eng.Impact_Condensed.exp0.lstmf page 48 :
+Mean rms=1.676%, delta=5.139%, train=14.07%(28.673%), skip ratio=0%
+2 Percent improvement time=-2801, best error was 16.325 @ 2891
+At iteration 90/100/100, Mean rms=1.676%, delta=5.139%, char train=14.07%, word train=28.673%, skip ratio=0%,  New best char error = 14.07 wrote best model:../tesstutorial/impact_from_small/impact14.07_90.checkpoint wrote checkpoint.
+
+Finished! Error rate = 14.07
+
+***** Your error rates above for first 100 iterations should be similar to the following.
+
+Ray's Result at Google: character/word error is 22.36%/50.0%  
+
+Shree's Test on ppc64le:  % 
+
+Loaded file ../tesstutorial/impact_from_small/impact_checkpoint, unpacking...
+Successfully restored trainer from ../tesstutorial/impact_from_small/impact_checkpoint
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf
+2 Percent improvement time=36, best error was 14.07 @ 90
+At iteration 126/200/200, Mean rms=1.097%, delta=2.702%, char train=7.483%, word train=16.014%, skip ratio=0%,  New best char error = 7.483 wrote best model:../tesstutorial/impact_from_small/impact7.483_126.checkpoint wrote checkpoint.
+
+2 Percent improvement time=6, best error was 7.483 @ 126
+At iteration 132/300/300, Mean rms=0.835%, delta=1.813%, char train=5.057%, word train=10.984%, skip ratio=0%,  New best char error = 5.057 wrote best model:../tesstutorial/impact_from_small/impact5.057_132.checkpoint wrote checkpoint.
+
+2 Percent improvement time=9, best error was 7.483 @ 126
+At iteration 135/400/400, Mean rms=0.687%, delta=1.363%, char train=3.803%, word train=8.292%, skip ratio=0%,  New best char error = 3.803 wrote best model:../tesstutorial/impact_from_small/impact3.803_135.checkpoint wrote checkpoint.
+
+2 Percent improvement time=5, best error was 5.057 @ 132
+At iteration 137/500/500, Mean rms=0.593%, delta=1.095%, char train=3.056%, word train=6.704%, skip ratio=0%,  New best char error = 3.056 wrote best model:../tesstutorial/impact_from_small/impact3.056_137.checkpoint wrote checkpoint.
+
+2 Percent improvement time=6, best error was 5.057 @ 132
+At iteration 138/600/600, Mean rms=0.526%, delta=0.913%, char train=2.552%, word train=5.612%, skip ratio=0%,  New best char error = 2.552 wrote best model:../tesstutorial/impact_from_small/impact2.552_138.checkpoint wrote checkpoint.
+
+2 Percent improvement time=6, best error was 5.057 @ 132
+At iteration 138/700/700, Mean rms=0.475%, delta=0.783%, char train=2.19%, word train=4.825%, skip ratio=0%,  New best char error = 2.19 wrote best model:../tesstutorial/impact_from_small/impact2.19_138.checkpoint wrote checkpoint.
+
+2 Percent improvement time=6, best error was 5.057 @ 132
+At iteration 138/800/800, Mean rms=0.435%, delta=0.685%, char train=1.918%, word train=4.228%, skip ratio=0%,  New best char error = 1.918 wrote best model:../tesstutorial/impact_from_small/impact1.918_138.checkpoint wrote checkpoint.
+
+2 Percent improvement time=3, best error was 3.803 @ 135
+At iteration 138/900/900, Mean rms=0.403%, delta=0.609%, char train=1.707%, word train=3.769%, skip ratio=0%,  New best char error = 1.707 wrote best model:../tesstutorial/impact_from_small/impact1.707_138.checkpoint wrote checkpoint.
+
+2 Percent improvement time=3, best error was 3.803 @ 135
+At iteration 138/1000/1000, Mean rms=0.377%, delta=0.548%, char train=1.54%, word train=3.408%, skip ratio=0%,  New best char error = 1.54 wrote best model:../tesstutorial/impact_from_small/impact1.54_138.checkpoint wrote checkpoint.
+
+2 Percent improvement time=0, best error was 2.19 @ 138
+At iteration 138/1100/1100, Mean rms=0.223%, delta=0.034%, char train=0.133%, word train=0.54%, skip ratio=0%,  New best char error = 0.133 wrote best model:../tesstutorial/impact_from_small/impact0.133_138.checkpoint wrote checkpoint.
+
+2 Percent improvement time=0, best error was 2.19 @ 138
+At iteration 138/1200/1200, Mean rms=0.184%, delta=0.008%, char train=0.045%, word train=0.215%, skip ratio=0%,  New best char error = 0.045 wrote best model:../tesstutorial/impact_from_small/impact0.045_138.checkpoint wrote checkpoint.
+
+Finished! Error rate = 0.045
+
+***** Your error rates above for 1200 iterations of lstmtraining should be similar to the following.
+
+Ray's Result at Google: character/word error is 0.3%/1.2% 
+
+Shree's Test on ppc64le:  % 
+
+../tesstutorial/impact_from_small/impact_checkpoint is not a recognition model, trying training checkpoint...
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf
+At iteration 0, stage 0, Eval Char error rate=0.015605493, Word error rate=0.077160494
+
+***** Your eval error rates above for eval for engeval should be similar to the following.
+
+Ray's Result at Google: character/word error is 0.0086%/0.057% 
+
+Shree's Test on ppc64le:  % 
+

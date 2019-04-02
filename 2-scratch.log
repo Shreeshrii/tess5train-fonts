@@ -1,0 +1,491 @@
+
+***** Run lstmtraining for 5000 iterations. 
+
+Warning: given outputs 111 not equal to unicharset of 110.
+Num outputs,weights in Series:
+  1,36,0,1:1, 0
+Num outputs,weights in Series:
+  C3,3:9, 0
+  Ft16:16, 160
+Total weights = 160
+  [C3,3Ft16]:16, 160
+  Mp3,3:16, 0
+  Lfys48:48, 12480
+  Lfx96:96, 55680
+  Lrx96:96, 74112
+  Lfx256:256, 361472
+  Fc110:110, 28270
+Total weights = 532174
+Built network:[1,36,0,1[C3,3Ft16]Mp3,3Lfys48Lfx96Lrx96Lfx256Fc110] from request [1,36,0,1 Ct3,3,16 Mp3,3 Lfys48 Lfx96 Lrx96 Lfx256 O1c111]
+Training parameters:
+  Debug interval = 0, weights = 0.1, learning rate = 0.002, momentum=0.5
+null char=109
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Medium.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.DejaVu_Sans_Ultra-Light.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana_Italic.exp0.lstmf
+At iteration 100/100/100, Mean rms=5.92%, delta=49.767%, char train=104.287%, word train=100%, skip ratio=0%,  New worst char error = 104.287 wrote checkpoint.
+
+At iteration 200/200/200, Mean rms=5.838%, delta=48.076%, char train=102.143%, word train=100%, skip ratio=0%,  New worst char error = 102.143 wrote checkpoint.
+
+2 Percent improvement time=300, best error was 100 @ 0
+At iteration 300/300/300, Mean rms=5.604%, delta=43.303%, char train=98.581%, word train=100%, skip ratio=0%,  New best char error = 98.581 wrote checkpoint.
+
+2 Percent improvement time=100, best error was 98.581 @ 300
+At iteration 400/400/400, Mean rms=5.124%, delta=34.554%, char train=94.512%, word train=100%, skip ratio=0%,  New best char error = 94.512 wrote checkpoint.
+
+2 Percent improvement time=100, best error was 94.512 @ 400
+At iteration 500/500/500, Mean rms=4.832%, delta=29.727%, char train=92.116%, word train=100%, skip ratio=0%,  New best char error = 92.116 wrote checkpoint.
+
+2 Percent improvement time=200, best error was 94.512 @ 400
+At iteration 600/600/600, Mean rms=4.641%, delta=26.781%, char train=90.409%, word train=100%, skip ratio=0%,  New best char error = 90.409 wrote checkpoint.
+
+2 Percent improvement time=200, best error was 92.116 @ 500
+At iteration 700/700/700, Mean rms=4.505%, delta=24.766%, char train=89.094%, word train=99.987%, skip ratio=0%,  New best char error = 89.094 wrote checkpoint.
+
+2 Percent improvement time=200, best error was 90.409 @ 600
+At iteration 800/800/800, Mean rms=4.408%, delta=23.282%, char train=87.651%, word train=99.832%, skip ratio=0%,  New best char error = 87.651 wrote checkpoint.
+
+2 Percent improvement time=200, best error was 89.094 @ 700
+At iteration 900/900/900, Mean rms=4.331%, delta=22.215%, char train=86.007%, word train=99.654%, skip ratio=0%,  New best char error = 86.007 wrote checkpoint.
+
+2 Percent improvement time=200, best error was 87.651 @ 800
+At iteration 1000/1000/1000, Mean rms=4.275%, delta=21.557%, char train=84.449%, word train=99.414%, skip ratio=0%,  New best char error = 84.449 wrote checkpoint.
+
+2 Percent improvement time=100, best error was 84.449 @ 1000
+At iteration 1100/1100/1100, Mean rms=4.06%, delta=18.345%, char train=80.825%, word train=99.039%, skip ratio=0%,  New best char error = 80.825 wrote checkpoint.
+
+2 Percent improvement time=100, best error was 80.825 @ 1100
+At iteration 1200/1200/1200, Mean rms=3.858%, delta=15.53%, char train=77.084%, word train=98.468%, skip ratio=0%,  New best char error = 77.084 wrote checkpoint.
+
+2 Percent improvement time=100, best error was 77.084 @ 1200
+At iteration 1300/1300/1300, Mean rms=3.707%, delta=13.899%, char train=73.794%, word train=97.683%, skip ratio=0%,  New best char error = 73.794 wrote checkpoint.
+
+2 Percent improvement time=100, best error was 73.794 @ 1300
+At iteration 1400/1400/1400, Mean rms=3.687%, delta=14.69%, char train=71.134%, word train=96.542%, skip ratio=0%,  New best char error = 71.134 wrote best model:../tesstutorial/engoutput/base71.134_1400.checkpoint wrote checkpoint.
+
+2 Percent improvement time=100, best error was 71.134 @ 1400
+At iteration 1500/1500/1500, Mean rms=3.652%, delta=15.155%, char train=67.84%, word train=95.028%, skip ratio=0%,  New best char error = 67.84 wrote best model:../tesstutorial/engoutput/base67.84_1500.checkpoint wrote checkpoint.
+
+2 Percent improvement time=100, best error was 67.84 @ 1500
+At iteration 1600/1600/1600, Mean rms=3.59%, delta=15.21%, char train=64.014%, word train=92.765%, skip ratio=0%,  New best char error = 64.014 wrote best model:../tesstutorial/engoutput/base64.014_1600.checkpoint wrote checkpoint.
+
+2 Percent improvement time=100, best error was 64.014 @ 1600
+At iteration 1700/1700/1700, Mean rms=3.516%, delta=15.141%, char train=59.946%, word train=90.25%, skip ratio=0%,  New best char error = 59.946 wrote best model:../tesstutorial/engoutput/base59.946_1700.checkpoint wrote checkpoint.
+
+2 Percent improvement time=100, best error was 59.946 @ 1700
+At iteration 1800/1800/1800, Mean rms=3.421%, delta=14.92%, char train=55.683%, word train=87.055%, skip ratio=0%,  New best char error = 55.683 wrote best model:../tesstutorial/engoutput/base55.683_1800.checkpoint wrote checkpoint.
+
+2 Percent improvement time=100, best error was 55.683 @ 1800
+At iteration 1900/1900/1900, Mean rms=3.304%, delta=14.444%, char train=51.46%, word train=83.307%, skip ratio=0%,  New best char error = 51.46 wrote best model:../tesstutorial/engoutput/base51.46_1900.checkpoint wrote checkpoint.
+
+2 Percent improvement time=100, best error was 51.46 @ 1900
+At iteration 2000/2000/2000, Mean rms=3.167%, delta=13.667%, char train=47.25%, word train=79.259%, skip ratio=0%,  New best char error = 47.25 wrote best model:../tesstutorial/engoutput/base47.25_2000.checkpoint wrote checkpoint.
+
+2 Percent improvement time=100, best error was 47.25 @ 2000
+At iteration 2100/2100/2100, Mean rms=3.022%, delta=12.63%, char train=42.958%, word train=74.864%, skip ratio=0%,  New best char error = 42.958 wrote best model:../tesstutorial/engoutput/base42.958_2100.checkpoint wrote checkpoint.
+
+2 Percent improvement time=100, best error was 42.958 @ 2100
+At iteration 2200/2200/2200, Mean rms=2.86%, delta=11.43%, char train=38.787%, word train=69.95%, skip ratio=0%,  New best char error = 38.787 wrote best model:../tesstutorial/engoutput/base38.787_2200.checkpoint wrote checkpoint.
+
+2 Percent improvement time=100, best error was 38.787 @ 2200
+At iteration 2300/2300/2300, Mean rms=2.692%, delta=10.198%, char train=34.748%, word train=64.734%, skip ratio=0%,  New best char error = 34.748 wrote best model:../tesstutorial/engoutput/base34.748_2300.checkpoint wrote checkpoint.
+
+2 Percent improvement time=100, best error was 34.748 @ 2300
+At iteration 2400/2400/2400, Mean rms=2.526%, delta=9.035%, char train=30.748%, word train=59.474%, skip ratio=0%,  New best char error = 30.748 wrote best model:../tesstutorial/engoutput/base30.748_2400.checkpoint wrote checkpoint.
+
+2 Percent improvement time=100, best error was 30.748 @ 2400
+At iteration 2500/2500/2500, Mean rms=2.361%, delta=7.91%, char train=27.167%, word train=54.113%, skip ratio=0%,  New best char error = 27.167 wrote best model:../tesstutorial/engoutput/base27.167_2500.checkpoint wrote checkpoint.
+
+2 Percent improvement time=99, best error was 27.167 @ 2500
+At iteration 2599/2600/2600, Mean rms=2.21%, delta=6.995%, char train=24.014%, word train=49.196%, skip ratio=0%,  New best char error = 24.014 wrote best model:../tesstutorial/engoutput/base24.014_2599.checkpoint wrote checkpoint.
+
+2 Percent improvement time=99, best error was 24.014 @ 2599
+At iteration 2698/2700/2700, Mean rms=2.069%, delta=6.125%, char train=21.136%, word train=44.443%, skip ratio=0%,  New best char error = 21.136 wrote best model:../tesstutorial/engoutput/base21.136_2698.checkpoint wrote checkpoint.
+
+2 Percent improvement time=97, best error was 21.136 @ 2698
+At iteration 2795/2800/2800, Mean rms=1.926%, delta=5.301%, char train=18.511%, word train=39.894%, skip ratio=0%,  New best char error = 18.511 wrote best model:../tesstutorial/engoutput/base18.511_2795.checkpoint wrote checkpoint.
+
+2 Percent improvement time=96, best error was 18.511 @ 2795
+At iteration 2891/2900/2900, Mean rms=1.803%, delta=4.659%, char train=16.325%, word train=35.905%, skip ratio=0%,  New best char error = 16.325 wrote best model:../tesstutorial/engoutput/base16.325_2891.checkpoint wrote checkpoint.
+
+2 Percent improvement time=99, best error was 16.325 @ 2891
+At iteration 2990/3000/3000, Mean rms=1.69%, delta=4.098%, char train=14.304%, word train=32.244%, skip ratio=0%,  New best char error = 14.304 wrote best model:../tesstutorial/engoutput/base14.304_2990.checkpoint wrote checkpoint.
+
+2 Percent improvement time=196, best error was 16.325 @ 2891
+At iteration 3087/3100/3100, Mean rms=1.593%, delta=3.628%, char train=12.657%, word train=29.15%, skip ratio=0%,  New best char error = 12.657 wrote best model:../tesstutorial/engoutput/base12.657_3087.checkpoint wrote checkpoint.
+
+2 Percent improvement time=191, best error was 14.304 @ 2990
+At iteration 3181/3200/3200, Mean rms=1.497%, delta=3.186%, char train=11.221%, word train=26.194%, skip ratio=0%,  New best char error = 11.221 wrote best model:../tesstutorial/engoutput/base11.221_3181.checkpoint wrote checkpoint.
+
+2 Percent improvement time=184, best error was 12.657 @ 3087
+At iteration 3271/3300/3300, Mean rms=1.413%, delta=2.846%, char train=9.994%, word train=23.706%, skip ratio=0%,  New best char error = 9.994 Transitioned to stage 1 wrote best model:../tesstutorial/engoutput/base9.994_3271.checkpoint wrote checkpoint.
+
+2 Percent improvement time=184, best error was 11.221 @ 3181
+At iteration 3365/3400/3400, Mean rms=1.334%, delta=2.546%, char train=8.955%, word train=21.452%, skip ratio=0%,  New best char error = 8.955 wrote best model:../tesstutorial/engoutput/base8.955_3365.checkpoint wrote checkpoint.
+
+2 Percent improvement time=275, best error was 11.221 @ 3181
+At iteration 3456/3500/3500, Mean rms=1.277%, delta=2.336%, char train=8.2%, word train=19.86%, skip ratio=0%,  New best char error = 8.2 wrote best model:../tesstutorial/engoutput/base8.2_3456.checkpoint wrote checkpoint.
+
+2 Percent improvement time=276, best error was 9.994 @ 3271
+At iteration 3547/3600/3600, Mean rms=1.219%, delta=2.12%, char train=7.414%, word train=18.142%, skip ratio=0%,  New best char error = 7.414 wrote best model:../tesstutorial/engoutput/base7.414_3547.checkpoint wrote checkpoint.
+
+2 Percent improvement time=262, best error was 8.955 @ 3365
+At iteration 3627/3700/3700, Mean rms=1.158%, delta=1.907%, char train=6.618%, word train=16.411%, skip ratio=0%,  New best char error = 6.618 wrote best model:../tesstutorial/engoutput/base6.618_3627.checkpoint wrote checkpoint.
+
+2 Percent improvement time=258, best error was 8.2 @ 3456
+At iteration 3714/3800/3800, Mean rms=1.123%, delta=1.803%, char train=6.198%, word train=15.464%, skip ratio=0%,  New best char error = 6.198 wrote best model:../tesstutorial/engoutput/base6.198_3714.checkpoint wrote checkpoint.
+
+2 Percent improvement time=344, best error was 8.2 @ 3456
+At iteration 3800/3900/3900, Mean rms=1.079%, delta=1.655%, char train=5.671%, word train=14.325%, skip ratio=0%,  New best char error = 5.671 wrote best model:../tesstutorial/engoutput/base5.671_3800.checkpoint wrote checkpoint.
+
+2 Percent improvement time=329, best error was 7.414 @ 3547
+At iteration 3876/4000/4000, Mean rms=1.034%, delta=1.522%, char train=5.192%, word train=13.151%, skip ratio=0%,  New best char error = 5.192 wrote best model:../tesstutorial/engoutput/base5.192_3876.checkpoint wrote checkpoint.
+
+2 Percent improvement time=403, best error was 7.414 @ 3547
+At iteration 3950/4100/4100, Mean rms=0.98%, delta=1.351%, char train=4.628%, word train=11.823%, skip ratio=0%,  New best char error = 4.628 wrote best model:../tesstutorial/engoutput/base4.628_3950.checkpoint wrote checkpoint.
+
+2 Percent improvement time=392, best error was 6.618 @ 3627
+At iteration 4019/4200/4200, Mean rms=0.941%, delta=1.249%, char train=4.238%, word train=10.981%, skip ratio=0%,  New best char error = 4.238 wrote best model:../tesstutorial/engoutput/base4.238_4019.checkpoint wrote checkpoint.
+
+2 Percent improvement time=385, best error was 6.198 @ 3714
+At iteration 4099/4300/4300, Mean rms=0.924%, delta=1.212%, char train=4.113%, word train=10.599%, skip ratio=0%,  New best char error = 4.113 wrote checkpoint.
+
+2 Percent improvement time=456, best error was 6.198 @ 3714
+At iteration 4170/4400/4400, Mean rms=0.899%, delta=1.136%, char train=3.855%, word train=9.96%, skip ratio=0%,  New best char error = 3.855 wrote best model:../tesstutorial/engoutput/base3.855_4170.checkpoint wrote checkpoint.
+
+2 Percent improvement time=437, best error was 5.671 @ 3800
+At iteration 4237/4500/4500, Mean rms=0.866%, delta=1.046%, char train=3.476%, word train=9.081%, skip ratio=0%,  New best char error = 3.476 wrote best model:../tesstutorial/engoutput/base3.476_4237.checkpoint wrote checkpoint.
+
+2 Percent improvement time=504, best error was 5.671 @ 3800
+At iteration 4304/4600/4600, Mean rms=0.845%, delta=0.995%, char train=3.311%, word train=8.669%, skip ratio=0%,  New best char error = 3.311 wrote best model:../tesstutorial/engoutput/base3.311_4304.checkpoint wrote checkpoint.
+
+2 Percent improvement time=491, best error was 5.192 @ 3876
+At iteration 4367/4700/4700, Mean rms=0.823%, delta=0.952%, char train=3.161%, word train=8.324%, skip ratio=0%,  New best char error = 3.161 wrote best model:../tesstutorial/engoutput/base3.161_4367.checkpoint wrote checkpoint.
+
+2 Percent improvement time=555, best error was 5.192 @ 3876
+At iteration 4431/4800/4800, Mean rms=0.794%, delta=0.88%, char train=2.951%, word train=7.795%, skip ratio=0%,  New best char error = 2.951 wrote best model:../tesstutorial/engoutput/base2.951_4431.checkpoint wrote checkpoint.
+
+2 Percent improvement time=622, best error was 5.192 @ 3876
+At iteration 4498/4900/4900, Mean rms=0.778%, delta=0.85%, char train=2.833%, word train=7.469%, skip ratio=0%,  New best char error = 2.833 wrote best model:../tesstutorial/engoutput/base2.833_4498.checkpoint wrote checkpoint.
+
+2 Percent improvement time=681, best error was 5.192 @ 3876
+At iteration 4557/5000/5000, Mean rms=0.759%, delta=0.808%, char train=2.666%, word train=7.116%, skip ratio=0%,  New best char error = 2.666 wrote best model:../tesstutorial/engoutput/base2.666_4557.checkpoint wrote checkpoint.
+
+Finished! Error rate = 2.666
+
+***** Your error rates above for 5000 iterations of lstmtraining should be similar to the following.
+
+Ray's Result at Google: 5000 iterations - char error 13% 
+
+Shree's Test on ppc64le: 5000 iterations - char train=3.762%, word train=9.868% 
+
+
+***** Run lstmeval on engeval set on checkpoint after 5000 iterations . 
+
+../tesstutorial/engoutput/base_checkpoint is not a recognition model, trying training checkpoint...
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf
+At iteration 0, stage 0, Eval Char error rate=115.54428, Word error rate=99.479741
+
+***** Your eval error rates above for evaluation of engeval for the lstmtraining checkpoint after 5000 iterations should be similar to the following.
+
+Ray's Result at Google: 85% character error rate 
+
+Shree's Test on ppc64le:  Eval Char error rate=87.883967, Word error rate=98.548647  
+
+
+***** Run lstmeval on engeval set for tessdata/best. 
+
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf
+Warning: LSTMTrainer deserialized an LSTMRecognizer!
+At iteration 0, stage 0, Eval Char error rate=2.7322011, Word error rate=8.5484687
+
+***** Your eval error rates above for evaluation of engeval with tessdata/best should be similar to the following.
+
+Ray's Result at Google: 2.45% character error rate 
+
+Shree's Test on ppc64le:  Eval Char error rate=2.7183757, Word error rate=8.433229 
+
+
+***** Run lstmeval on engtrain set for tessdata/best. 
+
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial_Bold_Italic.exp0.lstmf
+Warning: LSTMTrainer deserialized an LSTMRecognizer!
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Medium.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.DejaVu_Sans_Ultra-Light.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana_Italic.exp0.lstmf
+At iteration 0, stage 0, Eval Char error rate=0.21652867, Word error rate=0.52803284
+
+***** Your eval error rates above for evaluation of engtrain with tessdata/best should be similar to the following.
+
+Ray's Result at Google: Char error rate=0.25047642, Word error rate=0.63389585 
+
+Shree's Test on ppc64le:  Eval Char error rate=0.21695992, Word error rate=0.53543969 
+
+
+***** Continue lstmtraining till 10000 iterations. 
+
+Loaded file ../tesstutorial/engoutput/base_checkpoint, unpacking...
+Successfully restored trainer from ../tesstutorial/engoutput/base_checkpoint
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Arial_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Medium.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Century_Schoolbook_L_Bold_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Georgia_Bold_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Courier_New_Bold_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Courier_New.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Georgia_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Georgia_Bold.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Courier_New_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.DejaVu_Sans_Ultra-Light.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Georgia.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Bold.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Bold_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Bold.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Bold_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Bold.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Bold_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Verdana_Bold.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Verdana_Bold_Italic.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Verdana.exp0.lstmf
+Loaded 60/72 pages (13-72) of document ../tesstutorial/engtrain/eng.Verdana_Italic.exp0.lstmf
+2 Percent improvement time=661, best error was 4.628 @ 3950
+At iteration 4611/5100/5100, Mean rms=0.739%, delta=0.767%, char train=2.515%, word train=6.735%, skip ratio=0%,  New best char error = 2.515 wrote best model:../tesstutorial/engoutput/base2.515_4611.checkpoint wrote checkpoint.
+
+2 Percent improvement time=716, best error was 4.628 @ 3950
+At iteration 4666/5200/5200, Mean rms=0.734%, delta=0.769%, char train=2.503%, word train=6.674%, skip ratio=0%,  New best char error = 2.503 wrote checkpoint.
+
+2 Percent improvement time=784, best error was 4.628 @ 3950
+At iteration 4734/5300/5300, Mean rms=0.708%, delta=0.696%, char train=2.242%, word train=6.098%, skip ratio=0%,  New best char error = 2.242 wrote best model:../tesstutorial/engoutput/base2.242_4734.checkpoint wrote checkpoint.
+
+2 Percent improvement time=693, best error was 4.113 @ 4099
+At iteration 4792/5400/5400, Mean rms=0.691%, delta=0.663%, char train=2.111%, word train=5.805%, skip ratio=0%,  New best char error = 2.111 wrote best model:../tesstutorial/engoutput/base2.111_4792.checkpoint wrote checkpoint.
+
+2 Percent improvement time=735, best error was 4.113 @ 4099
+At iteration 4834/5500/5500, Mean rms=0.669%, delta=0.621%, char train=1.996%, word train=5.515%, skip ratio=0%,  New best char error = 1.996 wrote best model:../tesstutorial/engoutput/base1.996_4834.checkpoint wrote checkpoint.
+
+2 Percent improvement time=782, best error was 4.113 @ 4099
+At iteration 4881/5600/5600, Mean rms=0.649%, delta=0.587%, char train=1.877%, word train=5.229%, skip ratio=0%,  New best char error = 1.877 wrote best model:../tesstutorial/engoutput/base1.877_4881.checkpoint wrote checkpoint.
+
+At iteration 4945/5700/5700, Mean rms=0.651%, delta=0.594%, char train=1.898%, word train=5.262%, skip ratio=0%,  New worst char error = 1.898 wrote checkpoint.
+
+2 Percent improvement time=827, best error was 3.855 @ 4170
+At iteration 4997/5800/5800, Mean rms=0.639%, delta=0.568%, char train=1.808%, word train=4.996%, skip ratio=0%,  New best char error = 1.808 wrote best model:../tesstutorial/engoutput/base1.808_4997.checkpoint wrote checkpoint.
+
+2 Percent improvement time=865, best error was 3.855 @ 4170
+At iteration 5035/5900/5900, Mean rms=0.617%, delta=0.525%, char train=1.672%, word train=4.68%, skip ratio=0%,  New best char error = 1.672 wrote best model:../tesstutorial/engoutput/base1.672_5035.checkpoint wrote checkpoint.
+
+2 Percent improvement time=904, best error was 3.855 @ 4170
+At iteration 5074/6000/6000, Mean rms=0.6%, delta=0.501%, char train=1.606%, word train=4.499%, skip ratio=0%,  New best char error = 1.606 wrote best model:../tesstutorial/engoutput/base1.606_5074.checkpoint wrote checkpoint.
+
+At iteration 5124/6100/6100, Mean rms=0.599%, delta=0.505%, char train=1.615%, word train=4.511%, skip ratio=0%,  New worst char error = 1.615 wrote checkpoint.
+
+2 Percent improvement time=919, best error was 3.476 @ 4237
+At iteration 5156/6200/6200, Mean rms=0.574%, delta=0.448%, char train=1.461%, word train=4.115%, skip ratio=0%,  New best char error = 1.461 wrote best model:../tesstutorial/engoutput/base1.461_5156.checkpoint wrote checkpoint.
+
+2 Percent improvement time=955, best error was 3.476 @ 4237
+At iteration 5192/6300/6300, Mean rms=0.557%, delta=0.422%, char train=1.369%, word train=3.925%, skip ratio=0%,  New best char error = 1.369 wrote best model:../tesstutorial/engoutput/base1.369_5192.checkpoint wrote checkpoint.
+
+At iteration 5250/6400/6400, Mean rms=0.562%, delta=0.434%, char train=1.413%, word train=4.035%, skip ratio=0%,  New worst char error = 1.413 wrote checkpoint.
+
+At iteration 5294/6500/6500, Mean rms=0.565%, delta=0.449%, char train=1.454%, word train=4.105%, skip ratio=0%,  New worst char error = 1.454 wrote checkpoint.
+
+At iteration 5339/6600/6600, Mean rms=0.567%, delta=0.452%, char train=1.459%, word train=4.109%, skip ratio=0%,  New worst char error = 1.459 wrote checkpoint.
+
+2 Percent improvement time=1148, best error was 3.476 @ 4237
+At iteration 5385/6700/6700, Mean rms=0.546%, delta=0.412%, char train=1.34%, word train=3.769%, skip ratio=0%,  New best char error = 1.34 wrote checkpoint.
+
+2 Percent improvement time=1194, best error was 3.476 @ 4237
+At iteration 5431/6800/6800, Mean rms=0.545%, delta=0.413%, char train=1.337%, word train=3.792%, skip ratio=0%,  New best char error = 1.337 wrote checkpoint.
+
+2 Percent improvement time=1233, best error was 3.476 @ 4237
+At iteration 5470/6900/6900, Mean rms=0.541%, delta=0.411%, char train=1.326%, word train=3.753%, skip ratio=0%,  New best char error = 1.326 wrote best model:../tesstutorial/engoutput/base1.326_5470.checkpoint wrote checkpoint.
+
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Courier_New_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.DejaVu_Sans_Ultra-Light.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Georgia_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Times_New_Roman_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Trebuchet_MS_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.URW_Bookman_L_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana_Bold.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana_Bold_Italic.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana.exp0.lstmf
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engtrain/eng.Verdana_Italic.exp0.lstmf
+At iteration 5514/7000/7000, Mean rms=0.547%, delta=0.424%, char train=1.348%, word train=3.814%, skip ratio=0%,  New worst char error = 1.348 wrote checkpoint.
+
+At iteration 5571/7100/7100, Mean rms=0.553%, delta=0.436%, char train=1.376%, word train=3.861%, skip ratio=0%,  New worst char error = 1.376 wrote checkpoint.
+
+At iteration 5612/7200/7200, Mean rms=0.561%, delta=0.454%, char train=1.411%, word train=3.968%, skip ratio=0%,  New worst char error = 1.411 wrote checkpoint.
+
+At iteration 5655/7300/7300, Mean rms=0.562%, delta=0.457%, char train=1.401%, word train=3.948%, skip ratio=0%,  New worst char error = 1.401 wrote checkpoint.
+
+At iteration 5699/7400/7400, Mean rms=0.55%, delta=0.438%, char train=1.351%, word train=3.828%, skip ratio=0%,  New worst char error = 1.351 wrote checkpoint.
+
+2 Percent improvement time=1433, best error was 3.311 @ 4304
+At iteration 5737/7500/7500, Mean rms=0.542%, delta=0.416%, char train=1.286%, word train=3.68%, skip ratio=0%,  New best char error = 1.286 wrote checkpoint.
+
+At iteration 5782/7600/7600, Mean rms=0.539%, delta=0.416%, char train=1.293%, word train=3.695%, skip ratio=0%,  New worst char error = 1.293 wrote checkpoint.
+
+At iteration 5827/7700/7700, Mean rms=0.541%, delta=0.416%, char train=1.295%, word train=3.706%, skip ratio=0%,  New worst char error = 1.295 wrote checkpoint.
+
+2 Percent improvement time=1562, best error was 3.311 @ 4304
+At iteration 5866/7800/7800, Mean rms=0.529%, delta=0.397%, char train=1.235%, word train=3.552%, skip ratio=0%,  New best char error = 1.235 wrote best model:../tesstutorial/engoutput/base1.235_5866.checkpoint wrote checkpoint.
+
+2 Percent improvement time=1590, best error was 3.311 @ 4304
+At iteration 5894/7900/7900, Mean rms=0.525%, delta=0.39%, char train=1.218%, word train=3.493%, skip ratio=0%,  New best char error = 1.218 wrote checkpoint.
+
+2 Percent improvement time=1553, best error was 3.161 @ 4367
+At iteration 5920/8000/8000, Mean rms=0.511%, delta=0.372%, char train=1.159%, word train=3.284%, skip ratio=0%,  New best char error = 1.159 wrote best model:../tesstutorial/engoutput/base1.159_5920.checkpoint wrote checkpoint.
+
+2 Percent improvement time=1590, best error was 3.161 @ 4367
+At iteration 5957/8100/8100, Mean rms=0.495%, delta=0.342%, char train=1.065%, word train=3.081%, skip ratio=0%,  New best char error = 1.065 wrote best model:../tesstutorial/engoutput/base1.065_5957.checkpoint wrote checkpoint.
+
+2 Percent improvement time=1629, best error was 3.161 @ 4367
+At iteration 5996/8200/8200, Mean rms=0.482%, delta=0.323%, char train=1.009%, word train=2.951%, skip ratio=0%,  New best char error = 1.009 wrote best model:../tesstutorial/engoutput/base1.009_5996.checkpoint wrote checkpoint.
+
+2 Percent improvement time=1659, best error was 3.161 @ 4367
+At iteration 6026/8300/8300, Mean rms=0.469%, delta=0.304%, char train=0.973%, word train=2.812%, skip ratio=0%,  New best char error = 0.973 wrote best model:../tesstutorial/engoutput/base0.973_6026.checkpoint wrote checkpoint.
+
+2 Percent improvement time=1698, best error was 3.161 @ 4367
+At iteration 6065/8400/8400, Mean rms=0.465%, delta=0.296%, char train=0.959%, word train=2.756%, skip ratio=0%,  New best char error = 0.959 wrote checkpoint.
+
+2 Percent improvement time=1657, best error was 2.951 @ 4431
+At iteration 6088/8500/8500, Mean rms=0.449%, delta=0.278%, char train=0.898%, word train=2.611%, skip ratio=0%,  New best char error = 0.898 wrote best model:../tesstutorial/engoutput/base0.898_6088.checkpoint wrote checkpoint.
+
+2 Percent improvement time=1624, best error was 2.833 @ 4498
+At iteration 6122/8600/8600, Mean rms=0.436%, delta=0.256%, char train=0.823%, word train=2.406%, skip ratio=0%,  New best char error = 0.823 wrote best model:../tesstutorial/engoutput/base0.823_6122.checkpoint wrote checkpoint.
+
+2 Percent improvement time=1645, best error was 2.833 @ 4498
+At iteration 6143/8700/8700, Mean rms=0.417%, delta=0.232%, char train=0.742%, word train=2.207%, skip ratio=0%,  New best char error = 0.742 wrote best model:../tesstutorial/engoutput/base0.742_6143.checkpoint wrote checkpoint.
+
+2 Percent improvement time=1674, best error was 2.833 @ 4498
+At iteration 6172/8800/8800, Mean rms=0.411%, delta=0.222%, char train=0.711%, word train=2.135%, skip ratio=0%,  New best char error = 0.711 wrote best model:../tesstutorial/engoutput/base0.711_6172.checkpoint wrote checkpoint.
+
+2 Percent improvement time=1692, best error was 2.833 @ 4498
+At iteration 6190/8900/8900, Mean rms=0.405%, delta=0.215%, char train=0.686%, word train=2.064%, skip ratio=0%,  New best char error = 0.686 wrote best model:../tesstutorial/engoutput/base0.686_6190.checkpoint wrote checkpoint.
+
+2 Percent improvement time=1647, best error was 2.666 @ 4557
+At iteration 6204/9000/9000, Mean rms=0.398%, delta=0.2%, char train=0.65%, word train=1.985%, skip ratio=0%,  New best char error = 0.65 wrote best model:../tesstutorial/engoutput/base0.65_6204.checkpoint wrote checkpoint.
+
+At iteration 6252/9100/9100, Mean rms=0.413%, delta=0.25%, char train=0.803%, word train=2.268%, skip ratio=0%,  New worst char error = 0.803 wrote checkpoint.
+
+At iteration 6319/9200/9200, Mean rms=0.449%, delta=0.319%, char train=1.01%, word train=2.727%, skip ratio=0%,  New worst char error = 1.01 wrote checkpoint.
+
+At iteration 6364/9300/9300, Mean rms=0.468%, delta=0.356%, char train=1.118%, word train=2.994%, skip ratio=0%,  New worst char error = 1.118 wrote checkpoint.
+
+At iteration 6398/9400/9400, Mean rms=0.463%, delta=0.351%, char train=1.096%, word train=2.945%, skip ratio=0%,  New worst char error = 1.096 wrote checkpoint.
+
+At iteration 6431/9500/9500, Mean rms=0.479%, delta=0.374%, char train=1.166%, word train=3.124%, skip ratio=0%,  New worst char error = 1.166 wrote checkpoint.
+
+At iteration 6464/9600/9600, Mean rms=0.481%, delta=0.373%, char train=1.166%, word train=3.178%, skip ratio=0%,  New worst char error = 1.166 wrote checkpoint.
+
+At iteration 6475/9700/9700, Mean rms=0.474%, delta=0.363%, char train=1.138%, word train=3.101%, skip ratio=0%,  New worst char error = 1.138 wrote checkpoint.
+
+At iteration 6509/9800/9800, Mean rms=0.479%, delta=0.377%, char train=1.166%, word train=3.137%, skip ratio=0%,  New worst char error = 1.166 wrote checkpoint.
+
+At iteration 6538/9900/9900, Mean rms=0.484%, delta=0.386%, char train=1.199%, word train=3.231%, skip ratio=0%,  New worst char error = 1.199 wrote checkpoint.
+
+At iteration 6574/10000/10000, Mean rms=0.5%, delta=0.414%, char train=1.294%, word train=3.492%, skip ratio=0%,  New worst char error = 1.294 wrote checkpoint.
+
+Finished! Error rate = 0.65
+
+***** Your error rates above for 10000 iterations of lstmtraining should be similar to the following.
+
+Ray's Result at Google: 2.68% character / 10.01% word 
+
+Shree's Test on ppc64le:  char train=0.894%, word train=2.717% 
+
+
+***** Run lstmeval on engeval set on checkpoint after 10000 iterations . 
+
+../tesstutorial/engoutput/base_checkpoint is not a recognition model, trying training checkpoint...
+Loaded 72/72 pages (1-72) of document ../tesstutorial/engeval/eng.Impact_Condensed.exp0.lstmf
+At iteration 0, stage 0, Eval Char error rate=85.016436, Word error rate=97.835988
+
+***** Your eval error rates above for evaluation of engeval for the lstmtraining checkpoint after 10000 iterations should be similar to the following.
+
+Ray's Result at Google: Character error rate on Impact now >100% - OVERFITTED. 
+
+Shree's Test on ppc64le:  Eval Char error rate=88.197982, Word error rate=98.444517 
+

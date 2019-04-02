@@ -1,7 +1,7 @@
 # tess4training
 LSTM Training Tutorial for Tesseract 4
 
-In order to successfully run the Tesseract 4 Tutorial, you need to have a working installation of Tesseract 4
+In order to successfully run the Tesseract 4 LSTM Training Tutorial, you need to have a working installation of Tesseract 4
 and Tesseract 4 Training Tools and also have the training scripts and required traineddata files in certain directories.
 For running Tesseract 4, it is useful, but not essential to have a multi-core (4 is good) machine, with OpenMP
 and Intel Intrinsics support for SSE/AVX extensions. Basically it will still run on anything with enough memory,

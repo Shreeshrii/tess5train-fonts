@@ -1,0 +1,168 @@
+  'AlArabiya' \
+  'AlBattar' \
+  'AlHor' \
+  'AlManzomah' \
+  'AlYarmook' \
+  'Andale Mono' \
+  'Arab' \
+  'Arial' \
+  'Arial Black,' \
+  'Arial Bold' \
+  'Arial Bold Italic' \
+  'Arial Italic' \
+  'Arial Unicode MS' \
+  'Bitstream Vera Sans' \
+  'Bitstream Vera Sans Bold' \
+  'Bitstream Vera Sans Bold Oblique' \
+  'Bitstream Vera Sans Mono' \
+  'Bitstream Vera Sans Mono Bold' \
+  'Bitstream Vera Sans Mono Bold Oblique' \
+  'Bitstream Vera Sans Mono Oblique' \
+  'Bitstream Vera Sans Oblique' \
+  'Bitstream Vera Serif' \
+  'Bitstream Vera Serif Bold' \
+  'Century Schoolbook L Bold' \
+  'Century Schoolbook L Bold Italic' \
+  'Century Schoolbook L Italic' \
+  'Century Schoolbook L Medium' \
+  'Comic Sans MS' \
+  'Comic Sans MS Bold' \
+  'Cortoba' \
+  'Courier New' \
+  'Courier New Bold' \
+  'Courier New Bold Italic' \
+  'Courier New Italic' \
+  'DejaVu Sans' \
+  'DejaVu Sans Bold' \
+  'DejaVu Sans Bold Oblique' \
+  'DejaVu Sans Bold Oblique Semi-Condensed' \
+  'DejaVu Sans Bold Semi-Condensed' \
+  'DejaVu Sans Mono' \
+  'DejaVu Sans Mono Bold' \
+  'DejaVu Sans Mono Bold Oblique' \
+  'DejaVu Sans Mono Oblique' \
+  'DejaVu Sans Oblique' \
+  'DejaVu Sans Oblique Semi-Condensed' \
+  'DejaVu Sans Semi-Condensed' \
+  'DejaVu Sans Ultra-Light' \
+  'DejaVu Serif' \
+  'DejaVu Serif Bold' \
+  'DejaVu Serif Bold Italic' \
+  'DejaVu Serif Bold Italic Semi-Condensed' \
+  'DejaVu Serif Bold Semi-Condensed' \
+  'DejaVu Serif Italic' \
+  'DejaVu Serif Italic Semi-Condensed' \
+  'DejaVu Serif Semi-Condensed' \
+  'Dimnah' \
+  'Electron' \
+  'Furat' \
+  'Georgia' \
+  'Georgia Bold' \
+  'Georgia Bold Italic' \
+  'Georgia Italic' \
+  'Granada' \
+  'Graph' \
+  'Hani' \
+  'Haramain' \
+  'Hor' \
+  'Impact Condensed' \
+  'Japan' \
+  'Jet' \
+  'Kayrawan' \
+  'Khalid' \
+  'Liberation Mono' \
+  'Liberation Mono Bold' \
+  'Liberation Mono Bold Italic' \
+  'Liberation Mono Italic' \
+  'Liberation Sans' \
+  'Liberation Sans Bold' \
+  'Liberation Sans Bold Italic' \
+  'Liberation Sans Italic' \
+  'Liberation Sans Narrow Bold Condensed' \
+  'Liberation Sans Narrow Bold Italic Condensed' \
+  'Liberation Sans Narrow Condensed' \
+  'Liberation Sans Narrow Italic Condensed' \
+  'Liberation Serif' \
+  'Liberation Serif Bold' \
+  'Liberation Serif Bold Italic' \
+  'Liberation Serif Italic' \
+  'Mashq' \
+  'Mashq Bold' \
+  'Metal' \
+  'Nada' \
+  'Nagham' \
+  'Nakula' \
+  'Nice' \
+  'Nimbus Mono L' \
+  'Nimbus Mono L Bold' \
+  'Nimbus Mono L Bold Oblique' \
+  'Nimbus Mono L Oblique' \
+  'Nimbus Roman No9 L' \
+  'Nimbus Roman No9 L Bold' \
+  'Nimbus Roman No9 L Bold Italic' \
+  'Nimbus Roman No9 L Italic' \
+  'Nimbus Sans L' \
+  'Nimbus Sans L Bold' \
+  'Nimbus Sans L Bold Condensed' \
+  'Nimbus Sans L Bold Italic' \
+  'Nimbus Sans L Bold Italic Condensed' \
+  'Nimbus Sans L Condensed' \
+  'Nimbus Sans L Italic' \
+  'Nimbus Sans L Italic Condensed' \
+  'Ostorah' \
+  'Ouhod Bold' \
+  'Petra' \
+  'Rasheeq Bold' \
+  'Rehan' \
+  'Sahadeva' \
+  'Salem' \
+  'Shado' \
+  'Sharjah' \
+  'Sindbad' \
+  'TAMu_Kadambri' \
+  'TAMu_Kalyani' \
+  'TAMu_Maduram' \
+  'TSCu_Comic' \
+  'TSCu_Paranar' \
+  'TSCu_Paranar Bold' \
+  'TSCu_Paranar Italic' \
+  'TSCu_Times' \
+  'Tarablus' \
+  'Tholoth' \
+  'Times New Roman,' \
+  'Times New Roman, Bold' \
+  'Times New Roman, Bold Italic' \
+  'Times New Roman, Italic' \
+  'Trebuchet MS' \
+  'Trebuchet MS Bold' \
+  'Trebuchet MS Bold Italic' \
+  'Trebuchet MS Italic' \
+  'URW Bookman L' \
+  'URW Bookman L Bold' \
+  'URW Bookman L Bold Italic' \
+  'URW Bookman L Italic' \
+  'URW Chancery L Medium Italic' \
+  'URW Gothic L Book' \
+  'URW Gothic L Book Oblique' \
+  'URW Gothic L Semi-Bold' \
+  'URW Gothic L Semi-Bold Oblique' \
+  'URW Palladio L Bold' \
+  'URW Palladio L Bold Italic' \
+  'URW Palladio L Italic' \
+  'URW Palladio L Medium' \
+  'UnBatang' \
+  'UnBatang Bold' \
+  'UnDinaru' \
+  'UnDinaru Light' \
+  'UnDinaru Light' \
+  'UnDotum' \
+  'UnDotum Bold' \
+  'UnGraphic' \
+  'UnGraphic Bold' \
+  'UnGungseo' \
+  'UnPilgi' \
+  'UnPilgi Bold' \
+  'Verdana' \
+  'Verdana Bold' \
+  'Verdana Bold Italic' \
+  'Verdana Italic' \

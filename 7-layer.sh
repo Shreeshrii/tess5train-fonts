@@ -2,13 +2,6 @@
 
 cd ./tesseract
 
-rm -rf ../tesstutorial/eng_from_chi
-mkdir -p ../tesstutorial/eng_from_chi
-
-echo -e "\n***** Extract LSTM model from best traineddata for chi_sim. \n"
-combine_tessdata -e tessdata/best/chi_sim.traineddata \
-  ../tesstutorial/eng_from_chi/eng.lstm
-
 echo -e "\n***** Run lstmtraining for 3000 iterations for eng using engtrain training set. \n"
 lstmtraining --debug_interval 0 \
   --continue_from ../tesstutorial/eng_from_chi/eng.lstm \

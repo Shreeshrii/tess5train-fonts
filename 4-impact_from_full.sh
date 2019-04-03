@@ -2,13 +2,6 @@
 
 cd ./tesseract
 
-rm -rf  ../tesstutorial/impact_from_full
-mkdir ../tesstutorial/impact_from_full
-
-echo -e "\n***** Extract LSTM model from best traineddata. \n"
-combine_tessdata -e tessdata/best/eng.traineddata \
-  ../tesstutorial/impact_from_full/eng.lstm
-
 echo -e "\n***** Run lstmtraining with debug output for first 100 iterations. \n"
 lstmtraining \
   --model_output ../tesstutorial/impact_from_full/impact \

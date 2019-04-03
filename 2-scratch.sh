@@ -2,9 +2,6 @@
 
 cd ./tesseract
 
-rm -rf  ../tesstutorial/engoutput
-mkdir ../tesstutorial/engoutput
-
 echo -e "\n***** Run lstmtraining for 5000 iterations. \n"
 lstmtraining --debug_interval 0 \
   --traineddata ../tesstutorial/engtrain/eng/eng.traineddata \

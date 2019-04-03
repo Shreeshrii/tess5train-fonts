@@ -2,9 +2,6 @@
 
 cd ./tesseract
 
-rm -rf ../tesstutorial/impact_from_small
-mkdir -p ../tesstutorial/impact_from_small
-
 echo -e "\n***** Run lstmtraining with debug output for first 100 iterations. \n"
 lstmtraining --model_output ../tesstutorial/impact_from_small/impact \
   --continue_from ../tesstutorial/engoutput/base_checkpoint \

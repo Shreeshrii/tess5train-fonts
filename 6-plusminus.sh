@@ -2,10 +2,6 @@
 
 cd ./tesseract
 
-echo -e "\n***** Extract LSTM model from best traineddata. \n"
-combine_tessdata -e tessdata/best/eng.traineddata \
-  ../tesstutorial/trainplusminus/eng.lstm
-
 echo -e "\n***** Run lstmtraining with debug output for first 100 iterations. \n"
 lstmtraining --model_output ../tesstutorial/trainplusminus/plusminus \
   --continue_from ../tesstutorial/trainplusminus/eng.lstm \

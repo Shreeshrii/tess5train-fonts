@@ -41,3 +41,7 @@ src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_onl
   --tessdata_dir ./tessdata \
   --fontlist "Impact Condensed" --output_dir ../tesstutorial/evalplusminus
   
+echo -e "\n***** Extract LSTM model from best traineddata. \n"
+combine_tessdata -e tessdata/best/eng.traineddata \
+  ../tesstutorial/trainplusminus/eng.lstm
+  

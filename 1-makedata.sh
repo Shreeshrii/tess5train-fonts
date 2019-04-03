@@ -17,3 +17,23 @@ src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_onl
   --tessdata_dir ./tessdata \
   --fontlist "Impact Condensed" --output_dir ../tesstutorial/engeval
   
+rm -rf  ../tesstutorial/engoutput
+mkdir ../tesstutorial/engoutput
+
+rm -rf ../tesstutorial/impact_from_small
+mkdir ../tesstutorial/impact_from_small
+
+rm -rf  ../tesstutorial/impact_from_full
+mkdir ../tesstutorial/impact_from_full
+
+echo -e "\n***** Extract LSTM model from best traineddata. \n"
+combine_tessdata -e tessdata/best/eng.traineddata \
+  ../tesstutorial/impact_from_full/eng.lstm
+
+rm -rf ../tesstutorial/eng_from_chi
+mkdir  ../tesstutorial/eng_from_chi
+
+echo -e "\n***** Extract LSTM model from best traineddata for chi_sim. \n"
+combine_tessdata -e tessdata/best/chi_sim.traineddata \
+  ../tesstutorial/eng_from_chi/eng.lstm
+  

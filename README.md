@@ -142,6 +142,9 @@ Run this script to cut-off and replace the top layer of network spec from eng.tr
 train using lstmf files generated using `langdata/eng/eng.layer.training_text` with about 45 fonts
 for 50000 iterations. The script will take a while to run.
 
+*CHECKPOINT FILE AT 49100 ITERATIONS IS PROVIDED IN THE SUBMODULE
+IN `tesstutorial/eng_layer_eng` FOLDER TO MAKE THE TRAINING FASTER TO RUN.
+
 Improved recognition will  require more samples of the characters being added and using
 fonts that can render those characters for larger number of iterations to bring down the
 character error rate.

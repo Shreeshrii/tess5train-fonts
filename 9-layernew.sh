@@ -23,23 +23,30 @@ echo -e "Shree's Test on ppc64le: char train=1.346%, word train=4.523% \n"
 echo -e "\n***** Your error rates above for eng_layer_eng lstmtraining for 15000 iterations should be similar to the following.\n"
 echo -e "Shree's Test on ppc64le: char train=0.987%, word train=3.256% \n"
 echo -e "\n***** Your error rates above for eng_layer_eng lstmtraining for 20000 iterations should be similar to the following.\n"
-echo -e "Shree's Test on ppc64le:  char train=0.681%, word train=2.652% \n"
+echo -e "Shree's Test on ppc64le:  char train=0.657%, word train=2.796% \n"
 echo -e "\n***** Your error rates above for eng_layer_eng lstmtraining for 30000 iterations should be similar to the following.\n"
-echo -e "Shree's Test on ppc64le:  char train=0.494%, word train=1.89% \n"
-
+echo -e "Shree's Test on ppc64le:  char train=0.544%, word train=2.123% \n"
 echo -e "\n***** Your error rates above for eng_layer_eng lstmtraining for 50000 iterations should be similar to the following.\n"
-echo -e "Shree's Test on ppc64le:  ??????????  \n"
+echo -e "Shree's Test on ppc64le: char train=0.319%, word train=1.355%  \n"
 
 echo -e "\n***** lstmeval for independent test on the Impact font using evallayer set with best/eng - for comparison. \n"
 echo -e "Shree's Test on ppc64le: Eval Char error rate=154.14868, Word error rate=99.65746 \n"
 
-echo -e "\n***** Run lstmeval for independent test on the Impact font using evallayer set after eng_layer_eng lstmtraining. \n"
+echo -e "\n***** Run lstmeval for independent test on the Impact font using evallayer set. \n"
 lstmeval --model ../tesstutorial/eng_layer_eng/layer_checkpoint \
   --verbosity 0 \
   --traineddata ../tesstutorial/trainlayer/eng/eng.traineddata \
   --eval_listfile ../tesstutorial/evallayer/eng.training_files.txt
 echo -e "\n***** Your error rates above for eval of evallayer should be similar to the following.\n"
 echo -e "Shree's Test on ppc64le: Eval Char error rate=10.318807, Word error rate=31.464601 \n"
+
+echo -e "\n***** Run lstmeval for test on multiple fonts samples using testlayer set. \n"
+lstmeval --model ../tesstutorial/eng_layer_eng/layer_checkpoint \
+  --verbosity 0 \
+  --traineddata ../tesstutorial/trainlayer/eng/eng.traineddata \
+  --eval_listfile ../tesstutorial/testlayer/eng.training_files.txt
+echo -e "\n***** Your error rates above for eval of testlayer should be similar to the following.\n"
+echo -e "Shree's Test on ppc64le: Eval Char error rate=4.6751999, Word error rate=6.9228114 \n"
 
 echo -e "\n***** Stop lstmtraining and convert to traineddata. \n"
 lstmtraining \

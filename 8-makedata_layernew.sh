@@ -83,35 +83,64 @@ src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_onl
     "DejaVu Serif Bold Semi-Condensed" \
     "DejaVu Serif Italic" \
     "DejaVu Serif Italic Semi-Condensed" \
-    "DejaVu Serif Semi-Condensed" \
-    "Liberation Mono" \
-    "Liberation Mono Bold" \
-    "Liberation Mono Bold Italic" \
-    "Liberation Mono Italic" \
-    "Liberation Sans" \
-    "Liberation Sans Bold" \
-    "Liberation Sans Bold Italic" \
-    "Liberation Sans Italic" \
-    "Liberation Sans Narrow Bold Condensed" \
-    "Liberation Sans Narrow Bold Italic Condensed" \
-    "Liberation Sans Narrow Condensed" \
-    "Liberation Sans Narrow Italic Condensed" \
-    "Liberation Serif" \
-    "Liberation Serif Bold" \
-    "Liberation Serif Bold Italic" \
-    "Liberation Serif Italic" \
-    "Bitstream Vera Sans" \
-    "Bitstream Vera Sans Bold" \
-    "Bitstream Vera Sans Bold Oblique" \
-    "Bitstream Vera Sans Mono" \
-    "Bitstream Vera Sans Mono Bold" \
-    "Bitstream Vera Sans Mono Bold Oblique" \
-    "Bitstream Vera Sans Mono Oblique" \
-    "Bitstream Vera Sans Oblique" \
-    "Bitstream Vera Serif" \
-    "Bitstream Vera Serif Bold" \
+    "DejaVu Serif Semi-Condensed" 
+    
   
-  
+echo -e "\n***** Making test data for testlayer set for layer training."
+src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+  --noextract_font_properties --langdata_dir ../langdata \
+  --training_text ../langdata/eng/eng.layertest.training_text \
+  --tessdata_dir ./tessdata --output_dir ../tesstutorial/testlayer \
+  --save_box_tiff \
+  --fontlist \
+    "Arial Bold" \
+    "Arial Bold Italic" \
+    "Arial Italic" \
+    "Arial" \
+    "Courier New Bold" \
+    "Courier New Bold Italic" \
+    "Courier New Italic" \
+    "Courier New" \
+    "Times New Roman, Bold" \
+    "Times New Roman, Bold Italic" \
+    "Times New Roman, Italic" \
+    "Times New Roman," \
+    "Georgia Bold" \
+    "Georgia Italic" \
+    "Georgia" \
+    "Georgia Bold Italic" \
+    "Trebuchet MS Bold" \
+    "Trebuchet MS Bold Italic" \
+    "Trebuchet MS Italic" \
+    "Trebuchet MS" \
+    "Verdana Bold" \
+    "Verdana Italic" \
+    "Verdana" \
+    "Verdana Bold Italic" \
+    "DejaVu Sans Ultra-Light" \
+    "DejaVu Sans" \
+    "DejaVu Sans Bold" \
+    "DejaVu Sans Bold Oblique" \
+    "DejaVu Sans Bold Oblique Semi-Condensed" \
+    "DejaVu Sans Bold Semi-Condensed" \
+    "DejaVu Sans Mono" \
+    "DejaVu Sans Mono Bold" \
+    "DejaVu Sans Mono Bold Oblique" \
+    "DejaVu Sans Mono Oblique" \
+    "DejaVu Sans Oblique" \
+    "DejaVu Sans Oblique Semi-Condensed" \
+    "DejaVu Sans Semi-Condensed" \
+    "DejaVu Sans Ultra-Light" \
+    "DejaVu Serif" \
+    "DejaVu Serif Bold" \
+    "DejaVu Serif Bold Italic" \
+    "DejaVu Serif Bold Italic Semi-Condensed" \
+    "DejaVu Serif Bold Semi-Condensed" \
+    "DejaVu Serif Italic" \
+    "DejaVu Serif Italic Semi-Condensed" \
+    "DejaVu Serif Semi-Condensed" 
+
+    
 echo -e "\n***** Making evaluation data for evallayer set for layer training using Impact font."
 src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
   --noextract_font_properties --langdata_dir ../langdata \

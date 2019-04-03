@@ -37,8 +37,6 @@ Otherwise the training script will not find the required fonts and fail.
 sudo apt update
 sudo apt install ttf-mscorefonts-installer
 sudo apt install fonts-dejavu
-sudo apt install fonts-liberation
-sudo apt install ttf-bitstream-vera
 fc-cache -vf
 ```
 
@@ -126,8 +124,9 @@ certain fractions (¼, ½, ¾) and certain Greek letters used in equations such 
 
 ### 8-makedata_layernew.sh
 
-*IT IS NOT REQUIRED TO RUN THIS SCRIPT AS THE OUTPUT FOLDERS ARE PROVIDED AS A SUBMODULE IN THE REPO.*
-Use `git submodule update --init` to download the files (approx 900MB).
+*IT IS NOT REQUIRED TO RUN THIS SCRIPT AS THE OUTPUT FOLDERS ARE PROVIDED 
+AS A SUBMODULE IN THE REPO.*
+Use `git submodule update --init` to download the files (approx 600MB).
 
 In order to ensure that existing characters in the eng.lstm-unicharset are adequately represented during
 training, text is extracted from `tesseract-ocr/langdata_lstm/eng/eng.training_text` with at least 5 of
@@ -140,13 +139,17 @@ as evaluation data.
 ### 9-layernew.sh
 
 Run this script to cut-off and replace the top layer of network spec from eng.traineddata and
-train using lstmf files generated using `langdata/eng/eng.layer.training_text` with about 100 fonts
+train using lstmf files generated using `langdata/eng/eng.layer.training_text` with about 45 fonts
 for 50000 iterations. The script will take a while to run.
 
-Here is an example image with its OCRed text using `tessdata_best/eng.traineddata` to compared
+Improved recognition will  require more samples of the characters being added and using
+fonts that can render those characters for larger number of iterations to bring down the
+character error rate.
+
+Here is an example image with its OCRed text using `tessdata_best/eng.traineddata` compared
 against the finetuned `eng_layer.traineddata`.
 
-#### tessdata_best/eng.traineddata
+#### ORIGINAL tessdata_best/eng.traineddata
 
 ```
 United Forums ©2019
@@ -165,6 +168,7 @@ I want % a pizza not 3 or more,
 ![alt text][logo]
 
 [logo]: https://github.com/Shreeshrii/tess4training/raw/master/layernew.png "Sample Image"
+
 #### FINETUNED eng_layer.traineddata (trained to error rate of ~ 0.5%)
 
 ```

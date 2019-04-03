@@ -15,10 +15,9 @@ install:
 - fc-cache -vf
 - sudo apt-get install tesseract-ocr -y
 before_script:
-- ls -l
-- ls tesstutorial
 - if test ! -d ./tesstutorial/engeval; then bash ./1-makedata.sh; else echo "tesstutorial makedata cache exists"; fi
 - if test ! -d tesstutorial/evalplusminus; then bash ./5-makedata_plusminus.sh; else echo "tesstutorial plusminus cache exists"; fi
 - if test ! -d tesstutorial/evallayer; then bash ./8-makedata_layernew.sh; else echo "tesstutorial layernew cache exists"; fi
+- ls tesstutorial
 script:
-- ls -l
+- bash ./2-scratch.sh

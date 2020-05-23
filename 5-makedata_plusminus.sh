@@ -44,4 +44,3 @@ src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_onl
 echo -e "\n***** Extract LSTM model from best traineddata. \n"
 combine_tessdata -e tessdata/best/eng.traineddata \
   ../tesstutorial/trainplusminus/eng.lstm
-  

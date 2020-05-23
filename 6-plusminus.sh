@@ -14,7 +14,10 @@ echo -e "Past Result Range"
 echo -e "Ray's Result at Google: 1.26%/3.98% char/word error \n"
 echo -e "Shree's Test on ppc64le:  char train=0.541%, word train=1.748% \n"
 
-echo -e "\n***** Continue lstmtraining till 3600 iterations. \n"
+echo -e "\n***** Remove plusminus*checkpoints . \n"
+rm ../tesstutorial/trainplusminus/plusminus*checkpoint
+
+echo -e "\n***** Restart lstmtraining till 3600 iterations. \n"
 lstmtraining --model_output ../tesstutorial/trainplusminus/plusminus \
   --continue_from ../tesstutorial/trainplusminus/eng.lstm \
   --traineddata ../tesstutorial/trainplusminus/eng/eng.traineddata \

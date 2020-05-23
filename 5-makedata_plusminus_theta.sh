@@ -181,7 +181,7 @@ FITTING Tape company. Featured BOOK has PSYCHOTIC Ø CONTENT permeable LATVIA
 Public where C:\Program questions 8 this?) Other because 1 has & character; NCBI was back -
 EOM
 
-shuf -o ../langdata/eng/eng.plusminus.training_text <../langdata/eng/eng.plusminus.training_text 
+######## shuf -o ../langdata/eng/eng.plusminus.training_text <../langdata/eng/eng.plusminus.training_text 
 
 echo -e "\n***** Making training data for trainplusminus set for plusminus training."
 echo -e "\n***** This uses the fontlist for LATIN script fonts from src/training/language-specific.sh\n"

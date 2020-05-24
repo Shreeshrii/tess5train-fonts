@@ -33,7 +33,7 @@ shuf -o ../langdata/eng/eng.layer.training_text <../langdata/eng/eng.layer.train
 ### fonts_for_training=` cat ../langdata/eng/eng.fontslist.txt `
 
 echo -e "\n***** Making training data for trainlayer set for layer training."
-src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+bash src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
   --noextract_font_properties --langdata_dir ../langdata \
   --training_text ../langdata/eng/eng.layer.training_text \
   --tessdata_dir ./tessdata --output_dir ../tesstutorial/trainlayer \
@@ -87,7 +87,7 @@ src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_onl
     
   
 echo -e "\n***** Making test data for testlayer set for layer training."
-src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+bash src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
   --noextract_font_properties --langdata_dir ../langdata \
   --training_text ../langdata/eng/eng.layertest.training_text \
   --tessdata_dir ./tessdata --output_dir ../tesstutorial/testlayer \
@@ -142,7 +142,7 @@ src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_onl
 
     
 echo -e "\n***** Making evaluation data for evallayer set for layer training using Impact font."
-src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
+bash src/training/tesstrain.sh --fonts_dir /usr/share/fonts --lang eng --linedata_only \
   --noextract_font_properties --langdata_dir ../langdata \
   --training_text ../langdata/eng/eng.layer.training_text \
   --tessdata_dir ./tessdata \

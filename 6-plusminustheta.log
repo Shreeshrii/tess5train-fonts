@@ -1,0 +1,34 @@
+
+***** Run lstmtraining with debug output for first 100 iterations. 
+
+Loaded file ../tesstutorial/trainplusminustheta/eng.lstm, unpacking...
+Warning: LSTMTrainer deserialized an LSTMRecognizer!
+Code range changed from 111 to 113!
+Num (Extended) outputs,weights in Series:
+  1,36,0,1:1, 0
+Num (Extended) outputs,weights in Series:
+  C3,3:9, 0
+  Ft16:16, 160
+Total weights = 160
+  [C3,3Ft16]:16, 160
+  Mp3,3:16, 0
+  Lfys64:64, 20736
+  Lfx96:96, 61824
+  Lrx96:96, 74112
+  Lfx512:512, 1247232
+  Fc113:113, 57969
+Total weights = 1462033
+Previous null char=110 mapped to 112
+Continuing from ../tesstutorial/trainplusminustheta/eng.lstm
+Loaded 169/169 lines (1-169) of document ../tesstutorial/trainplusminustheta/eng.Arial_Bold.exp0.lstmf
+Loaded 169/169 lines (1-169) of document ../tesstutorial/trainplusminustheta/eng.Arial_Bold_Italic.exp0.lstmf
+Iteration 0: GROUND  TRUTH : Ø TRADEMARKS §120.871 Gilmore, FREE More Number Low trying AWARD, ('Beaver
+Iteration 0: BEST OCR TEXT : @ TRADEMARKS §120.871 Gilmore, FREE More Number Low trying AWARD, ('Beaver
+File /tmp/eng-2020-05-25.fhP/eng.Arial_Bold.exp0.lstmf line 33 :
+Mean rms=0.734%, delta=0.811%, train=2.703%(9.091%), skip ratio=0%
+Iteration 1: GROUND  TRUTH : or SC used By October Technology City And Business could Services (1) in Services 12 for
+File ../tesstutorial/trainplusminustheta/eng.Arial_Bold.exp0.lstmf line 1 (Perfect):
+Mean rms=0.434%, delta=0.405%, train=1.351%(4.545%), skip ratio=0%
+Iteration 2: GROUND  TRUTH : does YOU OH 30 them its 1 comments are November URL Reply of a San'a' I've some The to:
+File ../tesstutorial/trainplusminustheta/eng.Arial_Bold.exp0.lstmf line 2 :
+Mean rms=0.424%, delta=0.366%, train=0.901%(3.03%), skip ratio=0%

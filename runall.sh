@@ -8,5 +8,5 @@ bash 6-plusminustheta.sh >  6-plusminustheta.log  2>&1 &
 bash 5-makedata_plusminus.sh >  5-makedata_plusminus.log  2>&1 &  
 bash 6-plusminus.sh >  6-plusminus.log  2>&1 &  
 bash 7-layer.sh >  7-layer.log  2>&1 &  
-bash 8-makedata_layernew.sh >  8-makedata_layernew.log  2>&1 &  
+bash 8-makedata_layertamik.sh >  8-makedata_layertamil.log  2>&1 &  
 bash 9-layernew.sh >   9-layernew.log  2>&1 &  

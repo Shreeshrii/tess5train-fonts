@@ -9,6 +9,7 @@ lstmtraining --model_output ../tesstutorial/trainplusminustheta/plusminustheta \
   --old_traineddata tessdata/best/eng.traineddata \
   --train_listfile ../tesstutorial/trainplusminustheta/eng.training_files.txt \
   --debug_interval -1 \
+  --sequential_training  \
   --max_iterations 100
 
 echo -e "\n***** Continue lstmtraining till 3600 iterations. \n"
@@ -17,6 +18,7 @@ lstmtraining --model_output ../tesstutorial/trainplusminustheta/plusminustheta \
   --traineddata ../tesstutorial/trainplusminustheta/eng/eng.traineddata \
   --old_traineddata tessdata/best/eng.traineddata \
   --train_listfile ../tesstutorial/trainplusminustheta/eng.training_files.txt \
+  --sequential_training  \
   --max_iterations 3600
 
 echo -e "\n***** Run lstmeval on trainplusminustheta set. \n"

@@ -1,6 +1,9 @@
 #!/bin/bash
 
 cd ./tesseract
+uname -a
+tesseract -v
+
 
 rm -rf ../tesstutorial/trainplusminustheta
 rm -rf  ../tesstutorial/evalplusminustheta

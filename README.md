@@ -65,7 +65,7 @@ nohup bash plusminus_char.sh eng Latin eng engRupee FineTune ' "Andika" "Calibri
 ## engLayer
 
 Replace the top layer of network of tessdata_best/eng.traineddata for adding multiple characters such as superscripts, fraction symbols, etc using multiple fonts which support the characters.
-Evaluation done on data using Latin fonts listed in language_specific.py (used when no fonts are specified).
+Evaluation done on data using the same fonts.
 
 ### Fonts used
 

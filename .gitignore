@@ -10,11 +10,13 @@ data/*/reports
 data/*/tessdata_best
 data/*/tessdata_fast/*.traineddata
 data/*/tmp
+data/*IAST*
 data/*ground*
+data/*iast*
 data/Latin
 data/eng
-data/logs/*ayer*.*
 data/logs/*IAST*.*
+data/logs/*ayer*.*
 fonts
 fonts.conf
 langdata/iast

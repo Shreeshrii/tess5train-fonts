@@ -65,7 +65,7 @@ echo "________________________________________________________________________"
 # lstmf to model
 make  \
 TESSDATA=data \
-DEBUG_INTERVAL=-1 \
+DEBUG_INTERVAL=0 \
 TESSTRAIN_LANG=$1 \
 TESSTRAIN_SCRIPT=$2 \
 START_MODEL=$3 \

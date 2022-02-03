@@ -1,0 +1,2155 @@
+rm: cannot remove '/tmp/.font-unix': Operation not permitted
+rm: cannot remove '/tmp/systemd-private-900b7fe7083f4bd2a59fb3e5ba941c3b-systemd-timesyncd.service-DnpItT': Operation not permitted
+rm: cannot remove '/tmp/.X11-unix': Operation not permitted
+rm: cannot remove '/tmp/.XIM-unix': Operation not permitted
+rm: cannot remove '/tmp/.Test-unix': Operation not permitted
+rm: cannot remove '/tmp/systemd-private-900b7fe7083f4bd2a59fb3e5ba941c3b-ModemManager.service-h5G15y': Operation not permitted
+rm: cannot remove '/tmp/.ICE-unix': Operation not permitted
+rm: cannot remove '/tmp/systemd-private-900b7fe7083f4bd2a59fb3e5ba941c3b-systemd-resolved.service-lZAkcr': Operation not permitted
+maxiter=  9999
+maxcer=  2
+________________________________________________________________________
+Makefile:440: warning: overriding recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:437: warning: ignoring old recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:446: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:443: warning: ignoring old recipe for target 'data/Latin.unicharset'
+rm: cannot remove 'data/engFineTuned-final.traineddata': No such file or directory
+rm: cannot remove 'data/logs/engFineTuned.LOG': No such file or directory
+________________________________________________________________________
+________________________________________________________________________
+Makefile:440: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:437: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:446: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:443: warning: ignoring old recipe for target 'data/Latin.unicharset'
+make: Circular data/Latin.unicharset <- data/Latin.unicharset dependency dropped.
+mkdir -p data/engFineTuned
+python3 ./tesstrain.py \
+ --fonts_dir /usr/share/fonts \
+ --fontlist "Arial" "FreeSerif"  \
+ --maxpages 0 \
+ --lang eng \
+ --langdata_dir data \
+ --training_text data/engFineTuned-eval.training_text \
+ --tessdata_dir data \
+ --linedata_only --noextract_font_properties \
+ --exposures "0" \
+ --save_box_tiff \
+ --output_dir data/ground-truth/engFineTuned-eval
+[05:23:46] INFO - Log file location: /tmp/eng-2022-02-034pln5zuh/tesstrain.log
+[05:23:46] INFO - === Starting training for language eng
+[05:23:46] INFO - Testing font: Arial
+[05:23:52] INFO - === Phase I: Generating training images ===
+  0%|          | 0/2 [00:00<?, ?it/s][05:23:53] INFO - Rendering using Arial
+[05:23:54] INFO - Rendering using FreeSerif
+ 50%|█████     | 1/2 [00:01<00:01,  1.53s/it]100%|██████████| 2/2 [00:03<00:00,  1.54s/it]100%|██████████| 2/2 [00:03<00:00,  1.54s/it]
+[05:23:56] INFO - === Phase UP: Generating unicharset and unichar properties files ===
+[05:23:56] INFO - === Phase E: Generating lstmf files using ['lstm.train']===
+[05:23:56] INFO - Using TESSDATA_PREFIX=data
+  0%|          | 0/2 [00:00<?, ?it/s] 50%|█████     | 1/2 [00:01<00:01,  1.28s/it]100%|██████████| 2/2 [00:01<00:00,  1.50it/s]
+[05:23:57] INFO - === Constructing LSTM training data ===
+[05:23:57] INFO - Creating new directory data/ground-truth/engFineTuned-eval
+[05:23:57] INFO - === Saving box/tiff pairs for training data ===
+[05:23:57] INFO - === Moving lstmf files for training data ===
+[05:23:57] INFO - All done!
+mv -v data/ground-truth/engFineTuned-eval/eng.training_files.txt data/engFineTuned/list.eval
+renamed 'data/ground-truth/engFineTuned-eval/eng.training_files.txt' -> 'data/engFineTuned/list.eval'
+sed -i -e '$a\' data/engFineTuned/list.eval
+mv -v data/ground-truth/engFineTuned-eval/eng/eng.* data/engFineTuned/
+renamed 'data/ground-truth/engFineTuned-eval/eng/eng.charset_size=103.txt' -> 'data/engFineTuned/eng.charset_size=103.txt'
+renamed 'data/ground-truth/engFineTuned-eval/eng/eng.traineddata' -> 'data/engFineTuned/eng.traineddata'
+renamed 'data/ground-truth/engFineTuned-eval/eng/eng.unicharset' -> 'data/engFineTuned/eng.unicharset'
+rename "s/eng\./engFineTuned-eval\./g" data/engFineTuned/*.*
+removed directory 'data/ground-truth/engFineTuned-eval/eng'
+bash box2gt.sh data/ground-truth/engFineTuned-eval 
+creating gt from box files for  data/ground-truth/engFineTuned-eval
+python3 ./tesstrain.py \
+ --fonts_dir /usr/share/fonts \
+ --fontlist "Impact Condensed"  \
+ --maxpages 0 \
+ --lang eng \
+ --langdata_dir data \
+ --training_text data/engFineTuned-train.training_text \
+ --tessdata_dir data \
+ --linedata_only --noextract_font_properties \
+ --exposures "0" \
+ --save_box_tiff \
+ --output_dir data/ground-truth/engFineTuned-train
+[05:23:58] INFO - Log file location: /tmp/eng-2022-02-03d4lt9e3x/tesstrain.log
+[05:23:58] INFO - === Starting training for language eng
+[05:23:58] INFO - Testing font: Impact Condensed
+[05:24:04] INFO - === Phase I: Generating training images ===
+  0%|          | 0/1 [00:00<?, ?it/s][05:24:04] INFO - Rendering using Impact Condensed
+100%|██████████| 1/1 [00:15<00:00, 15.93s/it]100%|██████████| 1/1 [00:15<00:00, 15.93s/it]
+[05:24:20] INFO - === Phase UP: Generating unicharset and unichar properties files ===
+[05:24:20] INFO - === Phase E: Generating lstmf files using ['lstm.train']===
+[05:24:20] INFO - Using TESSDATA_PREFIX=data
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:12<00:00, 12.85s/it]100%|██████████| 1/1 [00:12<00:00, 12.85s/it]
+[05:24:33] INFO - === Constructing LSTM training data ===
+[05:24:33] INFO - Creating new directory data/ground-truth/engFineTuned-train
+[05:24:33] INFO - === Saving box/tiff pairs for training data ===
+[05:24:33] INFO - === Moving lstmf files for training data ===
+[05:24:33] INFO - All done!
+mv -v data/ground-truth/engFineTuned-train/eng.training_files.txt data/engFineTuned/list.train
+renamed 'data/ground-truth/engFineTuned-train/eng.training_files.txt' -> 'data/engFineTuned/list.train'
+sed -i -e '$a\' data/engFineTuned/list.train
+mv -v data/ground-truth/engFineTuned-train/eng/eng.* data/engFineTuned/
+renamed 'data/ground-truth/engFineTuned-train/eng/eng.charset_size=111.txt' -> 'data/engFineTuned/eng.charset_size=111.txt'
+renamed 'data/ground-truth/engFineTuned-train/eng/eng.traineddata' -> 'data/engFineTuned/eng.traineddata'
+renamed 'data/ground-truth/engFineTuned-train/eng/eng.unicharset' -> 'data/engFineTuned/eng.unicharset'
+rename "s/eng\./engFineTuned-train\./g" data/engFineTuned/*.*
+cp -v data/engFineTuned/engFineTuned-train.traineddata data/engFineTuned/engFineTuned-proto.traineddata
+'data/engFineTuned/engFineTuned-train.traineddata' -> 'data/engFineTuned/engFineTuned-proto.traineddata'
+combine_tessdata -dl data/engFineTuned/engFineTuned-proto.traineddata
+Version:5.0.1-6-g24e6
+18:lstm-punc-dawg:size=4322, offset=192
+20:lstm-number-dawg:size=4618, offset=4514
+21:lstm-unicharset:size=7409, offset=9132
+22:lstm-recoder:size=1012, offset=16541
+23:version:size=13, offset=17553
+removed directory 'data/ground-truth/engFineTuned-train/eng'
+bash box2gt.sh data/ground-truth/engFineTuned-train
+creating gt from box files for  data/ground-truth/engFineTuned-train
+________________________________________________________________________
+Makefile:440: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:437: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:446: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:443: warning: ignoring old recipe for target 'data/Latin.unicharset'
+make: Circular data/Latin.unicharset <- data/Latin.unicharset dependency dropped.
+lstmtraining \
+  --continue_from data/eng/eng.lstm --old_traineddata data/eng.traineddata \
+  --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+  --train_listfile data/engFineTuned/list.train \
+  --eval_listfile data/engFineTuned/list.eval \
+  --max_iterations 9999 \
+  --debug_interval 0 \
+  --learning_rate 0.0001 \
+  --target_error_rate 0.01 \
+  --model_output data/engFineTuned/checkpoints/engFineTuned \
+  > data/logs/engFineTuned.LOG  2>&1
+lstmtraining \
+--stop_training \
+--continue_from data/engFineTuned/checkpoints/engFineTuned_checkpoint \
+--traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+--model_output data/engFineTuned-final.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_checkpoint, unpacking...
+finetune_font.sh: line 66: g: command not found
+________________________________________________________________________
+Makefile:440: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:437: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:446: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:443: warning: ignoring old recipe for target 'data/Latin.unicharset'
+mkdir data/engFineTuned/tessdata_best
+mkdir data/engFineTuned/tessdata_fast
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.008000_162_2500.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.008000_162_2500.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.008000_162_2500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.018000_162_2400.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.018000_162_2400.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.018000_162_2400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.020000_162_2300.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.020000_162_2300.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.020000_162_2300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.026000_162_2200.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.026000_162_2200.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.026000_162_2200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.031000_162_2100.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.031000_162_2100.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.031000_162_2100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.037000_161_2000.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.037000_161_2000.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.037000_161_2000.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.053000_160_1900.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.053000_160_1900.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.053000_160_1900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.063000_160_1800.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.063000_160_1800.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.063000_160_1800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.079000_159_1700.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.079000_159_1700.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.079000_159_1700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.099000_159_1600.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.099000_159_1600.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.099000_159_1600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.110000_158_1500.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.110000_158_1500.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.110000_158_1500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.169000_154_1400.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.169000_154_1400.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.169000_154_1400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.201000_154_1300.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.201000_154_1300.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.201000_154_1300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.274000_152_1200.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.274000_152_1200.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.274000_152_1200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.341000_150_1100.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.341000_150_1100.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.341000_150_1100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.443000_148_1000.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.443000_148_1000.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.443000_148_1000.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.471000_140_900.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.471000_140_900.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.471000_140_900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.518000_137_800.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.518000_137_800.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.518000_137_800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.565000_128_700.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.565000_128_700.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.565000_128_700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.626000_121_600.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.626000_121_600.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.626000_121_600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.736000_92_400.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.736000_92_400.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.736000_92_400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.865000_78_300.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.865000_78_300.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.865000_78_300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.906000_57_200.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_0.906000_57_200.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.906000_57_200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_1.091000_33_100.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --model_output data/engFineTuned/tessdata_best/engFineTuned_1.091000_33_100.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_1.091000_33_100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.008000_162_2500.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.008000_162_2500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.018000_162_2400.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.018000_162_2400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.020000_162_2300.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.020000_162_2300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.026000_162_2200.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.026000_162_2200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.031000_162_2100.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.031000_162_2100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.037000_161_2000.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.037000_161_2000.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.053000_160_1900.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.053000_160_1900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.063000_160_1800.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.063000_160_1800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.079000_159_1700.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.079000_159_1700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.099000_159_1600.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.099000_159_1600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.110000_158_1500.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.110000_158_1500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.169000_154_1400.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.169000_154_1400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.201000_154_1300.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.201000_154_1300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.274000_152_1200.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.274000_152_1200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.341000_150_1100.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.341000_150_1100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.443000_148_1000.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.443000_148_1000.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.471000_140_900.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.471000_140_900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.518000_137_800.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.518000_137_800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.565000_128_700.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.565000_128_700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.626000_121_600.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.626000_121_600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.736000_92_400.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.736000_92_400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.865000_78_300.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.865000_78_300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_0.906000_57_200.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_0.906000_57_200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engFineTuned/checkpoints/engFineTuned_1.091000_33_100.checkpoint \
+          --traineddata data/engFineTuned/engFineTuned-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engFineTuned/tessdata_fast/engFineTuned_1.091000_33_100.traineddata
+Loaded file data/engFineTuned/checkpoints/engFineTuned_1.091000_33_100.checkpoint, unpacking...
+________________________________________________________________________
+Makefile:440: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:437: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:446: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:443: warning: ignoring old recipe for target 'data/Latin.unicharset'
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.eval.log
+real 19.30
+user 60.22
+sys 0.63
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.eval.log
+real 19.36
+user 60.27
+sys 0.58
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.eval.log
+real 19.23
+user 59.97
+sys 0.54
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.eval.log
+real 19.09
+user 59.93
+sys 0.57
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.eval.log
+real 19.07
+user 59.80
+sys 0.61
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.eval.log
+real 19.14
+user 59.84
+sys 0.46
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.eval.log
+real 19.00
+user 59.54
+sys 0.58
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.eval.log
+real 19.10
+user 59.91
+sys 0.58
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.eval.log
+real 19.01
+user 59.56
+sys 0.63
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.eval.log
+real 19.08
+user 59.91
+sys 0.53
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.eval.log
+real 19.04
+user 59.60
+sys 0.55
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.eval.log
+real 19.08
+user 59.54
+sys 0.55
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.eval.log
+real 19.05
+user 59.78
+sys 0.56
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.eval.log
+real 19.02
+user 59.63
+sys 0.56
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.eval.log
+real 19.01
+user 59.65
+sys 0.46
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.eval.log
+real 19.05
+user 59.74
+sys 0.58
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.eval.log
+real 19.09
+user 59.87
+sys 0.55
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.eval.log
+real 19.11
+user 59.64
+sys 0.63
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.eval.log
+real 19.08
+user 59.66
+sys 0.51
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.eval.log
+real 18.98
+user 59.50
+sys 0.66
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.eval.log
+real 19.03
+user 59.64
+sys 0.62
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.eval.log
+real 19.02
+user 59.60
+sys 0.62
+echo data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.eval.log
+data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.traineddata data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.eval.log
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.traineddata \
+	--eval_listfile data/engFineTuned/list.eval 2>&1 | grep "^BCER eval" > data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.eval.log
+real 18.99
+user 59.45
+sys 0.61
+sed -i '/^Filename/N;s/\n/ /' data/engFineTuned/tmp/engFineTuned-lstmeval.log
+sort -n -r -o data/engFineTuned/tmp/engFineTuned-lstmeval.log data/engFineTuned/tmp/engFineTuned-lstmeval.log
+sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/engFineTuned/tmp/engFineTuned-lstmeval.log > data/engFineTuned/reports/engFineTuned-lstmeval.txt
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.201000_154_1300'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.02
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.201000_154_1300/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.201000_154_1300/img.txt': No such file or directory
+Feb 03, 2022 5:50:06 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:06 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.865000_78_300'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.00
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.865000_78_300/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.865000_78_300/img.txt': No such file or directory
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:07 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.341000_150_1100'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.341000_150_1100/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.341000_150_1100/img.txt': No such file or directory
+Feb 03, 2022 5:50:08 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:08 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:08 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:08 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:08 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:08 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:08 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:08 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.443000_148_1000'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.02
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.443000_148_1000/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.443000_148_1000/img.txt': No such file or directory
+Feb 03, 2022 5:50:08 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.110000_158_1500'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.110000_158_1500/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.110000_158_1500/img.txt': No such file or directory
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:09 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.169000_154_1400'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.169000_154_1400/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.169000_154_1400/img.txt': No such file or directory
+Feb 03, 2022 5:50:10 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:10 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:10 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:10 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:10 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:10 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:10 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:10 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.906000_57_200'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.906000_57_200/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.906000_57_200/img.txt': No such file or directory
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.099000_159_1600'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.00
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.099000_159_1600/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.099000_159_1600/img.txt': No such file or directory
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:11 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:12 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:12 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.026000_162_2200'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.026000_162_2200/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.026000_162_2200/img.txt': No such file or directory
+Feb 03, 2022 5:50:12 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:12 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:12 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:12 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:12 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:12 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:12 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:12 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.079000_159_1700'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.079000_159_1700/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.079000_159_1700/img.txt': No such file or directory
+Feb 03, 2022 5:50:13 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:13 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:13 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:13 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:13 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:13 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:13 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:13 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.018000_162_2400'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.018000_162_2400/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.018000_162_2400/img.txt': No such file or directory
+Feb 03, 2022 5:50:13 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.626000_121_600'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.626000_121_600/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.626000_121_600/img.txt': No such file or directory
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:14 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.020000_162_2300'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.020000_162_2300/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.020000_162_2300/img.txt': No such file or directory
+Feb 03, 2022 5:50:15 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:15 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:15 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:15 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:15 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:15 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:15 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:15 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.518000_137_800'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.518000_137_800/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.518000_137_800/img.txt': No such file or directory
+Feb 03, 2022 5:50:16 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:16 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:16 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:16 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:16 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:16 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:16 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:16 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.008000_162_2500'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.008000_162_2500/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.008000_162_2500/img.txt': No such file or directory
+Feb 03, 2022 5:50:16 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:16 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:16 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.274000_152_1200'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.274000_152_1200/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.274000_152_1200/img.txt': No such file or directory
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:17 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.063000_160_1800'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.063000_160_1800/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.063000_160_1800/img.txt': No such file or directory
+Feb 03, 2022 5:50:18 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:18 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:18 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:18 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:18 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:18 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:18 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:18 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.471000_140_900'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.471000_140_900/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.471000_140_900/img.txt': No such file or directory
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.736000_92_400'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.736000_92_400/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.736000_92_400/img.txt': No such file or directory
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:19 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.053000_160_1900'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.053000_160_1900/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.053000_160_1900/img.txt': No such file or directory
+Feb 03, 2022 5:50:20 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:20 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:20 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:20 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:20 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:20 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:20 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:20 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.565000_128_700'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.565000_128_700/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.565000_128_700/img.txt': No such file or directory
+Feb 03, 2022 5:50:21 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:21 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:21 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:21 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:21 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:21 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:21 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:21 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.037000_161_2000'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.037000_161_2000/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.037000_161_2000/img.txt': No such file or directory
+Feb 03, 2022 5:50:21 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:21 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.031000_162_2100'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.00
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.031000_162_2100/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.031000_162_2100/img.txt': No such file or directory
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:22 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep '<td>CER</td><td>' data/engFineTuned/tessdata_fast/engFineTuned*.ocrevaluation.html > data/engFineTuned/reports/engFineTuned-ocreval.txt
+grep: data/engFineTuned/tessdata_fast/engFineTuned*.ocrevaluation.html: No such file or directory
+Makefile:313: recipe for target 'data/engFineTuned/reports/engFineTuned-ocreval.txt' failed
+make: *** [data/engFineTuned/reports/engFineTuned-ocreval.txt] Error 2
+________________________________________________________________________
+Makefile:440: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:437: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:446: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:443: warning: ignoring old recipe for target 'data/Latin.unicharset'
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.201000_154_1300'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.201000_154_1300/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.201000_154_1300/img.txt': No such file or directory
+Feb 03, 2022 5:50:23 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:23 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:23 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:23 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:23 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:23 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:23 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:23 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.201000_154_1300.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.865000_78_300'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.865000_78_300/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.865000_78_300/img.txt': No such file or directory
+Feb 03, 2022 5:50:23 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.341000_150_1100'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.02
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.341000_150_1100/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.341000_150_1100/img.txt': No such file or directory
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:24 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.443000_148_1000'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.443000_148_1000/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.443000_148_1000/img.txt': No such file or directory
+Feb 03, 2022 5:50:25 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:25 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:25 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:25 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:25 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:25 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:25 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:25 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.110000_158_1500'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.110000_158_1500/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.110000_158_1500/img.txt': No such file or directory
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.169000_154_1400'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.00
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.169000_154_1400/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.169000_154_1400/img.txt': No such file or directory
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:26 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.906000_57_200'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.906000_57_200/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.906000_57_200/img.txt': No such file or directory
+Feb 03, 2022 5:50:27 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:27 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:27 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:27 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:27 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:27 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:27 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:27 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.099000_159_1600'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.00
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.099000_159_1600/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.099000_159_1600/img.txt': No such file or directory
+Feb 03, 2022 5:50:28 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:28 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:28 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:28 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:28 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:28 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:28 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:28 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.026000_162_2200'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.026000_162_2200/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.026000_162_2200/img.txt': No such file or directory
+Feb 03, 2022 5:50:28 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.079000_159_1700'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.079000_159_1700/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.079000_159_1700/img.txt': No such file or directory
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:29 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.018000_162_2400'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.018000_162_2400/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.018000_162_2400/img.txt': No such file or directory
+Feb 03, 2022 5:50:30 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:30 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:30 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:30 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:30 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:30 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:30 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:30 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.626000_121_600'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.00
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.626000_121_600/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.626000_121_600/img.txt': No such file or directory
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.020000_162_2300'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.020000_162_2300/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.020000_162_2300/img.txt': No such file or directory
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:31 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.518000_137_800'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.518000_137_800/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.518000_137_800/img.txt': No such file or directory
+Feb 03, 2022 5:50:32 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:32 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:32 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:32 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:32 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:32 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:32 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:32 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.008000_162_2500'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.008000_162_2500/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.008000_162_2500/img.txt': No such file or directory
+Feb 03, 2022 5:50:33 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:33 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:33 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:33 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:33 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:33 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:33 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:33 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.274000_152_1200'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.274000_152_1200/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.274000_152_1200/img.txt': No such file or directory
+Feb 03, 2022 5:50:33 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.063000_160_1800'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.00
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.063000_160_1800/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.063000_160_1800/img.txt': No such file or directory
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:34 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.471000_140_900'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.471000_140_900/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.471000_140_900/img.txt': No such file or directory
+Feb 03, 2022 5:50:35 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:35 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:35 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:35 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:35 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:35 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:35 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:35 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.565000_128_700'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.565000_128_700/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.565000_128_700/img.txt': No such file or directory
+Feb 03, 2022 5:50:35 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.736000_92_400'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.736000_92_400/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.736000_92_400/img.txt': No such file or directory
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:36 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.053000_160_1900'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.053000_160_1900/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.053000_160_1900/img.txt': No such file or directory
+Feb 03, 2022 5:50:37 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:37 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:37 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:37 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:37 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:37 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:37 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:37 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.037000_161_2000'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.01
+cat: data/engFineTuned/reports//engFineTuned_0.037000_161_2000/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.037000_161_2000/img.txt': No such file or directory
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.traineddata
+Failed to read /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.traineddata
+Error opening data file /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.traineddata
+Please make sure the TESSDATA_PREFIX environment variable is set to your "tessdata" directory.
+Failed loading language 'engFineTuned_0.031000_162_2100'
+Tesseract couldn't load any languages!
+Could not initialize tesseract.
+real 0.02
+user 0.01
+sys 0.00
+cat: data/engFineTuned/reports//engFineTuned_0.031000_162_2100/img.txt: No such file or directory
+cat: '/home/ubuntu/tesstrain-fonts/data/ground-truth/engFineTuned-eval/*.gt.txt': No such file or directory
+rm: cannot remove 'data/engFineTuned/reports//engFineTuned_0.031000_162_2100/img.txt': No such file or directory
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:50:38 AM eu.digitisation.utils.log.Messages info
+INFO: eu.digitisation.utils.xml.DocumentParser: javax.xml.transform.TransformerException: java.io.FileNotFoundException: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.ocrevaluation.html (No such file or directory)
+ocreval.sh: line 39: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.accuracy.txt: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep: /home/ubuntu/tesstrain-fonts/data/engFineTuned/tessdata_fast/*.html: No such file or directory
+grep '<td>CER</td><td>' data/engFineTuned/tessdata_fast/engFineTuned*.ocrevaluation.html > data/engFineTuned/reports/engFineTuned-ocreval.txt
+grep: data/engFineTuned/tessdata_fast/engFineTuned*.ocrevaluation.html: No such file or directory
+Makefile:313: recipe for target 'data/engFineTuned/reports/engFineTuned-ocreval.txt' failed
+make: *** [data/engFineTuned/reports/engFineTuned-ocreval.txt] Error 2
+________________________________________________________________________

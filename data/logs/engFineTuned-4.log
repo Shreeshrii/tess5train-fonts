@@ -1,0 +1,532 @@
+________________________________________________________________________
+Makefile:439: warning: overriding recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:436: warning: ignoring old recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:445: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:442: warning: ignoring old recipe for target 'data/Latin.unicharset'
+________________________________________________________________________
+Makefile:439: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:436: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:445: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:442: warning: ignoring old recipe for target 'data/Latin.unicharset'
+sed -i '/^Filename/N;s/\n/ /' data/engFineTuned/tmp/engFineTuned-lstmeval.log
+sort -n -r -o data/engFineTuned/tmp/engFineTuned-lstmeval.log data/engFineTuned/tmp/engFineTuned-lstmeval.log
+sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/engFineTuned/tmp/engFineTuned-lstmeval.log > data/engFineTuned/reports/engFineTuned-lstmeval.txt
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.865000_78_300.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=300, sample_iteration=300, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.96
+user 29.35
+sys 0.29
+real 9.64
+user 28.47
+sys 0.32
+Feb 03, 2022 5:56:31 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:56:31 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:56:31 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:56:31 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:56:31 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:56:31 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:56:31 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.341000_150_1100.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1100, sample_iteration=1100, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.95
+user 29.37
+sys 0.27
+real 9.62
+user 28.45
+sys 0.26
+Feb 03, 2022 5:56:53 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:56:53 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:56:53 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:56:53 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:56:53 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:56:53 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:56:53 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.443000_148_1000.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1000, sample_iteration=1000, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.03
+user 29.48
+sys 0.32
+real 9.65
+user 28.56
+sys 0.26
+Feb 03, 2022 5:57:15 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:57:16 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:57:16 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:57:16 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:57:16 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:57:16 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:57:16 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.110000_158_1500.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1500, sample_iteration=1500, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.98
+user 29.41
+sys 0.30
+real 9.66
+user 28.55
+sys 0.28
+Feb 03, 2022 5:57:38 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:57:38 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:57:38 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:57:38 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:57:38 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:57:38 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:57:38 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.169000_154_1400.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1400, sample_iteration=1400, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.99
+user 29.46
+sys 0.29
+real 9.62
+user 28.38
+sys 0.35
+Feb 03, 2022 5:58:00 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:58:00 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:58:00 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:58:00 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:58:00 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:58:00 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:58:01 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.906000_57_200.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=200, sample_iteration=200, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.96
+user 29.30
+sys 0.31
+real 9.64
+user 28.51
+sys 0.24
+Feb 03, 2022 5:58:23 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:58:23 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:58:23 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:58:23 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:58:23 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:58:23 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:58:23 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.099000_159_1600.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1600, sample_iteration=1600, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.98
+user 29.47
+sys 0.26
+real 9.71
+user 28.71
+sys 0.28
+Feb 03, 2022 5:58:45 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:58:45 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:58:45 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:58:45 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:58:45 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:58:45 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:58:45 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.026000_162_2200.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2200, sample_iteration=2200, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.94
+user 29.29
+sys 0.30
+real 9.64
+user 28.37
+sys 0.36
+Feb 03, 2022 5:59:08 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:59:08 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:59:08 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:59:08 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:59:08 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:59:08 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:59:08 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.079000_159_1700.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1700, sample_iteration=1700, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.96
+user 29.33
+sys 0.30
+real 9.61
+user 28.45
+sys 0.24
+Feb 03, 2022 5:59:30 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:59:30 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:59:30 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:59:30 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:59:30 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:59:30 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:59:30 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.018000_162_2400.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2400, sample_iteration=2400, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.93
+user 29.28
+sys 0.29
+real 9.62
+user 28.40
+sys 0.31
+Feb 03, 2022 5:59:52 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:59:53 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:59:53 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:59:53 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:59:53 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:59:53 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:59:53 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.626000_121_600.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=600, sample_iteration=600, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.00
+user 29.41
+sys 0.38
+real 9.66
+user 28.53
+sys 0.31
+Feb 03, 2022 6:00:15 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:00:15 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:00:15 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:00:15 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:00:15 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:00:15 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:00:15 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.020000_162_2300.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2300, sample_iteration=2300, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.96
+user 29.30
+sys 0.34
+real 9.75
+user 28.68
+sys 0.32
+Feb 03, 2022 6:00:37 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:00:38 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:00:38 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:00:38 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:00:38 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:00:38 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:00:38 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.518000_137_800.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=800, sample_iteration=800, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.93
+user 29.33
+sys 0.27
+real 9.87
+user 28.72
+sys 0.31
+Feb 03, 2022 6:01:00 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:01:00 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:01:00 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:01:00 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:01:00 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:01:00 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:01:00 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.008000_162_2500.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2500, sample_iteration=2500, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.95
+user 29.31
+sys 0.29
+real 9.63
+user 28.48
+sys 0.26
+Feb 03, 2022 6:01:22 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:01:23 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:01:23 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:01:23 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:01:23 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:01:23 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:01:23 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.274000_152_1200.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1200, sample_iteration=1200, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.94
+user 29.28
+sys 0.31
+real 9.64
+user 28.53
+sys 0.25
+Feb 03, 2022 6:01:45 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:01:45 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:01:45 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:01:45 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:01:45 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:01:45 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:01:45 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.063000_160_1800.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1800, sample_iteration=1800, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.00
+user 29.42
+sys 0.33
+real 9.64
+user 28.48
+sys 0.31
+Feb 03, 2022 6:02:07 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:02:07 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:02:07 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:02:07 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:02:07 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:02:07 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:02:08 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.471000_140_900.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=900, sample_iteration=900, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.00
+user 29.42
+sys 0.33
+real 9.62
+user 28.47
+sys 0.30
+Feb 03, 2022 6:02:30 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:02:30 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:02:30 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:02:30 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:02:30 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:02:30 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:02:30 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.565000_128_700.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=700, sample_iteration=700, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.97
+user 29.38
+sys 0.28
+real 9.65
+user 28.55
+sys 0.29
+Feb 03, 2022 6:02:52 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:02:52 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:02:52 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:02:52 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:02:52 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:02:52 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:02:52 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.736000_92_400.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=400, sample_iteration=400, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.98
+user 29.39
+sys 0.32
+real 9.63
+user 28.52
+sys 0.24
+Feb 03, 2022 6:03:15 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:03:15 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:03:15 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:03:15 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:03:15 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:03:15 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:03:15 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.053000_160_1900.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1900, sample_iteration=1900, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.00
+user 29.45
+sys 0.24
+real 9.72
+user 28.80
+sys 0.28
+Feb 03, 2022 6:03:37 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:03:37 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:03:37 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:03:37 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:03:37 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:03:37 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:03:37 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.037000_161_2000.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2000, sample_iteration=2000, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.01
+user 29.48
+sys 0.34
+real 9.66
+user 28.54
+sys 0.32
+Feb 03, 2022 6:04:00 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:04:00 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:04:00 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:04:00 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:04:00 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:04:00 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:04:00 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engFineTuned data/engFineTuned/tessdata_fast/engFineTuned_0.031000_162_2100.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2100, sample_iteration=2100, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 9.94
+user 29.28
+sys 0.30
+real 9.66
+user 28.54
+sys 0.30
+Feb 03, 2022 6:04:22 AM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:04:22 AM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:04:22 AM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:04:22 AM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:04:22 AM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:04:22 AM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:04:22 AM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+grep '<td>CER</td><td>' data/engFineTuned/tessdata_fast/engFineTuned*.ocrevaluation.html > data/engFineTuned/reports/engFineTuned-ocreval.txt
+sort -n -r -o data/engFineTuned/reports/engFineTuned-ocreval.txt data/engFineTuned/reports/engFineTuned-ocreval.txt
+________________________________________________________________________
+Makefile:439: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:436: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:445: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:442: warning: ignoring old recipe for target 'data/Latin.unicharset'
+sed -i '/^Filename/N;s/\n/ /' data/engFineTuned/tmp/engFineTuned-lstmeval.log
+sort -n -r -o data/engFineTuned/tmp/engFineTuned-lstmeval.log data/engFineTuned/tmp/engFineTuned-lstmeval.log
+sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/engFineTuned/tmp/engFineTuned-lstmeval.log > data/engFineTuned/reports/engFineTuned-lstmeval.txt
+python plot_LOG.py engFineTuned,2,data/engFineTuned/tmp/engFineTuned-iteration.tsv,data/engFineTuned/tmp/engFineTuned-checkpoint.tsv,data/engFineTuned/tmp/engFineTuned-eval.tsv,data/engFineTuned/tmp/engFineTuned-sub.tsv
+python plot_cer.py engFineTuned,2,data/engFineTuned/tmp/engFineTuned-iteration.tsv,data/engFineTuned/tmp/engFineTuned-checkpoint.tsv,data/engFineTuned/tmp/engFineTuned-eval.tsv,data/engFineTuned/tmp/engFineTuned-sub.tsv,data/engFineTuned/tmp/engFineTuned-lstmeval.tsv,data/engFineTuned/tmp/engFineTuned-ocreval.tsv
+________________________________________________________________________

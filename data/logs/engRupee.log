@@ -1,0 +1,207 @@
+rm: cannot remove '/tmp/.font-unix': Operation not permitted
+rm: cannot remove '/tmp/systemd-private-900b7fe7083f4bd2a59fb3e5ba941c3b-systemd-timesyncd.service-DnpItT': Operation not permitted
+rm: cannot remove '/tmp/.X11-unix': Operation not permitted
+rm: cannot remove '/tmp/.XIM-unix': Operation not permitted
+rm: cannot remove '/tmp/.Test-unix': Operation not permitted
+rm: cannot remove '/tmp/systemd-private-900b7fe7083f4bd2a59fb3e5ba941c3b-ModemManager.service-h5G15y': Operation not permitted
+rm: cannot remove '/tmp/.ICE-unix': Operation not permitted
+rm: cannot remove '/tmp/systemd-private-900b7fe7083f4bd2a59fb3e5ba941c3b-systemd-resolved.service-lZAkcr': Operation not permitted
+maxiter=  99999
+maxcer=  2
+________________________________________________________________________
+rm: cannot remove '/tmp/.font-unix': Operation not permitted
+rm: cannot remove '/tmp/systemd-private-900b7fe7083f4bd2a59fb3e5ba941c3b-systemd-timesyncd.service-DnpItT': Operation not permitted
+rm: cannot remove '/tmp/.X11-unix': Operation not permitted
+rm: cannot remove '/tmp/.XIM-unix': Operation not permitted
+rm: cannot remove '/tmp/.Test-unix': Operation not permitted
+rm: cannot remove '/tmp/systemd-private-900b7fe7083f4bd2a59fb3e5ba941c3b-ModemManager.service-h5G15y': Operation not permitted
+rm: cannot remove '/tmp/.ICE-unix': Operation not permitted
+rm: cannot remove '/tmp/systemd-private-900b7fe7083f4bd2a59fb3e5ba941c3b-systemd-resolved.service-lZAkcr': Operation not permitted
+________________________________________________________________________
+Makefile:450: warning: overriding recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:447: warning: ignoring old recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:456: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:453: warning: ignoring old recipe for target 'data/Latin.unicharset'
+rm: cannot remove 'data/engRupee-final.traineddata': No such file or directory
+________________________________________________________________________
+________________________________________________________________________
+Makefile:450: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:447: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:456: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:453: warning: ignoring old recipe for target 'data/Latin.unicharset'
+make: Circular data/Latin.unicharset <- data/Latin.unicharset dependency dropped.
+mkdir -p data/engRupee
+python3 ./tesstrain.py \
+ --fonts_dir /usr/share/fonts \
+  \
+ --maxpages 0 \
+ --lang eng \
+ --langdata_dir data \
+ --training_text data/engRupee-eval.training_text \
+ --tessdata_dir data \
+ --linedata_only --noextract_font_properties \
+ --exposures "0" \
+ --save_box_tiff \
+ --output_dir data/ground-truth/engRupee-eval
+[13:34:05] INFO - Log file location: /tmp/eng-2022-02-035eo4nzmf/tesstrain.log
+[13:34:05] INFO - === Starting training for language eng
+[13:34:05] INFO - Testing font: Arial Bold
+[13:34:11] INFO - === Phase I: Generating training images ===
+  0%|          | 0/32 [00:00<?, ?it/s][13:34:11] INFO - Rendering using Arial Bold
+[13:34:13] INFO - Rendering using Arial Bold Italic
+  3%|▎         | 1/32 [00:01<00:49,  1.58s/it][13:34:15] INFO - Rendering using Arial Italic
+  6%|▋         | 2/32 [00:03<00:47,  1.58s/it][13:34:16] INFO - Rendering using Arial
+  9%|▉         | 3/32 [00:04<00:45,  1.58s/it][13:34:18] INFO - Rendering using Courier New Bold
+ 12%|█▎        | 4/32 [00:06<00:44,  1.57s/it][13:34:21] INFO - Rendering using Courier New Bold Italic
+ 16%|█▌        | 5/32 [00:09<00:53,  1.99s/it][13:34:24] INFO - Rendering using Courier New Italic
+ 19%|█▉        | 6/32 [00:12<00:59,  2.28s/it][13:34:27] INFO - Rendering using Courier New
+ 22%|██▏       | 7/32 [00:15<01:02,  2.48s/it][13:34:29] INFO - Rendering using Times New Roman, Bold
+ 25%|██▌       | 8/32 [00:18<01:02,  2.62s/it][13:34:31] INFO - Rendering using Times New Roman, Bold Italic
+ 28%|██▊       | 9/32 [00:19<00:53,  2.31s/it][13:34:33] INFO - Rendering using Times New Roman, Italic
+ 31%|███▏      | 10/32 [00:21<00:45,  2.08s/it][13:34:34] INFO - Rendering using Times New Roman,
+ 34%|███▍      | 11/32 [00:22<00:40,  1.93s/it][13:34:36] INFO - Rendering using Georgia Bold
+ 38%|███▊      | 12/32 [00:24<00:36,  1.82s/it][13:34:37] INFO - Rendering using Georgia Italic
+ 41%|████      | 13/32 [00:25<00:33,  1.74s/it][13:34:39] INFO - Rendering using Georgia
+ 44%|████▍     | 14/32 [00:27<00:30,  1.69s/it][13:34:40] INFO - Rendering using Georgia Bold Italic
+ 47%|████▋     | 15/32 [00:29<00:28,  1.65s/it][13:34:42] INFO - Rendering using Trebuchet MS Bold
+ 50%|█████     | 16/32 [00:30<00:25,  1.62s/it][13:34:44] INFO - Rendering using Trebuchet MS Bold Italic
+ 53%|█████▎    | 17/32 [00:32<00:24,  1.60s/it][13:34:45] INFO - Rendering using Trebuchet MS Italic
+ 56%|█████▋    | 18/32 [00:33<00:22,  1.59s/it][13:34:47] INFO - Rendering using Trebuchet MS
+ 59%|█████▉    | 19/32 [00:35<00:20,  1.58s/it][13:34:48] INFO - Rendering using Verdana Bold
+ 62%|██████▎   | 20/32 [00:36<00:18,  1.57s/it][13:34:51] INFO - Rendering using Verdana Italic
+ 66%|██████▌   | 21/32 [00:39<00:21,  1.98s/it][13:34:54] INFO - Rendering using Verdana
+ 69%|██████▉   | 22/32 [00:42<00:22,  2.27s/it][13:34:57] INFO - Rendering using Verdana Bold Italic
+ 72%|███████▏  | 23/32 [00:45<00:22,  2.48s/it][13:35:00] INFO - Rendering using Tex Gyre Bonum Bold
+ 75%|███████▌  | 24/32 [00:48<00:21,  2.63s/it][13:35:03] INFO - Rendering using Tex Gyre Bonum Italic
+ 78%|███████▊  | 25/32 [00:51<00:19,  2.73s/it][13:35:06] INFO - Rendering using Tex Gyre Bonum Bold Italic
+ 81%|████████▏ | 26/32 [00:54<00:16,  2.80s/it][13:35:09] INFO - Rendering using Tex Gyre Schola Bold
+ 84%|████████▍ | 27/32 [00:57<00:14,  2.85s/it][13:35:12] INFO - Rendering using Tex Gyre Schola Italic
+ 88%|████████▊ | 28/32 [01:00<00:11,  2.88s/it][13:35:15] INFO - Rendering using Tex Gyre Schola Bold Italic
+ 91%|█████████ | 29/32 [01:03<00:08,  2.91s/it][13:35:18] INFO - Rendering using Tex Gyre Schola Regular
+ 94%|█████████▍| 30/32 [01:06<00:05,  2.93s/it][13:35:21] INFO - Rendering using DejaVu Sans Ultra-Light
+ 97%|█████████▋| 31/32 [01:09<00:02,  2.94s/it]100%|██████████| 32/32 [01:11<00:00,  2.53s/it]100%|██████████| 32/32 [01:11<00:00,  2.22s/it]
+[13:35:22] INFO - === Phase UP: Generating unicharset and unichar properties files ===
+[13:35:22] INFO - === Phase E: Generating lstmf files using ['lstm.train']===
+[13:35:22] INFO - Using TESSDATA_PREFIX=data
+  0%|          | 0/32 [00:00<?, ?it/s]  3%|▎         | 1/32 [00:01<00:42,  1.38s/it]  9%|▉         | 3/32 [00:02<00:33,  1.17s/it] 12%|█▎        | 4/32 [00:03<00:27,  1.02it/s] 16%|█▌        | 5/32 [00:04<00:29,  1.10s/it] 19%|█▉        | 6/32 [00:04<00:21,  1.22it/s] 22%|██▏       | 7/32 [00:06<00:23,  1.06it/s] 25%|██▌       | 8/32 [00:06<00:17,  1.38it/s] 28%|██▊       | 9/32 [00:07<00:19,  1.17it/s] 31%|███▏      | 10/32 [00:08<00:18,  1.21it/s] 34%|███▍      | 11/32 [00:09<00:20,  1.04it/s] 38%|███▊      | 12/32 [00:09<00:14,  1.41it/s] 41%|████      | 13/32 [00:10<00:16,  1.13it/s] 44%|████▍     | 14/32 [00:11<00:14,  1.24it/s] 47%|████▋     | 15/32 [00:12<00:16,  1.04it/s] 50%|█████     | 16/32 [00:12<00:11,  1.40it/s] 53%|█████▎    | 17/32 [00:14<00:13,  1.13it/s] 56%|█████▋    | 18/32 [00:14<00:11,  1.23it/s] 59%|█████▉    | 19/32 [00:16<00:12,  1.05it/s] 62%|██████▎   | 20/32 [00:16<00:10,  1.16it/s] 66%|██████▌   | 21/32 [00:17<00:09,  1.21it/s] 69%|██████▉   | 22/32 [00:18<00:09,  1.08it/s] 72%|███████▏  | 23/32 [00:18<00:06,  1.38it/s] 75%|███████▌  | 24/32 [00:20<00:07,  1.01it/s] 78%|███████▊  | 25/32 [00:20<00:05,  1.25it/s] 81%|████████▏ | 26/32 [00:22<00:05,  1.02it/s] 84%|████████▍ | 27/32 [00:22<00:03,  1.37it/s] 88%|████████▊ | 28/32 [00:23<00:03,  1.07it/s] 91%|█████████ | 29/32 [00:24<00:02,  1.33it/s] 94%|█████████▍| 30/32 [00:25<00:01,  1.18it/s] 97%|█████████▋| 31/32 [00:26<00:00,  1.16it/s]100%|██████████| 32/32 [00:26<00:00,  1.34it/s]100%|██████████| 32/32 [00:26<00:00,  1.20it/s]
+[13:35:49] INFO - === Constructing LSTM training data ===
+[13:35:49] INFO - Creating new directory data/ground-truth/engRupee-eval
+[13:35:49] INFO - === Saving box/tiff pairs for training data ===
+[13:35:49] INFO - === Moving lstmf files for training data ===
+[13:35:49] INFO - All done!
+mv -v data/ground-truth/engRupee-eval/eng.training_files.txt data/engRupee/list.eval
+renamed 'data/ground-truth/engRupee-eval/eng.training_files.txt' -> 'data/engRupee/list.eval'
+sed -i -e '$a\' data/engRupee/list.eval
+mv -v data/ground-truth/engRupee-eval/eng/eng.* data/engRupee/
+renamed 'data/ground-truth/engRupee-eval/eng/eng.charset_size=102.txt' -> 'data/engRupee/eng.charset_size=102.txt'
+renamed 'data/ground-truth/engRupee-eval/eng/eng.traineddata' -> 'data/engRupee/eng.traineddata'
+renamed 'data/ground-truth/engRupee-eval/eng/eng.unicharset' -> 'data/engRupee/eng.unicharset'
+rename "s/eng\./engRupee-eval\./g" data/engRupee/*.*
+removed directory 'data/ground-truth/engRupee-eval/eng'
+bash box2gt.sh data/ground-truth/engRupee-eval 
+creating gt from box files for  data/ground-truth/engRupee-eval
+python3 ./tesstrain.py \
+ --fonts_dir /usr/share/fonts \
+ --fontlist "Andika" "Calibri" "Calibri Bold" "Calibri Bold Italic" "Calibri Italic" "Calibri Light" "Calibri Light Italic" "Cambria Bold" "Cambria Bold Italic" "Cambria Italic" "Charis SIL" "Charis SIL Bold" "Charis SIL Bold Italic" "Charis SIL Italic" "Consolas" "Consolas Bold" "Consolas Bold Italic" "Consolas Italic" "Doulos SIL" "FreeMono" "FreeMono Bold" "FreeMono Bold Italic" "FreeMono Italic" "FreeSans" "FreeSans Italic" "FreeSans Semi-Bold" "FreeSans Semi-Bold Italic" "FreeSerif" "FreeSerif Bold" "FreeSerif Bold Italic" "FreeSerif Italic" "Microsoft Sans Serif" "Quivira" "Symbola Semi-Condensed" "Tahoma" "Tahoma Bold" "Times New Roman," "Times New Roman, Bold" "Times New Roman, Bold Italic" "Times New Roman, Italic" "Unifont Medium"  \
+ --maxpages 0 \
+ --lang eng \
+ --langdata_dir data \
+ --training_text data/engRupee-train.training_text \
+ --tessdata_dir data \
+ --linedata_only --noextract_font_properties \
+ --exposures "0" \
+ --save_box_tiff \
+ --output_dir data/ground-truth/engRupee-train
+[13:35:52] INFO - Log file location: /tmp/eng-2022-02-03oaucdso6/tesstrain.log
+[13:35:52] INFO - === Starting training for language eng
+[13:35:52] INFO - Testing font: Andika
+[13:35:58] INFO - === Phase I: Generating training images ===
+  0%|          | 0/41 [00:00<?, ?it/s][13:35:59] INFO - Rendering using Andika
+[13:36:06] INFO - Rendering using Calibri
+  2%|▏         | 1/41 [00:07<04:57,  7.43s/it][13:36:12] INFO - Rendering using Calibri Bold
+  5%|▍         | 2/41 [00:13<04:33,  7.02s/it][13:36:18] INFO - Rendering using Calibri Bold Italic
+  7%|▋         | 3/41 [00:19<04:17,  6.79s/it][13:36:24] INFO - Rendering using Calibri Italic
+ 10%|▉         | 4/41 [00:25<04:03,  6.57s/it][13:36:31] INFO - Rendering using Calibri Light
+ 12%|█▏        | 5/41 [00:32<03:53,  6.48s/it][13:36:37] INFO - Rendering using Calibri Light Italic
+ 15%|█▍        | 6/41 [00:38<03:42,  6.36s/it][13:36:43] INFO - Rendering using Cambria Bold
+ 17%|█▋        | 7/41 [00:44<03:33,  6.28s/it][13:36:49] INFO - Rendering using Cambria Bold Italic
+ 20%|█▉        | 8/41 [00:50<03:25,  6.22s/it][13:36:55] INFO - Rendering using Cambria Italic
+ 22%|██▏       | 9/41 [00:56<03:17,  6.18s/it][13:37:01] INFO - Rendering using Charis SIL
+ 24%|██▍       | 10/41 [01:02<03:10,  6.15s/it][13:37:08] INFO - Rendering using Charis SIL Bold
+ 27%|██▋       | 11/41 [01:09<03:16,  6.54s/it][13:37:16] INFO - Rendering using Charis SIL Bold Italic
+ 29%|██▉       | 12/41 [01:17<03:17,  6.81s/it][13:37:23] INFO - Rendering using Charis SIL Italic
+ 32%|███▏      | 13/41 [01:24<03:16,  7.01s/it][13:37:31] INFO - Rendering using Consolas
+ 34%|███▍      | 14/41 [01:32<03:12,  7.14s/it][13:37:37] INFO - Rendering using Consolas Bold
+ 37%|███▋      | 15/41 [01:38<02:56,  6.80s/it][13:37:43] INFO - Rendering using Consolas Bold Italic
+ 39%|███▉      | 16/41 [01:44<02:44,  6.56s/it][13:37:49] INFO - Rendering using Consolas Italic
+ 41%|████▏     | 17/41 [01:50<02:33,  6.40s/it][13:37:55] INFO - Rendering using Doulos SIL
+ 44%|████▍     | 18/41 [01:56<02:24,  6.30s/it][13:38:02] INFO - Rendering using FreeMono
+ 46%|████▋     | 19/41 [02:03<02:26,  6.64s/it][13:38:08] INFO - Rendering using FreeMono Bold
+ 49%|████▉     | 20/41 [02:09<02:15,  6.44s/it][13:38:14] INFO - Rendering using FreeMono Bold Italic
+ 51%|█████     | 21/41 [02:15<02:06,  6.31s/it][13:38:20] INFO - Rendering using FreeMono Italic
+ 54%|█████▎    | 22/41 [02:21<01:58,  6.23s/it][13:38:26] INFO - Rendering using FreeSans
+ 56%|█████▌    | 23/41 [02:27<01:50,  6.17s/it][13:38:32] INFO - Rendering using FreeSans Italic
+ 59%|█████▊    | 24/41 [02:33<01:43,  6.12s/it][13:38:38] INFO - Rendering using FreeSans Semi-Bold
+ 61%|██████    | 25/41 [02:39<01:37,  6.10s/it][13:38:44] INFO - Rendering using FreeSans Semi-Bold Italic
+ 63%|██████▎   | 26/41 [02:45<01:31,  6.07s/it][13:38:50] INFO - Rendering using FreeSerif
+ 66%|██████▌   | 27/41 [02:51<01:24,  6.07s/it][13:38:57] INFO - Rendering using FreeSerif Bold
+ 68%|██████▊   | 28/41 [02:58<01:18,  6.06s/it][13:39:03] INFO - Rendering using FreeSerif Bold Italic
+ 71%|███████   | 29/41 [03:04<01:12,  6.06s/it][13:39:09] INFO - Rendering using FreeSerif Italic
+ 73%|███████▎  | 30/41 [03:10<01:06,  6.05s/it][13:39:15] INFO - Rendering using Microsoft Sans Serif
+ 76%|███████▌  | 31/41 [03:16<01:00,  6.05s/it][13:39:21] INFO - Rendering using Quivira
+ 78%|███████▊  | 32/41 [03:22<00:54,  6.03s/it][13:39:27] INFO - Rendering using Symbola Semi-Condensed
+ 80%|████████  | 33/41 [03:28<00:48,  6.03s/it][13:39:34] INFO - Rendering using Tahoma
+ 83%|████████▎ | 34/41 [03:35<00:45,  6.44s/it][13:39:41] INFO - Rendering using Tahoma Bold
+ 85%|████████▌ | 35/41 [03:42<00:40,  6.73s/it][13:39:49] INFO - Rendering using Times New Roman,
+ 88%|████████▊ | 36/41 [03:50<00:34,  6.94s/it][13:39:55] INFO - Rendering using Times New Roman, Bold
+ 90%|█████████ | 37/41 [03:56<00:26,  6.66s/it][13:40:01] INFO - Rendering using Times New Roman, Bold Italic
+ 93%|█████████▎| 38/41 [04:02<00:19,  6.48s/it][13:40:07] INFO - Rendering using Times New Roman, Italic
+ 95%|█████████▌| 39/41 [04:08<00:12,  6.34s/it][13:40:13] INFO - Rendering using Unifont Medium
+ 98%|█████████▊| 40/41 [04:14<00:06,  6.25s/it]100%|██████████| 41/41 [04:20<00:00,  6.15s/it]100%|██████████| 41/41 [04:20<00:00,  6.35s/it]
+[13:40:19] INFO - === Phase UP: Generating unicharset and unichar properties files ===
+[13:40:19] INFO - === Phase E: Generating lstmf files using ['lstm.train']===
+[13:40:19] INFO - Using TESSDATA_PREFIX=data
+  0%|          | 0/41 [00:00<?, ?it/s]  2%|▏         | 1/41 [00:05<03:39,  5.48s/it]  5%|▍         | 2/41 [00:05<02:30,  3.87s/it]  7%|▋         | 3/41 [00:10<02:44,  4.32s/it] 10%|▉         | 4/41 [00:11<02:00,  3.25s/it] 12%|█▏        | 5/41 [00:16<02:17,  3.83s/it] 15%|█▍        | 6/41 [00:17<01:35,  2.74s/it] 17%|█▋        | 7/41 [00:23<02:06,  3.73s/it] 22%|██▏       | 9/41 [00:28<01:50,  3.45s/it] 24%|██▍       | 10/41 [00:29<01:19,  2.57s/it] 27%|██▋       | 11/41 [00:34<01:39,  3.30s/it] 29%|██▉       | 12/41 [00:35<01:17,  2.66s/it] 32%|███▏      | 13/41 [00:40<01:32,  3.29s/it] 34%|███▍      | 14/41 [00:40<01:05,  2.43s/it] 37%|███▋      | 15/41 [00:46<01:26,  3.31s/it] 39%|███▉      | 16/41 [00:46<01:04,  2.57s/it] 41%|████▏     | 17/41 [00:51<01:18,  3.28s/it] 44%|████▍     | 18/41 [00:52<00:57,  2.51s/it] 46%|████▋     | 19/41 [00:57<01:10,  3.20s/it] 49%|████▉     | 20/41 [00:58<00:52,  2.48s/it] 51%|█████     | 21/41 [01:02<01:01,  3.06s/it] 54%|█████▎    | 22/41 [01:03<00:48,  2.53s/it] 56%|█████▌    | 23/41 [01:07<00:54,  3.02s/it] 59%|█████▊    | 24/41 [01:09<00:41,  2.45s/it] 61%|██████    | 25/41 [01:13<00:50,  3.16s/it] 63%|██████▎   | 26/41 [01:14<00:37,  2.52s/it] 66%|██████▌   | 27/41 [01:19<00:44,  3.16s/it] 68%|██████▊   | 28/41 [01:20<00:33,  2.60s/it] 71%|███████   | 29/41 [01:25<00:37,  3.17s/it] 73%|███████▎  | 30/41 [01:26<00:29,  2.64s/it] 76%|███████▌  | 31/41 [01:30<00:29,  2.98s/it] 78%|███████▊  | 32/41 [01:32<00:23,  2.57s/it] 80%|████████  | 33/41 [01:36<00:24,  3.02s/it] 83%|████████▎ | 34/41 [01:37<00:17,  2.54s/it] 85%|████████▌ | 35/41 [01:42<00:18,  3.13s/it] 88%|████████▊ | 36/41 [01:44<00:13,  2.79s/it] 90%|█████████ | 37/41 [01:47<00:12,  3.09s/it] 93%|█████████▎| 38/41 [01:49<00:08,  2.73s/it] 95%|█████████▌| 39/41 [01:53<00:06,  3.16s/it] 98%|█████████▊| 40/41 [01:55<00:02,  2.55s/it]100%|██████████| 41/41 [01:59<00:00,  3.11s/it]100%|██████████| 41/41 [01:59<00:00,  2.92s/it]
+[13:42:19] INFO - === Constructing LSTM training data ===
+[13:42:19] INFO - Creating new directory data/ground-truth/engRupee-train
+[13:42:19] INFO - === Saving box/tiff pairs for training data ===
+[13:42:19] INFO - === Moving lstmf files for training data ===
+[13:42:19] INFO - All done!
+mv -v data/ground-truth/engRupee-train/eng.training_files.txt data/engRupee/list.train
+renamed 'data/ground-truth/engRupee-train/eng.training_files.txt' -> 'data/engRupee/list.train'
+sed -i -e '$a\' data/engRupee/list.train
+mv -v data/ground-truth/engRupee-train/eng/eng.* data/engRupee/
+renamed 'data/ground-truth/engRupee-train/eng/eng.charset_size=112.txt' -> 'data/engRupee/eng.charset_size=112.txt'
+renamed 'data/ground-truth/engRupee-train/eng/eng.traineddata' -> 'data/engRupee/eng.traineddata'
+renamed 'data/ground-truth/engRupee-train/eng/eng.unicharset' -> 'data/engRupee/eng.unicharset'
+rename "s/eng\./engRupee-train\./g" data/engRupee/*.*
+cp -v data/engRupee/engRupee-train.traineddata data/engRupee/engRupee-proto.traineddata
+'data/engRupee/engRupee-train.traineddata' -> 'data/engRupee/engRupee-proto.traineddata'
+combine_tessdata -dl data/engRupee/engRupee-proto.traineddata
+Version:5.0.1-6-g24e6
+18:lstm-punc-dawg:size=4322, offset=192
+20:lstm-number-dawg:size=4618, offset=4514
+21:lstm-unicharset:size=7474, offset=9132
+22:lstm-recoder:size=1021, offset=16606
+23:version:size=13, offset=17627
+removed directory 'data/ground-truth/engRupee-train/eng'
+bash box2gt.sh data/ground-truth/engRupee-train
+creating gt from box files for  data/ground-truth/engRupee-train
+________________________________________________________________________
+________________________________________________________________________
+Makefile:450: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:447: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:456: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:453: warning: ignoring old recipe for target 'data/Latin.unicharset'
+make: Circular data/Latin.unicharset <- data/Latin.unicharset dependency dropped.
+lstmtraining \
+  --continue_from data/eng/eng.lstm --old_traineddata data/eng.traineddata \
+  --traineddata data/engRupee/engRupee-proto.traineddata \
+  --train_listfile data/engRupee/list.train \
+  --eval_listfile data/engRupee/list.eval \
+  --max_iterations 99999 \
+  --debug_interval 0 \
+  --learning_rate 0.0001 \
+  --target_error_rate 0.01 \
+  --model_output data/engRupee/checkpoints/engRupee \
+  > data/logs/engRupee.LOG  2>&1

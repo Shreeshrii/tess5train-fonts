@@ -1,5 +1,5 @@
 *.isri
-*.log
+./*.log
 *.out
 *.save
 __pycache__/

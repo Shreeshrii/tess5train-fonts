@@ -63,3 +63,14 @@ Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Ti
 2 Percent improvement time=53, best error was 100 @ 0
 At iteration 53/100/100, Mean rms=0.466000%, delta=0.551000%, BCER train=2.684000%, BWER train=5.842000%, skip ratio=0.000000%,  New best BCER = 2.684000 Transitioned to stage 1 wrote best model:data/engRupee/checkpoints/engRupee_2.684000_53_100.checkpoint wrote checkpoint.
 
+2 Percent improvement time=102, best error was 100 @ 0
+At iteration 102/200/200, Mean rms=0.419000%, delta=0.392000%, BCER train=2.134000%, BWER train=5.261000%, skip ratio=0.000000%,  New best BCER = 2.134000 wrote best model:data/engRupee/checkpoints/engRupee_2.134000_102_200.checkpoint wrote checkpoint.
+
+At iteration 152/300/300, Mean rms=0.414000%, delta=0.392000%, BCER train=2.168000%, BWER train=5.144000%, skip ratio=0.000000%,  New worst BCER = 2.168000 wrote checkpoint.
+
+2 Percent improvement time=209, best error was 100 @ 0
+At iteration 209/400/400, Mean rms=0.408000%, delta=0.347000%, BCER train=2.033000%, BWER train=5.098000%, skip ratio=0.000000%,  New best BCER = 2.033000 wrote best model:data/engRupee/checkpoints/engRupee_2.033000_209_400.checkpoint wrote checkpoint.
+
+2 Percent improvement time=259, best error was 100 @ 0
+At iteration 259/500/500, Mean rms=0.394000%, delta=0.311000%, BCER train=1.867000%, BWER train=4.833000%, skip ratio=0.000000%,  New best BCER = 1.867000 wrote best model:data/engRupee/checkpoints/engRupee_1.867000_259_500.checkpoint wrote checkpoint.
+

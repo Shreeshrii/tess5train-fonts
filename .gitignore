@@ -9,7 +9,7 @@ data/*/checkpoints/*.checkpoint
 data/*/reports
 data/*/tessdata*
 data/*/tmp
-data/*ground/*
+data/*ground*
 data/Latin
 data/eng
 data/logs

@@ -1,5 +1,7 @@
 # tess5train-fonts
 
+**THIS IS A WORK IN PROCESS.**
+
 Creation of training data, running of training and plotting of error rates based on different ocr evaluation methods.
 
 Training related scripts are based on Makefile and python scripts in [tesstrain](https://github.com/tesseract-ocr/tesstrain) repo.

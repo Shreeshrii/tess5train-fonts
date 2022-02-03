@@ -285,7 +285,6 @@ FAST_DATA_FILES := $(wildcard $(OUTPUT_DIR)/tessdata_fast/$(MODEL_NAME)_[0]\.[0-
 FAST_LSTMEVAL_FILES := $(subst tessdata_fast,tessdata_fast,$(patsubst %.traineddata,%.eval.log,$(FAST_DATA_FILES)))
 
 $(FAST_LSTMEVAL_FILES): %.eval.log: %.traineddata
-	echo $< $@
 	time -p lstmeval  \
 		--verbosity=0 \
 		--model $< \

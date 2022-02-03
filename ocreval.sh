@@ -5,10 +5,10 @@
 
 MODEL_NAME=$1
 IMG_EXT=tif
-FAST_PATH=$HOME/tesstrain-fonts/data/$MODEL_NAME/tessdata_fast
+FAST_PATH=data/$MODEL_NAME/tessdata_fast
 FAST_PATH_TRAINEDDATA=$2
 REPORTS_PATH=data/${MODEL_NAME}/reports/
-EVAL_IMAGES=/home/ubuntu/tesstrain-fonts/data/ground-truth/${MODEL_NAME}-eval/*.tif
+EVAL_IMAGES=data/ground-truth/${MODEL_NAME}-eval/*.tif
 
 rm -rf ${REPORTS_PATH}
 mkdir -p ${REPORTS_PATH}

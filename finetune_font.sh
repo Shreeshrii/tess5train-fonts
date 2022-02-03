@@ -14,7 +14,7 @@
 
 rm -rf /tmp
 
-# nohup bash finetune_font.sh eng Latin eng engFineTuned FineTune  ' "Impact Condensed" ' '' 0 0 9999 2 > data/logs/engFineTuned.log &
+# nohup bash finetune_font.sh eng Latin eng engFineTuned FineTune  ' "Impact Condensed" ' ' "Arial" "FreeSerif" ' 0 0 9999 2 > data/logs/engFineTuned-2.log &
 
 declare -i maxiter
 maxiter=${10}
@@ -29,8 +29,8 @@ make MODEL_NAME=$4 clean-groundtruth clean-output
 
 echo "________________________________________________________________________"
 
-cp ~/langdata/$3/$3.training_text  data/$4-eval.training_text
-cp ~/langdata/$3/$3.training_text  data/$4-train.training_text
+tail -50 ~/langdata_lstm/$3/$3.training_text  > data/$4-eval.training_text
+head -500 ~/langdata_lstm/$3/$3.training_text  > data/$4-train.training_text
 
 echo "________________________________________________________________________"
 

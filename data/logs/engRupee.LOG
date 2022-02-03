@@ -1,0 +1,65 @@
+Loaded file data/eng/eng.lstm, unpacking...
+Warning: LSTMTrainer deserialized an LSTMRecognizer!
+Code range changed from 111 to 112!
+Num (Extended) outputs,weights in Series:
+  1,36,0,1:1, 0
+Num (Extended) outputs,weights in Series:
+  C3,3:9, 0
+  Ft16:16, 160
+Total weights = 160
+  [C3,3Ft16]:16, 160
+  Mp3,3:16, 0
+  TxyLfys64:64, 20736
+  Lfx96:96, 61824
+  RxLrx96:96, 74112
+  Lfx512:512, 1247232
+  Fc112:112, 57456
+Total weights = 1461520
+Previous null char=110 mapped to 111
+Continuing from data/eng/eng.lstm
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.FreeSerif_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Consolas.exp0.lstmf
+Loaded 213/213 lines (1-213) of document data/ground-truth/engRupee-train/eng.FreeMono_Bold.exp0.lstmf
+Loaded 201/201 lines (1-201) of document data/ground-truth/engRupee-train/eng.Cambria_Bold_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Calibri_Light_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.FreeSerif_Bold_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Tahoma.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Calibri.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Consolas_Italic.exp0.lstmf
+Loaded 50/50 lines (1-50) of document data/ground-truth/engRupee-eval/eng.Verdana_Italic.exp0.lstmf
+Loaded 50/50 lines (1-50) of document data/ground-truth/engRupee-eval/eng.Trebuchet_MS.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.FreeSans_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Calibri_Light.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Charis_SIL_Bold_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Times_New_Roman.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Calibri_Bold.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Calibri_Bold_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.FreeSans.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Cambria_Bold.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Andika.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Charis_SIL.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Unifont_Medium.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Symbola_Semi-Condensed.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Times_New_Roman_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Charis_SIL_Bold.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Calibri_Italic.exp0.lstmf
+Loaded 214/214 lines (1-214) of document data/ground-truth/engRupee-train/eng.FreeMono_Bold_Italic.exp0.lstmf
+Loaded 201/201 lines (1-201) of document data/ground-truth/engRupee-train/eng.Cambria_Italic.exp0.lstmf
+Loaded 213/213 lines (1-213) of document data/ground-truth/engRupee-train/eng.FreeMono.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Consolas_Bold.exp0.lstmf
+Loaded 214/214 lines (1-214) of document data/ground-truth/engRupee-train/eng.FreeMono_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Consolas_Bold_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.FreeSerif_Bold.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Doulos_SIL.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Tahoma_Bold.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Quivira.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.FreeSerif.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.FreeSans_Semi-Bold_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Times_New_Roman_Bold_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Charis_SIL_Italic.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.FreeSans_Semi-Bold.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Microsoft_Sans_Serif.exp0.lstmf
+Loaded 200/200 lines (1-200) of document data/ground-truth/engRupee-train/eng.Times_New_Roman_Bold.exp0.lstmf
+2 Percent improvement time=53, best error was 100 @ 0
+At iteration 53/100/100, Mean rms=0.466000%, delta=0.551000%, BCER train=2.684000%, BWER train=5.842000%, skip ratio=0.000000%,  New best BCER = 2.684000 Transitioned to stage 1 wrote best model:data/engRupee/checkpoints/engRupee_2.684000_53_100.checkpoint wrote checkpoint.
+

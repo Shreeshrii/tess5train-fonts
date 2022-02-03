@@ -5,7 +5,7 @@
 __pycache__/
 data/*.traineddata
 data/*.unicharset
-data/*/checkpoints/*.checkpoints
+data/*/checkpoints/*.checkpoint
 data/*/reports
 data/*/tessdata*
 data/*/tmp

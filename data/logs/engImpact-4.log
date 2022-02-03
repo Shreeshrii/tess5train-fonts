@@ -1,0 +1,24 @@
+________________________________________________________________________
+Makefile:476: warning: overriding recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:473: warning: ignoring old recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:482: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:479: warning: ignoring old recipe for target 'data/Latin.unicharset'
+________________________________________________________________________
+Makefile:476: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:473: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:482: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:479: warning: ignoring old recipe for target 'data/Latin.unicharset'
+sed -i '/^Filename/N;s/\n/ /' data/engImpact/tmp/engImpact-lstmeval.log
+sort -n -r -o data/engImpact/tmp/engImpact-lstmeval.log data/engImpact/tmp/engImpact-lstmeval.log
+sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/engImpact/tmp/engImpact-lstmeval.log > data/engImpact/reports/engImpact-lstmeval.txt
+grep '<td>CER</td><td>' data/engImpact/tessdata_fast/engImpact*.ocrevaluation.html > data/engImpact/reports/engImpact-ocreval.txt
+sort -n -r -o data/engImpact/reports/engImpact-ocreval.txt data/engImpact/reports/engImpact-ocreval.txt
+sort -n -r data/engImpact/tmp/engImpact-isrieval.log > data/engImpact/reports/engImpact-isrieval.txt
+________________________________________________________________________
+Makefile:476: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:473: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:482: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:479: warning: ignoring old recipe for target 'data/Latin.unicharset'
+python plot_LOG.py engImpact,2,data/engImpact/tmp/engImpact-iteration.tsv,data/engImpact/tmp/engImpact-checkpoint.tsv,data/engImpact/tmp/engImpact-eval.tsv,data/engImpact/tmp/engImpact-sub.tsv
+python plot_cer.py engImpact,2,data/engImpact/tmp/engImpact-iteration.tsv,data/engImpact/tmp/engImpact-checkpoint.tsv,data/engImpact/tmp/engImpact-eval.tsv,data/engImpact/tmp/engImpact-sub.tsv,data/engImpact/tmp/engImpact-lstmeval.tsv,data/engImpact/tmp/engImpact-ocreval.tsv,data/engImpact/tmp/engImpact-isrieval.tsv
+________________________________________________________________________

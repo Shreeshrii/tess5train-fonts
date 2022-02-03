@@ -103,3 +103,28 @@ Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	Subt
 		157	2400	0.29		
 		158	2500	0.34		
 		158	2600	0.37		
+Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER
+		60	200	 99.66		
+		77	300	 99.55		
+		89	400	 99.66		
+		119	600	 99.71		
+		126	700	 99.68		
+		132	800	 99.68		
+		137	900	 99.63		
+		141	1000	 99.63		
+		146	1100	 99.71		
+		147	1200	 99.68		
+		148	1300	 99.71		
+		149	1400	 99.63		
+		152	1500	 99.71		
+		154	1600	 99.71		
+		154	1700	 99.68		
+		154	1800	 99.66		
+		155	1900	 99.66		
+		157	2000	 99.68		
+		157	2100	 99.71		
+		157	2200	 99.71		
+		157	2300	 99.71		
+		157	2400	 99.74		
+		158	2500	 99.68		
+		158	2600	 99.66		

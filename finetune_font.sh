@@ -14,9 +14,9 @@
 
 rm -rf /tmp
 
-# nohup bash finetune_font.sh eng Latin eng engFineTuned FineTune  ' "Impact Condensed" ' ' "Arial" "FreeSerif" ' 0 0 9999 2 > data/logs/engFineTuned-2.log &
-# nohup bash finetune_font.sh eng Latin eng engImpact FineTune  ' "Impact Condensed" ' ' "Impact Condensed" ' 0 0 9999 2 > data/logs/engImpact-2.log &
-# tail -f data/logs/engImpact-2.log
+# nohup bash finetune_font.sh eng Latin eng engFineTuned FineTune  ' "Impact Condensed" ' ' "Arial" "FreeSerif" ' 0 0 9999 2 > data/logs/engFineTuned.log &
+# nohup bash finetune_font.sh eng Latin eng engImpact FineTune  ' "Impact Condensed" ' ' "Impact Condensed" ' 0 0 9999 2 > data/logs/engImpact.log &
+# tail -f data/logs/engImpact.log
 
 declare -i maxiter
 maxiter=${10}

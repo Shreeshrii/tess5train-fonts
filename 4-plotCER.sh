@@ -1,9 +1,9 @@
 #!/bin/bash
 # $1 - MODEL_NAME
 
-# --debug=vij  -trace\
+# --debug=vij  --trace\
 
-# nohup bash 4-plotCER.sh engFineTuned 2 > data/logs/engFineTuned-4.log &
+# nohup bash 4-plotCER.sh engImpact 2 > data/logs/engImpact-4.log &
 # nohup bash 4-plotCER.sh engRupee 2 > data/logs/engRupee-4.log &
 # nohup bash 4-plotCER.sh engLayer 5 > data/logs/engLayer-4.log &
 
@@ -17,7 +17,7 @@ make MODEL_NAME=$1 clean-post
 echo "________________________________________________________________________"
 
 # lstmeval and ocreval
-make  \
+make \
 TESSDATA=data \
 MODEL_NAME=$1 \
 evalCER

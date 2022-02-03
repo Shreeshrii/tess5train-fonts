@@ -205,3 +205,2351 @@ lstmtraining \
   --target_error_rate 0.01 \
   --model_output data/engRupee/checkpoints/engRupee \
   > data/logs/engRupee.LOG  2>&1
+lstmtraining \
+--stop_training \
+--continue_from data/engRupee/checkpoints/engRupee_checkpoint \
+--traineddata data/engRupee/engRupee-proto.traineddata \
+--model_output data/engRupee-final.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_checkpoint, unpacking...
+lstmtraining \
+--stop_training \
+--continue_from data/engRupee/checkpoints/engRupee_checkpoint \
+--traineddata data/engRupee/engRupee-proto.traineddata \
+--convert_to_int \
+--model_output data/engRupee-integer.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_checkpoint, unpacking...
+________________________________________________________________________
+Makefile:450: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:447: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:456: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:453: warning: ignoring old recipe for target 'data/Latin.unicharset'
+mkdir data/engRupee/tessdata_best
+mkdir data/engRupee/tessdata_fast
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.007000_718_10800.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.007000_718_10800.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.007000_718_10800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.019000_718_10700.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.019000_718_10700.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.019000_718_10700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.020000_690_8500.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.020000_690_8500.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.020000_690_8500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.023000_688_8300.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.023000_688_8300.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.023000_688_8300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.031000_630_5800.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.031000_630_5800.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.031000_630_5800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.032000_629_5700.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.032000_629_5700.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.032000_629_5700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.047000_629_5600.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.047000_629_5600.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.047000_629_5600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.050000_629_5500.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.050000_629_5500.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.050000_629_5500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.056000_627_5400.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.056000_627_5400.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.056000_627_5400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.060000_565_3800.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.060000_565_3800.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.060000_565_3800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.066000_563_3700.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.066000_563_3700.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.066000_563_3700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.070000_558_3500.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.070000_558_3500.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.070000_558_3500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.073000_549_3300.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.073000_549_3300.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.073000_549_3300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.105000_505_2200.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.105000_505_2200.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.105000_505_2200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.113000_502_2100.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.113000_502_2100.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.113000_502_2100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.146000_495_1900.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.146000_495_1900.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.146000_495_1900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.167000_491_1800.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.167000_491_1800.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.167000_491_1800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.249000_485_1700.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.249000_485_1700.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.249000_485_1700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.298000_479_1600.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.298000_479_1600.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.298000_479_1600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.418000_475_1500.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.418000_475_1500.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.418000_475_1500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.528000_469_1400.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.528000_469_1400.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.528000_469_1400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.670000_463_1300.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.670000_463_1300.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.670000_463_1300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.877000_456_1200.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_0.877000_456_1200.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.877000_456_1200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.020000_447_1100.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_1.020000_447_1100.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.020000_447_1100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.256000_438_1000.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_1.256000_438_1000.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.256000_438_1000.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.383000_430_900.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_1.383000_430_900.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.383000_430_900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.522000_410_800.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_1.522000_410_800.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.522000_410_800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.609000_374_700.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_1.609000_374_700.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.609000_374_700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.782000_321_600.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_1.782000_321_600.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.782000_321_600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.867000_259_500.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_1.867000_259_500.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.867000_259_500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_2.033000_209_400.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_2.033000_209_400.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_2.033000_209_400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_2.134000_102_200.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_2.134000_102_200.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_2.134000_102_200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_2.684000_53_100.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --model_output data/engRupee/tessdata_best/engRupee_2.684000_53_100.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_2.684000_53_100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.007000_718_10800.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.007000_718_10800.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.007000_718_10800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.019000_718_10700.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.019000_718_10700.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.019000_718_10700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.020000_690_8500.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.020000_690_8500.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.020000_690_8500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.023000_688_8300.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.023000_688_8300.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.023000_688_8300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.031000_630_5800.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.031000_630_5800.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.031000_630_5800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.032000_629_5700.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.032000_629_5700.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.032000_629_5700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.047000_629_5600.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.047000_629_5600.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.047000_629_5600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.050000_629_5500.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.050000_629_5500.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.050000_629_5500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.056000_627_5400.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.056000_627_5400.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.056000_627_5400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.060000_565_3800.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.060000_565_3800.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.060000_565_3800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.066000_563_3700.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.066000_563_3700.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.066000_563_3700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.070000_558_3500.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.070000_558_3500.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.070000_558_3500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.073000_549_3300.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.073000_549_3300.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.073000_549_3300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.105000_505_2200.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.105000_505_2200.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.105000_505_2200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.113000_502_2100.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.113000_502_2100.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.113000_502_2100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.146000_495_1900.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.146000_495_1900.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.146000_495_1900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.167000_491_1800.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.167000_491_1800.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.167000_491_1800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.249000_485_1700.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.249000_485_1700.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.249000_485_1700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.298000_479_1600.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.298000_479_1600.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.298000_479_1600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.418000_475_1500.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.418000_475_1500.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.418000_475_1500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.528000_469_1400.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.528000_469_1400.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.528000_469_1400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.670000_463_1300.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.670000_463_1300.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.670000_463_1300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_0.877000_456_1200.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_0.877000_456_1200.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_0.877000_456_1200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.020000_447_1100.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_1.020000_447_1100.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.020000_447_1100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.256000_438_1000.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_1.256000_438_1000.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.256000_438_1000.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.383000_430_900.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_1.383000_430_900.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.383000_430_900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.522000_410_800.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_1.522000_410_800.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.522000_410_800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.609000_374_700.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_1.609000_374_700.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.609000_374_700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.782000_321_600.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_1.782000_321_600.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.782000_321_600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_1.867000_259_500.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_1.867000_259_500.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_1.867000_259_500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_2.033000_209_400.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_2.033000_209_400.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_2.033000_209_400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_2.134000_102_200.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_2.134000_102_200.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_2.134000_102_200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engRupee/checkpoints/engRupee_2.684000_53_100.checkpoint \
+          --traineddata data/engRupee/engRupee-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engRupee/tessdata_fast/engRupee_2.684000_53_100.traineddata
+Loaded file data/engRupee/checkpoints/engRupee_2.684000_53_100.checkpoint, unpacking...
+________________________________________________________________________
+Makefile:450: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:447: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:456: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:453: warning: ignoring old recipe for target 'data/Latin.unicharset'
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.298000_479_1600.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.298000_479_1600.eval.log
+real 348.11
+user 1081.64
+sys 9.49
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.073000_549_3300.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.073000_549_3300.eval.log
+real 349.90
+user 1084.50
+sys 10.09
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.670000_463_1300.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.670000_463_1300.eval.log
+real 348.51
+user 1080.18
+sys 10.33
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.020000_690_8500.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.020000_690_8500.eval.log
+real 347.80
+user 1080.82
+sys 9.52
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.249000_485_1700.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.249000_485_1700.eval.log
+real 349.14
+user 1084.78
+sys 9.74
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.019000_718_10700.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.019000_718_10700.eval.log
+real 349.12
+user 1085.00
+sys 9.40
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.066000_563_3700.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.066000_563_3700.eval.log
+real 350.00
+user 1083.06
+sys 10.10
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.023000_688_8300.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.023000_688_8300.eval.log
+real 348.14
+user 1081.66
+sys 9.89
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.418000_475_1500.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.418000_475_1500.eval.log
+real 348.58
+user 1082.93
+sys 9.82
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.050000_629_5500.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.050000_629_5500.eval.log
+real 348.59
+user 1081.91
+sys 9.64
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.113000_502_2100.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.113000_502_2100.eval.log
+real 348.07
+user 1081.50
+sys 9.25
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.031000_630_5800.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.031000_630_5800.eval.log
+real 347.99
+user 1080.89
+sys 9.68
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.032000_629_5700.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.032000_629_5700.eval.log
+real 348.25
+user 1081.03
+sys 9.52
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.047000_629_5600.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.047000_629_5600.eval.log
+real 348.38
+user 1082.00
+sys 10.38
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.105000_505_2200.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.105000_505_2200.eval.log
+real 348.01
+user 1080.94
+sys 9.79
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.528000_469_1400.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.528000_469_1400.eval.log
+real 348.09
+user 1081.15
+sys 9.71
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.167000_491_1800.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.167000_491_1800.eval.log
+real 348.65
+user 1082.41
+sys 10.66
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.007000_718_10800.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.007000_718_10800.eval.log
+real 348.00
+user 1081.28
+sys 9.33
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.146000_495_1900.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.146000_495_1900.eval.log
+real 347.71
+user 1080.93
+sys 9.48
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.060000_565_3800.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.060000_565_3800.eval.log
+real 349.43
+user 1085.71
+sys 9.41
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.070000_558_3500.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.070000_558_3500.eval.log
+real 349.11
+user 1083.73
+sys 10.32
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.056000_627_5400.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.056000_627_5400.eval.log
+real 347.90
+user 1080.70
+sys 9.80
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engRupee/tessdata_fast/engRupee_0.877000_456_1200.traineddata \
+	--eval_listfile data/engRupee/list.eval 2>&1 | grep "^BCER eval" > data/engRupee/tessdata_fast/engRupee_0.877000_456_1200.eval.log
+real 348.58
+user 1081.78
+sys 10.20
+sed -i '/^Filename/N;s/\n/ /' data/engRupee/tmp/engRupee-lstmeval.log
+sort -n -r -o data/engRupee/tmp/engRupee-lstmeval.log data/engRupee/tmp/engRupee-lstmeval.log
+sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/engRupee/tmp/engRupee-lstmeval.log > data/engRupee/reports/engRupee-lstmeval.txt
+bash ocreval.sh engRupee data/engRupee/tessdata_fast/engRupee_0.298000_479_1600.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1600, sample_iteration=1600, null_char=111, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.30
+user 30.19
+sys 0.32
+real 10.85
+user 31.63
+sys 0.42
+real 10.76
+user 31.58
+sys 0.34
+real 10.35
+user 30.30
+sys 0.29
+Page 1
+Page 2
+real 13.34
+user 39.57
+sys 0.42
+Page 1
+Page 2
+real 13.38
+user 39.70
+sys 0.47
+Page 1
+Page 2
+real 13.43
+user 39.72
+sys 0.48
+Page 1
+Page 2
+real 13.35
+user 39.51
+sys 0.44
+real 10.83
+user 31.97
+sys 0.31
+real 10.57
+user 30.94
+sys 0.36
+real 11.72
+user 34.60
+sys 0.39
+real 11.92
+user 35.08
+sys 0.41
+real 10.67
+user 31.17
+sys 0.32
+Page 1
+Page 2
+real 11.68
+user 33.65
+sys 0.38
+Page 1
+Page 2
+real 11.82
+user 34.14
+sys 0.39
+Page 1
+Page 2
+real 11.13
+user 31.87
+sys 0.36
+Page 1
+Page 2
+real 11.83
+user 34.12
+sys 0.37
+Page 1
+Page 2
+real 11.70
+user 33.59
+sys 0.41
+Page 1
+Page 2
+real 11.12
+user 31.79
+sys 0.32
+Page 1
+Page 2
+real 11.07
+user 31.74
+sys 0.30
+real 10.34
+user 30.45
+sys 0.33
+real 10.86
+user 32.06
+sys 0.36
+real 10.41
+user 30.47
+sys 0.35
+real 10.15
+user 29.70
+sys 0.27
+real 10.17
+user 29.78
+sys 0.31
+real 10.69
+user 31.44
+sys 0.34
+real 10.63
+user 31.19
+sys 0.31
+real 10.41
+user 30.30
+sys 0.30
+Page 1
+Page 2
+real 11.87
+user 34.13
+sys 0.36
+Page 1
+Page 2
+real 13.11
+user 38.07
+sys 0.35
+Page 1
+Page 2
+real 12.85
+user 37.03
+sys 0.36
+Page 1
+Page 2
+real 11.94
+user 34.30
+sys 0.35
+Feb 03, 2022 5:46:18 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:46:18 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:46:18 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:46:18 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:46:18 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:46:18 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:46:18 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:46:18 PM eu.digitisation.utils.log.Messages info
+INFO: 0% of file processed
+Feb 03, 2022 5:46:19 PM eu.digitisation.utils.log.Messages info
+INFO: 1% of file processed
+Feb 03, 2022 5:46:19 PM eu.digitisation.utils.log.Messages info
+INFO: 2% of file processed
+Feb 03, 2022 5:46:19 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 5:46:19 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 5:46:20 PM eu.digitisation.utils.log.Messages info
+INFO: 4% of file processed
+Feb 03, 2022 5:46:20 PM eu.digitisation.utils.log.Messages info
+INFO: 5% of file processed
+Feb 03, 2022 5:46:20 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 5:46:20 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 5:46:20 PM eu.digitisation.utils.log.Messages info
+INFO: 7% of file processed
+Feb 03, 2022 5:46:21 PM eu.digitisation.utils.log.Messages info
+INFO: 8% of file processed
+Feb 03, 2022 5:46:21 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 5:46:21 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 5:46:21 PM eu.digitisation.utils.log.Messages info
+INFO: 10% of file processed
+Feb 03, 2022 5:46:22 PM eu.digitisation.utils.log.Messages info
+INFO: 11% of file processed
+Feb 03, 2022 5:46:22 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 5:46:22 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 5:46:22 PM eu.digitisation.utils.log.Messages info
+INFO: 13% of file processed
+Feb 03, 2022 5:46:22 PM eu.digitisation.utils.log.Messages info
+INFO: 14% of file processed
+Feb 03, 2022 5:46:23 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 5:46:23 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 5:46:23 PM eu.digitisation.utils.log.Messages info
+INFO: 16% of file processed
+Feb 03, 2022 5:46:23 PM eu.digitisation.utils.log.Messages info
+INFO: 17% of file processed
+Feb 03, 2022 5:46:24 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 5:46:24 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 5:46:24 PM eu.digitisation.utils.log.Messages info
+INFO: 19% of file processed
+Feb 03, 2022 5:46:24 PM eu.digitisation.utils.log.Messages info
+INFO: 20% of file processed
+Feb 03, 2022 5:46:24 PM eu.digitisation.utils.log.Messages info
+INFO: 21% of file processed
+Feb 03, 2022 5:46:25 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 5:46:25 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 5:46:25 PM eu.digitisation.utils.log.Messages info
+INFO: 23% of file processed
+Feb 03, 2022 5:46:25 PM eu.digitisation.utils.log.Messages info
+INFO: 24% of file processed
+Feb 03, 2022 5:46:26 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 5:46:26 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 5:46:26 PM eu.digitisation.utils.log.Messages info
+INFO: 26% of file processed
+Feb 03, 2022 5:46:26 PM eu.digitisation.utils.log.Messages info
+INFO: 27% of file processed
+Feb 03, 2022 5:46:26 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 5:46:27 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 5:46:27 PM eu.digitisation.utils.log.Messages info
+INFO: 29% of file processed
+Feb 03, 2022 5:46:27 PM eu.digitisation.utils.log.Messages info
+INFO: 30% of file processed
+Feb 03, 2022 5:46:27 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 5:46:28 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 5:46:28 PM eu.digitisation.utils.log.Messages info
+INFO: 32% of file processed
+Feb 03, 2022 5:46:28 PM eu.digitisation.utils.log.Messages info
+INFO: 33% of file processed
+Feb 03, 2022 5:46:28 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 5:46:28 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 5:46:29 PM eu.digitisation.utils.log.Messages info
+INFO: 35% of file processed
+Feb 03, 2022 5:46:29 PM eu.digitisation.utils.log.Messages info
+INFO: 36% of file processed
+Feb 03, 2022 5:46:29 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 5:46:29 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 5:46:30 PM eu.digitisation.utils.log.Messages info
+INFO: 38% of file processed
+Feb 03, 2022 5:46:30 PM eu.digitisation.utils.log.Messages info
+INFO: 39% of file processed
+Feb 03, 2022 5:46:30 PM eu.digitisation.utils.log.Messages info
+INFO: 40% of file processed
+Feb 03, 2022 5:46:30 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 5:46:30 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 5:46:31 PM eu.digitisation.utils.log.Messages info
+INFO: 42% of file processed
+Feb 03, 2022 5:46:31 PM eu.digitisation.utils.log.Messages info
+INFO: 43% of file processed
+Feb 03, 2022 5:46:31 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 5:46:31 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 5:46:32 PM eu.digitisation.utils.log.Messages info
+INFO: 45% of file processed
+Feb 03, 2022 5:46:32 PM eu.digitisation.utils.log.Messages info
+INFO: 46% of file processed
+Feb 03, 2022 5:46:32 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 5:46:32 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 5:46:32 PM eu.digitisation.utils.log.Messages info
+INFO: 48% of file processed
+Feb 03, 2022 5:46:33 PM eu.digitisation.utils.log.Messages info
+INFO: 49% of file processed
+Feb 03, 2022 5:46:33 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 5:46:33 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 5:46:33 PM eu.digitisation.utils.log.Messages info
+INFO: 51% of file processed
+Feb 03, 2022 5:46:34 PM eu.digitisation.utils.log.Messages info
+INFO: 52% of file processed
+Feb 03, 2022 5:46:34 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 5:46:34 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 5:46:34 PM eu.digitisation.utils.log.Messages info
+INFO: 54% of file processed
+Feb 03, 2022 5:46:34 PM eu.digitisation.utils.log.Messages info
+INFO: 55% of file processed
+Feb 03, 2022 5:46:35 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 5:46:35 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 5:46:35 PM eu.digitisation.utils.log.Messages info
+INFO: 57% of file processed
+Feb 03, 2022 5:46:35 PM eu.digitisation.utils.log.Messages info
+INFO: 58% of file processed
+Feb 03, 2022 5:46:36 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 5:46:36 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 5:46:36 PM eu.digitisation.utils.log.Messages info
+INFO: 60% of file processed
+Feb 03, 2022 5:46:36 PM eu.digitisation.utils.log.Messages info
+INFO: 61% of file processed
+Feb 03, 2022 5:46:36 PM eu.digitisation.utils.log.Messages info
+INFO: 62% of file processed
+Feb 03, 2022 5:46:37 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 5:46:37 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 5:46:37 PM eu.digitisation.utils.log.Messages info
+INFO: 64% of file processed
+Feb 03, 2022 5:46:37 PM eu.digitisation.utils.log.Messages info
+INFO: 65% of file processed
+Feb 03, 2022 5:46:38 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 5:46:38 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 5:46:38 PM eu.digitisation.utils.log.Messages info
+INFO: 67% of file processed
+Feb 03, 2022 5:46:38 PM eu.digitisation.utils.log.Messages info
+INFO: 68% of file processed
+Feb 03, 2022 5:46:38 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 5:46:39 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 5:46:39 PM eu.digitisation.utils.log.Messages info
+INFO: 70% of file processed
+Feb 03, 2022 5:46:39 PM eu.digitisation.utils.log.Messages info
+INFO: 71% of file processed
+Feb 03, 2022 5:46:39 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 5:46:40 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 5:46:40 PM eu.digitisation.utils.log.Messages info
+INFO: 73% of file processed
+Feb 03, 2022 5:46:40 PM eu.digitisation.utils.log.Messages info
+INFO: 74% of file processed
+Feb 03, 2022 5:46:40 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 5:46:41 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 5:46:41 PM eu.digitisation.utils.log.Messages info
+INFO: 76% of file processed
+Feb 03, 2022 5:46:41 PM eu.digitisation.utils.log.Messages info
+INFO: 77% of file processed
+Feb 03, 2022 5:46:41 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 5:46:41 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 5:46:42 PM eu.digitisation.utils.log.Messages info
+INFO: 79% of file processed
+Feb 03, 2022 5:46:42 PM eu.digitisation.utils.log.Messages info
+INFO: 80% of file processed
+Feb 03, 2022 5:46:42 PM eu.digitisation.utils.log.Messages info
+INFO: 81% of file processed
+Feb 03, 2022 5:46:42 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 5:46:43 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 5:46:43 PM eu.digitisation.utils.log.Messages info
+INFO: 83% of file processed
+Feb 03, 2022 5:46:43 PM eu.digitisation.utils.log.Messages info
+INFO: 84% of file processed
+Feb 03, 2022 5:46:43 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 5:46:43 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 5:46:44 PM eu.digitisation.utils.log.Messages info
+INFO: 86% of file processed
+Feb 03, 2022 5:46:44 PM eu.digitisation.utils.log.Messages info
+INFO: 87% of file processed
+Feb 03, 2022 5:46:44 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 5:46:44 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 5:46:45 PM eu.digitisation.utils.log.Messages info
+INFO: 89% of file processed
+Feb 03, 2022 5:46:45 PM eu.digitisation.utils.log.Messages info
+INFO: 90% of file processed
+Feb 03, 2022 5:46:45 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 5:46:45 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 5:46:45 PM eu.digitisation.utils.log.Messages info
+INFO: 92% of file processed
+Feb 03, 2022 5:46:46 PM eu.digitisation.utils.log.Messages info
+INFO: 93% of file processed
+Feb 03, 2022 5:46:46 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 5:46:46 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 5:46:46 PM eu.digitisation.utils.log.Messages info
+INFO: 95% of file processed
+Feb 03, 2022 5:46:47 PM eu.digitisation.utils.log.Messages info
+INFO: 96% of file processed
+Feb 03, 2022 5:46:47 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 5:46:47 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 5:46:47 PM eu.digitisation.utils.log.Messages info
+INFO: 98% of file processed
+Feb 03, 2022 5:46:47 PM eu.digitisation.utils.log.Messages info
+INFO: 100% of file processed
+bash ocreval.sh engRupee data/engRupee/tessdata_fast/engRupee_0.073000_549_3300.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=3300, sample_iteration=3300, null_char=111, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.26
+user 30.15
+sys 0.32
+real 10.71
+user 31.51
+sys 0.37
+real 10.83
+user 31.63
+sys 0.32
+real 10.38
+user 30.37
+sys 0.32
+Page 1
+Page 2
+real 13.29
+user 39.49
+sys 0.37
+Page 1
+Page 2
+real 13.39
+user 39.83
+sys 0.38
+Page 1
+Page 2
+real 13.47
+user 39.87
+sys 0.43
+Page 1
+Page 2
+real 13.35
+user 39.59
+sys 0.37
+real 10.90
+user 32.12
+sys 0.33
+real 10.58
+user 30.94
+sys 0.31
+real 11.73
+user 34.68
+sys 0.34
+real 11.95
+user 35.13
+sys 0.36
+real 10.68
+user 31.16
+sys 0.37
+Page 1
+Page 2
+real 11.70
+user 33.72
+sys 0.36
+Page 1
+Page 2
+real 11.82
+user 34.14
+sys 0.33
+Page 1
+Page 2
+real 11.11
+user 31.79
+sys 0.36
+Page 1
+Page 2
+real 11.83
+user 34.17
+sys 0.37
+Page 1
+Page 2
+real 11.71
+user 33.60
+sys 0.42
+Page 1
+Page 2
+real 11.15
+user 31.86
+sys 0.33
+Page 1
+Page 2
+real 11.06
+user 31.63
+sys 0.38
+real 10.53
+user 30.70
+sys 0.32
+real 10.83
+user 31.99
+sys 0.32
+real 10.45
+user 30.72
+sys 0.32
+real 10.50
+user 30.36
+sys 0.33
+real 10.21
+user 29.90
+sys 0.27
+real 10.76
+user 31.45
+sys 0.30
+real 10.62
+user 31.15
+sys 0.30
+real 10.29
+user 30.20
+sys 0.29
+Page 1
+Page 2
+real 11.89
+user 34.18
+sys 0.36
+Page 1
+Page 2
+real 12.74
+user 36.90
+sys 0.39
+Page 1
+Page 2
+real 12.81
+user 37.02
+sys 0.35
+Page 1
+Page 2
+real 11.97
+user 34.33
+sys 0.39
+Feb 03, 2022 5:52:56 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:52:57 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:52:57 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:52:57 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:52:57 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:52:57 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:52:57 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:52:57 PM eu.digitisation.utils.log.Messages info
+INFO: 0% of file processed
+Feb 03, 2022 5:52:57 PM eu.digitisation.utils.log.Messages info
+INFO: 1% of file processed
+Feb 03, 2022 5:52:58 PM eu.digitisation.utils.log.Messages info
+INFO: 2% of file processed
+Feb 03, 2022 5:52:58 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 5:52:58 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 5:52:58 PM eu.digitisation.utils.log.Messages info
+INFO: 4% of file processed
+Feb 03, 2022 5:52:59 PM eu.digitisation.utils.log.Messages info
+INFO: 5% of file processed
+Feb 03, 2022 5:52:59 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 5:52:59 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 5:52:59 PM eu.digitisation.utils.log.Messages info
+INFO: 7% of file processed
+Feb 03, 2022 5:53:00 PM eu.digitisation.utils.log.Messages info
+INFO: 8% of file processed
+Feb 03, 2022 5:53:00 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 5:53:00 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 5:53:00 PM eu.digitisation.utils.log.Messages info
+INFO: 10% of file processed
+Feb 03, 2022 5:53:00 PM eu.digitisation.utils.log.Messages info
+INFO: 11% of file processed
+Feb 03, 2022 5:53:01 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 5:53:01 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 5:53:01 PM eu.digitisation.utils.log.Messages info
+INFO: 13% of file processed
+Feb 03, 2022 5:53:01 PM eu.digitisation.utils.log.Messages info
+INFO: 14% of file processed
+Feb 03, 2022 5:53:02 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 5:53:02 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 5:53:02 PM eu.digitisation.utils.log.Messages info
+INFO: 16% of file processed
+Feb 03, 2022 5:53:02 PM eu.digitisation.utils.log.Messages info
+INFO: 17% of file processed
+Feb 03, 2022 5:53:02 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 5:53:03 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 5:53:03 PM eu.digitisation.utils.log.Messages info
+INFO: 19% of file processed
+Feb 03, 2022 5:53:03 PM eu.digitisation.utils.log.Messages info
+INFO: 20% of file processed
+Feb 03, 2022 5:53:03 PM eu.digitisation.utils.log.Messages info
+INFO: 21% of file processed
+Feb 03, 2022 5:53:04 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 5:53:04 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 5:53:04 PM eu.digitisation.utils.log.Messages info
+INFO: 23% of file processed
+Feb 03, 2022 5:53:04 PM eu.digitisation.utils.log.Messages info
+INFO: 24% of file processed
+Feb 03, 2022 5:53:05 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 5:53:05 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 5:53:05 PM eu.digitisation.utils.log.Messages info
+INFO: 26% of file processed
+Feb 03, 2022 5:53:05 PM eu.digitisation.utils.log.Messages info
+INFO: 27% of file processed
+Feb 03, 2022 5:53:05 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 5:53:06 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 5:53:06 PM eu.digitisation.utils.log.Messages info
+INFO: 29% of file processed
+Feb 03, 2022 5:53:06 PM eu.digitisation.utils.log.Messages info
+INFO: 30% of file processed
+Feb 03, 2022 5:53:06 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 5:53:07 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 5:53:07 PM eu.digitisation.utils.log.Messages info
+INFO: 32% of file processed
+Feb 03, 2022 5:53:07 PM eu.digitisation.utils.log.Messages info
+INFO: 33% of file processed
+Feb 03, 2022 5:53:07 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 5:53:07 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 5:53:08 PM eu.digitisation.utils.log.Messages info
+INFO: 35% of file processed
+Feb 03, 2022 5:53:08 PM eu.digitisation.utils.log.Messages info
+INFO: 36% of file processed
+Feb 03, 2022 5:53:08 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 5:53:08 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 5:53:09 PM eu.digitisation.utils.log.Messages info
+INFO: 38% of file processed
+Feb 03, 2022 5:53:09 PM eu.digitisation.utils.log.Messages info
+INFO: 39% of file processed
+Feb 03, 2022 5:53:09 PM eu.digitisation.utils.log.Messages info
+INFO: 40% of file processed
+Feb 03, 2022 5:53:09 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 5:53:10 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 5:53:10 PM eu.digitisation.utils.log.Messages info
+INFO: 42% of file processed
+Feb 03, 2022 5:53:10 PM eu.digitisation.utils.log.Messages info
+INFO: 43% of file processed
+Feb 03, 2022 5:53:10 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 5:53:10 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 5:53:11 PM eu.digitisation.utils.log.Messages info
+INFO: 45% of file processed
+Feb 03, 2022 5:53:11 PM eu.digitisation.utils.log.Messages info
+INFO: 46% of file processed
+Feb 03, 2022 5:53:11 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 5:53:11 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 5:53:12 PM eu.digitisation.utils.log.Messages info
+INFO: 48% of file processed
+Feb 03, 2022 5:53:12 PM eu.digitisation.utils.log.Messages info
+INFO: 49% of file processed
+Feb 03, 2022 5:53:12 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 5:53:12 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 5:53:12 PM eu.digitisation.utils.log.Messages info
+INFO: 51% of file processed
+Feb 03, 2022 5:53:13 PM eu.digitisation.utils.log.Messages info
+INFO: 52% of file processed
+Feb 03, 2022 5:53:13 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 5:53:13 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 5:53:13 PM eu.digitisation.utils.log.Messages info
+INFO: 54% of file processed
+Feb 03, 2022 5:53:14 PM eu.digitisation.utils.log.Messages info
+INFO: 55% of file processed
+Feb 03, 2022 5:53:14 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 5:53:14 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 5:53:14 PM eu.digitisation.utils.log.Messages info
+INFO: 57% of file processed
+Feb 03, 2022 5:53:15 PM eu.digitisation.utils.log.Messages info
+INFO: 58% of file processed
+Feb 03, 2022 5:53:15 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 5:53:15 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 5:53:15 PM eu.digitisation.utils.log.Messages info
+INFO: 60% of file processed
+Feb 03, 2022 5:53:15 PM eu.digitisation.utils.log.Messages info
+INFO: 61% of file processed
+Feb 03, 2022 5:53:16 PM eu.digitisation.utils.log.Messages info
+INFO: 62% of file processed
+Feb 03, 2022 5:53:16 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 5:53:16 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 5:53:16 PM eu.digitisation.utils.log.Messages info
+INFO: 64% of file processed
+Feb 03, 2022 5:53:17 PM eu.digitisation.utils.log.Messages info
+INFO: 65% of file processed
+Feb 03, 2022 5:53:17 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 5:53:17 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 5:53:17 PM eu.digitisation.utils.log.Messages info
+INFO: 67% of file processed
+Feb 03, 2022 5:53:17 PM eu.digitisation.utils.log.Messages info
+INFO: 68% of file processed
+Feb 03, 2022 5:53:18 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 5:53:18 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 5:53:18 PM eu.digitisation.utils.log.Messages info
+INFO: 70% of file processed
+Feb 03, 2022 5:53:18 PM eu.digitisation.utils.log.Messages info
+INFO: 71% of file processed
+Feb 03, 2022 5:53:19 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 5:53:19 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 5:53:19 PM eu.digitisation.utils.log.Messages info
+INFO: 73% of file processed
+Feb 03, 2022 5:53:19 PM eu.digitisation.utils.log.Messages info
+INFO: 74% of file processed
+Feb 03, 2022 5:53:20 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 5:53:20 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 5:53:20 PM eu.digitisation.utils.log.Messages info
+INFO: 76% of file processed
+Feb 03, 2022 5:53:20 PM eu.digitisation.utils.log.Messages info
+INFO: 77% of file processed
+Feb 03, 2022 5:53:20 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 5:53:21 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 5:53:21 PM eu.digitisation.utils.log.Messages info
+INFO: 79% of file processed
+Feb 03, 2022 5:53:21 PM eu.digitisation.utils.log.Messages info
+INFO: 80% of file processed
+Feb 03, 2022 5:53:21 PM eu.digitisation.utils.log.Messages info
+INFO: 81% of file processed
+Feb 03, 2022 5:53:22 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 5:53:22 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 5:53:22 PM eu.digitisation.utils.log.Messages info
+INFO: 83% of file processed
+Feb 03, 2022 5:53:22 PM eu.digitisation.utils.log.Messages info
+INFO: 84% of file processed
+Feb 03, 2022 5:53:22 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 5:53:23 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 5:53:23 PM eu.digitisation.utils.log.Messages info
+INFO: 86% of file processed
+Feb 03, 2022 5:53:23 PM eu.digitisation.utils.log.Messages info
+INFO: 87% of file processed
+Feb 03, 2022 5:53:23 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 5:53:24 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 5:53:24 PM eu.digitisation.utils.log.Messages info
+INFO: 89% of file processed
+Feb 03, 2022 5:53:24 PM eu.digitisation.utils.log.Messages info
+INFO: 90% of file processed
+Feb 03, 2022 5:53:24 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 5:53:25 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 5:53:25 PM eu.digitisation.utils.log.Messages info
+INFO: 92% of file processed
+Feb 03, 2022 5:53:25 PM eu.digitisation.utils.log.Messages info
+INFO: 93% of file processed
+Feb 03, 2022 5:53:25 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 5:53:25 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 5:53:26 PM eu.digitisation.utils.log.Messages info
+INFO: 95% of file processed
+Feb 03, 2022 5:53:26 PM eu.digitisation.utils.log.Messages info
+INFO: 96% of file processed
+Feb 03, 2022 5:53:26 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 5:53:26 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 5:53:27 PM eu.digitisation.utils.log.Messages info
+INFO: 98% of file processed
+Feb 03, 2022 5:53:27 PM eu.digitisation.utils.log.Messages info
+INFO: 100% of file processed
+bash ocreval.sh engRupee data/engRupee/tessdata_fast/engRupee_0.670000_463_1300.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1300, sample_iteration=1300, null_char=111, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.27
+user 30.20
+sys 0.27
+real 10.65
+user 31.41
+sys 0.32
+real 10.73
+user 31.53
+sys 0.29
+real 10.40
+user 30.46
+sys 0.32
+Page 1
+Page 2
+real 13.36
+user 39.62
+sys 0.45
+Page 1
+Page 2
+real 13.44
+user 39.83
+sys 0.42
+Page 1
+Page 2
+real 13.47
+user 39.86
+sys 0.41
+Page 1
+Page 2
+real 13.34
+user 39.55
+sys 0.41
+real 10.84
+user 32.00
+sys 0.33
+real 10.59
+user 31.04
+sys 0.27
+real 11.79
+user 34.87
+sys 0.32
+real 11.95
+user 35.19
+sys 0.35
+real 10.68
+user 31.16
+sys 0.36
+Page 1
+Page 2
+real 11.81
+user 33.85
+sys 0.36
+Page 1
+Page 2
+real 11.85
+user 34.26
+sys 0.33
+Page 1
+Page 2
+real 11.20
+user 32.09
+sys 0.34
+Page 1
+Page 2
+real 11.93
+user 34.42
+sys 0.33
+Page 1
+Page 2
+real 11.96
+user 34.30
+sys 0.42
+Page 1
+Page 2
+real 11.21
+user 31.96
+sys 0.34
+Page 1
+Page 2
+real 11.11
+user 31.86
+sys 0.31
+real 10.37
+user 30.59
+sys 0.30
+real 10.80
+user 31.96
+sys 0.29
+real 10.41
+user 30.51
+sys 0.33
+real 10.19
+user 29.79
+sys 0.31
+real 10.16
+user 29.72
+sys 0.34
+real 10.65
+user 31.35
+sys 0.33
+real 10.62
+user 31.07
+sys 0.34
+real 10.27
+user 30.13
+sys 0.30
+Page 1
+Page 2
+real 11.88
+user 34.11
+sys 0.42
+Page 1
+Page 2
+real 12.71
+user 36.86
+sys 0.36
+Page 1
+Page 2
+real 12.80
+user 36.95
+sys 0.40
+Page 1
+Page 2
+real 11.96
+user 34.32
+sys 0.33
+Feb 03, 2022 5:59:36 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 5:59:36 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 5:59:36 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 5:59:36 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 5:59:36 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 5:59:36 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 5:59:36 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 5:59:36 PM eu.digitisation.utils.log.Messages info
+INFO: 0% of file processed
+Feb 03, 2022 5:59:37 PM eu.digitisation.utils.log.Messages info
+INFO: 1% of file processed
+Feb 03, 2022 5:59:37 PM eu.digitisation.utils.log.Messages info
+INFO: 2% of file processed
+Feb 03, 2022 5:59:37 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 5:59:37 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 5:59:38 PM eu.digitisation.utils.log.Messages info
+INFO: 4% of file processed
+Feb 03, 2022 5:59:38 PM eu.digitisation.utils.log.Messages info
+INFO: 5% of file processed
+Feb 03, 2022 5:59:38 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 5:59:38 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 5:59:39 PM eu.digitisation.utils.log.Messages info
+INFO: 7% of file processed
+Feb 03, 2022 5:59:39 PM eu.digitisation.utils.log.Messages info
+INFO: 8% of file processed
+Feb 03, 2022 5:59:39 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 5:59:39 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 5:59:39 PM eu.digitisation.utils.log.Messages info
+INFO: 10% of file processed
+Feb 03, 2022 5:59:40 PM eu.digitisation.utils.log.Messages info
+INFO: 11% of file processed
+Feb 03, 2022 5:59:40 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 5:59:40 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 5:59:40 PM eu.digitisation.utils.log.Messages info
+INFO: 13% of file processed
+Feb 03, 2022 5:59:41 PM eu.digitisation.utils.log.Messages info
+INFO: 14% of file processed
+Feb 03, 2022 5:59:41 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 5:59:41 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 5:59:41 PM eu.digitisation.utils.log.Messages info
+INFO: 16% of file processed
+Feb 03, 2022 5:59:41 PM eu.digitisation.utils.log.Messages info
+INFO: 17% of file processed
+Feb 03, 2022 5:59:42 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 5:59:42 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 5:59:42 PM eu.digitisation.utils.log.Messages info
+INFO: 19% of file processed
+Feb 03, 2022 5:59:42 PM eu.digitisation.utils.log.Messages info
+INFO: 20% of file processed
+Feb 03, 2022 5:59:43 PM eu.digitisation.utils.log.Messages info
+INFO: 21% of file processed
+Feb 03, 2022 5:59:43 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 5:59:43 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 5:59:43 PM eu.digitisation.utils.log.Messages info
+INFO: 23% of file processed
+Feb 03, 2022 5:59:44 PM eu.digitisation.utils.log.Messages info
+INFO: 24% of file processed
+Feb 03, 2022 5:59:44 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 5:59:44 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 5:59:44 PM eu.digitisation.utils.log.Messages info
+INFO: 26% of file processed
+Feb 03, 2022 5:59:44 PM eu.digitisation.utils.log.Messages info
+INFO: 27% of file processed
+Feb 03, 2022 5:59:45 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 5:59:45 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 5:59:45 PM eu.digitisation.utils.log.Messages info
+INFO: 29% of file processed
+Feb 03, 2022 5:59:45 PM eu.digitisation.utils.log.Messages info
+INFO: 30% of file processed
+Feb 03, 2022 5:59:46 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 5:59:46 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 5:59:46 PM eu.digitisation.utils.log.Messages info
+INFO: 32% of file processed
+Feb 03, 2022 5:59:46 PM eu.digitisation.utils.log.Messages info
+INFO: 33% of file processed
+Feb 03, 2022 5:59:46 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 5:59:47 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 5:59:47 PM eu.digitisation.utils.log.Messages info
+INFO: 35% of file processed
+Feb 03, 2022 5:59:47 PM eu.digitisation.utils.log.Messages info
+INFO: 36% of file processed
+Feb 03, 2022 5:59:47 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 5:59:48 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 5:59:48 PM eu.digitisation.utils.log.Messages info
+INFO: 38% of file processed
+Feb 03, 2022 5:59:48 PM eu.digitisation.utils.log.Messages info
+INFO: 39% of file processed
+Feb 03, 2022 5:59:48 PM eu.digitisation.utils.log.Messages info
+INFO: 40% of file processed
+Feb 03, 2022 5:59:48 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 5:59:49 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 5:59:49 PM eu.digitisation.utils.log.Messages info
+INFO: 42% of file processed
+Feb 03, 2022 5:59:49 PM eu.digitisation.utils.log.Messages info
+INFO: 43% of file processed
+Feb 03, 2022 5:59:49 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 5:59:50 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 5:59:50 PM eu.digitisation.utils.log.Messages info
+INFO: 45% of file processed
+Feb 03, 2022 5:59:50 PM eu.digitisation.utils.log.Messages info
+INFO: 46% of file processed
+Feb 03, 2022 5:59:50 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 5:59:51 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 5:59:51 PM eu.digitisation.utils.log.Messages info
+INFO: 48% of file processed
+Feb 03, 2022 5:59:51 PM eu.digitisation.utils.log.Messages info
+INFO: 49% of file processed
+Feb 03, 2022 5:59:51 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 5:59:51 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 5:59:52 PM eu.digitisation.utils.log.Messages info
+INFO: 51% of file processed
+Feb 03, 2022 5:59:52 PM eu.digitisation.utils.log.Messages info
+INFO: 52% of file processed
+Feb 03, 2022 5:59:52 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 5:59:52 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 5:59:53 PM eu.digitisation.utils.log.Messages info
+INFO: 54% of file processed
+Feb 03, 2022 5:59:53 PM eu.digitisation.utils.log.Messages info
+INFO: 55% of file processed
+Feb 03, 2022 5:59:53 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 5:59:53 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 5:59:53 PM eu.digitisation.utils.log.Messages info
+INFO: 57% of file processed
+Feb 03, 2022 5:59:54 PM eu.digitisation.utils.log.Messages info
+INFO: 58% of file processed
+Feb 03, 2022 5:59:54 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 5:59:54 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 5:59:54 PM eu.digitisation.utils.log.Messages info
+INFO: 60% of file processed
+Feb 03, 2022 5:59:55 PM eu.digitisation.utils.log.Messages info
+INFO: 61% of file processed
+Feb 03, 2022 5:59:55 PM eu.digitisation.utils.log.Messages info
+INFO: 62% of file processed
+Feb 03, 2022 5:59:55 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 5:59:55 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 5:59:55 PM eu.digitisation.utils.log.Messages info
+INFO: 64% of file processed
+Feb 03, 2022 5:59:56 PM eu.digitisation.utils.log.Messages info
+INFO: 65% of file processed
+Feb 03, 2022 5:59:56 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 5:59:56 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 5:59:56 PM eu.digitisation.utils.log.Messages info
+INFO: 67% of file processed
+Feb 03, 2022 5:59:57 PM eu.digitisation.utils.log.Messages info
+INFO: 68% of file processed
+Feb 03, 2022 5:59:57 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 5:59:57 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 5:59:57 PM eu.digitisation.utils.log.Messages info
+INFO: 70% of file processed
+Feb 03, 2022 5:59:57 PM eu.digitisation.utils.log.Messages info
+INFO: 71% of file processed
+Feb 03, 2022 5:59:58 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 5:59:58 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 5:59:58 PM eu.digitisation.utils.log.Messages info
+INFO: 73% of file processed
+Feb 03, 2022 5:59:58 PM eu.digitisation.utils.log.Messages info
+INFO: 74% of file processed
+Feb 03, 2022 5:59:59 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 5:59:59 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 5:59:59 PM eu.digitisation.utils.log.Messages info
+INFO: 76% of file processed
+Feb 03, 2022 5:59:59 PM eu.digitisation.utils.log.Messages info
+INFO: 77% of file processed
+Feb 03, 2022 5:59:59 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 6:00:00 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 6:00:00 PM eu.digitisation.utils.log.Messages info
+INFO: 79% of file processed
+Feb 03, 2022 6:00:00 PM eu.digitisation.utils.log.Messages info
+INFO: 80% of file processed
+Feb 03, 2022 6:00:00 PM eu.digitisation.utils.log.Messages info
+INFO: 81% of file processed
+Feb 03, 2022 6:00:01 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 6:00:01 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 6:00:01 PM eu.digitisation.utils.log.Messages info
+INFO: 83% of file processed
+Feb 03, 2022 6:00:01 PM eu.digitisation.utils.log.Messages info
+INFO: 84% of file processed
+Feb 03, 2022 6:00:02 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 6:00:02 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 6:00:02 PM eu.digitisation.utils.log.Messages info
+INFO: 86% of file processed
+Feb 03, 2022 6:00:02 PM eu.digitisation.utils.log.Messages info
+INFO: 87% of file processed
+Feb 03, 2022 6:00:02 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 6:00:03 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 6:00:03 PM eu.digitisation.utils.log.Messages info
+INFO: 89% of file processed
+Feb 03, 2022 6:00:03 PM eu.digitisation.utils.log.Messages info
+INFO: 90% of file processed
+Feb 03, 2022 6:00:03 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 6:00:04 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 6:00:04 PM eu.digitisation.utils.log.Messages info
+INFO: 92% of file processed
+Feb 03, 2022 6:00:04 PM eu.digitisation.utils.log.Messages info
+INFO: 93% of file processed
+Feb 03, 2022 6:00:04 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 6:00:04 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 6:00:05 PM eu.digitisation.utils.log.Messages info
+INFO: 95% of file processed
+Feb 03, 2022 6:00:05 PM eu.digitisation.utils.log.Messages info
+INFO: 96% of file processed
+Feb 03, 2022 6:00:05 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 6:00:05 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 6:00:06 PM eu.digitisation.utils.log.Messages info
+INFO: 98% of file processed
+Feb 03, 2022 6:00:06 PM eu.digitisation.utils.log.Messages info
+INFO: 100% of file processed
+bash ocreval.sh engRupee data/engRupee/tessdata_fast/engRupee_0.020000_690_8500.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=8500, sample_iteration=8500, null_char=111, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.32
+user 30.31
+sys 0.25
+real 10.66
+user 31.42
+sys 0.30
+real 10.68
+user 31.40
+sys 0.30
+real 10.35
+user 30.32
+sys 0.32
+Page 1
+Page 2
+real 13.28
+user 39.36
+sys 0.44
+Page 1
+Page 2
+real 13.38
+user 39.71
+sys 0.44
+Page 1
+Page 2
+real 13.48
+user 39.86
+sys 0.40
+Page 1
+Page 2
+real 13.39
+user 39.68
+sys 0.45
+real 10.86
+user 32.03
+sys 0.34
+real 10.58
+user 30.94
+sys 0.36
+real 11.71
+user 34.62
+sys 0.35
+real 11.89
+user 35.09
+sys 0.33
+real 10.64
+user 31.17
+sys 0.26
+Page 1
+Page 2
+real 11.69
+user 33.70
+sys 0.33
+Page 1
+Page 2
+real 11.80
+user 34.09
+sys 0.36
+Page 1
+Page 2
+real 11.17
+user 32.02
+sys 0.28
+Page 1
+Page 2
+real 11.91
+user 34.22
+sys 0.40
+Page 1
+Page 2
+real 12.19
+user 34.28
+sys 0.37
+Page 1
+Page 2
+real 11.13
+user 31.86
+sys 0.30
+Page 1
+Page 2
+real 11.11
+user 31.78
+sys 0.36
+real 10.35
+user 30.43
+sys 0.34
+real 10.83
+user 32.07
+sys 0.27
+real 10.41
+user 30.48
+sys 0.36
+real 10.19
+user 29.76
+sys 0.30
+real 10.18
+user 29.79
+sys 0.31
+real 10.74
+user 31.44
+sys 0.33
+real 10.61
+user 31.12
+sys 0.32
+real 10.27
+user 30.08
+sys 0.34
+Page 1
+Page 2
+real 11.85
+user 34.04
+sys 0.35
+Page 1
+Page 2
+real 12.74
+user 36.93
+sys 0.39
+Page 1
+Page 2
+real 12.80
+user 36.96
+sys 0.38
+Page 1
+Page 2
+real 11.95
+user 34.37
+sys 0.32
+Feb 03, 2022 6:06:14 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:06:15 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:06:15 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:06:15 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:06:15 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:06:15 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:06:15 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 6:06:15 PM eu.digitisation.utils.log.Messages info
+INFO: 0% of file processed
+Feb 03, 2022 6:06:16 PM eu.digitisation.utils.log.Messages info
+INFO: 1% of file processed
+Feb 03, 2022 6:06:16 PM eu.digitisation.utils.log.Messages info
+INFO: 2% of file processed
+Feb 03, 2022 6:06:16 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 6:06:16 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 6:06:16 PM eu.digitisation.utils.log.Messages info
+INFO: 4% of file processed
+Feb 03, 2022 6:06:17 PM eu.digitisation.utils.log.Messages info
+INFO: 5% of file processed
+Feb 03, 2022 6:06:17 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 6:06:17 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 6:06:17 PM eu.digitisation.utils.log.Messages info
+INFO: 7% of file processed
+Feb 03, 2022 6:06:18 PM eu.digitisation.utils.log.Messages info
+INFO: 8% of file processed
+Feb 03, 2022 6:06:18 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 6:06:18 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 6:06:18 PM eu.digitisation.utils.log.Messages info
+INFO: 10% of file processed
+Feb 03, 2022 6:06:18 PM eu.digitisation.utils.log.Messages info
+INFO: 11% of file processed
+Feb 03, 2022 6:06:19 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 6:06:19 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 6:06:19 PM eu.digitisation.utils.log.Messages info
+INFO: 13% of file processed
+Feb 03, 2022 6:06:19 PM eu.digitisation.utils.log.Messages info
+INFO: 14% of file processed
+Feb 03, 2022 6:06:20 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 6:06:20 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 6:06:20 PM eu.digitisation.utils.log.Messages info
+INFO: 16% of file processed
+Feb 03, 2022 6:06:20 PM eu.digitisation.utils.log.Messages info
+INFO: 17% of file processed
+Feb 03, 2022 6:06:21 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 6:06:21 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 6:06:21 PM eu.digitisation.utils.log.Messages info
+INFO: 19% of file processed
+Feb 03, 2022 6:06:21 PM eu.digitisation.utils.log.Messages info
+INFO: 20% of file processed
+Feb 03, 2022 6:06:21 PM eu.digitisation.utils.log.Messages info
+INFO: 21% of file processed
+Feb 03, 2022 6:06:22 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 6:06:22 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 6:06:22 PM eu.digitisation.utils.log.Messages info
+INFO: 23% of file processed
+Feb 03, 2022 6:06:22 PM eu.digitisation.utils.log.Messages info
+INFO: 24% of file processed
+Feb 03, 2022 6:06:23 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 6:06:23 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 6:06:23 PM eu.digitisation.utils.log.Messages info
+INFO: 26% of file processed
+Feb 03, 2022 6:06:23 PM eu.digitisation.utils.log.Messages info
+INFO: 27% of file processed
+Feb 03, 2022 6:06:23 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 6:06:24 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 6:06:24 PM eu.digitisation.utils.log.Messages info
+INFO: 29% of file processed
+Feb 03, 2022 6:06:24 PM eu.digitisation.utils.log.Messages info
+INFO: 30% of file processed
+Feb 03, 2022 6:06:24 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 6:06:25 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 6:06:25 PM eu.digitisation.utils.log.Messages info
+INFO: 32% of file processed
+Feb 03, 2022 6:06:25 PM eu.digitisation.utils.log.Messages info
+INFO: 33% of file processed
+Feb 03, 2022 6:06:25 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 6:06:25 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 6:06:26 PM eu.digitisation.utils.log.Messages info
+INFO: 35% of file processed
+Feb 03, 2022 6:06:26 PM eu.digitisation.utils.log.Messages info
+INFO: 36% of file processed
+Feb 03, 2022 6:06:26 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 6:06:26 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 6:06:27 PM eu.digitisation.utils.log.Messages info
+INFO: 38% of file processed
+Feb 03, 2022 6:06:27 PM eu.digitisation.utils.log.Messages info
+INFO: 39% of file processed
+Feb 03, 2022 6:06:27 PM eu.digitisation.utils.log.Messages info
+INFO: 40% of file processed
+Feb 03, 2022 6:06:27 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 6:06:28 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 6:06:28 PM eu.digitisation.utils.log.Messages info
+INFO: 42% of file processed
+Feb 03, 2022 6:06:28 PM eu.digitisation.utils.log.Messages info
+INFO: 43% of file processed
+Feb 03, 2022 6:06:28 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 6:06:28 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 6:06:29 PM eu.digitisation.utils.log.Messages info
+INFO: 45% of file processed
+Feb 03, 2022 6:06:29 PM eu.digitisation.utils.log.Messages info
+INFO: 46% of file processed
+Feb 03, 2022 6:06:29 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 6:06:29 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 6:06:30 PM eu.digitisation.utils.log.Messages info
+INFO: 48% of file processed
+Feb 03, 2022 6:06:30 PM eu.digitisation.utils.log.Messages info
+INFO: 49% of file processed
+Feb 03, 2022 6:06:30 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 6:06:30 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 6:06:31 PM eu.digitisation.utils.log.Messages info
+INFO: 51% of file processed
+Feb 03, 2022 6:06:31 PM eu.digitisation.utils.log.Messages info
+INFO: 52% of file processed
+Feb 03, 2022 6:06:31 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 6:06:31 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 6:06:31 PM eu.digitisation.utils.log.Messages info
+INFO: 54% of file processed
+Feb 03, 2022 6:06:32 PM eu.digitisation.utils.log.Messages info
+INFO: 55% of file processed
+Feb 03, 2022 6:06:32 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 6:06:32 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 6:06:32 PM eu.digitisation.utils.log.Messages info
+INFO: 57% of file processed
+Feb 03, 2022 6:06:33 PM eu.digitisation.utils.log.Messages info
+INFO: 58% of file processed
+Feb 03, 2022 6:06:33 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 6:06:33 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 6:06:33 PM eu.digitisation.utils.log.Messages info
+INFO: 60% of file processed
+Feb 03, 2022 6:06:33 PM eu.digitisation.utils.log.Messages info
+INFO: 61% of file processed
+Feb 03, 2022 6:06:34 PM eu.digitisation.utils.log.Messages info
+INFO: 62% of file processed
+Feb 03, 2022 6:06:34 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 6:06:34 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 6:06:34 PM eu.digitisation.utils.log.Messages info
+INFO: 64% of file processed
+Feb 03, 2022 6:06:35 PM eu.digitisation.utils.log.Messages info
+INFO: 65% of file processed
+Feb 03, 2022 6:06:35 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 6:06:35 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 6:06:35 PM eu.digitisation.utils.log.Messages info
+INFO: 67% of file processed
+Feb 03, 2022 6:06:35 PM eu.digitisation.utils.log.Messages info
+INFO: 68% of file processed
+Feb 03, 2022 6:06:36 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 6:06:36 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 6:06:36 PM eu.digitisation.utils.log.Messages info
+INFO: 70% of file processed
+Feb 03, 2022 6:06:36 PM eu.digitisation.utils.log.Messages info
+INFO: 71% of file processed
+Feb 03, 2022 6:06:37 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 6:06:37 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 6:06:37 PM eu.digitisation.utils.log.Messages info
+INFO: 73% of file processed
+Feb 03, 2022 6:06:37 PM eu.digitisation.utils.log.Messages info
+INFO: 74% of file processed
+Feb 03, 2022 6:06:37 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 6:06:38 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 6:06:38 PM eu.digitisation.utils.log.Messages info
+INFO: 76% of file processed
+Feb 03, 2022 6:06:38 PM eu.digitisation.utils.log.Messages info
+INFO: 77% of file processed
+Feb 03, 2022 6:06:38 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 6:06:39 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 6:06:39 PM eu.digitisation.utils.log.Messages info
+INFO: 79% of file processed
+Feb 03, 2022 6:06:39 PM eu.digitisation.utils.log.Messages info
+INFO: 80% of file processed
+Feb 03, 2022 6:06:39 PM eu.digitisation.utils.log.Messages info
+INFO: 81% of file processed
+Feb 03, 2022 6:06:39 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 6:06:40 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 6:06:40 PM eu.digitisation.utils.log.Messages info
+INFO: 83% of file processed
+Feb 03, 2022 6:06:40 PM eu.digitisation.utils.log.Messages info
+INFO: 84% of file processed
+Feb 03, 2022 6:06:40 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 6:06:41 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 6:06:41 PM eu.digitisation.utils.log.Messages info
+INFO: 86% of file processed
+Feb 03, 2022 6:06:41 PM eu.digitisation.utils.log.Messages info
+INFO: 87% of file processed
+Feb 03, 2022 6:06:41 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 6:06:42 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 6:06:42 PM eu.digitisation.utils.log.Messages info
+INFO: 89% of file processed
+Feb 03, 2022 6:06:42 PM eu.digitisation.utils.log.Messages info
+INFO: 90% of file processed
+Feb 03, 2022 6:06:42 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 6:06:42 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 6:06:43 PM eu.digitisation.utils.log.Messages info
+INFO: 92% of file processed
+Feb 03, 2022 6:06:43 PM eu.digitisation.utils.log.Messages info
+INFO: 93% of file processed
+Feb 03, 2022 6:06:43 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 6:06:43 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 6:06:44 PM eu.digitisation.utils.log.Messages info
+INFO: 95% of file processed
+Feb 03, 2022 6:06:44 PM eu.digitisation.utils.log.Messages info
+INFO: 96% of file processed
+Feb 03, 2022 6:06:44 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 6:06:44 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 6:06:44 PM eu.digitisation.utils.log.Messages info
+INFO: 98% of file processed
+Feb 03, 2022 6:06:45 PM eu.digitisation.utils.log.Messages info
+INFO: 100% of file processed
+bash ocreval.sh engRupee data/engRupee/tessdata_fast/engRupee_0.249000_485_1700.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1700, sample_iteration=1700, null_char=111, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.27
+user 30.17
+sys 0.32
+real 10.71
+user 31.55
+sys 0.34
+real 10.75
+user 31.56
+sys 0.35
+real 10.34
+user 30.28
+sys 0.30
+Page 1
+Page 2
+real 13.37
+user 39.75
+sys 0.36
+Page 1
+Page 2
+real 13.40
+user 39.76
+sys 0.42
+Page 1
+Page 2
+real 13.56
+user 40.16
+sys 0.44
+Page 1
+Page 2
+real 13.48
+user 39.77
+sys 0.42
+real 10.88
+user 32.14
+sys 0.29
+real 10.59
+user 30.89
+sys 0.34
+real 11.84
+user 35.07
+sys 0.31
+real 12.30
+user 35.61
+sys 0.36
+real 10.66
+user 31.21
+sys 0.30
+Page 1
+Page 2
+real 12.46
+user 34.50
+sys 0.37
+Page 1
+Page 2
+real 11.82
+user 34.07
+sys 0.39
+Page 1
+Page 2
+real 11.12
+user 31.83
+sys 0.34
+Page 1
+Page 2
+real 11.85
+user 34.24
+sys 0.35
+Page 1
+Page 2
+real 11.68
+user 33.63
+sys 0.28
+Page 1
+Page 2
+real 11.14
+user 31.86
+sys 0.28
+Page 1
+Page 2
+real 11.06
+user 31.69
+sys 0.33
+real 10.34
+user 30.51
+sys 0.26
+real 10.81
+user 32.00
+sys 0.31
+real 10.40
+user 30.49
+sys 0.32
+real 10.19
+user 29.63
+sys 0.36
+real 10.14
+user 29.73
+sys 0.27
+real 10.69
+user 31.50
+sys 0.31
+real 10.62
+user 31.16
+sys 0.31
+real 10.32
+user 30.28
+sys 0.29
+Page 1

@@ -17,6 +17,7 @@ etsvfile =  arg_list[4] # modelname + "-eval.tsv" - Not used as no training iter
 stsvfile =  arg_list[5] # modelname + "-sub.tsv"
 ltsvfile =  arg_list[6] # modelname + "-lstmeval.tsv"
 otsvfile =  arg_list[7] # modelname + "-ocreval.tsv"
+itsvfile =  arg_list[8] # modelname + "-isrieval.tsv"
 
 maxticks=10
 maxCER=int(ymaxcer) #max y axis to display
@@ -27,6 +28,7 @@ cdf = pd.read_csv(ctsvfile,sep='\t', encoding='utf-8')
 sdf = pd.read_csv(stsvfile,sep='\t', encoding='utf-8')
 ldf = pd.read_csv(ltsvfile,sep='\t', encoding='utf-8')
 odf = pd.read_csv(otsvfile,sep='\t', encoding='utf-8')
+idf = pd.read_csv(itsvfile,sep='\t', encoding='utf-8')
 
 ydf = ydf.sort_values('TrainingIteration')
 cdf = cdf.sort_values('TrainingIteration')
@@ -34,6 +36,7 @@ cdf = cdf.sort_values('TrainingIteration')
 sdf = sdf.sort_values('TrainingIteration')
 ldf = ldf.sort_values('TrainingIteration')
 odf = odf.sort_values('TrainingIteration')
+idf = idf.sort_values('TrainingIteration')
 
 y = ydf['IterationCER']
 x = ydf['LearningIteration']
@@ -58,6 +61,10 @@ lt = ldf['TrainingIteration']
 o = odf['EvalCER']
 ox = odf['LearningIteration']
 ot = odf['TrainingIteration']
+
+i = 100-idf['EvalCER'] # 100 - Accuracy %
+ix = idf['LearningIteration']
+it = idf['TrainingIteration']
 
 plotfile = "data/" + modelname + "/plots/" + modelname + "-" + ymaxcer + ".png"
 
@@ -103,6 +110,11 @@ if not o.dropna().empty: # not NaN or empty
     ax1.plot(ot, o, 'red', linewidth=0.5, label='impactcentre/ocrevalUAtion CER')
     ax1.scatter(ot, o, c='red', s=10, label='CER from ocrevalUAtion', alpha=0.5)
     annot_min('red',20,20,ox,o,ot)
+
+if not i.dropna().empty: # not NaN or empty
+    ax1.plot(it, i, 'green', linewidth=0.5, label='ISRI ocreval CER')
+    ax1.scatter(it, i, c='green', s=10, label='CER from ISRI ocreval', alpha=0.5)
+    annot_min('green',20,20,ix,i,it)
 
 if not s.dropna().empty: # not NaN or empty
     ax1.plot(st, s, 'orange', linewidth=0.5, label='SubTrainer BCER')

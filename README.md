@@ -13,9 +13,11 @@ OCR evalation tools:
 
 ## engImpact
 
-Finetuning of tessdata_best/eng.traineddata for Impact font
+Finetuning of tessdata_best/eng.traineddata for Impact font.
 Evaluation done on data using same font
 
+### Plot generated from log file generated during training
 ![Plot generated from log file generated during training](https://github.com/Shreeshrii/tess5train-fonts/blob/main/data/engImpact/plots/engImpact-LOG-2.png)
 
+### Plot generated from results of various OCR evaluation tools
 ![Plot generated from results of various OCR evaluation tools](https://github.com/Shreeshrii/tess5train-fonts/blob/main/data/engImpact/plots/engImpact-2.png)

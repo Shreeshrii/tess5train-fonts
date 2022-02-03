@@ -2553,3 +2553,1223 @@ real 10.32
 user 30.28
 sys 0.29
 Page 1
+Page 2
+real 11.90
+user 34.18
+sys 0.40
+Page 1
+Page 2
+real 12.80
+user 37.13
+sys 0.38
+Page 1
+Page 2
+real 12.87
+user 37.16
+sys 0.40
+Page 1
+Page 2
+real 11.95
+user 34.28
+sys 0.34
+Feb 03, 2022 6:12:55 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:12:55 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:12:55 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:12:55 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:12:55 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:12:55 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:12:55 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 6:12:56 PM eu.digitisation.utils.log.Messages info
+INFO: 0% of file processed
+Feb 03, 2022 6:12:56 PM eu.digitisation.utils.log.Messages info
+INFO: 1% of file processed
+Feb 03, 2022 6:12:56 PM eu.digitisation.utils.log.Messages info
+INFO: 2% of file processed
+Feb 03, 2022 6:12:56 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 6:12:56 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 6:12:57 PM eu.digitisation.utils.log.Messages info
+INFO: 4% of file processed
+Feb 03, 2022 6:12:57 PM eu.digitisation.utils.log.Messages info
+INFO: 5% of file processed
+Feb 03, 2022 6:12:57 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 6:12:57 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 6:12:58 PM eu.digitisation.utils.log.Messages info
+INFO: 7% of file processed
+Feb 03, 2022 6:12:58 PM eu.digitisation.utils.log.Messages info
+INFO: 8% of file processed
+Feb 03, 2022 6:12:58 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 6:12:58 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 6:12:58 PM eu.digitisation.utils.log.Messages info
+INFO: 10% of file processed
+Feb 03, 2022 6:12:59 PM eu.digitisation.utils.log.Messages info
+INFO: 11% of file processed
+Feb 03, 2022 6:12:59 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 6:12:59 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 6:12:59 PM eu.digitisation.utils.log.Messages info
+INFO: 13% of file processed
+Feb 03, 2022 6:13:00 PM eu.digitisation.utils.log.Messages info
+INFO: 14% of file processed
+Feb 03, 2022 6:13:00 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 6:13:00 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 6:13:00 PM eu.digitisation.utils.log.Messages info
+INFO: 16% of file processed
+Feb 03, 2022 6:13:01 PM eu.digitisation.utils.log.Messages info
+INFO: 17% of file processed
+Feb 03, 2022 6:13:01 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 6:13:01 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 6:13:01 PM eu.digitisation.utils.log.Messages info
+INFO: 19% of file processed
+Feb 03, 2022 6:13:01 PM eu.digitisation.utils.log.Messages info
+INFO: 20% of file processed
+Feb 03, 2022 6:13:02 PM eu.digitisation.utils.log.Messages info
+INFO: 21% of file processed
+Feb 03, 2022 6:13:02 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 6:13:02 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 6:13:02 PM eu.digitisation.utils.log.Messages info
+INFO: 23% of file processed
+Feb 03, 2022 6:13:03 PM eu.digitisation.utils.log.Messages info
+INFO: 24% of file processed
+Feb 03, 2022 6:13:03 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 6:13:03 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 6:13:03 PM eu.digitisation.utils.log.Messages info
+INFO: 26% of file processed
+Feb 03, 2022 6:13:03 PM eu.digitisation.utils.log.Messages info
+INFO: 27% of file processed
+Feb 03, 2022 6:13:04 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 6:13:04 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 6:13:04 PM eu.digitisation.utils.log.Messages info
+INFO: 29% of file processed
+Feb 03, 2022 6:13:04 PM eu.digitisation.utils.log.Messages info
+INFO: 30% of file processed
+Feb 03, 2022 6:13:05 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 6:13:05 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 6:13:05 PM eu.digitisation.utils.log.Messages info
+INFO: 32% of file processed
+Feb 03, 2022 6:13:05 PM eu.digitisation.utils.log.Messages info
+INFO: 33% of file processed
+Feb 03, 2022 6:13:05 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 6:13:06 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 6:13:06 PM eu.digitisation.utils.log.Messages info
+INFO: 35% of file processed
+Feb 03, 2022 6:13:06 PM eu.digitisation.utils.log.Messages info
+INFO: 36% of file processed
+Feb 03, 2022 6:13:06 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 6:13:07 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 6:13:07 PM eu.digitisation.utils.log.Messages info
+INFO: 38% of file processed
+Feb 03, 2022 6:13:07 PM eu.digitisation.utils.log.Messages info
+INFO: 39% of file processed
+Feb 03, 2022 6:13:07 PM eu.digitisation.utils.log.Messages info
+INFO: 40% of file processed
+Feb 03, 2022 6:13:07 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 6:13:08 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 6:13:08 PM eu.digitisation.utils.log.Messages info
+INFO: 42% of file processed
+Feb 03, 2022 6:13:08 PM eu.digitisation.utils.log.Messages info
+INFO: 43% of file processed
+Feb 03, 2022 6:13:08 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 6:13:09 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 6:13:09 PM eu.digitisation.utils.log.Messages info
+INFO: 45% of file processed
+Feb 03, 2022 6:13:09 PM eu.digitisation.utils.log.Messages info
+INFO: 46% of file processed
+Feb 03, 2022 6:13:09 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 6:13:09 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 6:13:10 PM eu.digitisation.utils.log.Messages info
+INFO: 48% of file processed
+Feb 03, 2022 6:13:10 PM eu.digitisation.utils.log.Messages info
+INFO: 49% of file processed
+Feb 03, 2022 6:13:10 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 6:13:10 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 6:13:11 PM eu.digitisation.utils.log.Messages info
+INFO: 51% of file processed
+Feb 03, 2022 6:13:11 PM eu.digitisation.utils.log.Messages info
+INFO: 52% of file processed
+Feb 03, 2022 6:13:11 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 6:13:11 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 6:13:11 PM eu.digitisation.utils.log.Messages info
+INFO: 54% of file processed
+Feb 03, 2022 6:13:12 PM eu.digitisation.utils.log.Messages info
+INFO: 55% of file processed
+Feb 03, 2022 6:13:12 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 6:13:12 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 6:13:12 PM eu.digitisation.utils.log.Messages info
+INFO: 57% of file processed
+Feb 03, 2022 6:13:13 PM eu.digitisation.utils.log.Messages info
+INFO: 58% of file processed
+Feb 03, 2022 6:13:13 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 6:13:13 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 6:13:13 PM eu.digitisation.utils.log.Messages info
+INFO: 60% of file processed
+Feb 03, 2022 6:13:13 PM eu.digitisation.utils.log.Messages info
+INFO: 61% of file processed
+Feb 03, 2022 6:13:14 PM eu.digitisation.utils.log.Messages info
+INFO: 62% of file processed
+Feb 03, 2022 6:13:14 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 6:13:14 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 6:13:14 PM eu.digitisation.utils.log.Messages info
+INFO: 64% of file processed
+Feb 03, 2022 6:13:15 PM eu.digitisation.utils.log.Messages info
+INFO: 65% of file processed
+Feb 03, 2022 6:13:15 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 6:13:15 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 6:13:15 PM eu.digitisation.utils.log.Messages info
+INFO: 67% of file processed
+Feb 03, 2022 6:13:16 PM eu.digitisation.utils.log.Messages info
+INFO: 68% of file processed
+Feb 03, 2022 6:13:16 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 6:13:16 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 6:13:16 PM eu.digitisation.utils.log.Messages info
+INFO: 70% of file processed
+Feb 03, 2022 6:13:16 PM eu.digitisation.utils.log.Messages info
+INFO: 71% of file processed
+Feb 03, 2022 6:13:17 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 6:13:17 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 6:13:17 PM eu.digitisation.utils.log.Messages info
+INFO: 73% of file processed
+Feb 03, 2022 6:13:17 PM eu.digitisation.utils.log.Messages info
+INFO: 74% of file processed
+Feb 03, 2022 6:13:18 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 6:13:18 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 6:13:18 PM eu.digitisation.utils.log.Messages info
+INFO: 76% of file processed
+Feb 03, 2022 6:13:18 PM eu.digitisation.utils.log.Messages info
+INFO: 77% of file processed
+Feb 03, 2022 6:13:18 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 6:13:19 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 6:13:19 PM eu.digitisation.utils.log.Messages info
+INFO: 79% of file processed
+Feb 03, 2022 6:13:19 PM eu.digitisation.utils.log.Messages info
+INFO: 80% of file processed
+Feb 03, 2022 6:13:19 PM eu.digitisation.utils.log.Messages info
+INFO: 81% of file processed
+Feb 03, 2022 6:13:20 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 6:13:20 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 6:13:20 PM eu.digitisation.utils.log.Messages info
+INFO: 83% of file processed
+Feb 03, 2022 6:13:20 PM eu.digitisation.utils.log.Messages info
+INFO: 84% of file processed
+Feb 03, 2022 6:13:20 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 6:13:21 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 6:13:21 PM eu.digitisation.utils.log.Messages info
+INFO: 86% of file processed
+Feb 03, 2022 6:13:21 PM eu.digitisation.utils.log.Messages info
+INFO: 87% of file processed
+Feb 03, 2022 6:13:21 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 6:13:22 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 6:13:22 PM eu.digitisation.utils.log.Messages info
+INFO: 89% of file processed
+Feb 03, 2022 6:13:22 PM eu.digitisation.utils.log.Messages info
+INFO: 90% of file processed
+Feb 03, 2022 6:13:22 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 6:13:22 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 6:13:23 PM eu.digitisation.utils.log.Messages info
+INFO: 92% of file processed
+Feb 03, 2022 6:13:23 PM eu.digitisation.utils.log.Messages info
+INFO: 93% of file processed
+Feb 03, 2022 6:13:23 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 6:13:23 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 6:13:24 PM eu.digitisation.utils.log.Messages info
+INFO: 95% of file processed
+Feb 03, 2022 6:13:24 PM eu.digitisation.utils.log.Messages info
+INFO: 96% of file processed
+Feb 03, 2022 6:13:24 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 6:13:24 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 6:13:24 PM eu.digitisation.utils.log.Messages info
+INFO: 98% of file processed
+Feb 03, 2022 6:13:25 PM eu.digitisation.utils.log.Messages info
+INFO: 100% of file processed
+bash ocreval.sh engRupee data/engRupee/tessdata_fast/engRupee_0.019000_718_10700.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=10700, sample_iteration=10700, null_char=111, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.29
+user 30.26
+sys 0.28
+real 10.70
+user 31.47
+sys 0.39
+real 10.74
+user 31.61
+sys 0.31
+real 10.46
+user 30.40
+sys 0.30
+Page 1
+Page 2
+real 13.42
+user 39.63
+sys 0.49
+Page 1
+Page 2
+real 13.45
+user 39.90
+sys 0.39
+Page 1
+Page 2
+real 13.74
+user 40.14
+sys 0.44
+Page 1
+Page 2
+real 13.30
+user 39.26
+sys 0.51
+real 10.84
+user 32.05
+sys 0.28
+real 10.51
+user 30.74
+sys 0.34
+real 11.74
+user 34.62
+sys 0.41
+real 11.91
+user 35.07
+sys 0.36
+real 10.64
+user 31.12
+sys 0.28
+Page 1
+Page 2
+real 11.70
+user 33.68
+sys 0.34
+Page 1
+Page 2
+real 11.76
+user 33.98
+sys 0.35
+Page 1
+Page 2
+real 11.10
+user 31.77
+sys 0.33
+Page 1
+Page 2
+real 11.93
+user 34.26
+sys 0.38
+Page 1
+Page 2
+real 11.70
+user 33.72
+sys 0.30
+Page 1
+Page 2
+real 11.13
+user 31.83
+sys 0.32
+Page 1
+Page 2
+real 11.07
+user 31.76
+sys 0.26
+real 10.37
+user 30.52
+sys 0.34
+real 10.77
+user 31.91
+sys 0.29
+real 10.43
+user 30.64
+sys 0.28
+real 10.17
+user 29.70
+sys 0.28
+real 10.15
+user 29.72
+sys 0.29
+real 10.69
+user 31.45
+sys 0.34
+real 10.63
+user 31.17
+sys 0.30
+real 10.25
+user 30.09
+sys 0.29
+Page 1
+Page 2
+real 11.89
+user 34.17
+sys 0.38
+Page 1
+Page 2
+real 12.74
+user 36.93
+sys 0.35
+Page 1
+Page 2
+real 12.84
+user 37.13
+sys 0.35
+Page 1
+Page 2
+real 11.98
+user 34.45
+sys 0.31
+Feb 03, 2022 6:19:33 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:19:33 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:19:33 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:19:33 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:19:33 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:19:33 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:19:33 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 6:19:34 PM eu.digitisation.utils.log.Messages info
+INFO: 0% of file processed
+Feb 03, 2022 6:19:34 PM eu.digitisation.utils.log.Messages info
+INFO: 1% of file processed
+Feb 03, 2022 6:19:34 PM eu.digitisation.utils.log.Messages info
+INFO: 2% of file processed
+Feb 03, 2022 6:19:35 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 6:19:35 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 6:19:35 PM eu.digitisation.utils.log.Messages info
+INFO: 4% of file processed
+Feb 03, 2022 6:19:35 PM eu.digitisation.utils.log.Messages info
+INFO: 5% of file processed
+Feb 03, 2022 6:19:36 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 6:19:36 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 6:19:36 PM eu.digitisation.utils.log.Messages info
+INFO: 7% of file processed
+Feb 03, 2022 6:19:36 PM eu.digitisation.utils.log.Messages info
+INFO: 8% of file processed
+Feb 03, 2022 6:19:36 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 6:19:37 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 6:19:37 PM eu.digitisation.utils.log.Messages info
+INFO: 10% of file processed
+Feb 03, 2022 6:19:37 PM eu.digitisation.utils.log.Messages info
+INFO: 11% of file processed
+Feb 03, 2022 6:19:37 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 6:19:38 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 6:19:38 PM eu.digitisation.utils.log.Messages info
+INFO: 13% of file processed
+Feb 03, 2022 6:19:38 PM eu.digitisation.utils.log.Messages info
+INFO: 14% of file processed
+Feb 03, 2022 6:19:38 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 6:19:39 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 6:19:39 PM eu.digitisation.utils.log.Messages info
+INFO: 16% of file processed
+Feb 03, 2022 6:19:39 PM eu.digitisation.utils.log.Messages info
+INFO: 17% of file processed
+Feb 03, 2022 6:19:39 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 6:19:39 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 6:19:40 PM eu.digitisation.utils.log.Messages info
+INFO: 19% of file processed
+Feb 03, 2022 6:19:40 PM eu.digitisation.utils.log.Messages info
+INFO: 20% of file processed
+Feb 03, 2022 6:19:40 PM eu.digitisation.utils.log.Messages info
+INFO: 21% of file processed
+Feb 03, 2022 6:19:40 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 6:19:41 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 6:19:41 PM eu.digitisation.utils.log.Messages info
+INFO: 23% of file processed
+Feb 03, 2022 6:19:41 PM eu.digitisation.utils.log.Messages info
+INFO: 24% of file processed
+Feb 03, 2022 6:19:41 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 6:19:42 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 6:19:42 PM eu.digitisation.utils.log.Messages info
+INFO: 26% of file processed
+Feb 03, 2022 6:19:42 PM eu.digitisation.utils.log.Messages info
+INFO: 27% of file processed
+Feb 03, 2022 6:19:42 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 6:19:42 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 6:19:43 PM eu.digitisation.utils.log.Messages info
+INFO: 29% of file processed
+Feb 03, 2022 6:19:43 PM eu.digitisation.utils.log.Messages info
+INFO: 30% of file processed
+Feb 03, 2022 6:19:43 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 6:19:43 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 6:19:44 PM eu.digitisation.utils.log.Messages info
+INFO: 32% of file processed
+Feb 03, 2022 6:19:44 PM eu.digitisation.utils.log.Messages info
+INFO: 33% of file processed
+Feb 03, 2022 6:19:44 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 6:19:44 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 6:19:45 PM eu.digitisation.utils.log.Messages info
+INFO: 35% of file processed
+Feb 03, 2022 6:19:45 PM eu.digitisation.utils.log.Messages info
+INFO: 36% of file processed
+Feb 03, 2022 6:19:45 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 6:19:45 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 6:19:45 PM eu.digitisation.utils.log.Messages info
+INFO: 38% of file processed
+Feb 03, 2022 6:19:46 PM eu.digitisation.utils.log.Messages info
+INFO: 39% of file processed
+Feb 03, 2022 6:19:46 PM eu.digitisation.utils.log.Messages info
+INFO: 40% of file processed
+Feb 03, 2022 6:19:46 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 6:19:46 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 6:19:47 PM eu.digitisation.utils.log.Messages info
+INFO: 42% of file processed
+Feb 03, 2022 6:19:47 PM eu.digitisation.utils.log.Messages info
+INFO: 43% of file processed
+Feb 03, 2022 6:19:47 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 6:19:47 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 6:19:47 PM eu.digitisation.utils.log.Messages info
+INFO: 45% of file processed
+Feb 03, 2022 6:19:48 PM eu.digitisation.utils.log.Messages info
+INFO: 46% of file processed
+Feb 03, 2022 6:19:48 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 6:19:48 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 6:19:48 PM eu.digitisation.utils.log.Messages info
+INFO: 48% of file processed
+Feb 03, 2022 6:19:49 PM eu.digitisation.utils.log.Messages info
+INFO: 49% of file processed
+Feb 03, 2022 6:19:49 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 6:19:49 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 6:19:49 PM eu.digitisation.utils.log.Messages info
+INFO: 51% of file processed
+Feb 03, 2022 6:19:50 PM eu.digitisation.utils.log.Messages info
+INFO: 52% of file processed
+Feb 03, 2022 6:19:50 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 6:19:50 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 6:19:50 PM eu.digitisation.utils.log.Messages info
+INFO: 54% of file processed
+Feb 03, 2022 6:19:50 PM eu.digitisation.utils.log.Messages info
+INFO: 55% of file processed
+Feb 03, 2022 6:19:51 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 6:19:51 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 6:19:51 PM eu.digitisation.utils.log.Messages info
+INFO: 57% of file processed
+Feb 03, 2022 6:19:51 PM eu.digitisation.utils.log.Messages info
+INFO: 58% of file processed
+Feb 03, 2022 6:19:52 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 6:19:52 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 6:19:52 PM eu.digitisation.utils.log.Messages info
+INFO: 60% of file processed
+Feb 03, 2022 6:19:52 PM eu.digitisation.utils.log.Messages info
+INFO: 61% of file processed
+Feb 03, 2022 6:19:52 PM eu.digitisation.utils.log.Messages info
+INFO: 62% of file processed
+Feb 03, 2022 6:19:53 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 6:19:53 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 6:19:53 PM eu.digitisation.utils.log.Messages info
+INFO: 64% of file processed
+Feb 03, 2022 6:19:53 PM eu.digitisation.utils.log.Messages info
+INFO: 65% of file processed
+Feb 03, 2022 6:19:54 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 6:19:54 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 6:19:54 PM eu.digitisation.utils.log.Messages info
+INFO: 67% of file processed
+Feb 03, 2022 6:19:54 PM eu.digitisation.utils.log.Messages info
+INFO: 68% of file processed
+Feb 03, 2022 6:19:55 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 6:19:55 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 6:19:55 PM eu.digitisation.utils.log.Messages info
+INFO: 70% of file processed
+Feb 03, 2022 6:19:55 PM eu.digitisation.utils.log.Messages info
+INFO: 71% of file processed
+Feb 03, 2022 6:19:55 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 6:19:56 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 6:19:56 PM eu.digitisation.utils.log.Messages info
+INFO: 73% of file processed
+Feb 03, 2022 6:19:56 PM eu.digitisation.utils.log.Messages info
+INFO: 74% of file processed
+Feb 03, 2022 6:19:56 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 6:19:57 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 6:19:57 PM eu.digitisation.utils.log.Messages info
+INFO: 76% of file processed
+Feb 03, 2022 6:19:57 PM eu.digitisation.utils.log.Messages info
+INFO: 77% of file processed
+Feb 03, 2022 6:19:57 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 6:19:58 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 6:19:58 PM eu.digitisation.utils.log.Messages info
+INFO: 79% of file processed
+Feb 03, 2022 6:19:58 PM eu.digitisation.utils.log.Messages info
+INFO: 80% of file processed
+Feb 03, 2022 6:19:58 PM eu.digitisation.utils.log.Messages info
+INFO: 81% of file processed
+Feb 03, 2022 6:19:58 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 6:19:59 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 6:19:59 PM eu.digitisation.utils.log.Messages info
+INFO: 83% of file processed
+Feb 03, 2022 6:19:59 PM eu.digitisation.utils.log.Messages info
+INFO: 84% of file processed
+Feb 03, 2022 6:19:59 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 6:20:00 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 6:20:00 PM eu.digitisation.utils.log.Messages info
+INFO: 86% of file processed
+Feb 03, 2022 6:20:00 PM eu.digitisation.utils.log.Messages info
+INFO: 87% of file processed
+Feb 03, 2022 6:20:00 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 6:20:01 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 6:20:01 PM eu.digitisation.utils.log.Messages info
+INFO: 89% of file processed
+Feb 03, 2022 6:20:01 PM eu.digitisation.utils.log.Messages info
+INFO: 90% of file processed
+Feb 03, 2022 6:20:01 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 6:20:01 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 6:20:02 PM eu.digitisation.utils.log.Messages info
+INFO: 92% of file processed
+Feb 03, 2022 6:20:02 PM eu.digitisation.utils.log.Messages info
+INFO: 93% of file processed
+Feb 03, 2022 6:20:02 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 6:20:02 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 6:20:03 PM eu.digitisation.utils.log.Messages info
+INFO: 95% of file processed
+Feb 03, 2022 6:20:03 PM eu.digitisation.utils.log.Messages info
+INFO: 96% of file processed
+Feb 03, 2022 6:20:03 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 6:20:03 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 6:20:03 PM eu.digitisation.utils.log.Messages info
+INFO: 98% of file processed
+Feb 03, 2022 6:20:04 PM eu.digitisation.utils.log.Messages info
+INFO: 100% of file processed
+bash ocreval.sh engRupee data/engRupee/tessdata_fast/engRupee_0.066000_563_3700.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=3700, sample_iteration=3700, null_char=111, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.46
+user 30.38
+sys 0.29
+real 10.67
+user 31.43
+sys 0.33
+real 10.76
+user 31.58
+sys 0.32
+real 10.36
+user 30.33
+sys 0.26
+Page 1
+Page 2
+real 13.28
+user 39.48
+sys 0.38
+Page 1
+Page 2
+real 13.41
+user 39.74
+sys 0.36
+Page 1
+Page 2
+real 13.53
+user 39.87
+sys 0.45
+Page 1
+Page 2
+real 13.35
+user 39.54
+sys 0.46
+real 10.85
+user 32.05
+sys 0.28
+real 10.60
+user 31.02
+sys 0.31
+real 11.74
+user 34.69
+sys 0.36
+real 11.90
+user 35.10
+sys 0.34
+real 10.70
+user 31.26
+sys 0.34
+Page 1
+Page 2
+real 11.73
+user 33.75
+sys 0.39
+Page 1
+Page 2
+real 11.81
+user 34.21
+sys 0.30
+Page 1
+Page 2
+real 11.16
+user 31.98
+sys 0.34
+Page 1
+Page 2
+real 11.82
+user 34.14
+sys 0.34
+Page 1
+Page 2
+real 11.73
+user 33.65
+sys 0.41
+Page 1
+Page 2
+real 11.16
+user 31.96
+sys 0.29
+Page 1
+Page 2
+real 11.11
+user 31.82
+sys 0.35
+real 10.42
+user 30.64
+sys 0.33
+real 10.81
+user 31.96
+sys 0.36
+real 10.42
+user 30.47
+sys 0.33
+real 10.21
+user 29.85
+sys 0.30
+real 10.18
+user 29.76
+sys 0.34
+real 10.66
+user 31.33
+sys 0.36
+real 10.60
+user 31.16
+sys 0.25
+real 10.26
+user 30.05
+sys 0.37
+Page 1
+Page 2
+real 11.92
+user 34.25
+sys 0.35
+Page 1
+Page 2
+real 12.76
+user 37.06
+sys 0.32
+Page 1
+Page 2
+real 12.80
+user 36.95
+sys 0.40
+Page 1
+Page 2
+real 11.92
+user 34.25
+sys 0.31
+Feb 03, 2022 6:26:12 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 03, 2022 6:26:12 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 03, 2022 6:26:12 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 03, 2022 6:26:12 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 03, 2022 6:26:12 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 03, 2022 6:26:12 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 03, 2022 6:26:13 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+Feb 03, 2022 6:26:13 PM eu.digitisation.utils.log.Messages info
+INFO: 0% of file processed
+Feb 03, 2022 6:26:13 PM eu.digitisation.utils.log.Messages info
+INFO: 1% of file processed
+Feb 03, 2022 6:26:14 PM eu.digitisation.utils.log.Messages info
+INFO: 2% of file processed
+Feb 03, 2022 6:26:14 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 6:26:14 PM eu.digitisation.utils.log.Messages info
+INFO: 3% of file processed
+Feb 03, 2022 6:26:14 PM eu.digitisation.utils.log.Messages info
+INFO: 4% of file processed
+Feb 03, 2022 6:26:15 PM eu.digitisation.utils.log.Messages info
+INFO: 5% of file processed
+Feb 03, 2022 6:26:15 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 6:26:15 PM eu.digitisation.utils.log.Messages info
+INFO: 6% of file processed
+Feb 03, 2022 6:26:15 PM eu.digitisation.utils.log.Messages info
+INFO: 7% of file processed
+Feb 03, 2022 6:26:15 PM eu.digitisation.utils.log.Messages info
+INFO: 8% of file processed
+Feb 03, 2022 6:26:16 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 6:26:16 PM eu.digitisation.utils.log.Messages info
+INFO: 9% of file processed
+Feb 03, 2022 6:26:16 PM eu.digitisation.utils.log.Messages info
+INFO: 10% of file processed
+Feb 03, 2022 6:26:16 PM eu.digitisation.utils.log.Messages info
+INFO: 11% of file processed
+Feb 03, 2022 6:26:17 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 6:26:17 PM eu.digitisation.utils.log.Messages info
+INFO: 12% of file processed
+Feb 03, 2022 6:26:17 PM eu.digitisation.utils.log.Messages info
+INFO: 13% of file processed
+Feb 03, 2022 6:26:17 PM eu.digitisation.utils.log.Messages info
+INFO: 14% of file processed
+Feb 03, 2022 6:26:17 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 6:26:18 PM eu.digitisation.utils.log.Messages info
+INFO: 15% of file processed
+Feb 03, 2022 6:26:18 PM eu.digitisation.utils.log.Messages info
+INFO: 16% of file processed
+Feb 03, 2022 6:26:18 PM eu.digitisation.utils.log.Messages info
+INFO: 17% of file processed
+Feb 03, 2022 6:26:18 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 6:26:19 PM eu.digitisation.utils.log.Messages info
+INFO: 18% of file processed
+Feb 03, 2022 6:26:19 PM eu.digitisation.utils.log.Messages info
+INFO: 19% of file processed
+Feb 03, 2022 6:26:19 PM eu.digitisation.utils.log.Messages info
+INFO: 20% of file processed
+Feb 03, 2022 6:26:19 PM eu.digitisation.utils.log.Messages info
+INFO: 21% of file processed
+Feb 03, 2022 6:26:19 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 6:26:20 PM eu.digitisation.utils.log.Messages info
+INFO: 22% of file processed
+Feb 03, 2022 6:26:20 PM eu.digitisation.utils.log.Messages info
+INFO: 23% of file processed
+Feb 03, 2022 6:26:20 PM eu.digitisation.utils.log.Messages info
+INFO: 24% of file processed
+Feb 03, 2022 6:26:20 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 6:26:21 PM eu.digitisation.utils.log.Messages info
+INFO: 25% of file processed
+Feb 03, 2022 6:26:21 PM eu.digitisation.utils.log.Messages info
+INFO: 26% of file processed
+Feb 03, 2022 6:26:21 PM eu.digitisation.utils.log.Messages info
+INFO: 27% of file processed
+Feb 03, 2022 6:26:21 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 6:26:21 PM eu.digitisation.utils.log.Messages info
+INFO: 28% of file processed
+Feb 03, 2022 6:26:22 PM eu.digitisation.utils.log.Messages info
+INFO: 29% of file processed
+Feb 03, 2022 6:26:22 PM eu.digitisation.utils.log.Messages info
+INFO: 30% of file processed
+Feb 03, 2022 6:26:22 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 6:26:22 PM eu.digitisation.utils.log.Messages info
+INFO: 31% of file processed
+Feb 03, 2022 6:26:23 PM eu.digitisation.utils.log.Messages info
+INFO: 32% of file processed
+Feb 03, 2022 6:26:23 PM eu.digitisation.utils.log.Messages info
+INFO: 33% of file processed
+Feb 03, 2022 6:26:23 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 6:26:23 PM eu.digitisation.utils.log.Messages info
+INFO: 34% of file processed
+Feb 03, 2022 6:26:24 PM eu.digitisation.utils.log.Messages info
+INFO: 35% of file processed
+Feb 03, 2022 6:26:24 PM eu.digitisation.utils.log.Messages info
+INFO: 36% of file processed
+Feb 03, 2022 6:26:24 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 6:26:24 PM eu.digitisation.utils.log.Messages info
+INFO: 37% of file processed
+Feb 03, 2022 6:26:24 PM eu.digitisation.utils.log.Messages info
+INFO: 38% of file processed
+Feb 03, 2022 6:26:25 PM eu.digitisation.utils.log.Messages info
+INFO: 39% of file processed
+Feb 03, 2022 6:26:25 PM eu.digitisation.utils.log.Messages info
+INFO: 40% of file processed
+Feb 03, 2022 6:26:25 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 6:26:25 PM eu.digitisation.utils.log.Messages info
+INFO: 41% of file processed
+Feb 03, 2022 6:26:26 PM eu.digitisation.utils.log.Messages info
+INFO: 42% of file processed
+Feb 03, 2022 6:26:26 PM eu.digitisation.utils.log.Messages info
+INFO: 43% of file processed
+Feb 03, 2022 6:26:26 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 6:26:26 PM eu.digitisation.utils.log.Messages info
+INFO: 44% of file processed
+Feb 03, 2022 6:26:26 PM eu.digitisation.utils.log.Messages info
+INFO: 45% of file processed
+Feb 03, 2022 6:26:27 PM eu.digitisation.utils.log.Messages info
+INFO: 46% of file processed
+Feb 03, 2022 6:26:27 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 6:26:27 PM eu.digitisation.utils.log.Messages info
+INFO: 47% of file processed
+Feb 03, 2022 6:26:27 PM eu.digitisation.utils.log.Messages info
+INFO: 48% of file processed
+Feb 03, 2022 6:26:28 PM eu.digitisation.utils.log.Messages info
+INFO: 49% of file processed
+Feb 03, 2022 6:26:28 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 6:26:28 PM eu.digitisation.utils.log.Messages info
+INFO: 50% of file processed
+Feb 03, 2022 6:26:28 PM eu.digitisation.utils.log.Messages info
+INFO: 51% of file processed
+Feb 03, 2022 6:26:28 PM eu.digitisation.utils.log.Messages info
+INFO: 52% of file processed
+Feb 03, 2022 6:26:29 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 6:26:29 PM eu.digitisation.utils.log.Messages info
+INFO: 53% of file processed
+Feb 03, 2022 6:26:29 PM eu.digitisation.utils.log.Messages info
+INFO: 54% of file processed
+Feb 03, 2022 6:26:29 PM eu.digitisation.utils.log.Messages info
+INFO: 55% of file processed
+Feb 03, 2022 6:26:30 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 6:26:30 PM eu.digitisation.utils.log.Messages info
+INFO: 56% of file processed
+Feb 03, 2022 6:26:30 PM eu.digitisation.utils.log.Messages info
+INFO: 57% of file processed
+Feb 03, 2022 6:26:30 PM eu.digitisation.utils.log.Messages info
+INFO: 58% of file processed
+Feb 03, 2022 6:26:30 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 6:26:31 PM eu.digitisation.utils.log.Messages info
+INFO: 59% of file processed
+Feb 03, 2022 6:26:31 PM eu.digitisation.utils.log.Messages info
+INFO: 60% of file processed
+Feb 03, 2022 6:26:31 PM eu.digitisation.utils.log.Messages info
+INFO: 61% of file processed
+Feb 03, 2022 6:26:31 PM eu.digitisation.utils.log.Messages info
+INFO: 62% of file processed
+Feb 03, 2022 6:26:32 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 6:26:32 PM eu.digitisation.utils.log.Messages info
+INFO: 63% of file processed
+Feb 03, 2022 6:26:32 PM eu.digitisation.utils.log.Messages info
+INFO: 64% of file processed
+Feb 03, 2022 6:26:32 PM eu.digitisation.utils.log.Messages info
+INFO: 65% of file processed
+Feb 03, 2022 6:26:32 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 6:26:33 PM eu.digitisation.utils.log.Messages info
+INFO: 66% of file processed
+Feb 03, 2022 6:26:33 PM eu.digitisation.utils.log.Messages info
+INFO: 67% of file processed
+Feb 03, 2022 6:26:33 PM eu.digitisation.utils.log.Messages info
+INFO: 68% of file processed
+Feb 03, 2022 6:26:33 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 6:26:34 PM eu.digitisation.utils.log.Messages info
+INFO: 69% of file processed
+Feb 03, 2022 6:26:34 PM eu.digitisation.utils.log.Messages info
+INFO: 70% of file processed
+Feb 03, 2022 6:26:34 PM eu.digitisation.utils.log.Messages info
+INFO: 71% of file processed
+Feb 03, 2022 6:26:34 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 6:26:34 PM eu.digitisation.utils.log.Messages info
+INFO: 72% of file processed
+Feb 03, 2022 6:26:35 PM eu.digitisation.utils.log.Messages info
+INFO: 73% of file processed
+Feb 03, 2022 6:26:35 PM eu.digitisation.utils.log.Messages info
+INFO: 74% of file processed
+Feb 03, 2022 6:26:35 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 6:26:35 PM eu.digitisation.utils.log.Messages info
+INFO: 75% of file processed
+Feb 03, 2022 6:26:36 PM eu.digitisation.utils.log.Messages info
+INFO: 76% of file processed
+Feb 03, 2022 6:26:36 PM eu.digitisation.utils.log.Messages info
+INFO: 77% of file processed
+Feb 03, 2022 6:26:36 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 6:26:36 PM eu.digitisation.utils.log.Messages info
+INFO: 78% of file processed
+Feb 03, 2022 6:26:36 PM eu.digitisation.utils.log.Messages info
+INFO: 79% of file processed
+Feb 03, 2022 6:26:37 PM eu.digitisation.utils.log.Messages info
+INFO: 80% of file processed
+Feb 03, 2022 6:26:37 PM eu.digitisation.utils.log.Messages info
+INFO: 81% of file processed
+Feb 03, 2022 6:26:37 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 6:26:37 PM eu.digitisation.utils.log.Messages info
+INFO: 82% of file processed
+Feb 03, 2022 6:26:38 PM eu.digitisation.utils.log.Messages info
+INFO: 83% of file processed
+Feb 03, 2022 6:26:38 PM eu.digitisation.utils.log.Messages info
+INFO: 84% of file processed
+Feb 03, 2022 6:26:38 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 6:26:38 PM eu.digitisation.utils.log.Messages info
+INFO: 85% of file processed
+Feb 03, 2022 6:26:38 PM eu.digitisation.utils.log.Messages info
+INFO: 86% of file processed
+Feb 03, 2022 6:26:39 PM eu.digitisation.utils.log.Messages info
+INFO: 87% of file processed
+Feb 03, 2022 6:26:39 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 6:26:39 PM eu.digitisation.utils.log.Messages info
+INFO: 88% of file processed
+Feb 03, 2022 6:26:39 PM eu.digitisation.utils.log.Messages info
+INFO: 89% of file processed
+Feb 03, 2022 6:26:40 PM eu.digitisation.utils.log.Messages info
+INFO: 90% of file processed
+Feb 03, 2022 6:26:40 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 6:26:40 PM eu.digitisation.utils.log.Messages info
+INFO: 91% of file processed
+Feb 03, 2022 6:26:40 PM eu.digitisation.utils.log.Messages info
+INFO: 92% of file processed
+Feb 03, 2022 6:26:40 PM eu.digitisation.utils.log.Messages info
+INFO: 93% of file processed
+Feb 03, 2022 6:26:41 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 6:26:41 PM eu.digitisation.utils.log.Messages info
+INFO: 94% of file processed
+Feb 03, 2022 6:26:41 PM eu.digitisation.utils.log.Messages info
+INFO: 95% of file processed
+Feb 03, 2022 6:26:41 PM eu.digitisation.utils.log.Messages info
+INFO: 96% of file processed
+Feb 03, 2022 6:26:42 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 6:26:42 PM eu.digitisation.utils.log.Messages info
+INFO: 97% of file processed
+Feb 03, 2022 6:26:42 PM eu.digitisation.utils.log.Messages info
+INFO: 98% of file processed
+Feb 03, 2022 6:26:42 PM eu.digitisation.utils.log.Messages info
+INFO: 100% of file processed
+bash ocreval.sh engRupee data/engRupee/tessdata_fast/engRupee_0.023000_688_8300.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=8300, sample_iteration=8300, null_char=111, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 10.32
+user 30.26
+sys 0.30
+real 10.71
+user 31.55
+sys 0.34
+real 10.71
+user 31.43
+sys 0.35
+real 10.45
+user 30.42
+sys 0.34
+Page 1
+Page 2
+real 13.63
+user 40.06
+sys 0.40
+Page 1
+Page 2
+real 13.52
+user 39.91
+sys 0.43
+Page 1
+Page 2
+real 13.42
+user 39.70
+sys 0.43
+Page 1
+Page 2
+real 13.30
+user 39.36
+sys 0.44
+real 10.83
+user 31.98
+sys 0.28
+real 10.57
+user 31.01
+sys 0.28
+real 11.77
+user 34.74
+sys 0.39
+real 11.85
+user 34.97
+sys 0.32
+real 10.68
+user 31.24
+sys 0.30
+Page 1
+Page 2
+real 11.66
+user 33.60
+sys 0.34
+Page 1
+Page 2
+real 11.77
+user 33.96
+sys 0.41
+Page 1
+Page 2
+real 11.13
+user 31.80
+sys 0.38
+Page 1
+Page 2
+real 11.82
+user 34.07
+sys 0.37
+Page 1
+Page 2
+real 11.76
+user 33.74
+sys 0.36
+Page 1
+Page 2
+real 11.13
+user 31.73
+sys 0.36
+Page 1
+Page 2
+real 11.10
+user 31.77
+sys 0.29
+real 10.35
+user 30.49
+sys 0.29
+real 10.84
+user 32.03
+sys 0.36
+real 10.41
+user 30.49
+sys 0.40
+real 10.16
+user 29.76
+sys 0.29
+real 10.18
+user 29.77
+sys 0.31
+real 10.66
+user 31.33
+sys 0.34
+real 10.59
+user 31.05
+sys 0.31
+real 10.26
+user 30.02
+sys 0.33
+Page 1
+Page 2
+real 11.88
+user 34.24
+sys 0.26
+Page 1

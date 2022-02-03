@@ -1,0 +1,24 @@
+________________________________________________________________________
+Makefile:476: warning: overriding recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:473: warning: ignoring old recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:482: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:479: warning: ignoring old recipe for target 'data/Latin.unicharset'
+________________________________________________________________________
+Makefile:476: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:473: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:482: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:479: warning: ignoring old recipe for target 'data/Latin.unicharset'
+sed -i '/^Filename/N;s/\n/ /' data/engFineTuned/tmp/engFineTuned-lstmeval.log
+sort -n -r -o data/engFineTuned/tmp/engFineTuned-lstmeval.log data/engFineTuned/tmp/engFineTuned-lstmeval.log
+sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/engFineTuned/tmp/engFineTuned-lstmeval.log > data/engFineTuned/reports/engFineTuned-lstmeval.txt
+grep '<td>CER</td><td>' data/engFineTuned/tessdata_fast/engFineTuned*.ocrevaluation.html > data/engFineTuned/reports/engFineTuned-ocreval.txt
+sort -n -r -o data/engFineTuned/reports/engFineTuned-ocreval.txt data/engFineTuned/reports/engFineTuned-ocreval.txt
+sort -n -r data/engFineTuned/tmp/engFineTuned-isrieval.log > data/engFineTuned/reports/engFineTuned-isrieval.txt
+________________________________________________________________________
+Makefile:476: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:473: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:482: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:479: warning: ignoring old recipe for target 'data/Latin.unicharset'
+python plot_LOG.py engFineTuned,2,data/engFineTuned/tmp/engFineTuned-iteration.tsv,data/engFineTuned/tmp/engFineTuned-checkpoint.tsv,data/engFineTuned/tmp/engFineTuned-eval.tsv,data/engFineTuned/tmp/engFineTuned-sub.tsv
+python plot_cer.py engFineTuned,2,data/engFineTuned/tmp/engFineTuned-iteration.tsv,data/engFineTuned/tmp/engFineTuned-checkpoint.tsv,data/engFineTuned/tmp/engFineTuned-eval.tsv,data/engFineTuned/tmp/engFineTuned-sub.tsv,data/engFineTuned/tmp/engFineTuned-lstmeval.tsv,data/engFineTuned/tmp/engFineTuned-ocreval.tsv,data/engFineTuned/tmp/engFineTuned-isrieval.tsv
+________________________________________________________________________

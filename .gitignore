@@ -17,6 +17,7 @@ data/logs/*ayer*.*
 data/logs/*IAST*.*
 fonts
 fonts.conf
-langdata
+langdata/iast
+langdata/san
 save
 testdata

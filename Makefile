@@ -48,6 +48,9 @@ PROTO_MODEL = $(OUTPUT_DIR)/$(MODEL_NAME)-proto.traineddata
 # Name of the final trained model. Default: '$(TRAINED_MODEL)'
 TRAINED_MODEL = $(DATA_DIR)/$(MODEL_NAME)-final.traineddata
 
+# Name of the final trained integer model. Default: '$(TRAINED_INTEGER_MODEL)'
+TRAINED_INTEGER_MODEL = $(DATA_DIR)/$(MODEL_NAME)-integer.traineddata
+
 # Max iterations. Default: $(MAX_ITERATIONS)
 MAX_ITERATIONS := 10000
 
@@ -344,8 +347,16 @@ $(OUTPUT_DIR)/tessdata_fast/%.traineddata: $(OUTPUT_DIR)/checkpoints/%.checkpoin
           --model_output $@
 
 # Do training
-training: $(TRAINED_MODEL)
+training: $(TRAINED_MODEL) $(TRAINED_INTEGER_MODEL)
 
+$(TRAINED_INTEGER_MODEL): $(LAST_CHECKPOINT)
+	lstmtraining \
+	--stop_training \
+	--continue_from $(LAST_CHECKPOINT) \
+	--traineddata $(PROTO_MODEL) \
+	--convert_to_int \
+	--model_output $@
+	
 $(TRAINED_MODEL): $(LAST_CHECKPOINT)
 	lstmtraining \
 	--stop_training \

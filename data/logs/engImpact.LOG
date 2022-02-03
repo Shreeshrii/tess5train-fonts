@@ -1,0 +1,100 @@
+Loaded file data/eng/eng.lstm, unpacking...
+Warning: LSTMTrainer deserialized an LSTMRecognizer!
+Code range changed from 111 to 111!
+Num (Extended) outputs,weights in Series:
+  1,36,0,1:1, 0
+Num (Extended) outputs,weights in Series:
+  C3,3:9, 0
+  Ft16:16, 160
+Total weights = 160
+  [C3,3Ft16]:16, 160
+  Mp3,3:16, 0
+  TxyLfys64:64, 20736
+  Lfx96:96, 61824
+  RxLrx96:96, 74112
+  Lfx512:512, 1247232
+  Fc111:111, 56943
+Total weights = 1461007
+Previous null char=110 mapped to 110
+Continuing from data/eng/eng.lstm
+Loaded 500/500 lines (1-500) of document data/ground-truth/engImpact-train/eng.Impact_Condensed.exp0.lstmf
+Loaded 50/50 lines (1-50) of document data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.lstmf
+2 Percent improvement time=34, best error was 100 @ 0
+At iteration 34/100/100, Mean rms=0.440000%, delta=0.367000%, BCER train=1.192000%, BWER train=3.808000%, skip ratio=0.000000%,  New best BCER = 1.192000 Transitioned to stage 1 wrote best model:data/engImpact/checkpoints/engImpact_1.192000_34_100.checkpoint wrote checkpoint.
+
+2 Percent improvement time=60, best error was 100 @ 0
+At iteration 60/200/200, Mean rms=0.416000%, delta=0.307000%, BCER train=0.980000%, BWER train=3.243000%, skip ratio=0.000000%,  New best BCER = 0.980000 wrote best model:data/engImpact/checkpoints/engImpact_0.980000_60_200.checkpoint wrote checkpoint.
+
+2 Percent improvement time=77, best error was 100 @ 0
+At iteration 77/300/300, Mean rms=0.380000%, delta=0.253000%, BCER train=0.821000%, BWER train=2.627000%, skip ratio=0.000000%,  New best BCER = 0.821000 wrote best model:data/engImpact/checkpoints/engImpact_0.821000_77_300.checkpoint wrote checkpoint.
+
+2 Percent improvement time=89, best error was 100 @ 0
+At iteration 89/400/400, Mean rms=0.358000%, delta=0.226000%, BCER train=0.716000%, BWER train=2.257000%, skip ratio=0.000000%,  New best BCER = 0.716000 wrote best model:data/engImpact/checkpoints/engImpact_0.716000_89_400.checkpoint wrote checkpoint.
+
+2 Percent improvement time=110, best error was 100 @ 0
+At iteration 110/500/500, Mean rms=0.347000%, delta=0.218000%, BCER train=0.699000%, BWER train=2.062000%, skip ratio=0.000000%,  New best BCER = 0.699000 wrote checkpoint.
+
+2 Percent improvement time=119, best error was 100 @ 0
+At iteration 119/600/600, Mean rms=0.327000%, delta=0.193000%, BCER train=0.609000%, BWER train=1.791000%, skip ratio=0.000000%,  New best BCER = 0.609000 wrote best model:data/engImpact/checkpoints/engImpact_0.609000_119_600.checkpoint wrote checkpoint.
+
+2 Percent improvement time=126, best error was 100 @ 0
+At iteration 126/700/700, Mean rms=0.313000%, delta=0.176000%, BCER train=0.551000%, BWER train=1.623000%, skip ratio=0.000000%,  New best BCER = 0.551000 wrote best model:data/engImpact/checkpoints/engImpact_0.551000_126_700.checkpoint wrote checkpoint.
+
+2 Percent improvement time=132, best error was 100 @ 0
+At iteration 132/800/800, Mean rms=0.299000%, delta=0.158000%, BCER train=0.497000%, BWER train=1.462000%, skip ratio=0.000000%,  New best BCER = 0.497000 wrote best model:data/engImpact/checkpoints/engImpact_0.497000_132_800.checkpoint wrote checkpoint.
+
+2 Percent improvement time=137, best error was 100 @ 0
+At iteration 137/900/900, Mean rms=0.287000%, delta=0.145000%, BCER train=0.458000%, BWER train=1.355000%, skip ratio=0.000000%,  New best BCER = 0.458000 wrote best model:data/engImpact/checkpoints/engImpact_0.458000_137_900.checkpoint wrote checkpoint.
+
+2 Percent improvement time=141, best error was 100 @ 0
+At iteration 141/1000/1000, Mean rms=0.278000%, delta=0.134000%, BCER train=0.424000%, BWER train=1.260000%, skip ratio=0.000000%,  New best BCER = 0.424000 wrote best model:data/engImpact/checkpoints/engImpact_0.424000_141_1000.checkpoint wrote checkpoint.
+
+2 Percent improvement time=146, best error was 100 @ 0
+At iteration 146/1100/1100, Mean rms=0.253000%, delta=0.101000%, BCER train=0.320000%, BWER train=0.906000%, skip ratio=0.000000%,  New best BCER = 0.320000 wrote best model:data/engImpact/checkpoints/engImpact_0.320000_146_1100.checkpoint wrote checkpoint.
+
+2 Percent improvement time=147, best error was 100 @ 0
+At iteration 147/1200/1200, Mean rms=0.230000%, delta=0.077000%, BCER train=0.245000%, BWER train=0.638000%, skip ratio=0.000000%,  New best BCER = 0.245000 wrote best model:data/engImpact/checkpoints/engImpact_0.245000_147_1200.checkpoint wrote checkpoint.
+
+2 Percent improvement time=148, best error was 100 @ 0
+At iteration 148/1300/1300, Mean rms=0.215000%, delta=0.063000%, BCER train=0.198000%, BWER train=0.499000%, skip ratio=0.000000%,  New best BCER = 0.198000 wrote best model:data/engImpact/checkpoints/engImpact_0.198000_148_1300.checkpoint wrote checkpoint.
+
+2 Percent improvement time=149, best error was 100 @ 0
+At iteration 149/1400/1400, Mean rms=0.201000%, delta=0.050000%, BCER train=0.160000%, BWER train=0.392000%, skip ratio=0.000000%,  New best BCER = 0.160000 wrote best model:data/engImpact/checkpoints/engImpact_0.160000_149_1400.checkpoint wrote checkpoint.
+
+2 Percent improvement time=152, best error was 100 @ 0
+At iteration 152/1500/1500, Mean rms=0.187000%, delta=0.033000%, BCER train=0.104000%, BWER train=0.284000%, skip ratio=0.000000%,  New best BCER = 0.104000 wrote best model:data/engImpact/checkpoints/engImpact_0.104000_152_1500.checkpoint wrote checkpoint.
+
+2 Percent improvement time=154, best error was 100 @ 0
+At iteration 154/1600/1600, Mean rms=0.179000%, delta=0.028000%, BCER train=0.093000%, BWER train=0.250000%, skip ratio=0.000000%,  New best BCER = 0.093000 wrote best model:data/engImpact/checkpoints/engImpact_0.093000_154_1600.checkpoint wrote checkpoint.
+
+2 Percent improvement time=154, best error was 100 @ 0
+At iteration 154/1700/1700, Mean rms=0.171000%, delta=0.020000%, BCER train=0.073000%, BWER train=0.188000%, skip ratio=0.000000%,  New best BCER = 0.073000 wrote best model:data/engImpact/checkpoints/engImpact_0.073000_154_1700.checkpoint wrote checkpoint.
+
+2 Percent improvement time=154, best error was 100 @ 0
+At iteration 154/1800/1800, Mean rms=0.164000%, delta=0.017000%, BCER train=0.061000%, BWER train=0.155000%, skip ratio=0.000000%,  New best BCER = 0.061000 wrote best model:data/engImpact/checkpoints/engImpact_0.061000_154_1800.checkpoint wrote checkpoint.
+
+2 Percent improvement time=155, best error was 100 @ 0
+At iteration 155/1900/1900, Mean rms=0.159000%, delta=0.014000%, BCER train=0.049000%, BWER train=0.113000%, skip ratio=0.000000%,  New best BCER = 0.049000 wrote best model:data/engImpact/checkpoints/engImpact_0.049000_155_1900.checkpoint wrote checkpoint.
+
+2 Percent improvement time=157, best error was 100 @ 0
+At iteration 157/2000/2000, Mean rms=0.153000%, delta=0.012000%, BCER train=0.042000%, BWER train=0.084000%, skip ratio=0.000000%,  New best BCER = 0.042000 wrote best model:data/engImpact/checkpoints/engImpact_0.042000_157_2000.checkpoint wrote checkpoint.
+
+2 Percent improvement time=157, best error was 100 @ 0
+At iteration 157/2100/2100, Mean rms=0.147000%, delta=0.008000%, BCER train=0.027000%, BWER train=0.057000%, skip ratio=0.000000%,  New best BCER = 0.027000 wrote best model:data/engImpact/checkpoints/engImpact_0.027000_157_2100.checkpoint wrote checkpoint.
+
+2 Percent improvement time=157, best error was 100 @ 0
+At iteration 157/2200/2200, Mean rms=0.144000%, delta=0.007000%, BCER train=0.024000%, BWER train=0.057000%, skip ratio=0.000000%,  New best BCER = 0.024000 wrote best model:data/engImpact/checkpoints/engImpact_0.024000_157_2200.checkpoint wrote checkpoint.
+
+2 Percent improvement time=157, best error was 100 @ 0
+At iteration 157/2300/2300, Mean rms=0.141000%, delta=0.006000%, BCER train=0.023000%, BWER train=0.065000%, skip ratio=0.000000%,  New best BCER = 0.023000 wrote best model:data/engImpact/checkpoints/engImpact_0.023000_157_2300.checkpoint wrote checkpoint.
+
+2 Percent improvement time=157, best error was 100 @ 0
+At iteration 157/2400/2400, Mean rms=0.138000%, delta=0.005000%, BCER train=0.021000%, BWER train=0.057000%, skip ratio=0.000000%,  New best BCER = 0.021000 wrote best model:data/engImpact/checkpoints/engImpact_0.021000_157_2400.checkpoint wrote checkpoint.
+
+2 Percent improvement time=158, best error was 100 @ 0
+At iteration 158/2500/2500, Mean rms=0.135000%, delta=0.004000%, BCER train=0.015000%, BWER train=0.048000%, skip ratio=0.000000%,  New best BCER = 0.015000 wrote best model:data/engImpact/checkpoints/engImpact_0.015000_158_2500.checkpoint wrote checkpoint.
+
+2 Percent improvement time=158, best error was 100 @ 0
+At iteration 158/2600/2600, Mean rms=0.132000%, delta=0.003000%, BCER train=0.010000%, BWER train=0.039000%, skip ratio=0.000000%,  New best BCER = 0.010000 wrote best model:data/engImpact/checkpoints/engImpact_0.010000_158_2600.checkpoint wrote checkpoint.
+
+Finished! Selected model with minimal training error rate (BCER) = 0.01

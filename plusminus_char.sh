@@ -14,10 +14,6 @@
 
 rm -rf /tmp
 
-# nohup bash finetune_font.sh eng Latin eng engFineTuned FineTune  ' "Impact Condensed" ' ' "Arial" "FreeSerif" ' 0 0 9999 2 > data/logs/engFineTuned-2.log &
-# nohup bash finetune_font.sh eng Latin eng engImpact FineTune  ' "Impact Condensed" ' ' "Impact Condensed" ' 0 0 9999 2 > data/logs/engImpact-2.log &
-# tail -f data/logs/engImpact-2.log
-
 declare -i maxiter
 maxiter=${10}
 echo "maxiter= " $maxiter
@@ -27,12 +23,22 @@ echo "maxcer= " $maxcer
 
 echo "________________________________________________________________________"
 
+# nohup bash plusminus_char.sh eng Latin eng engRupee FineTune ' "Andika" "Calibri" "Calibri Bold" "Calibri Bold Italic" "Calibri Italic" "Calibri Light" "Calibri Light Italic" "Cambria Bold" "Cambria Bold Italic" "Cambria Italic" "Charis SIL" "Charis SIL Bold" "Charis SIL Bold Italic" "Charis SIL Italic" "Consolas" "Consolas Bold" "Consolas Bold Italic" "Consolas Italic" "Doulos SIL" "FreeMono" "FreeMono Bold" "FreeMono Bold Italic" "FreeMono Italic" "FreeSans" "FreeSans Italic" "FreeSans Semi-Bold" "FreeSans Semi-Bold Italic" "FreeSerif" "FreeSerif Bold" "FreeSerif Bold Italic" "FreeSerif Italic" "Microsoft Sans Serif" "Quivira" "Symbola Semi-Condensed" "Tahoma" "Tahoma Bold" "Times New Roman," "Times New Roman, Bold" "Times New Roman, Bold Italic" "Times New Roman, Italic" "Unifont Medium" ' '' 0 0 99999 2 > data/logs/engRupee.log &
+
+rm -rf /tmp
+
+echo "________________________________________________________________________"
+
 make MODEL_NAME=$4 clean-groundtruth clean-output
 
 echo "________________________________________________________________________"
 
-tail -50 ~/langdata_lstm/$3/$3.training_text  > data/$4-eval.training_text
-head -500 ~/langdata_lstm/$3/$3.training_text  > data/$4-train.training_text
+tail -25 langdata/eng/eng.rupee.training_text > data/$4-eval.training_text
+tail -25 ~/langdata_lstm/eng/eng.training_text >> data/$4-eval.training_text
+shuf -o data/$4-eval.training_text <data/$4-eval.training_text
+head -100 langdata/eng/eng.rupee.training_text > data/$4-train.training_text
+head -100 ~/langdata_lstm/eng/eng.training_text >> data/$4-train.training_text
+shuf -o data/$4-train.training_text <data/$4-train.training_text
 
 echo "________________________________________________________________________"
 
@@ -51,6 +57,8 @@ MODEL_NAME=$4 \
 TESSTRAIN_FONTS="$6" \
 TESSEVAL_FONTS="$7" \
 lists
+
+echo "________________________________________________________________________"
 
 echo "________________________________________________________________________"
 

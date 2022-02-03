@@ -1,0 +1,98 @@
+Loaded file data/eng/eng.lstm, unpacking...
+Warning: LSTMTrainer deserialized an LSTMRecognizer!
+Code range changed from 111 to 111!
+Num (Extended) outputs,weights in Series:
+  1,36,0,1:1, 0
+Num (Extended) outputs,weights in Series:
+  C3,3:9, 0
+  Ft16:16, 160
+Total weights = 160
+  [C3,3Ft16]:16, 160
+  Mp3,3:16, 0
+  TxyLfys64:64, 20736
+  Lfx96:96, 61824
+  RxLrx96:96, 74112
+  Lfx512:512, 1247232
+  Fc111:111, 56943
+Total weights = 1461007
+Previous null char=110 mapped to 110
+Continuing from data/eng/eng.lstm
+Loaded 500/500 lines (1-500) of document data/ground-truth/engFineTuned-train/eng.Impact_Condensed.exp0.lstmf
+Loaded 50/50 lines (1-50) of document data/ground-truth/engFineTuned-eval/eng.Arial.exp0.lstmf
+Loaded 50/50 lines (1-50) of document data/ground-truth/engFineTuned-eval/eng.FreeSerif.exp0.lstmf
+2 Percent improvement time=33, best error was 100 @ 0
+At iteration 33/100/100, Mean rms=0.461000%, delta=0.327000%, BCER train=1.091000%, BWER train=3.714000%, skip ratio=0.000000%,  New best BCER = 1.091000 Transitioned to stage 1 wrote best model:data/engFineTuned/checkpoints/engFineTuned_1.091000_33_100.checkpoint wrote checkpoint.
+
+2 Percent improvement time=57, best error was 100 @ 0
+At iteration 57/200/200, Mean rms=0.411000%, delta=0.267000%, BCER train=0.906000%, BWER train=2.754000%, skip ratio=0.000000%,  New best BCER = 0.906000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.906000_57_200.checkpoint wrote checkpoint.
+
+2 Percent improvement time=78, best error was 100 @ 0
+At iteration 78/300/300, Mean rms=0.389000%, delta=0.247000%, BCER train=0.865000%, BWER train=2.578000%, skip ratio=0.000000%,  New best BCER = 0.865000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.865000_78_300.checkpoint wrote checkpoint.
+
+2 Percent improvement time=92, best error was 100 @ 0
+At iteration 92/400/400, Mean rms=0.361000%, delta=0.213000%, BCER train=0.736000%, BWER train=2.226000%, skip ratio=0.000000%,  New best BCER = 0.736000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.736000_92_400.checkpoint wrote checkpoint.
+
+2 Percent improvement time=115, best error was 100 @ 0
+At iteration 115/500/500, Mean rms=0.359000%, delta=0.217000%, BCER train=0.726000%, BWER train=2.173000%, skip ratio=0.000000%,  New best BCER = 0.726000 wrote checkpoint.
+
+2 Percent improvement time=121, best error was 100 @ 0
+At iteration 121/600/600, Mean rms=0.337000%, delta=0.187000%, BCER train=0.626000%, BWER train=1.904000%, skip ratio=0.000000%,  New best BCER = 0.626000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.626000_121_600.checkpoint wrote checkpoint.
+
+2 Percent improvement time=128, best error was 100 @ 0
+At iteration 128/700/700, Mean rms=0.320000%, delta=0.170000%, BCER train=0.565000%, BWER train=1.716000%, skip ratio=0.000000%,  New best BCER = 0.565000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.565000_128_700.checkpoint wrote checkpoint.
+
+2 Percent improvement time=137, best error was 100 @ 0
+At iteration 137/800/800, Mean rms=0.307000%, delta=0.154000%, BCER train=0.518000%, BWER train=1.588000%, skip ratio=0.000000%,  New best BCER = 0.518000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.518000_137_800.checkpoint wrote checkpoint.
+
+2 Percent improvement time=140, best error was 100 @ 0
+At iteration 140/900/900, Mean rms=0.293000%, delta=0.140000%, BCER train=0.471000%, BWER train=1.422000%, skip ratio=0.000000%,  New best BCER = 0.471000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.471000_140_900.checkpoint wrote checkpoint.
+
+2 Percent improvement time=148, best error was 100 @ 0
+At iteration 148/1000/1000, Mean rms=0.284000%, delta=0.132000%, BCER train=0.443000%, BWER train=1.325000%, skip ratio=0.000000%,  New best BCER = 0.443000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.443000_148_1000.checkpoint wrote checkpoint.
+
+2 Percent improvement time=150, best error was 100 @ 0
+At iteration 150/1100/1100, Mean rms=0.255000%, delta=0.101000%, BCER train=0.341000%, BWER train=0.983000%, skip ratio=0.000000%,  New best BCER = 0.341000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.341000_150_1100.checkpoint wrote checkpoint.
+
+2 Percent improvement time=152, best error was 100 @ 0
+At iteration 152/1200/1200, Mean rms=0.236000%, delta=0.082000%, BCER train=0.274000%, BWER train=0.803000%, skip ratio=0.000000%,  New best BCER = 0.274000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.274000_152_1200.checkpoint wrote checkpoint.
+
+2 Percent improvement time=154, best error was 100 @ 0
+At iteration 154/1300/1300, Mean rms=0.217000%, delta=0.062000%, BCER train=0.201000%, BWER train=0.590000%, skip ratio=0.000000%,  New best BCER = 0.201000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.201000_154_1300.checkpoint wrote checkpoint.
+
+2 Percent improvement time=154, best error was 100 @ 0
+At iteration 154/1400/1400, Mean rms=0.205000%, delta=0.051000%, BCER train=0.169000%, BWER train=0.473000%, skip ratio=0.000000%,  New best BCER = 0.169000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.169000_154_1400.checkpoint wrote checkpoint.
+
+2 Percent improvement time=158, best error was 100 @ 0
+At iteration 158/1500/1500, Mean rms=0.186000%, delta=0.030000%, BCER train=0.110000%, BWER train=0.304000%, skip ratio=0.000000%,  New best BCER = 0.110000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.110000_158_1500.checkpoint wrote checkpoint.
+
+2 Percent improvement time=159, best error was 100 @ 0
+At iteration 159/1600/1600, Mean rms=0.178000%, delta=0.027000%, BCER train=0.099000%, BWER train=0.259000%, skip ratio=0.000000%,  New best BCER = 0.099000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.099000_159_1600.checkpoint wrote checkpoint.
+
+2 Percent improvement time=159, best error was 100 @ 0
+At iteration 159/1700/1700, Mean rms=0.171000%, delta=0.020000%, BCER train=0.079000%, BWER train=0.201000%, skip ratio=0.000000%,  New best BCER = 0.079000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.079000_159_1700.checkpoint wrote checkpoint.
+
+2 Percent improvement time=160, best error was 100 @ 0
+At iteration 160/1800/1800, Mean rms=0.164000%, delta=0.016000%, BCER train=0.063000%, BWER train=0.140000%, skip ratio=0.000000%,  New best BCER = 0.063000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.063000_160_1800.checkpoint wrote checkpoint.
+
+2 Percent improvement time=160, best error was 100 @ 0
+At iteration 160/1900/1900, Mean rms=0.159000%, delta=0.014000%, BCER train=0.053000%, BWER train=0.131000%, skip ratio=0.000000%,  New best BCER = 0.053000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.053000_160_1900.checkpoint wrote checkpoint.
+
+2 Percent improvement time=161, best error was 100 @ 0
+At iteration 161/2000/2000, Mean rms=0.152000%, delta=0.008000%, BCER train=0.037000%, BWER train=0.094000%, skip ratio=0.000000%,  New best BCER = 0.037000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.037000_161_2000.checkpoint wrote checkpoint.
+
+2 Percent improvement time=162, best error was 100 @ 0
+At iteration 162/2100/2100, Mean rms=0.149000%, delta=0.007000%, BCER train=0.031000%, BWER train=0.076000%, skip ratio=0.000000%,  New best BCER = 0.031000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.031000_162_2100.checkpoint wrote checkpoint.
+
+2 Percent improvement time=162, best error was 100 @ 0
+At iteration 162/2200/2200, Mean rms=0.145000%, delta=0.006000%, BCER train=0.026000%, BWER train=0.076000%, skip ratio=0.000000%,  New best BCER = 0.026000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.026000_162_2200.checkpoint wrote checkpoint.
+
+2 Percent improvement time=162, best error was 100 @ 0
+At iteration 162/2300/2300, Mean rms=0.141000%, delta=0.005000%, BCER train=0.020000%, BWER train=0.067000%, skip ratio=0.000000%,  New best BCER = 0.020000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.020000_162_2300.checkpoint wrote checkpoint.
+
+2 Percent improvement time=162, best error was 100 @ 0
+At iteration 162/2400/2400, Mean rms=0.138000%, delta=0.005000%, BCER train=0.018000%, BWER train=0.067000%, skip ratio=0.000000%,  New best BCER = 0.018000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.018000_162_2400.checkpoint wrote checkpoint.
+
+2 Percent improvement time=162, best error was 100 @ 0
+At iteration 162/2500/2500, Mean rms=0.135000%, delta=0.002000%, BCER train=0.008000%, BWER train=0.040000%, skip ratio=0.000000%,  New best BCER = 0.008000 wrote best model:data/engFineTuned/checkpoints/engFineTuned_0.008000_162_2500.checkpoint wrote checkpoint.
+
+Finished! Selected model with minimal training error rate (BCER) = 0.008

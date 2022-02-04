@@ -1,0 +1,24 @@
+________________________________________________________________________
+Makefile:476: warning: overriding recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:473: warning: ignoring old recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:482: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:479: warning: ignoring old recipe for target 'data/Latin.unicharset'
+________________________________________________________________________
+Makefile:476: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:473: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:482: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:479: warning: ignoring old recipe for target 'data/Latin.unicharset'
+sed -i '/^Filename/N;s/\n/ /' data/engRupee/tmp/engRupee-lstmeval.log
+sort -n -r -o data/engRupee/tmp/engRupee-lstmeval.log data/engRupee/tmp/engRupee-lstmeval.log
+sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/engRupee/tmp/engRupee-lstmeval.log > data/engRupee/reports/engRupee-lstmeval.txt
+grep '<td>CER</td><td>' data/engRupee/tessdata_fast/engRupee*.ocrevaluation.html > data/engRupee/reports/engRupee-ocreval.txt
+sort -n -r -o data/engRupee/reports/engRupee-ocreval.txt data/engRupee/reports/engRupee-ocreval.txt
+sort -n -r data/engRupee/tmp/engRupee-isrieval.log > data/engRupee/reports/engRupee-isrieval.txt
+________________________________________________________________________
+Makefile:476: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:473: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:482: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:479: warning: ignoring old recipe for target 'data/Latin.unicharset'
+python plot_LOG.py engRupee,1,data/engRupee/tmp/engRupee-iteration.tsv,data/engRupee/tmp/engRupee-checkpoint.tsv,data/engRupee/tmp/engRupee-eval.tsv,data/engRupee/tmp/engRupee-sub.tsv
+python plot_cer.py engRupee,1,data/engRupee/tmp/engRupee-iteration.tsv,data/engRupee/tmp/engRupee-checkpoint.tsv,data/engRupee/tmp/engRupee-eval.tsv,data/engRupee/tmp/engRupee-sub.tsv,data/engRupee/tmp/engRupee-lstmeval.tsv,data/engRupee/tmp/engRupee-ocreval.tsv,data/engRupee/tmp/engRupee-isrieval.tsv
+________________________________________________________________________

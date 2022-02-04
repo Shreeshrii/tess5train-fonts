@@ -1,0 +1,11 @@
+________________________________________________________________________
+Makefile:476: warning: overriding recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:473: warning: ignoring old recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:482: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:479: warning: ignoring old recipe for target 'data/Latin.unicharset'
+________________________________________________________________________
+Makefile:476: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:473: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:482: warning: overriding recipe for target 'data/Latin.unicharset'
+Makefile:479: warning: ignoring old recipe for target 'data/Latin.unicharset'
+________________________________________________________________________

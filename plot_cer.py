@@ -98,23 +98,23 @@ ax1.grid(True)
 
 if not c.dropna().empty: # not NaN or empty
     ax1.scatter(ct, c, c='blue', s=15,
-       label='BCER at Checkpoints during training)', alpha=0.5)
+       label='BCER at Checkpoints during training', alpha=0.5)
     annot_min('blue',-50,-50,cx,c,ct)
 
 if not l.dropna().empty: # not NaN or empty
     ax1.plot(lt, l, 'indigo', linewidth=0.5, label='lstmeval BCER')
     ax1.scatter(lt, l, c='indigo', s=10, label='BCER from lstmeval after training', alpha=0.5)
-    annot_min('indigo',30,-30,lx,l,lt)
+    annot_min('indigo',40,-40,lx,l,lt)
 
 if not o.dropna().empty: # not NaN or empty
     ax1.plot(ot, o, 'red', linewidth=0.5, label='impactcentre/ocrevalUAtion CER')
     ax1.scatter(ot, o, c='red', s=10, label='CER from ocrevalUAtion', alpha=0.5)
-    annot_min('red',20,20,ox,o,ot)
+    annot_min('red',40,40,ox,o,ot)
 
 if not i.dropna().empty: # not NaN or empty
     ax1.plot(it, i, 'green', linewidth=0.5, label='ISRI ocreval CER')
     ax1.scatter(it, i, c='green', s=10, label='CER from ISRI ocreval', alpha=0.5)
-    annot_min('green',20,20,ix,i,it)
+    annot_min('green',80,80,ix,i,it)
 
 if not s.dropna().empty: # not NaN or empty
     ax1.plot(st, s, 'orange', linewidth=0.5, label='SubTrainer BCER')
@@ -129,7 +129,8 @@ boxtext= " {:.3f}% at \n  {:,} \n {:,} " .format(ymax,xmax,tmax)
 ax1.annotate(boxtext, xy=(tmax, ymax), xytext=(20,-10), textcoords='offset points', color='black',
             bbox=dict(boxstyle='round,pad=0.2', fc='teal', alpha=0.3))
 
-plt.title(label=PlotTitle,  fontsize = 14, fontweight = 'bold')
+plt.title('CER by Training Iterations - from various OCR evaluation tools',fontsize=10)
+plt.suptitle(PlotTitle, y=0.95, fontsize = 14, fontweight = 'bold')
 plt.legend(loc='upper right')
 
 ax1.set_ylim([-0.5,maxCER])

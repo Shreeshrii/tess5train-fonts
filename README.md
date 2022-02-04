@@ -24,9 +24,6 @@ Evaluation done on data using same font
 nohup bash finetune_font.sh eng Latin eng engImpact FineTune  ' "Impact Condensed" ' ' "Impact Condensed" ' 0 0 9999 1 > data/logs/engImpact.log &
 ```
 
-### Plot using log file generated during training
-![Plot using log file generated during training](https://github.com/Shreeshrii/tess5train-fonts/blob/main/data/engImpact/plots/engImpact-LOG-1.png)
-
 ### Plot from results of various OCR evaluation tools
 ![Plot from results of various OCR evaluation tools](https://github.com/Shreeshrii/tess5train-fonts/blob/main/data/engImpact/plots/engImpact-1.png)
 
@@ -40,8 +37,6 @@ Evaluation done on data using two other fonts.
 ```
 nohup bash finetune_font.sh eng Latin eng engFineTuned FineTune  ' "Impact Condensed" ' ' "Arial" "FreeSerif" ' 0 0 9999 1 > data/logs/engFineTuned.log &
 ```
-### Plot using log file generated during training
-![Plot using log file generated during training](https://github.com/Shreeshrii/tess5train-fonts/blob/main/data/engFineTuned/plots/engFineTuned-LOG-1.png)
 
 ### Plot from results of various OCR evaluation tools
 ![Plot from results of various OCR evaluation tools](https://github.com/Shreeshrii/tess5train-fonts/blob/main/data/engFineTuned/plots/engFineTuned-1.png)
@@ -56,8 +51,6 @@ Evaluation done on data using Latin fonts listed in language_specific.py (used w
 ```
 nohup bash plusminus_char.sh eng Latin eng engRupee FineTune ' "Andika" "Calibri" "Calibri Bold" "Calibri Bold Italic" "Calibri Italic" "Calibri Light" "Calibri Light Italic" "Cambria Bold" "Cambria Bold Italic" "Cambria Italic" "Charis SIL" "Charis SIL Bold" "Charis SIL Bold Italic" "Charis SIL Italic" "Consolas" "Consolas Bold" "Consolas Bold Italic" "Consolas Italic" "Doulos SIL" "FreeMono" "FreeMono Bold" "FreeMono Bold Italic" "FreeMono Italic" "FreeSans" "FreeSans Italic" "FreeSans Semi-Bold" "FreeSans Semi-Bold Italic" "FreeSerif" "FreeSerif Bold" "FreeSerif Bold Italic" "FreeSerif Italic" "Microsoft Sans Serif" "Quivira" "Symbola Semi-Condensed" "Tahoma" "Tahoma Bold" "Times New Roman," "Times New Roman, Bold" "Times New Roman, Bold Italic" "Times New Roman, Italic" "Unifont Medium" ' '' 0 0 99999 1 > data/logs/engRupee.log &
 ```
-### Plot using log file generated during training
-![Plot using log file generated during training](https://github.com/Shreeshrii/tess5train-fonts/blob/main/data/engRupee/plots/engRupee-LOG-1.png)
 
 ### Plot from results of various OCR evaluation tools
 ![Plot from results of various OCR evaluation tools](https://github.com/Shreeshrii/tess5train-fonts/blob/main/data/engRupee/plots/engRupee-1.png)

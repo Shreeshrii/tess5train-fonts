@@ -1,0 +1,18 @@
+________________________________________________________________________
+Makefile:474: warning: overriding recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:471: warning: ignoring old recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+________________________________________________________________________
+Makefile:474: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:471: warning: ignoring old recipe for target 'data/eng.traineddata'
+sed -i '/^Filename/N;s/\n/ /' data/BrazilPlates/tmp/BrazilPlates-lstmeval.log
+sort -n -r -o data/BrazilPlates/tmp/BrazilPlates-lstmeval.log data/BrazilPlates/tmp/BrazilPlates-lstmeval.log
+sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/BrazilPlates/tmp/BrazilPlates-lstmeval.log > data/BrazilPlates/reports/BrazilPlates-lstmeval.txt
+grep '<td>CER</td><td>' data/BrazilPlates/tessdata_fast/BrazilPlates*.ocrevaluation.html > data/BrazilPlates/reports/BrazilPlates-ocreval.txt
+sort -n -r -o data/BrazilPlates/reports/BrazilPlates-ocreval.txt data/BrazilPlates/reports/BrazilPlates-ocreval.txt
+sort -n -r data/BrazilPlates/tmp/BrazilPlates-isrieval.log > data/BrazilPlates/reports/BrazilPlates-isrieval.txt
+________________________________________________________________________
+Makefile:474: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:471: warning: ignoring old recipe for target 'data/eng.traineddata'
+python plot_LOG.py BrazilPlates,3,data/BrazilPlates/tmp/BrazilPlates-iteration.tsv,data/BrazilPlates/tmp/BrazilPlates-checkpoint.tsv,data/BrazilPlates/tmp/BrazilPlates-eval.tsv,data/BrazilPlates/tmp/BrazilPlates-sub.tsv
+python plot_cer.py BrazilPlates,3,data/BrazilPlates/tmp/BrazilPlates-iteration.tsv,data/BrazilPlates/tmp/BrazilPlates-checkpoint.tsv,data/BrazilPlates/tmp/BrazilPlates-eval.tsv,data/BrazilPlates/tmp/BrazilPlates-sub.tsv,data/BrazilPlates/tmp/BrazilPlates-lstmeval.tsv,data/BrazilPlates/tmp/BrazilPlates-ocreval.tsv,data/BrazilPlates/tmp/BrazilPlates-isrieval.tsv
+________________________________________________________________________

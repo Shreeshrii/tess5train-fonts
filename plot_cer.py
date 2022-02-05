@@ -122,12 +122,12 @@ if not s.dropna().empty: # not NaN or empty
        label='BCER for UpdateSubtrainer every 100 iterations', alpha=0.5)
     annot_min('orange',-100,-100,sx,s,st)
 
-tmax = t[np.argmax(x)]
-ymax = y[np.argmax(x)]
-xmax = x.max()
-boxtext= " {:.3f}% at \n  {:,} \n {:,} " .format(ymax,xmax,tmax)
-ax1.annotate(boxtext, xy=(tmax, ymax), xytext=(20,-10), textcoords='offset points', color='black',
-            bbox=dict(boxstyle='round,pad=0.2', fc='teal', alpha=0.3))
+### tmax = t[np.argmax(x)]
+### ymax = y[np.argmax(x)]
+### xmax = x.max()
+### boxtext= " {:.3f}% at \n  {:,} \n {:,} " .format(ymax,xmax,tmax)
+### ax1.annotate(boxtext, xy=(tmax, ymax), xytext=(20,-10), textcoords='offset points', color='black',
+###             bbox=dict(boxstyle='round,pad=0.2', fc='teal', alpha=0.3))
 
 plt.title('CER by Training Iterations - from various OCR evaluation tools',fontsize=10)
 plt.suptitle(PlotTitle, y=0.95, fontsize = 14, fontweight = 'bold')

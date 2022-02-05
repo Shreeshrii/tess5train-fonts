@@ -72,10 +72,12 @@ NET_SPEC := [1,36,0,1 Ct3,3,16 Mp3,3 Lfys48 Lfx96 Lrx96 Lfx192 O1c\#\#\#]
 ifeq ($(TRAIN_TYPE),FineTune)
 	NET_SPEC =--continue_from $(DATA_DIR)/$(START_MODEL)/$(START_MODEL).lstm --old_traineddata $(TESSDATA)/$(START_MODEL).traineddata
 	LEARNING_RATE := 0.0001
+	FAST_DATA_FILES := $(wildcard $(OUTPUT_DIR)/tessdata_fast/$(MODEL_NAME)_[0-1]\.[0-9]*.traineddata)
 else
 ifeq ($(TRAIN_TYPE),ReplaceLayer)
 	NET_SPEC =--continue_from $(DATA_DIR)/$(START_MODEL)/$(START_MODEL).lstm --append_index 5 --net_spec '[Lfx192O1c1]'
 	LEARNING_RATE := 0.0002
+	FAST_DATA_FILES := $(wildcard $(OUTPUT_DIR)/tessdata_fast/$(MODEL_NAME)_[0]\.[0-9]*.traineddata)
 endif
 endif
 
@@ -293,7 +295,7 @@ $(TSV_ALL_CER): $(TSV_100_ITERATIONS) $(TSV_CHECKPOINT) $(TSV_EVAL) $(TSV_SUB) $
 evalCER: $(LSTMEVAL_CER) $(TMP_FAST_LOG) $(FAST_LSTMEVAL_FILES) $(OCREVAL_CER) $(FAST_OCREVAL_FILES) $(ISRIEVAL_CER) $(FAST_ISRIEVAL_FILES)
 
 # Build fast traineddata file list with CER in range [0-1].[0-9].
-FAST_DATA_FILES := $(wildcard $(OUTPUT_DIR)/tessdata_fast/$(MODEL_NAME)_[0]\.[0-9]*.traineddata)
+# FAST_DATA_FILES := $(wildcard $(OUTPUT_DIR)/tessdata_fast/$(MODEL_NAME)_[0]\.[0-9]*.traineddata)
 
 # Build lstmeval files list based on above traineddata list.
 FAST_LSTMEVAL_FILES := $(subst tessdata_fast,tessdata_fast,$(patsubst %.traineddata,%.eval.log,$(FAST_DATA_FILES)))

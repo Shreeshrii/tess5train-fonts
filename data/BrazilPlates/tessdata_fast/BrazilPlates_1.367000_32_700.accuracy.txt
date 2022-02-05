@@ -1,29 +1,32 @@
 ocreval Accuracy Report Version 7.0
 -----------------------------------
      416   Characters
-       0   Errors
-  100.00%  Accuracy
+       1   Errors
+   99.76%  Accuracy
 
        0   Reject Characters
        0   Suspect Markers
        0   False Marks
     0.00%  Characters Marked
-  100.00%  Accuracy After Correction
+   99.76%  Accuracy After Correction
 
      Ins    Subst      Del   Errors
        0        0        0        0   Marked
-       0        0        0        0   Unmarked
-       0        0        0        0   Total
+       0        1        0        1   Unmarked
+       0        1        0        1   Total
 
    Count   Missed   %Right
       52        0   100.00   ASCII Spacing Characters
-     156        0   100.00   ASCII Digits
+     156        1    99.36   ASCII Digits
      208        0   100.00   ASCII Uppercase Letters
-     416        0   100.00   Total
+     416        1    99.76   Total
+
+  Errors   Marked   Correct-Generated
+       1        0   {0}-{Q}
 
    Count   Missed   %Right
       52        0   100.00   {<\n>}
-       6        0   100.00   {0}
+       6        1    83.33   {0}
       15        0   100.00   {1}
       20        0   100.00   {2}
       21        0   100.00   {3}

@@ -1,12 +1,12 @@
 maxiter=  9999
 maxcer=  6
 ________________________________________________________________________
-Makefile:472: warning: overriding recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
-Makefile:469: warning: ignoring old recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:474: warning: overriding recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:471: warning: ignoring old recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
 ________________________________________________________________________
 ________________________________________________________________________
-Makefile:472: warning: overriding recipe for target 'data/eng.traineddata'
-Makefile:469: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:474: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:471: warning: ignoring old recipe for target 'data/eng.traineddata'
 mkdir -p data/BrazilPlates
 python3 ./tesstrain.py \
  --fonts_dir ./fonts \
@@ -20,21 +20,21 @@ python3 ./tesstrain.py \
  --exposures "0" \
  --save_box_tiff \
  --output_dir data/ground-truth/BrazilPlates-eval
-[13:18:10] INFO - Log file location: /tmp/eng-2022-02-05g80g8pl1/tesstrain.log
-[13:18:10] INFO - === Starting training for language eng
-[13:18:10] INFO - Testing font: FE-Font
-[13:18:12] INFO - === Phase I: Generating training images ===
-  0%|          | 0/1 [00:00<?, ?it/s][13:18:12] INFO - Rendering using FE-Font
-100%|██████████| 1/1 [00:01<00:00,  1.46s/it]100%|██████████| 1/1 [00:01<00:00,  1.46s/it]
-[13:18:13] INFO - === Phase UP: Generating unicharset and unichar properties files ===
-[13:18:13] INFO - === Phase E: Generating lstmf files using ['lstm.train']===
-[13:18:13] INFO - Using TESSDATA_PREFIX=data
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.53it/s]100%|██████████| 1/1 [00:00<00:00,  1.52it/s]
-[13:18:14] INFO - === Constructing LSTM training data ===
-[13:18:14] INFO - Creating new directory data/ground-truth/BrazilPlates-eval
-[13:18:14] INFO - === Saving box/tiff pairs for training data ===
-[13:18:14] INFO - === Moving lstmf files for training data ===
-[13:18:14] INFO - All done!
+[13:50:50] INFO - Log file location: /tmp/eng-2022-02-0580taxpsf/tesstrain.log
+[13:50:50] INFO - === Starting training for language eng
+[13:50:50] INFO - Testing font: FE-Font
+[13:50:52] INFO - === Phase I: Generating training images ===
+  0%|          | 0/1 [00:00<?, ?it/s][13:50:52] INFO - Rendering using FE-Font
+100%|██████████| 1/1 [00:01<00:00,  1.47s/it]100%|██████████| 1/1 [00:01<00:00,  1.47s/it]
+[13:50:53] INFO - === Phase UP: Generating unicharset and unichar properties files ===
+[13:50:53] INFO - === Phase E: Generating lstmf files using ['lstm.train']===
+[13:50:53] INFO - Using TESSDATA_PREFIX=data
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00,  1.52it/s]100%|██████████| 1/1 [00:00<00:00,  1.52it/s]
+[13:50:54] INFO - === Constructing LSTM training data ===
+[13:50:54] INFO - Creating new directory data/ground-truth/BrazilPlates-eval
+[13:50:54] INFO - === Saving box/tiff pairs for training data ===
+[13:50:54] INFO - === Moving lstmf files for training data ===
+[13:50:54] INFO - All done!
 mv -v data/ground-truth/BrazilPlates-eval/eng.training_files.txt data/BrazilPlates/list.eval
 renamed 'data/ground-truth/BrazilPlates-eval/eng.training_files.txt' -> 'data/BrazilPlates/list.eval'
 sed -i -e '$a\' data/BrazilPlates/list.eval
@@ -58,21 +58,21 @@ python3 ./tesstrain.py \
  --exposures "0" \
  --save_box_tiff \
  --output_dir data/ground-truth/BrazilPlates-train
-[13:18:14] INFO - Log file location: /tmp/eng-2022-02-05ly52ld1m/tesstrain.log
-[13:18:14] INFO - === Starting training for language eng
-[13:18:14] INFO - Testing font: FE-Font
-[13:18:16] INFO - === Phase I: Generating training images ===
-  0%|          | 0/1 [00:00<?, ?it/s][13:18:16] INFO - Rendering using FE-Font
-100%|██████████| 1/1 [00:11<00:00, 11.33s/it]100%|██████████| 1/1 [00:11<00:00, 11.33s/it]
-[13:18:27] INFO - === Phase UP: Generating unicharset and unichar properties files ===
-[13:18:27] INFO - === Phase E: Generating lstmf files using ['lstm.train']===
-[13:18:27] INFO - Using TESSDATA_PREFIX=data
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.76s/it]100%|██████████| 1/1 [00:04<00:00,  4.76s/it]
-[13:18:32] INFO - === Constructing LSTM training data ===
-[13:18:32] INFO - Creating new directory data/ground-truth/BrazilPlates-train
-[13:18:32] INFO - === Saving box/tiff pairs for training data ===
-[13:18:32] INFO - === Moving lstmf files for training data ===
-[13:18:32] INFO - All done!
+[13:50:55] INFO - Log file location: /tmp/eng-2022-02-057dkfgei7/tesstrain.log
+[13:50:55] INFO - === Starting training for language eng
+[13:50:55] INFO - Testing font: FE-Font
+[13:50:56] INFO - === Phase I: Generating training images ===
+  0%|          | 0/1 [00:00<?, ?it/s][13:50:56] INFO - Rendering using FE-Font
+100%|██████████| 1/1 [00:11<00:00, 11.36s/it]100%|██████████| 1/1 [00:11<00:00, 11.37s/it]
+[13:51:07] INFO - === Phase UP: Generating unicharset and unichar properties files ===
+[13:51:07] INFO - === Phase E: Generating lstmf files using ['lstm.train']===
+[13:51:07] INFO - Using TESSDATA_PREFIX=data
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.80s/it]100%|██████████| 1/1 [00:04<00:00,  4.80s/it]
+[13:51:12] INFO - === Constructing LSTM training data ===
+[13:51:12] INFO - Creating new directory data/ground-truth/BrazilPlates-train
+[13:51:12] INFO - === Saving box/tiff pairs for training data ===
+[13:51:12] INFO - === Moving lstmf files for training data ===
+[13:51:12] INFO - All done!
 mv -v data/ground-truth/BrazilPlates-train/eng.training_files.txt data/BrazilPlates/list.train
 renamed 'data/ground-truth/BrazilPlates-train/eng.training_files.txt' -> 'data/BrazilPlates/list.train'
 sed -i -e '$a\' data/BrazilPlates/list.train
@@ -94,8 +94,8 @@ removed directory 'data/ground-truth/BrazilPlates-train/eng'
 bash box2gt.sh data/ground-truth/BrazilPlates-train
 creating gt from box files for  data/ground-truth/BrazilPlates-train
 ________________________________________________________________________
-Makefile:472: warning: overriding recipe for target 'data/eng.traineddata'
-Makefile:469: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:474: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:471: warning: ignoring old recipe for target 'data/eng.traineddata'
 lstmtraining \
   --continue_from data/eng/eng.lstm --old_traineddata data/eng.traineddata \
   --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
@@ -121,420 +121,434 @@ lstmtraining \
 --model_output data/BrazilPlates-integer.traineddata
 Loaded file data/BrazilPlates/checkpoints/BrazilPlates_checkpoint, unpacking...
 ________________________________________________________________________
-Makefile:472: warning: overriding recipe for target 'data/eng.traineddata'
-Makefile:469: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:474: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:471: warning: ignoring old recipe for target 'data/eng.traineddata'
 mkdir data/BrazilPlates/tessdata_best
 mkdir data/BrazilPlates/tessdata_fast
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.000000_24_1400.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.000000_32_1300.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.000000_24_1400.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.000000_24_1400.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.000000_32_1300.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.000000_32_1300.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.029000_24_1300.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.029000_32_1200.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.029000_24_1300.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.029000_24_1300.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.029000_32_1200.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.029000_32_1200.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.071000_24_1200.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.286000_32_1100.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.071000_24_1200.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.071000_24_1200.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.286000_32_1100.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.286000_32_1100.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.200000_24_1100.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.957000_32_1000.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.200000_24_1100.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.200000_24_1100.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.957000_32_1000.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.957000_32_1000.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.657000_24_1000.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.063000_32_900.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.657000_24_1000.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.657000_24_1000.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_1.063000_32_900.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.063000_32_900.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.730000_24_900.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.196000_32_800.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.730000_24_900.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.730000_24_900.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_1.196000_32_800.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.196000_32_800.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.821000_24_800.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.367000_32_700.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.821000_24_800.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.821000_24_800.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_1.367000_32_700.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.367000_32_700.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.939000_24_700.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.595000_32_600.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_0.939000_24_700.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.939000_24_700.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_1.595000_32_600.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.595000_32_600.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.095000_24_600.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.914000_32_500.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_1.095000_24_600.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.095000_24_600.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_1.914000_32_500.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.914000_32_500.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.314000_24_500.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_2.393000_32_400.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_1.314000_24_500.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.314000_24_500.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_2.393000_32_400.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_2.393000_32_400.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.643000_24_400.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_3.190000_32_300.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_1.643000_24_400.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.643000_24_400.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_3.190000_32_300.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_3.190000_32_300.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_2.095000_23_300.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_4.643000_31_200.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_2.095000_23_300.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_2.095000_23_300.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_4.643000_31_200.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_4.643000_31_200.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_2.929000_20_200.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_6.714000_21_100.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_2.929000_20_200.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_2.929000_20_200.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_6.714000_21_100.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_6.714000_21_100.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_4.571000_16_100.checkpoint \
-          --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --model_output data/BrazilPlates/tessdata_best/BrazilPlates_4.571000_16_100.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_4.571000_16_100.checkpoint, unpacking...
-lstmtraining \
-          --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.000000_24_1400.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.000000_32_1300.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.000000_24_1400.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.000000_24_1400.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.000000_32_1300.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.000000_32_1300.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.029000_24_1300.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.029000_32_1200.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.029000_24_1300.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.029000_24_1300.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.029000_32_1200.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.029000_32_1200.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.071000_24_1200.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.286000_32_1100.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.071000_24_1200.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.071000_24_1200.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.286000_32_1100.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.286000_32_1100.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.200000_24_1100.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.957000_32_1000.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.200000_24_1100.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.200000_24_1100.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.957000_32_1000.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.957000_32_1000.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.657000_24_1000.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.063000_32_900.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.657000_24_1000.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.657000_24_1000.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_1.063000_32_900.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.063000_32_900.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.730000_24_900.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.196000_32_800.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.730000_24_900.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.730000_24_900.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_1.196000_32_800.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.196000_32_800.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.821000_24_800.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.367000_32_700.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.821000_24_800.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.821000_24_800.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_1.367000_32_700.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.367000_32_700.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_0.939000_24_700.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.595000_32_600.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_0.939000_24_700.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_0.939000_24_700.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_1.595000_32_600.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.595000_32_600.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.095000_24_600.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.914000_32_500.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_1.095000_24_600.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.095000_24_600.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_1.914000_32_500.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.914000_32_500.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.314000_24_500.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_2.393000_32_400.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_1.314000_24_500.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.314000_24_500.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_2.393000_32_400.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_2.393000_32_400.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_1.643000_24_400.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_3.190000_32_300.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_1.643000_24_400.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_1.643000_24_400.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_3.190000_32_300.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_3.190000_32_300.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_2.095000_23_300.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_4.643000_31_200.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_2.095000_23_300.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_2.095000_23_300.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_4.643000_31_200.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_4.643000_31_200.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_2.929000_20_200.checkpoint \
+          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_6.714000_21_100.checkpoint \
           --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
           --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_2.929000_20_200.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_2.929000_20_200.checkpoint, unpacking...
-lstmtraining \
-          --stop_training \
-          --continue_from data/BrazilPlates/checkpoints/BrazilPlates_4.571000_16_100.checkpoint \
-          --traineddata data/BrazilPlates/BrazilPlates-proto.traineddata \
-          --convert_to_int \
-          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_4.571000_16_100.traineddata
-Loaded file data/BrazilPlates/checkpoints/BrazilPlates_4.571000_16_100.checkpoint, unpacking...
+          --model_output data/BrazilPlates/tessdata_fast/BrazilPlates_6.714000_21_100.traineddata
+Loaded file data/BrazilPlates/checkpoints/BrazilPlates_6.714000_21_100.checkpoint, unpacking...
 ________________________________________________________________________
-Makefile:472: warning: overriding recipe for target 'data/eng.traineddata'
-Makefile:469: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:474: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:471: warning: ignoring old recipe for target 'data/eng.traineddata'
 time -p lstmeval  \
 	--verbosity=0 \
-	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.071000_24_1200.traineddata \
-	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.071000_24_1200.eval.log
+	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.029000_32_1200.traineddata \
+	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.029000_32_1200.eval.log
 real 1.19
-user 3.94
-sys 0.08
+user 3.99
+sys 0.05
 time -p lstmeval  \
 	--verbosity=0 \
-	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.730000_24_900.traineddata \
-	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.730000_24_900.eval.log
-real 1.18
-user 3.93
+	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.286000_32_1100.traineddata \
+	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.286000_32_1100.eval.log
+real 1.20
+user 3.98
 sys 0.07
 time -p lstmeval  \
 	--verbosity=0 \
-	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.000000_24_1400.traineddata \
-	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.000000_24_1400.eval.log
-real 1.18
-user 3.93
+	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.000000_32_1300.traineddata \
+	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.000000_32_1300.eval.log
+real 1.19
+user 3.95
 sys 0.07
 time -p lstmeval  \
 	--verbosity=0 \
-	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.939000_24_700.traineddata \
-	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.939000_24_700.eval.log
+	--model data/BrazilPlates/tessdata_fast/BrazilPlates_1.914000_32_500.traineddata \
+	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_1.914000_32_500.eval.log
+real 1.19
+user 3.98
+sys 0.05
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/BrazilPlates/tessdata_fast/BrazilPlates_1.063000_32_900.traineddata \
+	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_1.063000_32_900.eval.log
 real 1.19
 user 3.96
 sys 0.06
 time -p lstmeval  \
 	--verbosity=0 \
-	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.821000_24_800.traineddata \
-	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.821000_24_800.eval.log
-real 1.18
-user 3.94
-sys 0.06
+	--model data/BrazilPlates/tessdata_fast/BrazilPlates_1.367000_32_700.traineddata \
+	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_1.367000_32_700.eval.log
+real 1.41
+user 4.24
+sys 0.08
 time -p lstmeval  \
 	--verbosity=0 \
-	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.029000_24_1300.traineddata \
-	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.029000_24_1300.eval.log
-real 1.18
-user 3.95
-sys 0.05
-time -p lstmeval  \
-	--verbosity=0 \
-	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.200000_24_1100.traineddata \
-	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.200000_24_1100.eval.log
-real 1.18
-user 3.94
-sys 0.06
-time -p lstmeval  \
-	--verbosity=0 \
-	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.657000_24_1000.traineddata \
-	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.657000_24_1000.eval.log
-real 1.20
-user 3.95
+	--model data/BrazilPlates/tessdata_fast/BrazilPlates_0.957000_32_1000.traineddata \
+	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_0.957000_32_1000.eval.log
+real 1.19
+user 3.96
 sys 0.07
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/BrazilPlates/tessdata_fast/BrazilPlates_1.595000_32_600.traineddata \
+	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_1.595000_32_600.eval.log
+real 1.20
+user 3.96
+sys 0.09
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/BrazilPlates/tessdata_fast/BrazilPlates_1.196000_32_800.traineddata \
+	--eval_listfile data/BrazilPlates/list.eval 2>&1 | grep "^BCER eval" > data/BrazilPlates/tessdata_fast/BrazilPlates_1.196000_32_800.eval.log
+real 1.20
+user 3.98
+sys 0.06
 sed -i '/^Filename/N;s/\n/ /' data/BrazilPlates/tmp/BrazilPlates-lstmeval.log
 sort -n -r -o data/BrazilPlates/tmp/BrazilPlates-lstmeval.log data/BrazilPlates/tmp/BrazilPlates-lstmeval.log
 sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/BrazilPlates/tmp/BrazilPlates-lstmeval.log > data/BrazilPlates/reports/BrazilPlates-lstmeval.txt
-bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.071000_24_1200.traineddata
+bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.029000_32_1200.traineddata
 LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1200, sample_iteration=1200, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
 Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
-real 1.52
-user 3.54
-sys 0.10
-Feb 05, 2022 1:21:27 PM eu.digitisation.utils.log.Messages info
+real 1.54
+user 3.59
+sys 0.08
+Feb 05, 2022 1:53:57 PM eu.digitisation.utils.log.Messages info
 INFO: Logfile is /home/ubuntu/ocrevaluation.log
-Feb 05, 2022 1:21:28 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:53:57 PM eu.digitisation.utils.log.Messages info
 INFO: Processing GT.txt
-Feb 05, 2022 1:21:28 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:53:57 PM eu.digitisation.utils.log.Messages info
 INFO: Application folder is /home/ubuntu
-Feb 05, 2022 1:21:28 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:53:57 PM eu.digitisation.utils.log.Messages info
 INFO: No properties were defined by user
-Feb 05, 2022 1:21:28 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:53:57 PM eu.digitisation.utils.log.Messages info
 INFO: max length of text set to 0
-Feb 05, 2022 1:21:28 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:53:57 PM eu.digitisation.utils.log.Messages info
 INFO: Text file GT.txt encoding is UTF-8
-Feb 05, 2022 1:21:28 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:53:57 PM eu.digitisation.utils.log.Messages info
 INFO: Text file OCR.txt encoding is UTF-8
-bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.730000_24_900.traineddata
+bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.286000_32_1100.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1100, sample_iteration=1100, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 1.53
+user 3.57
+sys 0.08
+Feb 05, 2022 1:54:00 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 1:54:00 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 1:54:00 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 1:54:00 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 1:54:00 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 1:54:00 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 1:54:00 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.000000_32_1300.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1300, sample_iteration=1300, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 1.64
+user 3.92
+sys 0.07
+Feb 05, 2022 1:54:02 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 1:54:02 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 1:54:02 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 1:54:02 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 1:54:02 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 1:54:02 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 1:54:02 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_1.914000_32_500.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=500, sample_iteration=500, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 1.54
+user 3.56
+sys 0.10
+Feb 05, 2022 1:54:05 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 1:54:05 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 1:54:05 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 1:54:05 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 1:54:05 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 1:54:05 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 1:54:05 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_1.063000_32_900.traineddata
 LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=900, sample_iteration=900, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
 Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
-real 1.52
-user 3.55
+real 1.54
+user 3.57
 sys 0.08
-Feb 05, 2022 1:21:30 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:07 PM eu.digitisation.utils.log.Messages info
 INFO: Logfile is /home/ubuntu/ocrevaluation.log
-Feb 05, 2022 1:21:30 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:08 PM eu.digitisation.utils.log.Messages info
 INFO: Processing GT.txt
-Feb 05, 2022 1:21:30 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:08 PM eu.digitisation.utils.log.Messages info
 INFO: Application folder is /home/ubuntu
-Feb 05, 2022 1:21:30 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:08 PM eu.digitisation.utils.log.Messages info
 INFO: No properties were defined by user
-Feb 05, 2022 1:21:30 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:08 PM eu.digitisation.utils.log.Messages info
 INFO: max length of text set to 0
-Feb 05, 2022 1:21:30 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:08 PM eu.digitisation.utils.log.Messages info
 INFO: Text file GT.txt encoding is UTF-8
-Feb 05, 2022 1:21:30 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:08 PM eu.digitisation.utils.log.Messages info
 INFO: Text file OCR.txt encoding is UTF-8
-bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.000000_24_1400.traineddata
-LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1400, sample_iteration=1400, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
-Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
-real 1.52
-user 3.54
-sys 0.09
-Feb 05, 2022 1:21:32 PM eu.digitisation.utils.log.Messages info
-INFO: Logfile is /home/ubuntu/ocrevaluation.log
-Feb 05, 2022 1:21:33 PM eu.digitisation.utils.log.Messages info
-INFO: Processing GT.txt
-Feb 05, 2022 1:21:33 PM eu.digitisation.utils.log.Messages info
-INFO: Application folder is /home/ubuntu
-Feb 05, 2022 1:21:33 PM eu.digitisation.utils.log.Messages info
-INFO: No properties were defined by user
-Feb 05, 2022 1:21:33 PM eu.digitisation.utils.log.Messages info
-INFO: max length of text set to 0
-Feb 05, 2022 1:21:33 PM eu.digitisation.utils.log.Messages info
-INFO: Text file GT.txt encoding is UTF-8
-Feb 05, 2022 1:21:33 PM eu.digitisation.utils.log.Messages info
-INFO: Text file OCR.txt encoding is UTF-8
-bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.939000_24_700.traineddata
+bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_1.367000_32_700.traineddata
 LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=700, sample_iteration=700, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
 Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
-real 1.52
-user 3.58
-sys 0.04
-Feb 05, 2022 1:21:35 PM eu.digitisation.utils.log.Messages info
+real 1.53
+user 3.57
+sys 0.08
+Feb 05, 2022 1:54:10 PM eu.digitisation.utils.log.Messages info
 INFO: Logfile is /home/ubuntu/ocrevaluation.log
-Feb 05, 2022 1:21:35 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:10 PM eu.digitisation.utils.log.Messages info
 INFO: Processing GT.txt
-Feb 05, 2022 1:21:35 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:10 PM eu.digitisation.utils.log.Messages info
 INFO: Application folder is /home/ubuntu
-Feb 05, 2022 1:21:35 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:10 PM eu.digitisation.utils.log.Messages info
 INFO: No properties were defined by user
-Feb 05, 2022 1:21:35 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:10 PM eu.digitisation.utils.log.Messages info
 INFO: max length of text set to 0
-Feb 05, 2022 1:21:35 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:10 PM eu.digitisation.utils.log.Messages info
 INFO: Text file GT.txt encoding is UTF-8
-Feb 05, 2022 1:21:35 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:10 PM eu.digitisation.utils.log.Messages info
 INFO: Text file OCR.txt encoding is UTF-8
-bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.821000_24_800.traineddata
+bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.957000_32_1000.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1000, sample_iteration=1000, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 1.54
+user 3.62
+sys 0.06
+Feb 05, 2022 1:54:13 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 1:54:13 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 1:54:13 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 1:54:13 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 1:54:13 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 1:54:13 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 1:54:13 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_1.595000_32_600.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=600, sample_iteration=600, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+real 1.54
+user 3.58
+sys 0.06
+Feb 05, 2022 1:54:15 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 1:54:15 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 1:54:15 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 1:54:15 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 1:54:15 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 1:54:15 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 1:54:15 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_1.196000_32_800.traineddata
 LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=800, sample_iteration=800, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
 Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
 real 1.53
-user 3.55
-sys 0.09
-Feb 05, 2022 1:21:38 PM eu.digitisation.utils.log.Messages info
-INFO: Logfile is /home/ubuntu/ocrevaluation.log
-Feb 05, 2022 1:21:38 PM eu.digitisation.utils.log.Messages info
-INFO: Processing GT.txt
-Feb 05, 2022 1:21:38 PM eu.digitisation.utils.log.Messages info
-INFO: Application folder is /home/ubuntu
-Feb 05, 2022 1:21:38 PM eu.digitisation.utils.log.Messages info
-INFO: No properties were defined by user
-Feb 05, 2022 1:21:38 PM eu.digitisation.utils.log.Messages info
-INFO: max length of text set to 0
-Feb 05, 2022 1:21:38 PM eu.digitisation.utils.log.Messages info
-INFO: Text file GT.txt encoding is UTF-8
-Feb 05, 2022 1:21:38 PM eu.digitisation.utils.log.Messages info
-INFO: Text file OCR.txt encoding is UTF-8
-bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.029000_24_1300.traineddata
-LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1300, sample_iteration=1300, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
-Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
-real 1.52
-user 3.54
-sys 0.08
-Feb 05, 2022 1:21:40 PM eu.digitisation.utils.log.Messages info
-INFO: Logfile is /home/ubuntu/ocrevaluation.log
-Feb 05, 2022 1:21:40 PM eu.digitisation.utils.log.Messages info
-INFO: Processing GT.txt
-Feb 05, 2022 1:21:40 PM eu.digitisation.utils.log.Messages info
-INFO: Application folder is /home/ubuntu
-Feb 05, 2022 1:21:40 PM eu.digitisation.utils.log.Messages info
-INFO: No properties were defined by user
-Feb 05, 2022 1:21:40 PM eu.digitisation.utils.log.Messages info
-INFO: max length of text set to 0
-Feb 05, 2022 1:21:40 PM eu.digitisation.utils.log.Messages info
-INFO: Text file GT.txt encoding is UTF-8
-Feb 05, 2022 1:21:40 PM eu.digitisation.utils.log.Messages info
-INFO: Text file OCR.txt encoding is UTF-8
-bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.200000_24_1100.traineddata
-LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1100, sample_iteration=1100, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
-Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
-real 1.52
-user 3.55
-sys 0.07
-Feb 05, 2022 1:21:43 PM eu.digitisation.utils.log.Messages info
-INFO: Logfile is /home/ubuntu/ocrevaluation.log
-Feb 05, 2022 1:21:43 PM eu.digitisation.utils.log.Messages info
-INFO: Processing GT.txt
-Feb 05, 2022 1:21:43 PM eu.digitisation.utils.log.Messages info
-INFO: Application folder is /home/ubuntu
-Feb 05, 2022 1:21:43 PM eu.digitisation.utils.log.Messages info
-INFO: No properties were defined by user
-Feb 05, 2022 1:21:43 PM eu.digitisation.utils.log.Messages info
-INFO: max length of text set to 0
-Feb 05, 2022 1:21:43 PM eu.digitisation.utils.log.Messages info
-INFO: Text file GT.txt encoding is UTF-8
-Feb 05, 2022 1:21:43 PM eu.digitisation.utils.log.Messages info
-INFO: Text file OCR.txt encoding is UTF-8
-bash ocreval.sh BrazilPlates data/BrazilPlates/tessdata_fast/BrazilPlates_0.657000_24_1000.traineddata
-LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1000, sample_iteration=1000, null_char=37, learning_rate=0.001, momentum=0.5, adam_beta=0.999
-Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
-real 1.53
-user 3.60
+user 3.59
 sys 0.06
-Feb 05, 2022 1:21:45 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:18 PM eu.digitisation.utils.log.Messages info
 INFO: Logfile is /home/ubuntu/ocrevaluation.log
-Feb 05, 2022 1:21:45 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:18 PM eu.digitisation.utils.log.Messages info
 INFO: Processing GT.txt
-Feb 05, 2022 1:21:45 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:18 PM eu.digitisation.utils.log.Messages info
 INFO: Application folder is /home/ubuntu
-Feb 05, 2022 1:21:45 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:18 PM eu.digitisation.utils.log.Messages info
 INFO: No properties were defined by user
-Feb 05, 2022 1:21:45 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:18 PM eu.digitisation.utils.log.Messages info
 INFO: max length of text set to 0
-Feb 05, 2022 1:21:45 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:18 PM eu.digitisation.utils.log.Messages info
 INFO: Text file GT.txt encoding is UTF-8
-Feb 05, 2022 1:21:45 PM eu.digitisation.utils.log.Messages info
+Feb 05, 2022 1:54:18 PM eu.digitisation.utils.log.Messages info
 INFO: Text file OCR.txt encoding is UTF-8
 grep '<td>CER</td><td>' data/BrazilPlates/tessdata_fast/BrazilPlates*.ocrevaluation.html > data/BrazilPlates/reports/BrazilPlates-ocreval.txt
 sort -n -r -o data/BrazilPlates/reports/BrazilPlates-ocreval.txt data/BrazilPlates/reports/BrazilPlates-ocreval.txt
 sort -n -r data/BrazilPlates/tmp/BrazilPlates-isrieval.log > data/BrazilPlates/reports/BrazilPlates-isrieval.txt
 ________________________________________________________________________
-Makefile:472: warning: overriding recipe for target 'data/eng.traineddata'
-Makefile:469: warning: ignoring old recipe for target 'data/eng.traineddata'
+Makefile:474: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:471: warning: ignoring old recipe for target 'data/eng.traineddata'
 sed -i '/^Filename/N;s/\n/ /' data/BrazilPlates/tmp/BrazilPlates-lstmeval.log
 sort -n -r -o data/BrazilPlates/tmp/BrazilPlates-lstmeval.log data/BrazilPlates/tmp/BrazilPlates-lstmeval.log
 sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/BrazilPlates/tmp/BrazilPlates-lstmeval.log > data/BrazilPlates/reports/BrazilPlates-lstmeval.txt

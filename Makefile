@@ -228,10 +228,10 @@ all: clean help proto_model lists groundtruth training traineddata
 
 # plotting
 
-plotCER: $(OCREVAL_CER) $(LSTMEVAL_CER) $(TSV_ISRIEVAL) $(TSV_ALL_CER)
+plotCER: $(TSV_ALL_CER)
 
 # Make TSV with CER at every 100 iterations.
-$(TSV_100_ITERATIONS):
+$(TSV_100_ITERATIONS): fixcheckpoints traineddata $(MODEL_LOG)
 	@echo "Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER" > "$@"
 	@grep 'At iteration' $(MODEL_LOG) \
 		| sed -e '/^Sub/d' \
@@ -241,7 +241,7 @@ $(TSV_100_ITERATIONS):
 		| sed -e 's/%, BWER.*/\t/' >>  "$@"
 
 # Make TSV with Checkpoint CER.
-$(TSV_CHECKPOINT):
+$(TSV_CHECKPOINT): $(MODEL_LOG)
 	@echo "Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER" > "$@"
 	@grep 'best model' $(MODEL_LOG) \
 		| sed -e 's/^.*\///' \
@@ -249,7 +249,7 @@ $(TSV_CHECKPOINT):
 		| sed -e 's/_/\t/g' >>  "$@"
 
 # Make TSV with Eval CER.
-$(TSV_EVAL):
+$(TSV_EVAL): $(MODEL_LOG)
 	@echo "Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER" > "$@"
 	@grep 'BCER eval' $(MODEL_LOG) \
 		| sed -e 's/^.*[0-9]At iteration //' \
@@ -258,26 +258,26 @@ $(TSV_EVAL):
 		| sed -e 's/^/\t\t/' >>  "$@"
 
 # Make TSV with Subtrainer CER.
-$(TSV_SUB):
+$(TSV_SUB): $(MODEL_LOG)
 	@echo "Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER" > "$@"
 	@grep '^UpdateSubtrainer' $(MODEL_LOG) \
 		| sed -e 's/^.*At iteration \([0-9]*\)\/\([0-9]*\)\/.*BCER train=/\t\t\1\t\2\t\t\t/' \
 		| sed -e 's/%, BWER.*//' >>  "$@"
 
 # Make TSV with lstmeval CER.
-$(TSV_LSTMEVAL):
+$(TSV_LSTMEVAL): $(LSTMEVAL_CER)
 	@echo "Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER" > "$@"
 	@grep 'BCER eval' $(LSTMEVAL_CER) \
 		| sed -e 's/^BCER eval=\(.*\), BWER.*\t.*_\(.*\)_\(.*\)\.eval.log/\t\t\2\t\3\t\1\t\t/' >>  "$@"
 
 # Make TSV with ocreval CER.
-$(TSV_OCREVAL):
+$(TSV_OCREVAL):  $(OCREVAL_CER)
 	@echo "Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER" > "$@"
 	@grep 'CER' $(OCREVAL_CER) \
 		| sed -e 's/^.*_\(.*\)_\(.*\)\.ocreval.*><td>\(.*\)<.*/\t\t\1\t\2\t\3\t\t/' >>  "$@"
 
 # Make TSV with ISRIeval CER.
-$(TSV_ISRIEVAL):
+$(TSV_ISRIEVAL): $(ISRIEVAL_CER)
 	@echo "Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER" > "$@"
 	@grep 'Accuracy' $(ISRIEVAL_CER) \
 		| sed -e 's/^.*_\(.*\)_\(.*\)\.accuracy.txt:  \(.*\)%  Accuracy/\t\t\1\t\2\t\3\t\t/' >>  "$@"
@@ -343,9 +343,7 @@ $(ISRIEVAL_CER): $(TMP_ISRIEVAL_LOG)
 
 # Rename checkpoints with one/two decimal digits to 3 decimal digts for correct sorting later.
 fixcheckpoints:
-	@mkdir -p $(PLOT_DIR)
-	@mkdir -p $(REPORT_DIR)
-	@mkdir -p $(TMP_DIR)
+	@mkdir -p $(PLOT_DIR) $(REPORT_DIR) $(TMP_DIR)
 	@find $(OUTPUT_DIR)/checkpoints/ -regex ^.*$(MODEL_NAME)_[0-9]\.[0-9]_.*_.*.checkpoint -exec rename -v 's/(.[0-9])_/$${1}00_/' {} \;
 	@find $(OUTPUT_DIR)/checkpoints/ -regex ^.*$(MODEL_NAME)_[0-9]*\.[0-9][0-9]_.*_.*.checkpoint -exec rename -v 's/(.[0-9][0-9])_/$${1}0_/' {} \;
 
@@ -458,11 +456,9 @@ $(OUTPUT_DIR)/list.eval: $(DATA_DIR)/$(TESSTRAIN_SCRIPT).unicharset $(DATA_DIR)/
 
 # Setup training data
 $(DATA_DIR)/$(START_MODEL)/$(START_MODEL).lstm: $(DATA_DIR)/$(START_MODEL)/$(START_MODEL).punc $(TESSDATA)/eng.traineddata
-	@mkdir -p $(DATA_DIR)/$(START_MODEL)
 	combine_tessdata -e $(TESSDATA)/$(START_MODEL).traineddata  $(DATA_DIR)/$(START_MODEL)/$(START_MODEL).lstm
 
 $(DATA_DIR)/$(START_MODEL)/$(START_MODEL).punc: $(DATA_DIR)/$(START_MODEL)/$(START_MODEL).numbers
-	@mkdir -p $(DATA_DIR)/$(START_MODEL)
 	wget -O $@ 'https://github.com/tesseract-ocr/langdata_lstm/raw/main/eng/eng.punc'
 
 $(DATA_DIR)/$(START_MODEL)/$(START_MODEL).numbers: $(TESSDATA)/$(START_MODEL).traineddata
@@ -475,11 +471,8 @@ $(TESSDATA)/$(START_MODEL).traineddata:
 $(TESSDATA)/eng.traineddata:
 	wget -O $@ 'https://github.com/tesseract-ocr/tessdata_best/raw/main/eng.traineddata'
 
-$(DATA_DIR)/$(TESSTRAIN_SCRIPT).unicharset: $(DATA_DIR)/Latin.unicharset $(DATA_DIR)/radical-stroke.txt
+$(DATA_DIR)/$(TESSTRAIN_SCRIPT).unicharset: $(DATA_DIR)/radical-stroke.txt
 	wget -O $@ 'https://github.com/tesseract-ocr/langdata_lstm/raw/main/$(TESSTRAIN_SCRIPT).unicharset'
-
-$(DATA_DIR)/Latin.unicharset:
-	wget -O $@ 'https://github.com/tesseract-ocr/langdata_lstm/raw/main/Latin.unicharset'
 
 $(DATA_DIR)/radical-stroke.txt:
 	@mkdir -p $(DATA_DIR)

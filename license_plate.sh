@@ -13,10 +13,9 @@
 ##
 
 ### rm -rf /tmp
+### fc-cache -vf
 
-# nohup bash finetune_font.sh eng Latin eng engFineTuned FineTune  ' "Impact Condensed" ' ' "Arial" "FreeSerif" ' 0 0 9999 2 > data/logs/engFineTuned.log &
-# nohup bash finetune_font.sh eng Latin eng engImpact FineTune  ' "Impact Condensed" ' ' "Impact Condensed" ' 0 0 9999 2 > data/logs/engImpact.log &
-# tail -f data/logs/engImpact.log
+# nohup bash license_plate.sh eng Latin eng BrazilPlates FineTune  ' "FE-Font" ' '  "FE-Font" ' 0 0 9999 6 > data/logs/BrazilPlates.log &
 
 declare -i maxiter
 maxiter=${10}
@@ -31,15 +30,15 @@ make MODEL_NAME=$4 clean-groundtruth clean-output
 
 echo "________________________________________________________________________"
 
-### tail -50 ~/langdata_lstm/$3/$3.training_text  > data/$4-eval.training_text
-### head -500 ~/langdata_lstm/$3/$3.training_text  > data/$4-train.training_text
+cp langdata/eng/brazilcar-eval.training_text   data/$4-eval.training_text
+cp langdata/eng/brazilcar-train.training_text   data/$4-train.training_text
 
 echo "________________________________________________________________________"
 
 # font 2 lstmf lists
 make  \
 TESSDATA=data \
-TESSTRAIN_FONTS_DIR=/usr/share/fonts \
+TESSTRAIN_FONTS_DIR=./fonts \
 TESSTRAIN_TEXT=data/$4-train.training_text \
 TESSEVAL_TEXT=data/$4-eval.training_text \
 TESSTRAIN_MAX_PAGES=$8 \

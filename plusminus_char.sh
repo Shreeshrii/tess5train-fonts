@@ -12,7 +12,7 @@
 # $11 - Y_MAX_CER (use as integer maxcer)
 ##
 
-rm -rf /tmp
+### rm -rf /tmp
 
 declare -i maxiter
 maxiter=${10}
@@ -33,12 +33,12 @@ make MODEL_NAME=$4 clean-groundtruth clean-output
 
 echo "________________________________________________________________________"
 
-tail -25 langdata/eng/eng.rupee.training_text > data/$4-eval.training_text
-tail -25 ~/langdata_lstm/eng/eng.training_text >> data/$4-eval.training_text
-shuf -o data/$4-eval.training_text <data/$4-eval.training_text
-head -100 langdata/eng/eng.rupee.training_text > data/$4-train.training_text
-head -100 ~/langdata_lstm/eng/eng.training_text >> data/$4-train.training_text
-shuf -o data/$4-train.training_text <data/$4-train.training_text
+### tail -25 langdata/eng/eng.rupee.training_text > data/$4-eval.training_text
+### tail -25 ~/langdata_lstm/eng/eng.training_text >> data/$4-eval.training_text
+### shuf -o data/$4-eval.training_text <data/$4-eval.training_text
+### head -100 langdata/eng/eng.rupee.training_text > data/$4-train.training_text
+### head -100 ~/langdata_lstm/eng/eng.training_text >> data/$4-train.training_text
+### shuf -o data/$4-train.training_text <data/$4-train.training_text
 
 echo "________________________________________________________________________"
 
@@ -57,8 +57,6 @@ MODEL_NAME=$4 \
 TESSTRAIN_FONTS="$6" \
 TESSEVAL_FONTS="$7" \
 lists
-
-echo "________________________________________________________________________"
 
 echo "________________________________________________________________________"
 

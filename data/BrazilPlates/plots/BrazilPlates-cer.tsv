@@ -1,0 +1,59 @@
+Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER
+		16	100		4.571000	
+		20	200		2.929000	
+		23	300		2.095000	
+		24	400		1.643000	
+		24	500		1.314000	
+		24	600		1.095000	
+		24	700		0.939000	
+		24	800		0.821000	
+		24	900		0.730000	
+		24	1000		0.657000	
+		24	1100		0.200000	
+		24	1200		0.071000	
+		24	1300		0.029000	
+		24	1400		0.000000	
+Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER
+BrazilPlates	4.571000	16	100			
+BrazilPlates	2.929000	20	200			
+BrazilPlates	2.095000	23	300			
+BrazilPlates	1.643000	24	400			
+BrazilPlates	1.314000	24	500			
+BrazilPlates	1.095000	24	600			
+BrazilPlates	0.939000	24	700			
+BrazilPlates	0.821000	24	800			
+BrazilPlates	0.730000	24	900			
+BrazilPlates	0.657000	24	1000			
+BrazilPlates	0.200000	24	1100			
+BrazilPlates	0.071000	24	1200			
+BrazilPlates	0.029000	24	1300			
+BrazilPlates	0.000000	24	1400			
+Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER
+Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER
+Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER
+		24	700	0.000000		
+		24	800	0.000000		
+		24	900	0.000000		
+		24	1000	0.000000		
+		24	1100	0.000000		
+		24	1200	0.000000		
+		24	1300	0.000000		
+		24	1400	0.000000		
+Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER
+		24	700	0.00		
+		24	800	0.00		
+		24	900	0.00		
+		24	1000	0.24		
+		24	1100	0.00		
+		24	1200	0.24		
+		24	1300	0.00		
+		24	1400	0.00		
+Name	CheckpointCER	LearningIteration	TrainingIteration	EvalCER	IterationCER	SubtrainerCER
+		24	700	100.00		
+		24	800	100.00		
+		24	900	100.00		
+		24	1000	 99.76		
+		24	1100	100.00		
+		24	1200	 99.76		
+		24	1300	100.00		
+		24	1400	100.00		

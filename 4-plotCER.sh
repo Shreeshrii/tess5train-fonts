@@ -5,7 +5,7 @@
 
 # nohup bash 4-plotCER.sh engImpact 1 FineTune > data/logs/engImpact-4.log &
 # nohup bash 4-plotCER.sh BrazilPlates 3 FineTune > data/logs/BrazilPlates-4.log &
-# nohup bash 4-plotCER.sh engLayer 10 ReplaceLayer > data/logs/engLayer-4.log &
+# nohup bash 4-plotCER.sh engLayer 4 ReplaceLayer > data/logs/engLayer-4.log &
 
 declare -i maxcer
 maxcer=$2

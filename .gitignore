@@ -18,6 +18,6 @@ data/logs/*IAST*.*
 data/tessdata/*final.traineddata
 fonts
 fonts.conf
-langdata/
+langdata
 save
 testdata

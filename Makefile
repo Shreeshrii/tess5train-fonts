@@ -439,13 +439,14 @@ $(OUTPUT_DIR)/list.eval: $(DATA_DIR)/$(TESSTRAIN_SCRIPT).unicharset $(DATA_DIR)/
 	python3 ./tesstrain.py \
 	 --fonts_dir $(TESSTRAIN_FONTS_DIR) \
 	 $(TESSEVAL_FONT_LIST) \
-	 --maxpages $(TESSEVAL_MAX_PAGES) \
 	 --lang $(TESSTRAIN_LANG) \
 	 --langdata_dir $(DATA_DIR) \
 	 --training_text $(TESSEVAL_TEXT) \
 	 --tessdata_dir $(TESSDATA) \
 	 --linedata_only --noextract_font_properties \
 	 --exposures "0" \
+	 --maxpages 1 \
+	 --ysize 14400 \
 	 --save_box_tiff \
 	 --output_dir $(TESSEVAL_TRUTH_DIR)
 

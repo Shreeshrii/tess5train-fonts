@@ -7,23 +7,22 @@
 # $6 - TESSTRAIN_FONTS
 # $7 - TESSEVAL_FONTS
 # $8 - TESSTRAIN_MAX_PAGES per font
-# $9 - TESSEVAL_MAX_PAGES per font
-# $10 - MAX_ITERATIONS (use as integer maxiter)
-# $11 - Y_MAX_CER (use as integer maxcer)
+# $9 - MAX_ITERATIONS (use as integer maxiter)
+# $10 - Y_MAX_CER (use as integer maxcer)
 ##
 
 ### rm -rf /tmp
 
 declare -i maxiter
-maxiter=${10}
+maxiter=${9}
 echo "maxiter= " $maxiter
 declare -i maxcer
-maxcer=${11}
+maxcer=${10}
 echo "maxcer= " $maxcer
 
 echo "________________________________________________________________________"
 
-# nohup bash plusminus_char.sh eng Latin eng engRupee FineTune ' "Andika" "Calibri" "Calibri Bold" "Calibri Bold Italic" "Calibri Italic" "Calibri Light" "Calibri Light Italic" "Cambria Bold" "Cambria Bold Italic" "Cambria Italic" "Charis SIL" "Charis SIL Bold" "Charis SIL Bold Italic" "Charis SIL Italic" "Consolas" "Consolas Bold" "Consolas Bold Italic" "Consolas Italic" "Doulos SIL" "FreeMono" "FreeMono Bold" "FreeMono Bold Italic" "FreeMono Italic" "FreeSans" "FreeSans Italic" "FreeSans Semi-Bold" "FreeSans Semi-Bold Italic" "FreeSerif" "FreeSerif Bold" "FreeSerif Bold Italic" "FreeSerif Italic" "Microsoft Sans Serif" "Quivira" "Symbola Semi-Condensed" "Tahoma" "Tahoma Bold" "Times New Roman," "Times New Roman, Bold" "Times New Roman, Bold Italic" "Times New Roman, Italic" "Unifont Medium" ' '' 0 0 99999 2 > data/logs/engRupee.log &
+# nohup bash plusminus_char.sh eng Latin eng engRupee FineTune ' "Andika" "Calibri" "Calibri Bold" "Calibri Bold Italic" "Calibri Italic" "Calibri Light" "Calibri Light Italic" "Cambria Bold" "Cambria Bold Italic" "Cambria Italic" "Charis SIL" "Charis SIL Bold" "Charis SIL Bold Italic" "Charis SIL Italic" "Consolas" "Consolas Bold" "Consolas Bold Italic" "Consolas Italic" "Doulos SIL" "FreeMono" "FreeMono Bold" "FreeMono Bold Italic" "FreeMono Italic" "FreeSans" "FreeSans Italic" "FreeSans Semi-Bold" "FreeSans Semi-Bold Italic" "FreeSerif" "FreeSerif Bold" "FreeSerif Bold Italic" "FreeSerif Italic" "Microsoft Sans Serif" "Quivira" "Symbola Semi-Condensed" "Tahoma" "Tahoma Bold" "Times New Roman," "Times New Roman, Bold" "Times New Roman, Bold Italic" "Times New Roman, Italic" "Unifont Medium" ' ' "Andika" "Calibri" "Calibri Bold" "Calibri Bold Italic" "Calibri Italic" "Calibri Light" "Calibri Light Italic" "Cambria Bold" "Cambria Bold Italic" "Cambria Italic" "Charis SIL" "Charis SIL Bold" "Charis SIL Bold Italic" "Charis SIL Italic" "Consolas" "Consolas Bold" "Consolas Bold Italic" "Consolas Italic" "Doulos SIL" "FreeMono" "FreeMono Bold" "FreeMono Bold Italic" "FreeMono Italic" "FreeSans" "FreeSans Italic" "FreeSans Semi-Bold" "FreeSans Semi-Bold Italic" "FreeSerif" "FreeSerif Bold" "FreeSerif Bold Italic" "FreeSerif Italic" "Microsoft Sans Serif" "Quivira" "Symbola Semi-Condensed" "Tahoma" "Tahoma Bold" "Times New Roman," "Times New Roman, Bold" "Times New Roman, Bold Italic" "Times New Roman, Italic" "Unifont Medium" ' 0 99999 2 > data/logs/engRupee.log &
 
 rm -rf /tmp
 
@@ -33,23 +32,13 @@ make MODEL_NAME=$4 clean-groundtruth clean-output
 
 echo "________________________________________________________________________"
 
-### tail -25 langdata/eng/eng.rupee.training_text > data/$4-eval.training_text
-### tail -25 ~/langdata_lstm/eng/eng.training_text >> data/$4-eval.training_text
-### shuf -o data/$4-eval.training_text <data/$4-eval.training_text
-### head -100 langdata/eng/eng.rupee.training_text > data/$4-train.training_text
-### head -100 ~/langdata_lstm/eng/eng.training_text >> data/$4-train.training_text
-### shuf -o data/$4-train.training_text <data/$4-train.training_text
-
-echo "________________________________________________________________________"
-
 # font 2 lstmf lists
 make  \
 TESSDATA=data \
 TESSTRAIN_FONTS_DIR=/usr/share/fonts \
-TESSTRAIN_TEXT=data/$4-train.training_text \
-TESSEVAL_TEXT=data/$4-eval.training_text \
+TESSTRAIN_TEXT=data/langdata/$4-train.training_text \
+TESSEVAL_TEXT=data/langdata/$4-eval.training_text \
 TESSTRAIN_MAX_PAGES=$8 \
-TESSEVAL_MAX_PAGES=$9 \
 TESSTRAIN_LANG=$1 \
 TESSTRAIN_SCRIPT=$2 \
 START_MODEL=$3 \
@@ -86,6 +75,7 @@ echo "________________________________________________________________________"
 make  \
 TESSDATA=data \
 MODEL_NAME=$4 \
+TRAIN_TYPE=$5 \
 evalCER
 
 echo "________________________________________________________________________"
@@ -94,6 +84,7 @@ echo "________________________________________________________________________"
 make  \
 TESSDATA=data \
 MODEL_NAME=$4 \
+TRAIN_TYPE=$5 \
 Y_MAX_CER=$maxcer \
 plotCER
 

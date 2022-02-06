@@ -46,10 +46,10 @@ LAST_CHECKPOINT = $(OUTPUT_DIR)/checkpoints/$(MODEL_NAME)_checkpoint
 PROTO_MODEL = $(OUTPUT_DIR)/$(MODEL_NAME)-proto.traineddata
 
 # Name of the final trained model. Default: '$(TRAINED_MODEL)'
-TRAINED_MODEL = $(DATA_DIR)/$(MODEL_NAME)-final.traineddata
+TRAINED_MODEL = $(DATA_DIR)/tessdata/$(MODEL_NAME)-final.traineddata
 
 # Name of the final trained integer model. Default: '$(TRAINED_INTEGER_MODEL)'
-TRAINED_INTEGER_MODEL = $(DATA_DIR)/$(MODEL_NAME)-integer.traineddata
+TRAINED_INTEGER_MODEL = $(DATA_DIR)/tessdata/$(MODEL_NAME)-integer.traineddata
 
 # Max iterations. Default: $(MAX_ITERATIONS)
 MAX_ITERATIONS := 10000

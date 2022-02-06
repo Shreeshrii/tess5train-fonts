@@ -1,0 +1,1130 @@
+maxiter=  9999
+maxcer=  2
+________________________________________________________________________
+Makefile:475: warning: overriding recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+Makefile:472: warning: ignoring old recipe for target '/home/ubuntu/tess5train-fonts/usr/share/tessdata/eng.traineddata'
+________________________________________________________________________
+________________________________________________________________________
+Makefile:475: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:472: warning: ignoring old recipe for target 'data/eng.traineddata'
+mkdir -p data/engImpact
+python3 ./tesstrain.py \
+ --fonts_dir /usr/share/fonts \
+ --fontlist "Impact Condensed"  \
+ --lang eng \
+ --langdata_dir data \
+ --training_text data/engImpact-eval.training_text \
+ --tessdata_dir data \
+ --linedata_only --noextract_font_properties \
+ --exposures "0" \
+ --maxpages 1 \
+ --ysize 14400 \
+ --save_box_tiff \
+ --output_dir data/ground-truth/engImpact-eval
+[19:24:16] INFO - Log file location: /tmp/eng-2022-02-05q1oa4upa/tesstrain.log
+[19:24:16] INFO - === Starting training for language eng
+[19:24:16] INFO - Testing font: Impact Condensed
+[19:24:22] INFO - === Phase I: Generating training images ===
+  0%|          | 0/1 [00:00<?, ?it/s][19:24:22] INFO - Rendering using Impact Condensed
+100%|██████████| 1/1 [00:04<00:00,  4.29s/it]100%|██████████| 1/1 [00:04<00:00,  4.29s/it]
+[19:24:26] INFO - === Phase UP: Generating unicharset and unichar properties files ===
+[19:24:26] INFO - === Phase E: Generating lstmf files using ['lstm.train']===
+[19:24:26] INFO - Using TESSDATA_PREFIX=data
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:02<00:00,  2.21s/it]100%|██████████| 1/1 [00:02<00:00,  2.21s/it]
+[19:24:29] INFO - === Constructing LSTM training data ===
+[19:24:29] INFO - Creating new directory data/ground-truth/engImpact-eval
+[19:24:29] INFO - === Saving box/tiff pairs for training data ===
+[19:24:29] INFO - === Moving lstmf files for training data ===
+[19:24:29] INFO - All done!
+mv -v data/ground-truth/engImpact-eval/eng.training_files.txt data/engImpact/list.eval
+renamed 'data/ground-truth/engImpact-eval/eng.training_files.txt' -> 'data/engImpact/list.eval'
+sed -i -e '$a\' data/engImpact/list.eval
+mv -v data/ground-truth/engImpact-eval/eng/eng.* data/engImpact/
+renamed 'data/ground-truth/engImpact-eval/eng/eng.charset_size=103.txt' -> 'data/engImpact/eng.charset_size=103.txt'
+renamed 'data/ground-truth/engImpact-eval/eng/eng.traineddata' -> 'data/engImpact/eng.traineddata'
+renamed 'data/ground-truth/engImpact-eval/eng/eng.unicharset' -> 'data/engImpact/eng.unicharset'
+rename "s/eng\./engImpact-eval\./g" data/engImpact/*.*
+removed directory 'data/ground-truth/engImpact-eval/eng'
+bash box2gt.sh data/ground-truth/engImpact-eval 
+creating gt from box files for  data/ground-truth/engImpact-eval
+python3 ./tesstrain.py \
+ --fonts_dir /usr/share/fonts \
+ --fontlist "Impact Condensed"  \
+ --maxpages 0 \
+ --lang eng \
+ --langdata_dir data \
+ --training_text data/engImpact-train.training_text \
+ --tessdata_dir data \
+ --linedata_only --noextract_font_properties \
+ --exposures "0" \
+ --save_box_tiff \
+ --output_dir data/ground-truth/engImpact-train
+[19:24:29] INFO - Log file location: /tmp/eng-2022-02-05pcwaxogl/tesstrain.log
+[19:24:29] INFO - === Starting training for language eng
+[19:24:29] INFO - Testing font: Impact Condensed
+[19:24:36] INFO - === Phase I: Generating training images ===
+  0%|          | 0/1 [00:00<?, ?it/s][19:24:36] INFO - Rendering using Impact Condensed
+100%|██████████| 1/1 [00:16<00:00, 16.09s/it]100%|██████████| 1/1 [00:16<00:00, 16.09s/it]
+[19:24:52] INFO - === Phase UP: Generating unicharset and unichar properties files ===
+[19:24:52] INFO - === Phase E: Generating lstmf files using ['lstm.train']===
+[19:24:52] INFO - Using TESSDATA_PREFIX=data
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:12<00:00, 12.90s/it]100%|██████████| 1/1 [00:12<00:00, 12.90s/it]
+[19:25:05] INFO - === Constructing LSTM training data ===
+[19:25:05] INFO - Creating new directory data/ground-truth/engImpact-train
+[19:25:05] INFO - === Saving box/tiff pairs for training data ===
+[19:25:05] INFO - === Moving lstmf files for training data ===
+[19:25:05] INFO - All done!
+mv -v data/ground-truth/engImpact-train/eng.training_files.txt data/engImpact/list.train
+renamed 'data/ground-truth/engImpact-train/eng.training_files.txt' -> 'data/engImpact/list.train'
+sed -i -e '$a\' data/engImpact/list.train
+mv -v data/ground-truth/engImpact-train/eng/eng.* data/engImpact/
+renamed 'data/ground-truth/engImpact-train/eng/eng.charset_size=111.txt' -> 'data/engImpact/eng.charset_size=111.txt'
+renamed 'data/ground-truth/engImpact-train/eng/eng.traineddata' -> 'data/engImpact/eng.traineddata'
+renamed 'data/ground-truth/engImpact-train/eng/eng.unicharset' -> 'data/engImpact/eng.unicharset'
+rename "s/eng\./engImpact-train\./g" data/engImpact/*.*
+cp -v data/engImpact/engImpact-train.traineddata data/engImpact/engImpact-proto.traineddata
+'data/engImpact/engImpact-train.traineddata' -> 'data/engImpact/engImpact-proto.traineddata'
+combine_tessdata -dl data/engImpact/engImpact-proto.traineddata
+Version:5.0.1-15-g14399
+18:lstm-punc-dawg:size=4322, offset=192
+20:lstm-number-dawg:size=4618, offset=4514
+21:lstm-unicharset:size=7409, offset=9132
+22:lstm-recoder:size=1012, offset=16541
+23:version:size=15, offset=17553
+removed directory 'data/ground-truth/engImpact-train/eng'
+bash box2gt.sh data/ground-truth/engImpact-train
+creating gt from box files for  data/ground-truth/engImpact-train
+________________________________________________________________________
+Makefile:475: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:472: warning: ignoring old recipe for target 'data/eng.traineddata'
+lstmtraining \
+  --continue_from data/eng/eng.lstm --old_traineddata data/eng.traineddata \
+  --traineddata data/engImpact/engImpact-proto.traineddata \
+  --train_listfile data/engImpact/list.train \
+  --eval_listfile data/engImpact/list.eval \
+  --max_iterations 9999 \
+  --debug_interval -1 \
+  --learning_rate 0.0001 \
+  --target_error_rate 0.01 \
+  --model_output data/engImpact/checkpoints/engImpact \
+  > data/logs/engImpact.LOG  2>&1
+lstmtraining \
+--stop_training \
+--continue_from data/engImpact/checkpoints/engImpact_checkpoint \
+--traineddata data/engImpact/engImpact-proto.traineddata \
+--model_output data/engImpact-final.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_checkpoint, unpacking...
+lstmtraining \
+--stop_training \
+--continue_from data/engImpact/checkpoints/engImpact_checkpoint \
+--traineddata data/engImpact/engImpact-proto.traineddata \
+--convert_to_int \
+--model_output data/engImpact-integer.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_checkpoint, unpacking...
+________________________________________________________________________
+Makefile:475: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:472: warning: ignoring old recipe for target 'data/eng.traineddata'
+mkdir data/engImpact/tessdata_best
+mkdir data/engImpact/tessdata_fast
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.008000_170_2500.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.008000_170_2500.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.008000_170_2500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.011000_170_2400.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.011000_170_2400.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.011000_170_2400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.012000_170_2300.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.012000_170_2300.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.012000_170_2300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.019000_170_2200.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.019000_170_2200.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.019000_170_2200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.024000_169_2100.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.024000_169_2100.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.024000_169_2100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.033000_169_2000.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.033000_169_2000.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.033000_169_2000.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.043000_169_1900.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.043000_169_1900.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.043000_169_1900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.057000_169_1800.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.057000_169_1800.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.057000_169_1800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.079000_169_1700.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.079000_169_1700.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.079000_169_1700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.100000_167_1600.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.100000_167_1600.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.100000_167_1600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.121000_166_1500.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.121000_166_1500.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.121000_166_1500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.170000_165_1400.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.170000_165_1400.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.170000_165_1400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.226000_165_1300.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.226000_165_1300.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.226000_165_1300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.303000_163_1200.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.303000_163_1200.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.303000_163_1200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.361000_160_1100.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.361000_160_1100.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.361000_160_1100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.451000_156_1000.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.451000_156_1000.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.451000_156_1000.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.489000_152_900.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.489000_152_900.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.489000_152_900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.533000_146_800.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.533000_146_800.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.533000_146_800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.578000_136_700.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.578000_136_700.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.578000_136_700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.632000_128_600.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.632000_128_600.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.632000_128_600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.710000_120_500.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.710000_120_500.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.710000_120_500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.759000_106_400.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.759000_106_400.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.759000_106_400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.813000_58_200.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.813000_58_200.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.813000_58_200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.982000_33_100.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --model_output data/engImpact/tessdata_best/engImpact_0.982000_33_100.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.982000_33_100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.008000_170_2500.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.008000_170_2500.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.008000_170_2500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.011000_170_2400.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.011000_170_2400.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.011000_170_2400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.012000_170_2300.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.012000_170_2300.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.012000_170_2300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.019000_170_2200.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.019000_170_2200.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.019000_170_2200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.024000_169_2100.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.024000_169_2100.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.024000_169_2100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.033000_169_2000.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.033000_169_2000.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.033000_169_2000.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.043000_169_1900.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.043000_169_1900.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.043000_169_1900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.057000_169_1800.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.057000_169_1800.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.057000_169_1800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.079000_169_1700.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.079000_169_1700.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.079000_169_1700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.100000_167_1600.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.100000_167_1600.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.100000_167_1600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.121000_166_1500.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.121000_166_1500.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.121000_166_1500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.170000_165_1400.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.170000_165_1400.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.170000_165_1400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.226000_165_1300.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.226000_165_1300.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.226000_165_1300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.303000_163_1200.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.303000_163_1200.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.303000_163_1200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.361000_160_1100.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.361000_160_1100.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.361000_160_1100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.451000_156_1000.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.451000_156_1000.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.451000_156_1000.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.489000_152_900.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.489000_152_900.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.489000_152_900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.533000_146_800.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.533000_146_800.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.533000_146_800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.578000_136_700.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.578000_136_700.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.578000_136_700.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.632000_128_600.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.632000_128_600.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.632000_128_600.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.710000_120_500.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.710000_120_500.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.710000_120_500.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.759000_106_400.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.759000_106_400.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.759000_106_400.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.813000_58_200.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.813000_58_200.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.813000_58_200.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/engImpact/checkpoints/engImpact_0.982000_33_100.checkpoint \
+          --traineddata data/engImpact/engImpact-proto.traineddata \
+          --convert_to_int \
+          --model_output data/engImpact/tessdata_fast/engImpact_0.982000_33_100.traineddata
+Loaded file data/engImpact/checkpoints/engImpact_0.982000_33_100.checkpoint, unpacking...
+________________________________________________________________________
+Makefile:475: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:472: warning: ignoring old recipe for target 'data/eng.traineddata'
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.489000_152_900.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.489000_152_900.eval.log
+real 8.25
+user 25.87
+sys 0.27
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.170000_165_1400.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.170000_165_1400.eval.log
+real 8.18
+user 25.69
+sys 0.26
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.008000_170_2500.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.008000_170_2500.eval.log
+real 8.25
+user 25.81
+sys 0.25
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.533000_146_800.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.533000_146_800.eval.log
+real 8.32
+user 25.99
+sys 0.32
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.043000_169_1900.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.043000_169_1900.eval.log
+real 8.23
+user 25.82
+sys 0.27
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.226000_165_1300.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.226000_165_1300.eval.log
+real 8.27
+user 25.99
+sys 0.28
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.011000_170_2400.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.011000_170_2400.eval.log
+real 8.43
+user 26.57
+sys 0.30
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.012000_170_2300.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.012000_170_2300.eval.log
+real 8.40
+user 26.45
+sys 0.26
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.079000_169_1700.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.079000_169_1700.eval.log
+real 8.33
+user 26.06
+sys 0.32
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.057000_169_1800.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.057000_169_1800.eval.log
+real 8.40
+user 26.40
+sys 0.30
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.033000_169_2000.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.033000_169_2000.eval.log
+real 8.44
+user 26.50
+sys 0.32
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.361000_160_1100.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.361000_160_1100.eval.log
+real 8.47
+user 26.64
+sys 0.34
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.024000_169_2100.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.024000_169_2100.eval.log
+real 8.40
+user 26.38
+sys 0.25
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.578000_136_700.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.578000_136_700.eval.log
+real 8.31
+user 26.13
+sys 0.22
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.121000_166_1500.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.121000_166_1500.eval.log
+real 8.47
+user 26.61
+sys 0.30
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.813000_58_200.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.813000_58_200.eval.log
+real 8.34
+user 26.23
+sys 0.26
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.303000_163_1200.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.303000_163_1200.eval.log
+real 8.25
+user 25.88
+sys 0.27
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.019000_170_2200.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.019000_170_2200.eval.log
+real 8.35
+user 26.19
+sys 0.32
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.759000_106_400.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.759000_106_400.eval.log
+real 8.23
+user 25.80
+sys 0.27
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.632000_128_600.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.632000_128_600.eval.log
+real 8.38
+user 26.26
+sys 0.36
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.100000_167_1600.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.100000_167_1600.eval.log
+real 8.16
+user 25.61
+sys 0.26
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.451000_156_1000.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.451000_156_1000.eval.log
+real 8.23
+user 25.84
+sys 0.26
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.710000_120_500.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.710000_120_500.eval.log
+real 8.20
+user 25.65
+sys 0.30
+time -p lstmeval  \
+	--verbosity=0 \
+	--model data/engImpact/tessdata_fast/engImpact_0.982000_33_100.traineddata \
+	--eval_listfile data/engImpact/list.eval 2>&1 | grep "^BCER eval" > data/engImpact/tessdata_fast/engImpact_0.982000_33_100.eval.log
+real 8.19
+user 25.75
+sys 0.24
+sed -i '/^Filename/N;s/\n/ /' data/engImpact/tmp/engImpact-lstmeval.log
+sort -n -r -o data/engImpact/tmp/engImpact-lstmeval.log data/engImpact/tmp/engImpact-lstmeval.log
+sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/engImpact/tmp/engImpact-lstmeval.log > data/engImpact/reports/engImpact-lstmeval.txt
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.489000_152_900.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=900, sample_iteration=900, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.06
+user 24.27
+sys 0.30
+Feb 05, 2022 7:47:34 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:47:34 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:47:34 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:47:34 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:47:34 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:47:34 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:47:34 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.170000_165_1400.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1400, sample_iteration=1400, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.20
+user 24.53
+sys 0.38
+Feb 05, 2022 7:47:45 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:47:45 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:47:45 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:47:45 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:47:45 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:47:45 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:47:45 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.008000_170_2500.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2500, sample_iteration=2500, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.11
+user 24.43
+sys 0.32
+Feb 05, 2022 7:47:56 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:47:56 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:47:56 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:47:56 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:47:56 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:47:56 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:47:56 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.533000_146_800.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=800, sample_iteration=800, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.05
+user 24.23
+sys 0.28
+Feb 05, 2022 7:48:07 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:48:07 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:48:07 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:48:07 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:48:07 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:48:07 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:48:07 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.043000_169_1900.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1900, sample_iteration=1900, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.12
+user 24.42
+sys 0.32
+Feb 05, 2022 7:48:18 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:48:18 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:48:18 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:48:18 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:48:18 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:48:18 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:48:18 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.226000_165_1300.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1300, sample_iteration=1300, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.26
+user 24.54
+sys 0.32
+Feb 05, 2022 7:48:29 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:48:30 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:48:30 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:48:30 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:48:30 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:48:30 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:48:30 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.011000_170_2400.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2400, sample_iteration=2400, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.37
+user 24.85
+sys 0.30
+Feb 05, 2022 7:48:41 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:48:41 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:48:41 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:48:41 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:48:41 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:48:41 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:48:41 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.012000_170_2300.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2300, sample_iteration=2300, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.72
+user 25.74
+sys 0.34
+Feb 05, 2022 7:48:53 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:48:53 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:48:53 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:48:53 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:48:53 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:48:53 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:48:53 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.079000_169_1700.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1700, sample_iteration=1700, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.27
+user 24.55
+sys 0.34
+Feb 05, 2022 7:49:04 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:49:04 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:49:04 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:49:04 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:49:04 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:49:04 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:49:04 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.057000_169_1800.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1800, sample_iteration=1800, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.14
+user 24.41
+sys 0.33
+Feb 05, 2022 7:49:15 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:49:15 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:49:15 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:49:15 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:49:15 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:49:15 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:49:15 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.033000_169_2000.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2000, sample_iteration=2000, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.10
+user 24.33
+sys 0.34
+Feb 05, 2022 7:49:26 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:49:26 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:49:26 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:49:26 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:49:26 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:49:26 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:49:26 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.361000_160_1100.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1100, sample_iteration=1100, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.11
+user 24.33
+sys 0.30
+Feb 05, 2022 7:49:37 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:49:37 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:49:37 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:49:37 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:49:37 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:49:37 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:49:37 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.024000_169_2100.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2100, sample_iteration=2100, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.16
+user 24.49
+sys 0.33
+Feb 05, 2022 7:49:48 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:49:48 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:49:48 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:49:48 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:49:48 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:49:48 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:49:48 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.578000_136_700.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=700, sample_iteration=700, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.67
+user 25.68
+sys 0.34
+Feb 05, 2022 7:50:00 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:50:00 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:50:00 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:50:00 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:50:00 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:50:00 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:50:00 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.121000_166_1500.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1500, sample_iteration=1500, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.28
+user 24.53
+sys 0.33
+Feb 05, 2022 7:50:11 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:50:11 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:50:11 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:50:11 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:50:11 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:50:11 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:50:11 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.813000_58_200.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=200, sample_iteration=200, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.74
+user 25.65
+sys 0.35
+Feb 05, 2022 7:50:23 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:50:23 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:50:23 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:50:23 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:50:23 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:50:23 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:50:23 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.303000_163_1200.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1200, sample_iteration=1200, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.46
+user 25.09
+sys 0.33
+Feb 05, 2022 7:50:35 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:50:35 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:50:35 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:50:35 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:50:35 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:50:35 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:50:35 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.019000_170_2200.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=2200, sample_iteration=2200, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.90
+user 26.15
+sys 0.39
+Feb 05, 2022 7:50:47 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:50:47 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:50:47 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:50:47 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:50:47 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:50:47 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:50:47 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.759000_106_400.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=400, sample_iteration=400, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.48
+user 25.20
+sys 0.32
+Feb 05, 2022 7:50:58 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:50:59 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:50:59 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:50:59 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:50:59 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:50:59 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:50:59 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.632000_128_600.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=600, sample_iteration=600, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.47
+user 25.18
+sys 0.35
+Feb 05, 2022 7:51:10 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:51:10 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:51:10 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:51:10 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:51:10 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:51:10 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:51:10 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.100000_167_1600.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1600, sample_iteration=1600, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.40
+user 25.10
+sys 0.32
+Feb 05, 2022 7:51:21 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:51:22 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:51:22 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:51:22 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:51:22 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:51:22 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:51:22 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.451000_156_1000.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=1000, sample_iteration=1000, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.39
+user 24.70
+sys 0.38
+Feb 05, 2022 7:51:33 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:51:33 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:51:33 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:51:33 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:51:33 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:51:33 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:51:33 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.710000_120_500.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=500, sample_iteration=500, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.03
+user 24.24
+sys 0.28
+Feb 05, 2022 7:51:44 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:51:44 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:51:44 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:51:44 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:51:44 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:51:44 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:51:44 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+bash ocreval.sh engImpact data/engImpact/tessdata_fast/engImpact_0.982000_33_100.traineddata
+LSTM: network=[1,36,0,1Ct3,3,16Mp3,3Lfys64Lfx96Lrx96Lfx512O1c1], int_mode=1, recoding=1, iteration=100, sample_iteration=100, null_char=110, learning_rate=0.001, momentum=0.5, adam_beta=0.999
+Layer Learning Rates: :0(Input)=0.001, :1:0(Convolve)=0.001, :1:1(ConvNL)=0.0005, :2(Maxpool)=0.001, :3:0(Lfys64)=0.0005, :4(Lfx96)=0.0005, :5:0(Lrx96)=0.0005, :6(Lfx512)=0.0005, :7(Output)=0.0005
+Page 0 : data/ground-truth/engImpact-eval/eng.Impact_Condensed.exp0.tif
+real 9.23
+user 24.82
+sys 0.31
+Feb 05, 2022 7:51:55 PM eu.digitisation.utils.log.Messages info
+INFO: Logfile is /home/ubuntu/ocrevaluation.log
+Feb 05, 2022 7:51:55 PM eu.digitisation.utils.log.Messages info
+INFO: Processing GT.txt
+Feb 05, 2022 7:51:55 PM eu.digitisation.utils.log.Messages info
+INFO: Application folder is /home/ubuntu
+Feb 05, 2022 7:51:55 PM eu.digitisation.utils.log.Messages info
+INFO: No properties were defined by user
+Feb 05, 2022 7:51:55 PM eu.digitisation.utils.log.Messages info
+INFO: max length of text set to 0
+Feb 05, 2022 7:51:55 PM eu.digitisation.utils.log.Messages info
+INFO: Text file GT.txt encoding is UTF-8
+Feb 05, 2022 7:51:55 PM eu.digitisation.utils.log.Messages info
+INFO: Text file OCR.txt encoding is UTF-8
+grep '<td>CER</td><td>' data/engImpact/tessdata_fast/engImpact*.ocrevaluation.html > data/engImpact/reports/engImpact-ocreval.txt
+sort -n -r -o data/engImpact/reports/engImpact-ocreval.txt data/engImpact/reports/engImpact-ocreval.txt
+sort -n -r data/engImpact/tmp/engImpact-isrieval.log > data/engImpact/reports/engImpact-isrieval.txt
+________________________________________________________________________
+Makefile:475: warning: overriding recipe for target 'data/eng.traineddata'
+Makefile:472: warning: ignoring old recipe for target 'data/eng.traineddata'
+sed -i '/^Filename/N;s/\n/ /' data/engImpact/tmp/engImpact-lstmeval.log
+sort -n -r -o data/engImpact/tmp/engImpact-lstmeval.log data/engImpact/tmp/engImpact-lstmeval.log
+sed -e 's/\(Filename.*.log\).*\(BCER.*\)/\2 \t \1/g' data/engImpact/tmp/engImpact-lstmeval.log > data/engImpact/reports/engImpact-lstmeval.txt
+python plot_LOG.py engImpact,2,data/engImpact/tmp/engImpact-iteration.tsv,data/engImpact/tmp/engImpact-checkpoint.tsv,data/engImpact/tmp/engImpact-eval.tsv,data/engImpact/tmp/engImpact-sub.tsv
+python plot_cer.py engImpact,2,data/engImpact/tmp/engImpact-iteration.tsv,data/engImpact/tmp/engImpact-checkpoint.tsv,data/engImpact/tmp/engImpact-eval.tsv,data/engImpact/tmp/engImpact-sub.tsv,data/engImpact/tmp/engImpact-lstmeval.tsv,data/engImpact/tmp/engImpact-ocreval.tsv,data/engImpact/tmp/engImpact-isrieval.tsv
+________________________________________________________________________

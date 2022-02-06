@@ -1,7 +1,6 @@
-*.isri
-./*.log
 *.out
 *.save
+./*.log
 __pycache__/
 data/*.traineddata
 data/*.unicharset
@@ -16,10 +15,9 @@ data/*iast*
 data/Latin
 data/eng
 data/logs/*IAST*.*
-data/logs/*ayer*.*
+data/tessdata/*final.traineddata
 fonts
 fonts.conf
-langdata/iast
-langdata/san
+langdata/
 save
 testdata
